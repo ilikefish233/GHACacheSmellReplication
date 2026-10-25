@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": {
+    "validation_176_cases_and_all_type_metrics": true,
+    "all_completed_duration": true,
+    "successful_duration": true,
+    "success_lpm": true,
+    "rq1/multiplicity.csv": true,
+    "rq1/cooccurrence.csv": true,
+    "rq1/ecosystem_preserving_paper_groups.csv": true,
+    "rq1/roles_preserving_paper_groups.csv": true,
+    "rq1/triggers_preserving_paper_groups.csv": true,
+    "rq1/repository_concentration.csv": true,
+    "rq1/repository_distribution_tests.csv": true,
+    "rq1/prevalence_comparison.csv": true,
+    "rq1/ndc_exclusive_metadata_opportunities.csv": true,
+    "rq2_3/smell_resource_summary.json": true,
+    "rq2_3/result_audit.json": true,
+    "rq2_3/observed_monthly_frequency/smell_observed_monthly_summary.json": true
+  },
+  "relative_tolerance": 1e-08,
+  "absolute_tolerance": 1e-10
+}

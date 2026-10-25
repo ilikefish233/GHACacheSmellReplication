@@ -1,0 +1,65 @@
+{
+  "artifact_version": "emse-local-2026-10-25",
+  "paper_title": "Cache Configuration Smells in GitHub Actions: A Large-Scale Empirical Study",
+  "study_cutoff": "2026-06-09T23:59:59Z",
+  "scope": [
+    "RQ1.1",
+    "RQ1.2",
+    "RQ2.1",
+    "RQ2.2",
+    "RQ2.3"
+  ],
+  "rq3_included": false,
+  "detector": {
+    "source": "src/frozen/src/detectors/smell/cache_smell_detector.py",
+    "sha256": "daca83cf58ed207fdaa7719862b07bb2f771bebe11bbf9bda25013b2dcdca39e"
+  },
+  "inputs": {
+    "rq1": "RQ1/data",
+    "rq2": "RQ2/data",
+    "rq2_grouped": "RQ2/prepared",
+    "rq2_3_jobs": "RQ2/RQ2_3/data/frozen_job_metadata.jsonl",
+    "yaml": "data/canonical/content",
+    "validation": "Validation/data/annotations.xlsx",
+    "upstream_candidates": "data/upstream/ghalogs/repositories.json",
+    "acquisition_and_curation": "Pipeline/data_manifest.json"
+  },
+  "entrypoints": {
+    "all": "reproduce.py",
+    "rq1": "RQ1/analysis.py",
+    "rq2": "RQ2/analysis.py",
+    "rq2_3": "RQ2/RQ2_3/analysis.py",
+    "validation": "Validation/analysis.py",
+    "detector": "src/scan.py",
+    "figures": "src/render_figures.py",
+    "pipeline": "Pipeline/run.py"
+  },
+  "interpretation": "adjusted observational associations; LPM success differences are not odds ratios",
+  "initial_candidate_file_included": false,
+  "publication_status": "local; author-owned licenses selected; public deposit pending",
+  "verification": "docs/verification/original/verification.json",
+  "pipeline_scope": "RQ1/RQ2 only; no retired RQ3 execution",
+  "pipeline_verification": "docs/verification/pipeline/verification.json",
+  "pipeline_source_data_bytes": 42888924225,
+  "pipeline_compressed_data_bytes": 2552315203,
+  "licensing": {
+    "scope": "docs/license_scope.md",
+    "author_owned_code": "MIT",
+    "author_owned_data_and_documentation": "CC-BY-4.0",
+    "third_party_workflow_review": "deferred by author"
+  },
+  "external_inputs": {
+    "upstream_candidates": {
+      "path": "data/upstream/ghalogs/repositories.json",
+      "source": "https://zenodo.org/records/14796970",
+      "required_for": [
+        "filter",
+        "offline-all"
+      ],
+      "required_for_default_paper_analysis": false
+    }
+  },
+  "distribution": "GitHub code/small-table edition; large inputs external",
+  "data_configuration": "data/sources.json",
+  "layout": "RQ entry points; shared code in src; provenance and reports in docs"
+}

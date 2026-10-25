@@ -1,0 +1,19 @@
+\begin{figure}[htbp]
+\centering
+\begin{lstlisting}[style=ccscase]
+  9 - uses: actions/checkout@v2
+ 10 - uses: actions/setup-node@v2
+ 11   with:
+ 12     node-version: '14'
+ 13 - name: Cache node modules
+|+| 14   uses: actions/cache@v2|/|
+ 15   with:
+ 16     path: "**/node_modules"
+ 17     key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+ 18     restore-keys: ${{ runner.os }}-modules-
+ 19 - name: Install Modules
+ 20   run: yarn install
+\end{lstlisting}
+\caption{\texttt{deprecated\_cache\_action} in \href{https://github.com/MathiasGilson/Tailwind-Styled-Component/blob/86be7109cc761123c142038efec7d54f2fc6b5f8/.github/workflows/test.yml}{MathiasGilson/Tailwind-Styled-Component}.}
+\label{fig:ccs-deprecated-code}
+\end{figure}

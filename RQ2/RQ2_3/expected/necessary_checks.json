@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": {
+    "unique_run_keys": 1284,
+    "version_interval_memberships": 1337,
+    "difference_sign_and_math": 203,
+    "repository_aggregate": 32
+  },
+  "no_optional_code_quality_tests": true
+}

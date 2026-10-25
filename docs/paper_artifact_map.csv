@@ -1,0 +1,8 @@
+paper_item,input,entrypoint,expected_output
+Detector validation,Validation/data/annotations.xlsx,Validation/analysis.py,Validation/expected/evaluation.json
+RQ1.1 prevalence/contexts,RQ1/data/rq1_scan_direct.jsonl,RQ1/analysis.py,RQ1/expected/paper_tables/
+RQ1.2 multiplicity/co-occurrence,RQ1/data/rq1_scan_direct.jsonl,RQ1/analysis.py,RQ1/expected/paper_tables/
+RQ2.1 duration,RQ2/data/,RQ2/analysis.py,RQ2/expected/duration/
+RQ2.2 success,RQ2/data/,RQ2/analysis.py,RQ2/expected/success/
+RQ2.3 resources,RQ2/RQ2_3/data/,RQ2/RQ2_3/analysis.py,RQ2/RQ2_3/expected/
+Quantitative figures,RQ1/paper_source_data/ and RQ2 results,Figures/render.py,docs/paper/figures/

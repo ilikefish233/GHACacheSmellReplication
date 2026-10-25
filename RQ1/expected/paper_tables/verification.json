@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "main_manuscript_unchanged": true,
+    "all_55_pairs_match_run3": true,
+    "ecosystem_preserving_paper_groups.csv_partition": true,
+    "roles_preserving_paper_groups.csv_partition": true,
+    "multiplicity_partition": true,
+    "55_distribution_tests": true,
+    "121_exclusions_accounted_for": true,
+    "trigger_definition_reproduces_original_paper_totals": true
+  },
+  "reconstructed_original_trigger_counts": {
+    "pull_request": 56569,
+    "push": 61937,
+    "release": 4959,
+    "workflow_dispatch": 42669,
+    "schedule": 22369,
+    "other": 23879,
+    "unclassified": 254
+  },
+  "source_audit_script_sha256": "c36f76e73c56bdf440e8d97736ed32dec4b7a520627eef143e70b7c3651d1e23"
+}

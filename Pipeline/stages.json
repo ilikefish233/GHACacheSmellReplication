@@ -1,0 +1,71 @@
+{
+  "study_cutoff": "2026-06-09T23:59:59Z",
+  "window_days": 30,
+  "run_key": [
+    "repository_id",
+    "run_id",
+    "run_attempt"
+  ],
+  "formal_events": [
+    "push",
+    "schedule",
+    "workflow_dispatch"
+  ],
+  "stages": [
+    {
+      "name": "filter",
+      "script": "source/scripts/filter_repositories.py",
+      "network": false,
+      "expected_candidate_records": 240781,
+      "expected_selected_repositories": 22911
+    },
+    {
+      "name": "collect-base",
+      "script": "source/scripts/data_update/fetch_all.py",
+      "network": true,
+      "configuration": "source/scripts/data_update/filter_config.py",
+      "notes": "Original early collector limits are followed by explicit supplementation."
+    },
+    {
+      "name": "canonical",
+      "adapter": "canonical_rq1_rq2.py",
+      "script": "source/scripts/build_canonical_dataset.py",
+      "network": false,
+      "rq3_entrypoint_called": false,
+      "expected_snapshots": 118883
+    },
+    {
+      "name": "consolidate",
+      "script": "source/scripts/consolidate_rq2_full_acquisition.py",
+      "network": false,
+      "formal_batches": 11,
+      "expected_unique_runs": 2132983
+    },
+    {
+      "name": "coverage",
+      "script": "source/scripts/build_rq2_final_coverage_evidence.py",
+      "network": false,
+      "expected_coverage_rows": 118883
+    },
+    {
+      "name": "queue",
+      "script": "source/scripts/audit_rq2_canonical_coverage.py",
+      "network": false,
+      "expected_final_workflows": 51179,
+      "expected_final_runs": 1093639
+    },
+    {
+      "name": "model-input",
+      "script": "source/scripts/prepare_rq2_final_model_input.py",
+      "network": false,
+      "handoff_verifier": "verify_handoff.py"
+    },
+    {
+      "name": "October paper analyses",
+      "entrypoint": "../reproduce.py",
+      "network": false,
+      "detector": "../code/frozen/src/detectors/smell/cache_smell_detector.py",
+      "notes": "Adopted run3 labels; unified duration models and LPM success."
+    }
+  ]
+}

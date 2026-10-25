@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workflow Cache Inspector</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">⌁</span><span>Workflow Cache Inspector</span></div>
+      <span class="top-note">11 cache smell types</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span class="pulse"></span> GITHUB ACTIONS · CACHE ANALYSIS</div>
+        <h1 lang="en">Find cache smells<br><em>in your workflows</em></h1>
+        <p class="lead">Enter a GitHub repository and workflow path to find cache smells and suggested fixes</p>
+      </section>
+
+      <section class="search-card" aria-labelledby="scan-title">
+        <div class="card-head"><span class="step-number">01</span><div><h2 id="scan-title">Select a workflow</h2><p>Scan the current file on the repository’s default branch</p></div></div>
+        <form id="scan-form">
+          <div class="fields">
+            <label>Repository <input name="repository" id="repository" placeholder="owner/repo" autocomplete="off" required></label>
+            <label>Workflow file path <input name="workflow_path" id="workflow-path" placeholder=".github/workflows/ci.yml" autocomplete="off" required></label>
+          </div>
+          <div class="form-footer"><button type="submit" id="scan-button">Scan workflow <span aria-hidden="true">↗</span></button></div>
+        </form>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section id="report" class="report hidden" aria-live="polite">
+        <div class="section-heading"><div><span class="eyebrow">SCAN REPORT</span><h2>Detection report</h2></div><button id="download" type="button" class="ghost-button">Download JSON ↓</button></div>
+        <div class="report-overview">
+          <div class="overview-main"><span class="overline">Scanned workflow</span><h3 id="workflow-name"></h3><p id="workflow-meta"></p><a id="source-link" target="_blank" rel="noopener noreferrer">View source on GitHub ↗</a></div>
+          <div class="metric"><strong id="finding-count">0</strong><span>Findings</span></div>
+          <div class="metric"><strong id="type-count">0</strong><span>Types found / 11</span></div>
+        </div>
+        <p class="interpretation">Review findings in the context of your repository. A clean scan does not guarantee that every cache is configured correctly.</p>
+        <div class="results-grid">
+          <aside class="rule-panel"><h3>Cache smell types</h3><div id="rule-list"></div></aside>
+          <div class="findings-panel"><div class="list-heading"><h3>Findings</h3><span id="result-caption"></span></div><div id="findings"></div></div>
+        </div>
+        <details class="provenance"><summary>Source and file hashes</summary><dl><dt>Workflow path</dt><dd id="source-path"></dd><dt>GitHub blob SHA</dt><dd id="blob-sha"></dd><dt>Content SHA-256</dt><dd id="content-sha"></dd></dl></details>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

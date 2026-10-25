@@ -1,0 +1,162 @@
+{
+  "total_workflows": 118402,
+  "scan_records_processed": 118523,
+  "detector_error_workflows_excluded": 121,
+  "total_repos": 19324,
+  "denominator_definition": "conditional workflow opportunity set per smell type; detector-error records excluded from both numerator and denominator",
+  "operationalized_smell_types": [
+    "no_dependency_cache",
+    "no_restore_keys",
+    "redundant_cache_update",
+    "cache_position_error",
+    "conflicting_cache_sources",
+    "static_cache_key",
+    "overly_specific_cache_key",
+    "no_docker_layer_cache",
+    "deprecated_cache_action",
+    "unreachable_cache_write",
+    "cache_as_artifact"
+  ],
+  "any_smell_definition": "at least one operationalized smell type; non-operationalized catalog candidates are excluded",
+  "popularity_stratification": "omitted by study design; only overall prevalence is reported",
+  "trigger_parser": "pyyaml",
+  "any_smell": {
+    "workflow_count": 26388,
+    "workflow_pct": 22.29,
+    "repo_count": 10528,
+    "repo_pct": 54.48
+  },
+  "by_smell_type": {
+    "no_dependency_cache": {
+      "workflow_count": 16138,
+      "eligible_workflows": 28450,
+      "workflow_pct": 56.72,
+      "instance_count": 22853,
+      "instance_pct": 80.33,
+      "avg_instances_per_workflow": 1.42,
+      "repo_count": 6976,
+      "eligible_repos": 10196,
+      "repo_pct": 68.42
+    },
+    "no_restore_keys": {
+      "workflow_count": 5757,
+      "eligible_workflows": 26494,
+      "workflow_pct": 21.73,
+      "instance_count": 13001,
+      "instance_pct": 49.07,
+      "avg_instances_per_workflow": 2.26,
+      "repo_count": 3007,
+      "eligible_repos": 9647,
+      "repo_pct": 31.17,
+      "subtypes": {
+        "missing_restore_keys": {
+          "instance_count": 12474,
+          "workflow_count": 5404
+        },
+        "ineffective_restore_key": {
+          "instance_count": 527,
+          "workflow_count": 392
+        }
+      }
+    },
+    "redundant_cache_update": {
+      "workflow_count": 1970,
+      "eligible_workflows": 5018,
+      "workflow_pct": 39.26,
+      "instance_count": 4024,
+      "instance_pct": 80.19,
+      "avg_instances_per_workflow": 2.04,
+      "repo_count": 1460,
+      "eligible_repos": 3675,
+      "repo_pct": 39.73
+    },
+    "cache_position_error": {
+      "workflow_count": 872,
+      "eligible_workflows": 26494,
+      "workflow_pct": 3.29,
+      "instance_count": 1214,
+      "instance_pct": 4.58,
+      "avg_instances_per_workflow": 1.39,
+      "repo_count": 528,
+      "eligible_repos": 9647,
+      "repo_pct": 5.47
+    },
+    "conflicting_cache_sources": {
+      "workflow_count": 660,
+      "eligible_workflows": 26494,
+      "workflow_pct": 2.49,
+      "instance_count": 1169,
+      "instance_pct": 4.41,
+      "avg_instances_per_workflow": 1.77,
+      "repo_count": 407,
+      "eligible_repos": 9647,
+      "repo_pct": 4.22
+    },
+    "static_cache_key": {
+      "workflow_count": 1720,
+      "eligible_workflows": 26494,
+      "workflow_pct": 6.49,
+      "instance_count": 3014,
+      "instance_pct": 11.38,
+      "avg_instances_per_workflow": 1.75,
+      "repo_count": 1142,
+      "eligible_repos": 9647,
+      "repo_pct": 11.84
+    },
+    "overly_specific_cache_key": {
+      "workflow_count": 661,
+      "eligible_workflows": 26494,
+      "workflow_pct": 2.49,
+      "instance_count": 1316,
+      "instance_pct": 4.97,
+      "avg_instances_per_workflow": 1.99,
+      "repo_count": 405,
+      "eligible_repos": 9647,
+      "repo_pct": 4.2
+    },
+    "no_docker_layer_cache": {
+      "workflow_count": 3852,
+      "eligible_workflows": 5945,
+      "workflow_pct": 64.79,
+      "instance_count": 5729,
+      "instance_pct": 96.37,
+      "avg_instances_per_workflow": 1.49,
+      "repo_count": 2343,
+      "eligible_repos": 3303,
+      "repo_pct": 70.94
+    },
+    "deprecated_cache_action": {
+      "workflow_count": 463,
+      "eligible_workflows": 26494,
+      "workflow_pct": 1.75,
+      "instance_count": 2730,
+      "instance_pct": 10.3,
+      "avg_instances_per_workflow": 5.9,
+      "repo_count": 249,
+      "eligible_repos": 9647,
+      "repo_pct": 2.58
+    },
+    "unreachable_cache_write": {
+      "workflow_count": 4,
+      "eligible_workflows": 26494,
+      "workflow_pct": 0.02,
+      "instance_count": 5,
+      "instance_pct": 0.02,
+      "avg_instances_per_workflow": 1.25,
+      "repo_count": 4,
+      "eligible_repos": 9647,
+      "repo_pct": 0.04
+    },
+    "cache_as_artifact": {
+      "workflow_count": 147,
+      "eligible_workflows": 26494,
+      "workflow_pct": 0.55,
+      "instance_count": 388,
+      "instance_pct": 1.46,
+      "avg_instances_per_workflow": 2.64,
+      "repo_count": 116,
+      "eligible_repos": 9647,
+      "repo_pct": 1.2
+    }
+  }
+}

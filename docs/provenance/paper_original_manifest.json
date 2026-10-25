@@ -1,0 +1,103 @@
+{
+  "artifact_version": "run3-manuscript-revision-2026-10-19",
+  "study_cutoff": "2026-06-09T23:59:59Z",
+  "repository": "https://github.com/ilikefish233/gha_log_analysis",
+  "selection": {
+    "candidate_list": "GHALogs v1.0.1 repositories.json.gz",
+    "source_url": "https://zenodo.org/records/14796970",
+    "filters": {
+      "selected": true,
+      "processed": true,
+      "isFork": false,
+      "isArchived": false,
+      "stargazers": ">100",
+      "commits": ">100",
+      "total_runs_90d": ">50"
+    },
+    "workflow_and_run_source": "independent GitHub REST API collection; GHALogs supplies only the candidate repository list",
+    "repository_metadata_source": "collected by the authors, as clarified by the author on 2026-10-21",
+    "total_runs_90d_note": "part of the author-collected repository metadata"
+  },
+  "detector": {
+    "operationalized_smells": [
+      "no_dependency_cache",
+      "no_docker_layer_cache",
+      "deprecated_cache_action",
+      "no_fallback_cache",
+      "static_cache_key",
+      "overly_specific_cache_key",
+      "cache_as_artifact",
+      "cache_position_error",
+      "unreachable_cache_write",
+      "redundant_cache_update",
+      "overlapping_cache_mechanisms"
+    ],
+    "frozen_source_snapshot": "E:\\gha_log_analysis\\output_experimental_rq1_rq2_20261018_run3\\source_snapshot",
+    "sha256": "daca83cf58ed207fdaa7719862b07bb2f771bebe11bbf9bda25013b2dcdca39e",
+    "scope": "original eleven paper rules; extra diagnostic rules excluded"
+  },
+  "rq1": {
+    "scan": "E:\\gha_log_analysis\\output_experimental_rq1_rq2_20261018_run3\\analysis_inputs\\rq1_scan_direct.jsonl",
+    "prevalence": "E:\\gha_log_analysis\\output_experimental_rq1_rq2_20261018_run3\\rq1\\smell_prevalence.json",
+    "workflows": 118402,
+    "repositories": 19324,
+    "affected_workflows": 26388,
+    "affected_repositories": 10528,
+    "source_data": "run3_revision_20261019/source_data",
+    "audit_manifest": "run3_impact_audit_20261019/manifest.json",
+    "classification": "original eight canonical repository ecosystems; original eleven job-name roles; corrected top-level trigger parser",
+    "opportunity_note": "broad detector metadata presence predicates; not restricted to every final non-auxiliary decision"
+  },
+  "validation": {
+    "frozen_source_root": "E:\\gha_log_analysis\\output_experimental_rq1_rq2_20261018_run3\\source_snapshot",
+    "detector_sha256": "daca83cf58ed207fdaa7719862b07bb2f771bebe11bbf9bda25013b2dcdca39e",
+    "xlsx_sha256": "aed30b013730fed6936cf5e76796a664825436c3e4d85d87266bb40eba174c8d",
+    "scoring_script_sha256": "c9f7c8960592ade97ac765db0e6412622518fe66adfa3f1073a95c562f4dcca3",
+    "result_sha256": "7ff48e9f90a1c59d352d41bfaabc8df1a606b09e86c70bdd5f936a9af1d1a730",
+    "cases": 176,
+    "annotations_changed": false,
+    "scoring_logic_changed": false,
+    "adapter_changes": "only frozen module search paths and output filename"
+  },
+  "rq2": {
+    "linked_versions": 51179,
+    "linked_repositories": 14710,
+    "linked_run_attempts": 1093639,
+    "detector_valid_versions": 51097,
+    "detector_valid_repositories": 14695,
+    "detector_valid_run_attempts": 1091978,
+    "duration": {
+      "source": "E:\\gha_log_analysis\\output_experimental_rq2_unified_slim_20261018_results\\all_completed_duration.json",
+      "versions": 50985,
+      "repositories": 14690,
+      "runs": 1089617
+    },
+    "success": {
+      "source": "E:\\gha_log_analysis\\output_experimental_rq2_unified_lpm_20261019_final\\reliability_lpm.json",
+      "versions": 50460,
+      "repositories": 14632,
+      "runs": 1047015
+    },
+    "bootstrap": 0,
+    "inference": "repository-clustered uncertainty; outcome-wise BH; original final unified duration model and LPM retained",
+    "input_sha256": "f937c7ce8423c5865310a3a6532a4808ceff9ee7bac37c0c42c056fc400e910e"
+  },
+  "rq23": {
+    "source": "E:\\gha_log_analysis\\output_experimental_rq23_history_relaxed_20261019",
+    "events": 166,
+    "repositories": 88,
+    "unique_successful_run_attempts": 1268,
+    "scope": "original_11; included events; unchanged in this revision"
+  },
+  "revision": {
+    "before_directory": "run3_revision_20261019/before",
+    "scripts": [
+      "revise_run3_manuscript.py",
+      "render_run3_figures.py",
+      "run3_revision_20261019/update_validation_and_manifest.py"
+    ],
+    "changes_before_section_4_3": "numeric substitutions only; overview figure workflow count updated",
+    "rq2_results_changed": false,
+    "references_changed": false
+  }
+}

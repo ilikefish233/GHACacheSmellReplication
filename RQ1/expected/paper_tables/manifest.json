@@ -1,0 +1,57 @@
+{
+  "read_only_sources": true,
+  "scope": "run3 detection labels; original paper context grouping and canonical repository measurements",
+  "valid_workflows": 118402,
+  "repositories": 19324,
+  "affected_workflows": 26388,
+  "affected_repositories": 10528,
+  "reference_repositories": 8796,
+  "excluded_workflows": 121,
+  "multiplicity": {
+    "0": 92014,
+    "1": 22076,
+    "3": 962,
+    "2": 3083,
+    "5": 37,
+    "4": 225,
+    "6": 4,
+    "7": 1
+  },
+  "ndc_opportunities": {
+    "python": {
+      "eligible_workflows": 13419,
+      "ndc_workflows": 9707
+    },
+    "npm": {
+      "eligible_workflows": 14189,
+      "ndc_workflows": 5772
+    },
+    "both": {
+      "eligible_workflows": 842,
+      "ndc_workflows": 659
+    }
+  },
+  "context_definition": "original canonical primary_ecosystem, original job-name substring role function, original bounded top-level on-block parser",
+  "ndc_opportunity_definition": "broad install metadata predicate used in run3 smell_prevalence.json; NOT strict non-auxiliary NDC decision scope",
+  "source_files": {
+    "E:\\gha_log_analysis\\output_experimental_rq1_rq2_20261018_run3\\analysis_inputs\\rq1_scan_direct.jsonl": "407bb6585e388a957972594a5e951723dcf71b456b0f9b087eb49b6849dca117",
+    "E:\\gha_log_analysis\\output_experimental_rq1_rq2_20261018_run3\\rq1\\smell_prevalence.json": "b4eb0119eb5ce676230151b3478c4c74440b02fc408e0fbca8b38ab895ff1bc3",
+    "E:\\gha_log_analysis\\data_26_6_9_canonical_20260609\\repositories.jsonl": "5977de05fed0740922f6fbbc2740f38a157abe108c9b0b6a05ef97f463deca17",
+    "E:\\gha_log_analysis\\data_26_6_9_canonical_20260609\\rq1_cohort.jsonl": "67cd6f0fbaca7f8ed7dea769b34d886eb2d2a59c44c412491ed093a70ed1bec7",
+    "E:\\gha_log_analysis\\scripts\\finalize_canonical_rq1_20260921.py": "9689359d94105d4ef54e37928a7d3af495ad64daa6425a7f7714beee268379df",
+    "E:\\0_cache_smell\\template.tex": "23626e535758842bb2e572923ad487982ab14ec40a3d2a29d07fae1adb3533dc"
+  },
+  "software": {
+    "numpy": "2.4.4",
+    "scipy": "1.18.0",
+    "pyyaml": "6.0.3"
+  },
+  "statistics": "two-sided asymptotic tie/continuity-corrected Mann-Whitney; Holm over 55 tests; target-oriented Cliff delta; feature-wise missing omission",
+  "not_run": [
+    "detector",
+    "GitHub collection",
+    "RQ2 models",
+    "plot rendering",
+    "manuscript editing"
+  ]
+}

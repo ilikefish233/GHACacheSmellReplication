@@ -1,0 +1,14 @@
+{
+  "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "acquisition_dependencies": {
+    "requests": "2.34.2",
+    "urllib3": "2.7.0",
+    "certifi": "2026.7.22",
+    "charset-normalizer": "3.5.1",
+    "idna": "3.18",
+    "croniter": "6.2.4"
+  },
+  "fresh_install_tested": false,
+  "network_recollection_tested": false
+}

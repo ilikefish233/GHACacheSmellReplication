@@ -1,0 +1,63 @@
+{
+  "edition": "GitHub code and small-table edition",
+  "checked_on": "2026-10-25",
+  "environment": "Existing Python 3.12.3 Windows environment; fresh installation not tested",
+  "checks": {
+    "python_syntax_all_files": true,
+    "validation_176_cases_matches_frozen_expected_metrics": true,
+    "original_model_tests_passed": 11,
+    "missing_data_message_before_analysis": true,
+    "data_installer_fixture_selected_data_only": true,
+    "data_installer_preserves_code": true,
+    "data_installer_fixture_repeat_install": true,
+    "data_installer_rejects_parent_traversal": true
+  },
+  "limits": [
+    "Full data extraction and full scientific analyses not rerun in this GitHub edition.",
+    "Complete offline artifact verification is preserved separately as historical evidence.",
+    "No Zenodo record, DOI or public repository created.",
+    "Other operating systems not tested."
+  ],
+  "readme_usage_revision": {
+    "date": "2026-10-25",
+    "languages": [
+      "English",
+      "Chinese"
+    ],
+    "checks": [
+      "All referenced Python entry points exist",
+      "Local Markdown links resolve",
+      "Download/extraction one-line Python syntax parses",
+      "Shared sub-RQ execution and pending archive status documented"
+    ],
+    "scope": "Documentation only; scientific analyses and full-data hashing not rerun."
+  },
+  "reorganization": {
+    "date": "2026-10-25",
+    "top_directories": [
+      "RQ1",
+      "RQ2",
+      "Validation",
+      "Pipeline",
+      "src",
+      "data",
+      "docs",
+      "LICENSES"
+    ],
+    "scientific_source_files_byte_preserved": 175,
+    "checks": {
+      "validation_176_cases_matches_all_frozen_metrics": true,
+      "original_model_tests_passed": 11,
+      "detector_100_workflows_matches_frozen_findings": true,
+      "both_quantitative_figures_regenerated": true,
+      "pipeline_source_setup_and_collector_help": true,
+      "archive_identity_counts_and_sizes_compatible": true,
+      "readme_command_paths_and_links": true
+    },
+    "limits": [
+      "Full RQ statistical analyses and six-stage data replay were not rerun after directory consolidation.",
+      "No full-data SHA pass performed.",
+      "Fresh dependency installation and other operating systems not tested."
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "workflows_compared": 118883,
+  "scientific_fields": [
+    "workflow_key",
+    "repository_id",
+    "workflow_path",
+    "query_coverage_status",
+    "analysis_ready",
+    "coverage_confirmed",
+    "query_complete",
+    "pagination_complete",
+    "execution_status"
+  ],
+  "provenance_difference": "Rebuilt status-source paths and hashes are retained rather than overwritten with original local paths."
+}

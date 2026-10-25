@@ -1,0 +1,17 @@
+﻿smell,scope,events,repositories,delta_vm_seconds,delta_reference_cost_usd,vm_interval_lower_seconds,vm_interval_upper_seconds,cost_interval_lower_usd,cost_interval_upper_usd,repositories_with_positive_vm_delta,repositories_with_positive_cost_delta,interval_limitation,single_observation_events,other_smell_change_events,task_changed_or_unconfirmed_events,previously_ineligible_or_ambiguous_control_events,experimental,causal_effect
+no_dependency_cache,original_11,106,59,17.293352347589643,0.008593822624331065,-38.68933320681203,82.76635204386794,-0.029064686644178165,0.04633320414989892,34,26,pointwise_observational_interval,32,7,71,73,True,False
+no_fallback_cache,original_11,46,24,161.91467210451586,-0.016511226158101144,-23.335814029720247,419.90234489396585,-0.10027334381764066,0.0606690435027935,14,12,pointwise_observational_interval,15,27,25,20,True,False
+redundant_cache_update,original_11,7,6,183.40860805860805,0.0875047619047619,2.9493589743589794,415.96785714285716,0.002333333333333338,0.21722857142857144,5,4,few_repositories_unstable_interval,3,6,4,5,True,False
+cache_position_error,original_11,2,2,-830.75,-0.13533333333333333,-1829.0,167.5,-0.30466666666666664,0.033999999999999975,1,1,few_repositories_unstable_interval,0,1,2,0,True,False
+conflicting_cache_sources,original_11,8,6,60.694444444444436,0.009166666666666665,-50.17638888888889,174.88888888888889,-0.006677777777777769,0.02638888888888888,4,4,few_repositories_unstable_interval,0,2,6,7,True,False
+static_cache_key,original_11,17,6,169.99287934287932,0.03594045214045216,-44.29918414918418,520.7761904761904,-0.004266666666666659,0.1055425685425686,4,3,few_repositories_unstable_interval,15,15,2,2,True,False
+overly_specific_cache_key,original_11,4,4,431.95833333333337,0.061227272727272755,73.41666666666674,857.125,0.010727272727272724,0.1225000000000001,3,3,few_repositories_unstable_interval,1,2,3,2,True,False
+no_docker_layer_cache,original_11,6,4,699.7791666666666,0.09495555555555564,195.29166666666669,1278.4624999999996,0.026444444444444444,0.18070000000000025,4,4,few_repositories_unstable_interval,3,0,6,5,True,False
+deprecated_cache_action,original_11,0,0,,,,,,,0,0,not_estimable,0,0,0,0,True,False
+unreachable_cache_write,original_11,0,0,,,,,,,0,0,not_estimable,0,0,0,0,True,False
+cache_as_artifact,original_11,1,1,-680.0,-0.0759999999999994,,,,,0,0,single_repository_no_population_interval,1,0,1,0,True,False
+cache_path_pollution,additional_detector_type,1,1,-20.666666666666515,-0.008000000000000007,,,,,0,0,single_repository_no_population_interval,0,1,1,0,True,False
+incorrect_cache_hit_condition,additional_detector_type,4,2,1204.5416666666667,0.16266666666666665,-100.91666666666667,2510.0,-0.014000000000000004,0.3393333333333333,1,1,few_repositories_unstable_interval,0,4,4,0,True,False
+malformed_cache_path,additional_detector_type,0,0,,,,,,,0,0,not_estimable,0,0,0,0,True,False
+non_portable_cache_path,additional_detector_type,0,0,,,,,,,0,0,not_estimable,0,0,0,0,True,False
+overly_broad_cache_path,additional_detector_type,1,1,207.75,0.08200000000000003,,,,,1,1,single_repository_no_population_interval,0,1,1,0,True,False

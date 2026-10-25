@@ -1,0 +1,1038 @@
+{
+  "evaluation_scope": {
+    "physical_row_start": 2,
+    "physical_row_end": 201,
+    "row_limit": 200,
+    "manual_label_columns": {
+      "no_dependency_cache": 7,
+      "no_restore_keys": 8,
+      "redundant_cache_update": 9,
+      "cache_position_error": 10,
+      "no_docker_layer_cache": 18,
+      "deprecated_cache_action": 20,
+      "cache_as_artifact": 21,
+      "conflicting_cache_sources": 17,
+      "static_cache_key": 19,
+      "overly_specific_cache_key": 22,
+      "malformed_cache_path": 24,
+      "incorrect_cache_hit_condition": 25
+    },
+    "adoption_column": 13,
+    "evaluated_smell_types": [
+      "no_dependency_cache",
+      "no_restore_keys",
+      "redundant_cache_update",
+      "cache_position_error",
+      "no_docker_layer_cache",
+      "deprecated_cache_action",
+      "cache_as_artifact",
+      "conflicting_cache_sources",
+      "static_cache_key",
+      "overly_specific_cache_key",
+      "malformed_cache_path",
+      "incorrect_cache_hit_condition",
+      "unreachable_cache_write",
+      "overly_broad_cache_path",
+      "cache_path_pollution",
+      "non_portable_cache_path"
+    ],
+    "case_level_sentinel": "__case__",
+    "derived_label_columns": {
+      "unreachable_cache_write": {
+        "source_columns": [
+          11,
+          12
+        ],
+        "source_headers": [
+          "说明",
+          "其他潜在异味"
+        ],
+        "rule": "从“无效缓存”或等价明确描述派生；没有明确 Job 时按案例级标签计数"
+      },
+      "overly_broad_cache_path": {
+        "source_column": 23,
+        "source_header": "缓存路径宽泛/路径污染风险/跨平台不兼容",
+        "marker": "overly_broad_cache_path/路径宽泛"
+      },
+      "cache_path_pollution": {
+        "source_column": 23,
+        "source_header": "缓存路径宽泛/路径污染风险/跨平台不兼容",
+        "marker": "cache_path_pollution/路径污染风险"
+      },
+      "non_portable_cache_path": {
+        "source_column": 23,
+        "source_header": "缓存路径宽泛/路径污染风险/跨平台不兼容",
+        "marker": "non_portable_cache_path/路径跨平台不兼容"
+      }
+    },
+    "extended_label_mapping": {
+      "conflicting_cache_sources": {
+        "column": 17,
+        "header": "缓存重复",
+        "note": "人工“缓存重复”作为不同缓存机制冲突的近似标签，可能混入其他重复缓存情形"
+      },
+      "static_cache_key": {
+        "column": 19,
+        "header": "静态缓存键"
+      },
+      "overly_specific_cache_key": {
+        "columns": [
+          22,
+          29
+        ],
+        "headers": [
+          "一次性缓存",
+          "细粒度缓存"
+        ],
+        "note": "两列合并为易变缓存键标签；细粒度缓存指 key 使用工作流文件本身作为失效依据"
+      },
+      "no_docker_layer_cache": {
+        "column": 18,
+        "header": "无docker层缓存"
+      },
+      "deprecated_cache_action": {
+        "column": 20,
+        "header": "过时缓存版本"
+      },
+      "cache_as_artifact": {
+        "column": 21,
+        "header": "缓存误作产物传递",
+        "note": "1 按案例级标签处理；若填写 Job 名则按 Job 级匹配"
+      },
+      "malformed_cache_path": {
+        "column": 24,
+        "header": "语法错误（路径带引号\\缺少变量）"
+      },
+      "incorrect_cache_hit_condition": {
+        "column": 25,
+        "header": "无命中条件防护"
+      }
+    }
+  },
+  "scanned_rows": 200,
+  "excluded_not_adopted_cases": 24,
+  "excluded_case_id_cases": 0,
+  "missing_yaml_cases": 0,
+  "total_cases": 176,
+  "parsed_successfully": 176,
+  "parse_failures": 0,
+  "ignored_ndc_jobs_with_parenthesized_annotations": 35,
+  "ignored_ndc_cases_with_parenthesized_annotations": 20,
+  "by_smell_type": {
+    "no_dependency_cache": {
+      "tp": 31,
+      "fp": 2,
+      "fn": 14,
+      "precision": 0.9394,
+      "recall": 0.6889,
+      "f1": 0.7949,
+      "precision_wilson_ci_95": [
+        0.8039,
+        0.9832
+      ],
+      "recall_wilson_ci_95": [
+        0.5434,
+        0.8047
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 90,
+      "reference_positive_opportunities": 37,
+      "true_negative_opportunities": 51
+    },
+    "no_restore_keys": {
+      "tp": 119,
+      "fp": 13,
+      "fn": 1,
+      "precision": 0.9015,
+      "recall": 0.9917,
+      "f1": 0.9444,
+      "precision_wilson_ci_95": [
+        0.8388,
+        0.9415
+      ],
+      "recall_wilson_ci_95": [
+        0.9543,
+        0.9985
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 184,
+      "reference_positive_opportunities": 120,
+      "true_negative_opportunities": 51
+    },
+    "redundant_cache_update": {
+      "tp": 27,
+      "fp": 7,
+      "fn": 0,
+      "precision": 0.7941,
+      "recall": 1.0,
+      "f1": 0.8852,
+      "precision_wilson_ci_95": [
+        0.632,
+        0.8965
+      ],
+      "recall_wilson_ci_95": [
+        0.8754,
+        1.0
+      ],
+      "opportunity_unit": "workflow_relation",
+      "eligible_opportunities": 28,
+      "reference_positive_opportunities": null,
+      "true_negative_opportunities": null
+    },
+    "cache_position_error": {
+      "tp": 12,
+      "fp": 0,
+      "fn": 5,
+      "precision": 1.0,
+      "recall": 0.7059,
+      "f1": 0.8276,
+      "precision_wilson_ci_95": [
+        0.7575,
+        1.0
+      ],
+      "recall_wilson_ci_95": [
+        0.4687,
+        0.8672
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 228,
+      "reference_positive_opportunities": 17,
+      "true_negative_opportunities": 211
+    },
+    "no_docker_layer_cache": {
+      "tp": 12,
+      "fp": 2,
+      "fn": 2,
+      "precision": 0.8571,
+      "recall": 0.8571,
+      "f1": 0.8571,
+      "precision_wilson_ci_95": [
+        0.6006,
+        0.9599
+      ],
+      "recall_wilson_ci_95": [
+        0.6006,
+        0.9599
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 0,
+      "reference_positive_opportunities": 0,
+      "true_negative_opportunities": 0
+    },
+    "deprecated_cache_action": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_wilson_ci_95": [
+        0.3424,
+        1.0
+      ],
+      "recall_wilson_ci_95": [
+        0.3424,
+        1.0
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 0,
+      "reference_positive_opportunities": 0,
+      "true_negative_opportunities": 0
+    },
+    "cache_as_artifact": {
+      "tp": 3,
+      "fp": 1,
+      "fn": 3,
+      "precision": 0.75,
+      "recall": 0.5,
+      "f1": 0.6,
+      "precision_wilson_ci_95": [
+        0.3006,
+        0.9544
+      ],
+      "recall_wilson_ci_95": [
+        0.1876,
+        0.8124
+      ],
+      "opportunity_unit": "case",
+      "eligible_opportunities": 0,
+      "reference_positive_opportunities": 0,
+      "true_negative_opportunities": 0
+    },
+    "conflicting_cache_sources": {
+      "tp": 5,
+      "fp": 2,
+      "fn": 1,
+      "precision": 0.7143,
+      "recall": 0.8333,
+      "f1": 0.7692,
+      "precision_wilson_ci_95": [
+        0.3589,
+        0.9178
+      ],
+      "recall_wilson_ci_95": [
+        0.4365,
+        0.9699
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 37,
+      "reference_positive_opportunities": 5,
+      "true_negative_opportunities": 32
+    },
+    "static_cache_key": {
+      "tp": 8,
+      "fp": 16,
+      "fn": 2,
+      "precision": 0.3333,
+      "recall": 0.8,
+      "f1": 0.4706,
+      "precision_wilson_ci_95": [
+        0.1797,
+        0.5329
+      ],
+      "recall_wilson_ci_95": [
+        0.4902,
+        0.9433
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 154,
+      "reference_positive_opportunities": 9,
+      "true_negative_opportunities": 130
+    },
+    "overly_specific_cache_key": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.6667,
+      "recall": 0.6667,
+      "f1": 0.6667,
+      "precision_wilson_ci_95": [
+        0.2077,
+        0.9385
+      ],
+      "recall_wilson_ci_95": [
+        0.2077,
+        0.9385
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 154,
+      "reference_positive_opportunities": 3,
+      "true_negative_opportunities": 150
+    },
+    "malformed_cache_path": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "precision_wilson_ci_95": [
+        null,
+        null
+      ],
+      "recall_wilson_ci_95": [
+        0.0,
+        0.6576
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 0,
+      "reference_positive_opportunities": 0,
+      "true_negative_opportunities": 0
+    },
+    "incorrect_cache_hit_condition": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "precision_wilson_ci_95": [
+        0.2065,
+        1.0
+      ],
+      "recall_wilson_ci_95": [
+        0.0945,
+        0.9055
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 0,
+      "reference_positive_opportunities": 0,
+      "true_negative_opportunities": 0
+    },
+    "unreachable_cache_write": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_wilson_ci_95": [
+        0.3424,
+        1.0
+      ],
+      "recall_wilson_ci_95": [
+        0.3424,
+        1.0
+      ],
+      "opportunity_unit": "case",
+      "eligible_opportunities": 0,
+      "reference_positive_opportunities": 0,
+      "true_negative_opportunities": 0
+    },
+    "overly_broad_cache_path": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "precision_wilson_ci_95": [
+        null,
+        null
+      ],
+      "recall_wilson_ci_95": [
+        0.0,
+        0.7935
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 0,
+      "reference_positive_opportunities": 0,
+      "true_negative_opportunities": 0
+    },
+    "cache_path_pollution": {
+      "tp": 5,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1": 0.9091,
+      "precision_wilson_ci_95": [
+        0.4365,
+        0.9699
+      ],
+      "recall_wilson_ci_95": [
+        0.5655,
+        1.0
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 0,
+      "reference_positive_opportunities": 0,
+      "true_negative_opportunities": 0
+    },
+    "non_portable_cache_path": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_wilson_ci_95": [
+        0.2065,
+        1.0
+      ],
+      "recall_wilson_ci_95": [
+        0.2065,
+        1.0
+      ],
+      "opportunity_unit": "job",
+      "eligible_opportunities": 0,
+      "reference_positive_opportunities": 0,
+      "true_negative_opportunities": 0
+    }
+  },
+  "fp_details": [
+    {
+      "id": 3,
+      "repo": "ombi-app/ombi",
+      "workflow": "build_001.yml",
+      "type": "redundant_cache_update",
+      "job": "publish",
+      "message": "Job \"publish\" 的多个 matrix 实例会写入相同缓存 key"
+    },
+    {
+      "id": 9,
+      "repo": "algorand/go-algorand",
+      "workflow": "reviewdog_001.yml",
+      "type": "no_restore_keys",
+      "job": "reviewdog-errors",
+      "message": "Job \"reviewdog-errors\" 缓存步骤缺少 restore-keys 回退"
+    },
+    {
+      "id": 9,
+      "repo": "algorand/go-algorand",
+      "workflow": "reviewdog_001.yml",
+      "type": "no_restore_keys",
+      "job": "reviewdog-warnings",
+      "message": "Job \"reviewdog-warnings\" 缓存步骤缺少 restore-keys 回退"
+    },
+    {
+      "id": 13,
+      "repo": "syncaidius/moltenengine",
+      "workflow": "build_001.yml",
+      "type": "no_restore_keys",
+      "job": "build-android",
+      "message": "Job \"build-android\" 缓存步骤的 restore-keys 与主 key 完全相同，未提供有效回退"
+    },
+    {
+      "id": 13,
+      "repo": "syncaidius/moltenengine",
+      "workflow": "build_001.yml",
+      "type": "no_restore_keys",
+      "job": "build-windows",
+      "message": "Job \"build-windows\" 缓存步骤的 restore-keys 与主 key 完全相同，未提供有效回退"
+    },
+    {
+      "id": 13,
+      "repo": "syncaidius/moltenengine",
+      "workflow": "build_001.yml",
+      "type": "static_cache_key",
+      "job": "build-android",
+      "message": "Job \"build-android\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 13,
+      "repo": "syncaidius/moltenengine",
+      "workflow": "build_001.yml",
+      "type": "static_cache_key",
+      "job": "build-windows",
+      "message": "Job \"build-windows\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 22,
+      "repo": "databricks/dbt-databricks",
+      "workflow": "warmDepsCache_001.yml",
+      "type": "overly_specific_cache_key",
+      "job": "warm-cache",
+      "message": "Job \"warm-cache\" 的缓存 key 包含每次运行唯一的标识，导致缓存无法稳定复用"
+    },
+    {
+      "id": 23,
+      "repo": "wolfssl/wolfssh",
+      "workflow": "coverity-scan-fixes_001.yml",
+      "type": "static_cache_key",
+      "job": "coverity",
+      "message": "Job \"coverity\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 26,
+      "repo": "ebean-orm/ebean",
+      "workflow": "oracle_001.yml",
+      "type": "static_cache_key",
+      "job": "build",
+      "message": "Job \"build\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 33,
+      "repo": "nats-io/nats.c",
+      "workflow": "bench_001.yml",
+      "type": "cache_path_pollution",
+      "job": "do",
+      "message": "Job \"do\" 的缓存路径可能混入临时文件、日志或运行时状态"
+    },
+    {
+      "id": 50,
+      "repo": "sormas-foundation/sormas-project",
+      "workflow": "sormas_app_ci_001.yml",
+      "type": "static_cache_key",
+      "job": "test",
+      "message": "Job \"test\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 74,
+      "repo": "matrix-org/matrix-rust-sdk",
+      "workflow": "bindings_ci_001.yml",
+      "type": "no_restore_keys",
+      "job": "test-android",
+      "message": "Job \"test-android\" 缓存步骤缺少 restore-keys 回退"
+    },
+    {
+      "id": 74,
+      "repo": "matrix-org/matrix-rust-sdk",
+      "workflow": "bindings_ci_001.yml",
+      "type": "no_restore_keys",
+      "job": "test-apple",
+      "message": "Job \"test-apple\" 缓存步骤缺少 restore-keys 回退"
+    },
+    {
+      "id": 98,
+      "repo": "adap/flower",
+      "workflow": "framework-e2e_001.yml",
+      "type": "no_dependency_cache",
+      "job": "wheel",
+      "message": "Job \"wheel\" 存在依赖操作(uv)但缺少对应缓存"
+    },
+    {
+      "id": 102,
+      "repo": "shaka-project/shaka-player",
+      "workflow": "build-and-test_001.yml",
+      "type": "no_docker_layer_cache",
+      "job": "build_in_docker",
+      "message": "Job \"build_in_docker\" 存在未接入历史层缓存的 Docker 构建"
+    },
+    {
+      "id": 107,
+      "repo": "smeighan/xlights",
+      "workflow": "wx_win_001.yml",
+      "type": "static_cache_key",
+      "job": "build",
+      "message": "Job \"build\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 109,
+      "repo": "datahub-project/datahub",
+      "workflow": "notify-slack-status_001.yml",
+      "type": "no_restore_keys",
+      "job": "notify",
+      "message": "Job \"notify\" 缓存步骤缺少 restore-keys 回退"
+    },
+    {
+      "id": 113,
+      "repo": "subspace/subspace",
+      "workflow": "rust_001.yml",
+      "type": "static_cache_key",
+      "job": "cargo-clippy",
+      "message": "Job \"cargo-clippy\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 118,
+      "repo": "apache/lucenenet",
+      "workflow": "Lucene-Net-Tests-Analysis-Phonetic_001.yml",
+      "type": "redundant_cache_update",
+      "job": "Test",
+      "message": "Job \"Test\" 的多个 matrix 实例会写入相同缓存 key"
+    },
+    {
+      "id": 118,
+      "repo": "apache/lucenenet",
+      "workflow": "Lucene-Net-Tests-Analysis-Phonetic_001.yml",
+      "type": "redundant_cache_update",
+      "job": "Test",
+      "message": "Job \"Test\" 的多个 matrix 实例会写入相同缓存 key"
+    },
+    {
+      "id": 119,
+      "repo": "yhirose/cpp-httplib",
+      "workflow": "test_001.yml",
+      "type": "redundant_cache_update",
+      "job": "windows",
+      "message": "Job \"windows\" 的多个 matrix 实例会写入相同缓存 key"
+    },
+    {
+      "id": 124,
+      "repo": "lambdaclass/cairo-vm",
+      "workflow": "rust_001.yml",
+      "type": "conflicting_cache_sources",
+      "job": "merge-caches",
+      "message": "Job \"merge-caches\" 的两个独立手动缓存管理重叠目录"
+    },
+    {
+      "id": 124,
+      "repo": "lambdaclass/cairo-vm",
+      "workflow": "rust_001.yml",
+      "type": "conflicting_cache_sources",
+      "job": "compare-memory-and-trace",
+      "message": "Job \"compare-memory-and-trace\" 的两个独立手动缓存管理重叠目录"
+    },
+    {
+      "id": 129,
+      "repo": "picolibc/picolibc",
+      "workflow": "zephyr_001.yml",
+      "type": "no_docker_layer_cache",
+      "job": "cache-maker",
+      "message": "Job \"cache-maker\" 存在未接入历史层缓存的 Docker 构建"
+    },
+    {
+      "id": 133,
+      "repo": "signalapp/signal-desktop",
+      "workflow": "reproducible-build-scheduler_001.yml",
+      "type": "no_restore_keys",
+      "job": "linux",
+      "message": "Job \"linux\" 缓存步骤缺少 restore-keys 回退"
+    },
+    {
+      "id": 133,
+      "repo": "signalapp/signal-desktop",
+      "workflow": "reproducible-build-scheduler_001.yml",
+      "type": "static_cache_key",
+      "job": "linux",
+      "message": "Job \"linux\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 134,
+      "repo": "neuralensemble/python-neo",
+      "workflow": "caches_cron_job_001.yml",
+      "type": "no_restore_keys",
+      "job": "create-data-cache-if-missing",
+      "message": "Job \"create-data-cache-if-missing\" 缓存步骤缺少 restore-keys 回退"
+    },
+    {
+      "id": 140,
+      "repo": "projectcontour/contour",
+      "workflow": "prbuild_001.yml",
+      "type": "redundant_cache_update",
+      "job": "e2e",
+      "message": "Job \"e2e\" 的多个 matrix 实例会写入相同缓存 key"
+    },
+    {
+      "id": 140,
+      "repo": "projectcontour/contour",
+      "workflow": "prbuild_001.yml",
+      "type": "redundant_cache_update",
+      "job": "upgrade",
+      "message": "Job \"upgrade\" 的多个 matrix 实例会写入相同缓存 key"
+    },
+    {
+      "id": 157,
+      "repo": "davidcole1340/ext-php-rs",
+      "workflow": "coverage_001.yml",
+      "type": "static_cache_key",
+      "job": "test",
+      "message": "Job \"test\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 160,
+      "repo": "ether/etherpad-lite",
+      "workflow": "load-test_001.yml",
+      "type": "redundant_cache_update",
+      "job": "long, withoutplugins, withplugins",
+      "message": "并行 Job(long, withoutplugins, withplugins)写入相同缓存 key，可能导致缓存更新冲突"
+    },
+    {
+      "id": 161,
+      "repo": "rancher/elemental-toolkit",
+      "workflow": "build_and_test_x86_001.yml",
+      "type": "no_restore_keys",
+      "job": "build-os",
+      "message": "Job \"build-os\" 缓存步骤缺少 restore-keys 回退"
+    },
+    {
+      "id": 161,
+      "repo": "rancher/elemental-toolkit",
+      "workflow": "build_and_test_x86_001.yml",
+      "type": "no_restore_keys",
+      "job": "build-iso",
+      "message": "Job \"build-iso\" 缓存步骤缺少 restore-keys 回退"
+    },
+    {
+      "id": 179,
+      "repo": "umee-network/umee",
+      "workflow": "simulations_001.yml",
+      "type": "static_cache_key",
+      "job": "install-dependencies",
+      "message": "Job \"install-dependencies\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 179,
+      "repo": "umee-network/umee",
+      "workflow": "simulations_001.yml",
+      "type": "static_cache_key",
+      "job": "test-app-import-export",
+      "message": "Job \"test-app-import-export\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 179,
+      "repo": "umee-network/umee",
+      "workflow": "simulations_001.yml",
+      "type": "static_cache_key",
+      "job": "test-app-after-import",
+      "message": "Job \"test-app-after-import\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 179,
+      "repo": "umee-network/umee",
+      "workflow": "simulations_001.yml",
+      "type": "static_cache_key",
+      "job": "test-app-multi-seed-short",
+      "message": "Job \"test-app-multi-seed-short\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 181,
+      "repo": "khronosgroup/spirv-tools",
+      "workflow": "bazel_001.yml",
+      "type": "static_cache_key",
+      "job": "build",
+      "message": "Job \"build\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 181,
+      "repo": "khronosgroup/spirv-tools",
+      "workflow": "bazel_001.yml",
+      "type": "static_cache_key",
+      "job": "build-macos",
+      "message": "Job \"build-macos\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 182,
+      "repo": "rust-lang/rust-clippy",
+      "workflow": "lintcheck_001.yml",
+      "type": "cache_as_artifact",
+      "job": "__case__",
+      "message": "工作流通过缓存从 Job \"base\" 向 \"diff\" 传递确定性产物"
+    },
+    {
+      "id": 183,
+      "repo": "pcre2project/pcre2",
+      "workflow": "dev_001.yml",
+      "type": "static_cache_key",
+      "job": "wasp",
+      "message": "Job \"wasp\" 的缓存 key 是静态的，依赖更新后缓存不会刷新"
+    },
+    {
+      "id": 184,
+      "repo": "jupyter/nbdime",
+      "workflow": "tests_001.yml",
+      "type": "no_dependency_cache",
+      "job": "ui-test",
+      "message": "Job \"ui-test\" 存在依赖操作(pip)但缺少对应缓存"
+    },
+    {
+      "id": 187,
+      "repo": "shaka-project/shaka-player",
+      "workflow": "update-screenshots_001.yml",
+      "type": "no_restore_keys",
+      "job": "manage-pr",
+      "message": "Job \"manage-pr\" 缓存步骤缺少 restore-keys 回退"
+    },
+    {
+      "id": 194,
+      "repo": "posthog/posthog",
+      "workflow": "ci-backend_001.yml",
+      "type": "no_restore_keys",
+      "job": "turbo-tests",
+      "message": "Job \"turbo-tests\" 缓存步骤缺少 restore-keys 回退"
+    }
+  ],
+  "fn_details": [
+    {
+      "id": 11,
+      "repo": "braintree/braintree_android",
+      "workflow": "firebase_deploy_demo_001.yml",
+      "type": "no_dependency_cache",
+      "job": "build_and_preview"
+    },
+    {
+      "id": 18,
+      "repo": "signalapp/signal-desktop",
+      "workflow": "ci_001.yml",
+      "type": "no_dependency_cache",
+      "job": "audit"
+    },
+    {
+      "id": 23,
+      "repo": "wolfssl/wolfssh",
+      "workflow": "coverity-scan-fixes_001.yml",
+      "type": "no_restore_keys",
+      "job": "build_wolfssl"
+    },
+    {
+      "id": 24,
+      "repo": "tg123/sshpiper",
+      "workflow": "benchmark_001.yml",
+      "type": "no_docker_layer_cache",
+      "job": "Benchmark"
+    },
+    {
+      "id": 27,
+      "repo": "kivy/kivy",
+      "workflow": "test_osx_python_001.yml",
+      "type": "no_dependency_cache",
+      "job": "unit_test"
+    },
+    {
+      "id": 29,
+      "repo": "orb-community/pktvisor",
+      "workflow": "build-release_001.yml",
+      "type": "cache_position_error",
+      "job": "package-arm64"
+    },
+    {
+      "id": 29,
+      "repo": "orb-community/pktvisor",
+      "workflow": "build-release_001.yml",
+      "type": "cache_position_error",
+      "job": "package-amd64"
+    },
+    {
+      "id": 64,
+      "repo": "keptn/lifecycle-toolkit",
+      "workflow": "e2e-test_001.yml",
+      "type": "no_dependency_cache",
+      "job": "run-e2e-test"
+    },
+    {
+      "id": 66,
+      "repo": "orchardcms/orchardcore",
+      "workflow": "main_ci_001.yml",
+      "type": "no_dependency_cache",
+      "job": "uncertain"
+    },
+    {
+      "id": 67,
+      "repo": "project-stacker/stacker",
+      "workflow": "release_001.yml",
+      "type": "cache_as_artifact",
+      "job": "__case__"
+    },
+    {
+      "id": 68,
+      "repo": "facontidavide/plotjuggler",
+      "workflow": "pre-commit_001.yml",
+      "type": "no_dependency_cache",
+      "job": "pre-commit"
+    },
+    {
+      "id": 74,
+      "repo": "matrix-org/matrix-rust-sdk",
+      "workflow": "bindings_ci_001.yml",
+      "type": "cache_as_artifact",
+      "job": "__case__"
+    },
+    {
+      "id": 79,
+      "repo": "axllent/mailpit",
+      "workflow": "codeql-analysis_001.yml",
+      "type": "no_dependency_cache",
+      "job": "analyze"
+    },
+    {
+      "id": 83,
+      "repo": "gztimewalker/gzctf",
+      "workflow": "codeql_001.yml",
+      "type": "no_dependency_cache",
+      "job": "analyze"
+    },
+    {
+      "id": 84,
+      "repo": "nginxinc/nginx-prometheus-exporter",
+      "workflow": "release_001.yml",
+      "type": "cache_as_artifact",
+      "job": "build-docker"
+    },
+    {
+      "id": 92,
+      "repo": "zurdi15/romm",
+      "workflow": "typecheck_001.yml",
+      "type": "no_dependency_cache",
+      "job": "typecheck"
+    },
+    {
+      "id": 107,
+      "repo": "smeighan/xlights",
+      "workflow": "wx_win_001.yml",
+      "type": "overly_broad_cache_path",
+      "job": "build"
+    },
+    {
+      "id": 111,
+      "repo": "cockroachdb/cockroach-operator",
+      "workflow": "update-crdb-versions_001.yml",
+      "type": "malformed_cache_path",
+      "job": "update"
+    },
+    {
+      "id": 112,
+      "repo": "dogtagpki/pki",
+      "workflow": "ca-container-existing-certs-test_001.yml",
+      "type": "incorrect_cache_hit_condition",
+      "job": "test"
+    },
+    {
+      "id": 137,
+      "repo": "defich/ain",
+      "workflow": "build-dev_001.yml",
+      "type": "static_cache_key",
+      "job": "build"
+    },
+    {
+      "id": 137,
+      "repo": "defich/ain",
+      "workflow": "build-dev_001.yml",
+      "type": "static_cache_key",
+      "job": "docker-build"
+    },
+    {
+      "id": 141,
+      "repo": "mmtk/mmtk-core",
+      "workflow": "link-check_001.yml",
+      "type": "malformed_cache_path",
+      "job": "check-broken-links-in-docs"
+    },
+    {
+      "id": 143,
+      "repo": "rust-lang/packed_simd",
+      "workflow": "run-ci-script_001.yml",
+      "type": "conflicting_cache_sources",
+      "job": "run-ci-script"
+    },
+    {
+      "id": 147,
+      "repo": "sanity-io/sanity",
+      "workflow": "browser-tests_001.yml",
+      "type": "no_dependency_cache",
+      "job": "install"
+    },
+    {
+      "id": 147,
+      "repo": "sanity-io/sanity",
+      "workflow": "browser-tests_001.yml",
+      "type": "no_dependency_cache",
+      "job": "browser-test"
+    },
+    {
+      "id": 160,
+      "repo": "ether/etherpad-lite",
+      "workflow": "load-test_001.yml",
+      "type": "no_dependency_cache",
+      "job": "withoutplugins"
+    },
+    {
+      "id": 160,
+      "repo": "ether/etherpad-lite",
+      "workflow": "load-test_001.yml",
+      "type": "no_dependency_cache",
+      "job": "withplugins"
+    },
+    {
+      "id": 160,
+      "repo": "ether/etherpad-lite",
+      "workflow": "load-test_001.yml",
+      "type": "no_dependency_cache",
+      "job": "long"
+    },
+    {
+      "id": 160,
+      "repo": "ether/etherpad-lite",
+      "workflow": "load-test_001.yml",
+      "type": "cache_position_error",
+      "job": "withoutplugins"
+    },
+    {
+      "id": 160,
+      "repo": "ether/etherpad-lite",
+      "workflow": "load-test_001.yml",
+      "type": "cache_position_error",
+      "job": "withplugins"
+    },
+    {
+      "id": 160,
+      "repo": "ether/etherpad-lite",
+      "workflow": "load-test_001.yml",
+      "type": "cache_position_error",
+      "job": "long"
+    },
+    {
+      "id": 169,
+      "repo": "mozilla/experimenter",
+      "workflow": "experimenter-mozcloud-publish_001.yml",
+      "type": "no_docker_layer_cache",
+      "job": "build_and_push"
+    },
+    {
+      "id": 171,
+      "repo": "headlamp-k8s/headlamp",
+      "workflow": "build-container_001.yml",
+      "type": "overly_specific_cache_key",
+      "job": "build"
+    }
+  ]
+}

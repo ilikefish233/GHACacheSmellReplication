@@ -1,0 +1,175 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\renewcommand{\figurename}{Supplementary Fig.}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\tablename}{Supplementary Table}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\begin{document}
+\begin{center}
+{\Large\textbf{Online Resource 1: Supplementary analyses for RQ1}\par}
+\vspace{4mm}
+{\small\textit{Cache Configuration Smells in GitHub Actions: A Large-Scale Empirical Study}\par}
+{\small Empirical Software Engineering\par}
+{\small Siyu Wang, Yang Zhang, Changrong Xie, Jiacheng Jie, Youren Chen, Zezhou Tang, Tanghaoran Zhang, Xinjun Mao\par}
+{\small College of Computer Science and Technology, National University of Defense and Technology, Changsha, China\par}
+{\small Corresponding author: Xinjun Mao (\texttt{xjmao@nudt.edu.cn})\par}
+\end{center}
+
+\section*{Workflow-level CCS co-occurrence}
+
+Supplementary Table~S1 lists the eight most frequent unique pairs among the
+11 operationalized CCS rules. Pair counts are workflows triggering both
+rules; corpus share divides that count by all 118,402 workflows with usable detector results.
+Jaccard divides the pair count by the number of workflows triggering at least
+one rule in the pair. These summaries are descriptive; they do not establish
+independent associations or causal relations. The complete pairwise matrix is
+provided in \texttt{rq1\_cooccurrence.csv}.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Selected workflow-level co-occurrences among the 11 CCS rules.}
+\label{tab:supp-smell-cooccurrence}
+\begin{tabular}{p{0.48\textwidth}rrr}
+\hline
+CCS pair & Workflows & Corpus share & Jaccard\\
+\hline
+No fallback cache + static cache key & 1,596 & 1.3480\% & 0.271382\\
+No fallback cache + redundant cache update & 1,050 & 0.8868\% & 0.157256\\
+No dependency cache + no fallback cache & 858 & 0.7246\% & 0.040785\\
+No dependency cache + no docker layer cache & 362 & 0.3057\% & 0.018443\\
+Redundant cache update + static cache key & 351 & 0.2964\% & 0.105121\\
+No fallback cache + overlapping cache mechanisms & 314 & 0.2652\% & 0.051450\\
+No dependency cache + redundant cache update & 313 & 0.2644\% & 0.017589\\
+No fallback cache + overly specific cache key & 311 & 0.2627\% & 0.050925\\
+\hline
+\end{tabular}
+\end{table}
+
+\section*{NDC within supported dependency-installation opportunities}
+
+Supplementary Table~S2 separates the 28,450 workflows with supported
+dependency-installation metadata into mutually exclusive groups. The npm-compatible group covers npm, Yarn, and pnpm; the
+Python-compatible group covers pip, Pipenv, Poetry, and uv. A workflow using
+both groups appears only in the mixed row. These groups describe operations
+observed in workflow jobs rather than repository primary language. Unsupported
+dependency ecosystems and opaque dependency acquisition are outside the NDC
+opportunity denominator. This metadata-based denominator includes operations excluded by the detector as auxiliary or cache warming. The rates are descriptive and do not establish an
+ecosystem effect.
+
+\begin{table}[H]
+\centering
+\small
+\caption{NDC detection among workflows with supported dependency-installation opportunities.}
+\label{tab:supp-ndc-opportunity}
+\begin{tabular}{lrrr}
+\hline
+Dependency operations & Eligible workflows & NDC workflows & NDC rate\\
+\hline
+npm-compatible only & 14,189 & 5,772 & 40.68\%\\
+Python-compatible only & 13,419 & 9,707 & 72.34\%\\
+Both groups & 842 & 659 & 78.27\%\\
+\hline
+Total & 28,450 & 16,138 & 56.72\%\\
+\hline
+\end{tabular}
+\end{table}
+
+\section*{Supplementary repository-feature distributions}
+
+Supplementary Fig.~S1 shows workflow prevalence by repository-feature stratum. Supplementary
+Figs.~S2--S12 show the complete set of 11 CCS-specific repository-feature
+comparisons. In every split violin, the gray left half is the
+same global reference of repositories with no detectable CCS, whereas the
+blue right half contains repositories with the named target CCS. Target
+repositories may contain other CCS types. These global-reference comparisons are
+unadjusted, are not detector-opportunity matched, and do not estimate
+independent or causal effects.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/repository_feature_smell_heatmap_canonical_rq1_20260921.png}
+\caption{Unadjusted workflow prevalence of the 11 statically detectable CCS within repository-feature strata. Each cell uses its stratum-specific workflow denominator; missing values are retained in source data and omitted from the display. The heatmap and continuous-distribution comparisons use the same final RQ1 detector results.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/no_dependency_cache_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{no\_dependency\_cache}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=6{,}976$). Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/no_fallback_cache_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{no\_fallback\_cache}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=3{,}007$). Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/redundant_cache_update_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{redundant\_cache\_update}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=1{,}460$). Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/cache_position_error_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{cache\_position\_error}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=528$). Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/overlapping_cache_mechanisms_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{overlapping\_cache\_mechanisms}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=407$). Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/static_cache_key_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{static\_cache\_key}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=1{,}142$). Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/overly_specific_cache_key_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{overly\_specific\_cache\_key}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=405$, except contributors $n=404$). Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/no_docker_layer_cache_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{no\_docker\_layer\_cache}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=2{,}343$). Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/deprecated_cache_action_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{deprecated\_cache\_action}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=249$). Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/unreachable_cache_write_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{unreachable\_cache\_write}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=4$). The sparse target group is marked $\dagger$, and all target observations are overlaid; its kernel-density shape is unstable and should not be generalized. Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\clearpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{figures/cache_as_artifact_global_nosmell_comparison_ccs.pdf}
+\caption{Repository characteristics for \texttt{cache\_as\_artifact}. Each panel compares repositories with no detectable CCS (left half, gray; $n=8{,}796$, except contributors $n=8{,}794$) with repositories containing the target CCS (right half, blue; $n=116$). The sparse target group is marked $\dagger$, and all target observations are overlaid; its kernel-density shape should be interpreted cautiously. Features use the $\log_{10}(x+1)$ scale; black bars and points show the interquartile range and median.}
+\end{figure}
+
+\end{document}

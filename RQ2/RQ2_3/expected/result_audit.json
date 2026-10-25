@@ -1,0 +1,21 @@
+{
+  "experimental": true,
+  "final_events": 166,
+  "final_repositories": 88,
+  "unique_success_runs": 1268,
+  "smell_memberships": 203,
+  "covered_original_smells": 9,
+  "covered_additional_smells": 3,
+  "single_observation_events": 53,
+  "task_changed_or_unconfirmed_events": 107,
+  "version_attribution_memberships": {
+    "exact_head_content_confirmed": 439,
+    "history_interval_only": 884
+  },
+  "resource_exclusions": {
+    "runner_allocation_unknown": 3,
+    "self_hosted_runner": 7,
+    "unknown_pricing_category": 4
+  },
+  "api_calls": 0
+}

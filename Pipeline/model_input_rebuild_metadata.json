@@ -1,0 +1,58 @@
+{
+  "canonical_inputs_modified": false,
+  "commit_date_is_run_time_proxy": false,
+  "counts": {
+    "duplicate_run_keys": 0,
+    "missing_detector_states": 0,
+    "repositories": 14710,
+    "run_records": 1093639,
+    "version_records": 51179,
+    "version_scan_results": 51179
+  },
+  "detector_state_join": "workflow.detector_state_key -> detector_states.state_key",
+  "detector_versions": [
+    "cache_smell_detector_sha256:a6f162b5715c872215a7135407f4028ba7007ddef519143aa439ae0946456340"
+  ],
+  "effective_end_at": "2026-06-09T23:59:59Z",
+  "events": {
+    "push": 558561,
+    "schedule": 512608,
+    "workflow_dispatch": 22470
+  },
+  "external_fetch_performed": false,
+  "output_files": {
+    "run_records": "rebuilt/model_input/run_records.jsonl",
+    "version_records": "rebuilt/model_input/version_records.jsonl",
+    "version_scan_results": "rebuilt/model_input/version_scan_results.jsonl"
+  },
+  "run_order_rule": "created_at ascending, then numeric run_id and run_attempt",
+  "run_primary_key": "(repository_id, run_id, run_attempt)",
+  "schema_version": "rq2-final-model-input-v1",
+  "selection_policy": "No reselection: workflows and runs are copied from the Phase 3.1 final analysis queue after conversion-only validation.",
+  "source_files": {
+    "detector_states": {
+      "path": "data_26_6_9_canonical_20260609/detector_states.jsonl",
+      "sha256": "7505739ee247bcfc2969958253b968716f6a7875d8e73c5a6f520e6d59eb37d0"
+    },
+    "final_runs": {
+      "path": "rebuilt/queue/rq2_final_analysis_runs.jsonl",
+      "sha256": "057368e8f34efeda25e82445d1ac235792a62b926015776e94bb55ef661ade8a"
+    },
+    "final_workflows": {
+      "path": "rebuilt/queue/rq2_final_analysis_workflows.jsonl",
+      "sha256": "efcc74c06ce44d9c08d5891538e1f674a783bedaebd37c37596e4943f0d13c24"
+    },
+    "rq1_cohort": {
+      "path": "data_26_6_9_canonical_20260609/rq1_cohort.jsonl",
+      "sha256": "67cd6f0fbaca7f8ed7dea769b34d886eb2d2a59c44c412491ed093a70ed1bec7"
+    }
+  },
+  "study_cutoff": "2026-06-09T23:59:59Z",
+  "taxonomy_versions": [
+    "cache-smell-taxonomy-2026-09-01"
+  ],
+  "version_id_rule": "<repository_id>|<workflow_path>|content:<content_hash>",
+  "window_days": 30,
+  "window_start": "2026-05-10T23:59:59Z",
+  "workflow_identity": "(repository_id, normalized_workflow_path)"
+}

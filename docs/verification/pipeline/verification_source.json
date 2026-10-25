@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "compressed_inputs_verified": 0,
+  "uncompressed_bytes_verified": 0,
+  "source_files_verified": 84,
+  "source_modules_verified": 82,
+  "python_files_parsed": 98,
+  "credential_files_included": false,
+  "network_requests": 0,
+  "rq3_executed": false
+}

@@ -1,0 +1,754 @@
+[
+  {
+    "original_path": "archive/legacy_log_analysis_data/gha_log_dataset/data/filter_stats.json",
+    "archive_path": "Pipeline/data/1fb039fd5e3bbf59-filter_stats.json.gz",
+    "bytes": 500,
+    "gzip_bytes": 267,
+    "sha256": "fa81690861db5f6870c0651745de178e40cbdb03121aab57c1f542d850ef464a",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "archive/legacy_log_analysis_data/gha_log_dataset/data/filtered_repositories.json",
+    "archive_path": "Pipeline/data/9b009e2a6d59053a-filtered_repositories.json.gz",
+    "bytes": 56052976,
+    "gzip_bytes": 14072733,
+    "sha256": "fc829fa8a0b4e125bd38629282b30b5de7fdf5aaf84b32ff6b18107545468818",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9/repo_info.jsonl",
+    "archive_path": "Pipeline/data/12293ffeafbbd4a6-repo_info.jsonl.gz",
+    "bytes": 56772565,
+    "gzip_bytes": 14411843,
+    "sha256": "3b2835d6e85789b2a41d179d02a49ffd0a5e3cf23e28c9630af5b3c2a7e4cde2",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9/supplement_missing_workflows_20260609/candidate_repositories.jsonl",
+    "archive_path": "Pipeline/data/68bee50c0fc2c727-candidate_repositories.jsonl.gz",
+    "bytes": 4556949,
+    "gzip_bytes": 425152,
+    "sha256": "587e82a702bc4716351546ff590ff79c6bcd7d022322a9e1b8225aee1d294f92",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9/supplement_missing_workflows_20260609/workflow_files.jsonl",
+    "archive_path": "Pipeline/data/da5d8561006c0fed-workflow_files.jsonl.gz",
+    "bytes": 30451393,
+    "gzip_bytes": 6348293,
+    "sha256": "67ddefdd38e34389eb94e0cc7144ac952649880ee2217de3fbf7a75ee616523b",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9/workflow_changes.jsonl",
+    "archive_path": "Pipeline/data/ce40a7b04dd63ce7-workflow_changes.jsonl.gz",
+    "bytes": 156292118,
+    "gzip_bytes": 30636190,
+    "sha256": "ebc83aafe6b3679469a2f12d0528d7cb49c36ad708784b403dc0ba042848b8a0",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9/workflow_files.jsonl",
+    "archive_path": "Pipeline/data/8b5fd27b23a25bee-workflow_files.jsonl.gz",
+    "bytes": 38722849,
+    "gzip_bytes": 9816042,
+    "sha256": "ce3c11755bf37348daa72d6b2036b99d7c35173418b8768f17f5417513bddee5",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9/workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/6e9603585dff177f-workflow_runs.jsonl.gz",
+    "bytes": 505160099,
+    "gzip_bytes": 51369803,
+    "sha256": "ef5edce4b1e5c06d3d0fab606d962206bac69bf0f5830fa5de2dbe47ff336c25",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9_canonical_20260609/detector_states.jsonl",
+    "archive_path": "Pipeline/data/7c54fc65aa9d2c0b-detector_states.jsonl.gz",
+    "bytes": 460259057,
+    "gzip_bytes": 58501419,
+    "sha256": "7505739ee247bcfc2969958253b968716f6a7875d8e73c5a6f520e6d59eb37d0",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9_canonical_20260609/workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/1a3b22490a8c041a-workflow_runs.jsonl.gz",
+    "bytes": 2868911124,
+    "gzip_bytes": 181122929,
+    "sha256": "a248e3b17d80e88d7be695beb1d48e445fab53d63567dc69b0074247614ebe63",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9_complete_20260609/dataset_manifest.json",
+    "archive_path": "Pipeline/data/9ba61c42e2d5067b-dataset_manifest.json.gz",
+    "bytes": 1939,
+    "gzip_bytes": 737,
+    "sha256": "6e4e9bba2910da8559dbe18b6d0bbd41cac6228a0e6e8fa97cd3814c62cb94a7",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9_complete_20260609/repo_info.jsonl",
+    "archive_path": "Pipeline/data/b76ae85a7fa75389-repo_info.jsonl.gz",
+    "bytes": 58242305,
+    "gzip_bytes": 14507982,
+    "sha256": "4c6015c4e7f0eff109b012d8c6f06240b1d6fc1ecbdfe478b64b1422f64019be",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9_complete_20260609/workflow_changes.jsonl",
+    "archive_path": "Pipeline/data/4969350dc0c12cf7-workflow_changes.jsonl.gz",
+    "bytes": 159701577,
+    "gzip_bytes": 31327543,
+    "sha256": "fdb5bcae3c02f4daf85e2f42eb24b39153bcfe40bc58fdd10532e2a6d748b26f",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9_complete_20260609/workflow_files.jsonl",
+    "archive_path": "Pipeline/data/69e6593b53780921-workflow_files.jsonl.gz",
+    "bytes": 78138226,
+    "gzip_bytes": 16380745,
+    "sha256": "04c73ae52be755c0a3b7123aae1c5e37c312678fe8c12de77bbc9082e115f4d5",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "data_26_6_9_complete_20260609/workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/eef173465d70570c-workflow_runs.jsonl.gz",
+    "bytes": 505160099,
+    "gzip_bytes": 51369803,
+    "sha256": "ef5edce4b1e5c06d3d0fab606d962206bac69bf0f5830fa5de2dbe47ff336c25",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_canonical_rq2_query_coverage_phase1_2_1_20260919/rq2_query_coverage_conflicts.jsonl",
+    "archive_path": "Pipeline/data/9c8c77d0d79731e4-rq2_query_coverage_conflicts.jsonl.gz",
+    "bytes": 151044835,
+    "gzip_bytes": 6148478,
+    "sha256": "01682b4e5e5808f69ae59adf5129ccc099e87aecb2cc07ff2e3f273f3f787c8d",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_canonical_rq2_query_coverage_phase1_2_1_20260919/rq2_query_coverage_evidence.jsonl",
+    "archive_path": "Pipeline/data/e24b62c914845f61-rq2_query_coverage_evidence.jsonl.gz",
+    "bytes": 213458250,
+    "gzip_bytes": 9364878,
+    "sha256": "6b1f632b84613e5e029b2ce816ee8c3bb6b887c3968027ce4a945719ec62ab85",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_canonical_rq2_query_coverage_phase1_2_1_20260919/rq2_query_coverage_evidence_all.jsonl",
+    "archive_path": "Pipeline/data/a9992932092e116e-rq2_query_coverage_evidence_all.jsonl.gz",
+    "bytes": 406648198,
+    "gzip_bytes": 15667073,
+    "sha256": "4c15c2e784e9f762f06ce6107cae7236370bc3799ac36765adb415cdeaf1138f",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_canonical_rq2_query_coverage_phase1_2_1_20260919/rq2_query_coverage_summary.json",
+    "archive_path": "Pipeline/data/e5da1de9a648e91e-rq2_query_coverage_summary.json.gz",
+    "bytes": 20299,
+    "gzip_bytes": 3483,
+    "sha256": "8a71c42add61ce60be0e72f814a3e10f4b60a0aa2b82dbc6cfe0cc50effc5071",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_canonical_rq2_query_coverage_phase1_2_1_20260919/rq2_retry_targets_after_local_recovery.jsonl",
+    "archive_path": "Pipeline/data/a3abb7a982b7ba43-rq2_retry_targets_after_local_recovery.jsonl.gz",
+    "bytes": 141439846,
+    "gzip_bytes": 5903451,
+    "sha256": "bba03c6d9cc9e7945132aa50279903fd0c558ac1e6975a8d4a335809a6bde7ac",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_full_logical_20260915_complete/rq2_history_canonical_all_20260918/workflow_changes.jsonl",
+    "archive_path": "Pipeline/data/1e1b74ef9e7b2a8d-workflow_changes.jsonl.gz",
+    "bytes": 101763594,
+    "gzip_bytes": 14395478,
+    "sha256": "4865e7f2dccbde3ee1fb406eb4bf69ee88f727d4634cd3c33cdb659343dd7ac2",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_full_logical_20260915_complete/rq2_input_targeted_runs_60d_90d_all_unmatched_20260918/workflow_runs_normalized_dedup.jsonl",
+    "archive_path": "Pipeline/data/694a2e9fb3cd4205-workflow_runs_normalized_dedup.jsonl.gz",
+    "bytes": 2799640592,
+    "gzip_bytes": 196778499,
+    "sha256": "3bfef5b3c0cc55cc9d59a9de87a38bc96f9a74fd98ef47d908afa1c3468d4eea",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_full_logical_20260915_complete/rq2_latest_snapshot_repair_applied/smell_scan_results_at_cutoff.jsonl",
+    "archive_path": "Pipeline/data/6d383d9c95dd7846-smell_scan_results_at_cutoff.jsonl.gz",
+    "bytes": 396108651,
+    "gzip_bytes": 56919476,
+    "sha256": "348e8f788a9863121fa9dcb0ab5cac1cb0b37a3263c51976e4f14e93d8e27613",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_full_logical_20260915_complete/rq2_latest_snapshot_repair_applied/workflow_files_at_cutoff.jsonl",
+    "archive_path": "Pipeline/data/6929476fac324bb0-workflow_files_at_cutoff.jsonl.gz",
+    "bytes": 80156453,
+    "gzip_bytes": 16965672,
+    "sha256": "730d86b235baebeb4a24bebcba92efae38b0ec0bfb28096572f6d06ae743a40c",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_consolidated_20260920/consolidation_manifest.json",
+    "archive_path": "Pipeline/data/2cd1d323d4fd7737-consolidation_manifest.json.gz",
+    "bytes": 9237,
+    "gzip_bytes": 2519,
+    "sha256": "c5233d29501137351e89051437351d90391737de00680ce0b97ba7a96409c5ba",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_20260919/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/84ce74ca420cd7c2-normalized_workflow_runs.jsonl.gz",
+    "bytes": 14767741,
+    "gzip_bytes": 1014658,
+    "sha256": "53b6562071ed24e01e2932a9cce2007b6c2c850a5a8f37e037600acc96a9d2ef",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_20260919/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/b01cdaa94aa13f9c-raw_workflow_runs.jsonl.gz",
+    "bytes": 1075516546,
+    "gzip_bytes": 54044236,
+    "sha256": "e804b5bc7e872d2cdc0892aa2d9b5daf3fdec1208ef838f12781c172771c3257",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_20260919/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/7c550fd7a9f6bc3a-repository_execution_status.jsonl.gz",
+    "bytes": 394279,
+    "gzip_bytes": 34511,
+    "sha256": "7d0e8b6df94aae268c0edc218f5a28c79298210de7025557e8a295d903b2c765",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_20260919/request_events.jsonl",
+    "archive_path": "Pipeline/data/a14e5d3dd6e59856-request_events.jsonl.gz",
+    "bytes": 1340389,
+    "gzip_bytes": 91475,
+    "sha256": "16e59a69201d251d445a07d216639e0ba75209356d7c3bd081ef86403582ed20",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_20260919/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/97a0f6249a5da439-workflow_execution_status.jsonl.gz",
+    "bytes": 656498,
+    "gzip_bytes": 47992,
+    "sha256": "c7e06c00cfc8948aa6f8f0f3954e20f40dd65f0dcd48df1b1d1efdd48815483e",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard01/execution_manifest.json",
+    "archive_path": "Pipeline/data/b62a849dba71268a-execution_manifest.json.gz",
+    "bytes": 2863,
+    "gzip_bytes": 1117,
+    "sha256": "f0ecb131f9ecc74ccb128cffcc9154f253f567837060185f0f4065e9fcf5cb97",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard01/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/ee43b023335500e6-normalized_workflow_runs.jsonl.gz",
+    "bytes": 84953832,
+    "gzip_bytes": 5805014,
+    "sha256": "8cc153cd9b603b9d3e0cb83d92b2115cc2fb4f8bcfe30abfb84f37b4b2931581",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard01/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/203eb7029f20abd7-raw_workflow_runs.jsonl.gz",
+    "bytes": 5584305363,
+    "gzip_bytes": 287942806,
+    "sha256": "ffc5df8a55b2f8f86ecb9ad68eb63bc97ac910489849f724e3481df525da10c6",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard01/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/a8077932fd820c4d-repository_execution_status.jsonl.gz",
+    "bytes": 2021663,
+    "gzip_bytes": 178099,
+    "sha256": "223f940daa4a52ac72f11af3819f050f58d4d9f2c9649c23b90c7fa4f6b9f688",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard01/request_events.jsonl",
+    "archive_path": "Pipeline/data/3844b92347719a8a-request_events.jsonl.gz",
+    "bytes": 6877269,
+    "gzip_bytes": 475525,
+    "sha256": "c79cd658e0c9b96fb2b1ddc0ad5da300aa4843a9a672a906e1d51eae0b917122",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard01/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/73de67a2e6cf7783-workflow_execution_status.jsonl.gz",
+    "bytes": 3308677,
+    "gzip_bytes": 242884,
+    "sha256": "763b8a59d7b0c3146cd06233e0b2757158f3d641b02bee5fe6c626f676e3b07b",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard02/execution_manifest.json",
+    "archive_path": "Pipeline/data/2d138dc344ec530f-execution_manifest.json.gz",
+    "bytes": 2863,
+    "gzip_bytes": 1117,
+    "sha256": "3164da69b57a27424f714b3e11346d4290287d978a1d7a6bd148b5756ba9e242",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard02/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/ca0c7a4de9c09ff3-normalized_workflow_runs.jsonl.gz",
+    "bytes": 77999328,
+    "gzip_bytes": 5313146,
+    "sha256": "b1781227e66bb5054ed488ebcd8bfbacfc4a084cb925312e35f3caf5cb440511",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard02/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/38e394523a9cc90e-raw_workflow_runs.jsonl.gz",
+    "bytes": 5265892922,
+    "gzip_bytes": 275570961,
+    "sha256": "604c773175709de5be82b643c8de8c546b6e3904102c6a7331b9c1c51892b29f",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard02/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/d570ade831dc0509-repository_execution_status.jsonl.gz",
+    "bytes": 2029995,
+    "gzip_bytes": 177045,
+    "sha256": "a06dd9f3e15973d8529b044f7b347a02402be1f360acabcf60415314c15d97d8",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard02/request_events.jsonl",
+    "archive_path": "Pipeline/data/561f5406dd70794e-request_events.jsonl.gz",
+    "bytes": 6649160,
+    "gzip_bytes": 461866,
+    "sha256": "5e90b53970d93af37b7e6f073a84dfa8c45beeba21636bd2877e9aa35696ec24",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard02/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/58f777d85cb1cfe6-workflow_execution_status.jsonl.gz",
+    "bytes": 3359448,
+    "gzip_bytes": 247227,
+    "sha256": "2a8b6ec9f537769b6485c9f0ab08be665821a2a07b186732197310114546fd0e",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard03/execution_manifest.json",
+    "archive_path": "Pipeline/data/ce86c855e717c908-execution_manifest.json.gz",
+    "bytes": 2863,
+    "gzip_bytes": 1116,
+    "sha256": "931dff8c8dee020020e18dc289a92b413ac62cb5640b1761a2f7902193cc7fb7",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard03/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/610bf405b26dfe8c-normalized_workflow_runs.jsonl.gz",
+    "bytes": 72381425,
+    "gzip_bytes": 5028730,
+    "sha256": "bf4288b5186ff173766ab02da7cebea18dd3417067d94958fdd1c7e4db80c93f",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard03/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/eaa1df15418df1d1-raw_workflow_runs.jsonl.gz",
+    "bytes": 5336253416,
+    "gzip_bytes": 273950995,
+    "sha256": "dcffdea78df2b243ad63443ce70c7277fc9afbd2f52e46c7572af3e165d48f8b",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard03/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/ad843a7bcca59e84-repository_execution_status.jsonl.gz",
+    "bytes": 2021904,
+    "gzip_bytes": 177299,
+    "sha256": "62800abf1068791ff42ccb43773a54b0791881d897cf10ad25dbb6df1eb780a4",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard03/request_events.jsonl",
+    "archive_path": "Pipeline/data/c57603d43ca4227a-request_events.jsonl.gz",
+    "bytes": 6672335,
+    "gzip_bytes": 463369,
+    "sha256": "b3e67c0dc27098a091bd2a968a5def2d086664db366519c672e1c976cd4602d5",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard03/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/8c26b8b2fcada24b-workflow_execution_status.jsonl.gz",
+    "bytes": 3400409,
+    "gzip_bytes": 251425,
+    "sha256": "b3e3f8b1f66b81adb8d2231b15751c06f5a132d45664e0c3bab70af16752d4bd",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard04/execution_manifest.json",
+    "archive_path": "Pipeline/data/a06f19cbed4e61d5-execution_manifest.json.gz",
+    "bytes": 2863,
+    "gzip_bytes": 1119,
+    "sha256": "bc21e533d35bc5cc1e25c0ecf588cf6ef1c1746370ba17a6da6ee2c04dde2101",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard04/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/cef40ca3f272d75c-normalized_workflow_runs.jsonl.gz",
+    "bytes": 77972898,
+    "gzip_bytes": 5445587,
+    "sha256": "8310b90d1a1007132201b830933a1b69d3ee39a58f8eb0d69fc8cecd4c451830",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard04/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/e004e5639b3aceb8-raw_workflow_runs.jsonl.gz",
+    "bytes": 5318578926,
+    "gzip_bytes": 271801882,
+    "sha256": "080a45f0243bd9d8c0a83382befd237db1580a8b8967041fdd7e05af0a7e511d",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard04/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/56f63b6bf19ee86d-repository_execution_status.jsonl.gz",
+    "bytes": 2018953,
+    "gzip_bytes": 174816,
+    "sha256": "85ec4049ac973deffc0d5f66d922caada3e99530e39d7466a8d7384e87c0abb5",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard04/request_events.jsonl",
+    "archive_path": "Pipeline/data/d37b15d1e9219139-request_events.jsonl.gz",
+    "bytes": 6653177,
+    "gzip_bytes": 461288,
+    "sha256": "ecc9f694b89c0b421c3107ff53ce4fd43e6066e86be39157884bcf943f07645c",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard04/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/9cfb5bbc5d9a000f-workflow_execution_status.jsonl.gz",
+    "bytes": 3416517,
+    "gzip_bytes": 252926,
+    "sha256": "32fb59d0e7a197f5fc35f081df1bc686f361abd2bf3c85961e4667ed4c25ce14",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard05/execution_manifest.json",
+    "archive_path": "Pipeline/data/5eb6ebf49025fc2c-execution_manifest.json.gz",
+    "bytes": 2863,
+    "gzip_bytes": 1113,
+    "sha256": "26c3ad7323907b55dfe3b46772251fecaba3ae349b9312278a25f20e65948b4c",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard05/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/df2fa40ce5ee5a39-normalized_workflow_runs.jsonl.gz",
+    "bytes": 70912797,
+    "gzip_bytes": 4870011,
+    "sha256": "f14ccf7eaea996d8ab4e39db8403668672150d1b8b2582f86e9122d836dfa38a",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard05/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/20578951dc899192-raw_workflow_runs.jsonl.gz",
+    "bytes": 5420225764,
+    "gzip_bytes": 279077137,
+    "sha256": "23da2e44096dcf395c15213bfcf79c1e4d3b5a58f9ca1184e9bfc096e1c0714b",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard05/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/e400d618c5c66652-repository_execution_status.jsonl.gz",
+    "bytes": 2016147,
+    "gzip_bytes": 175939,
+    "sha256": "0ecf9fa99e845cfab0304404cce266509e4325839c2d5fdf61c1572fb30bf228",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard05/request_events.jsonl",
+    "archive_path": "Pipeline/data/20579360330c3ecf-request_events.jsonl.gz",
+    "bytes": 6706516,
+    "gzip_bytes": 464932,
+    "sha256": "fd9ef25816dd169a336c62a6c5c6cef8c4d44650bceae85c7e01387bab6bea74",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round2_shard05/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/a01f7e88f3c80f93-workflow_execution_status.jsonl.gz",
+    "bytes": 3246460,
+    "gzip_bytes": 244942,
+    "sha256": "8c9c8f357afcc0be933c373b51f3fdb90c5e8660a472e787d0878af2f3dfd079",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round3_retry_20260920/execution_manifest.json",
+    "archive_path": "Pipeline/data/d4cfc9691e38491a-execution_manifest.json.gz",
+    "bytes": 2869,
+    "gzip_bytes": 1114,
+    "sha256": "e030168e24b5c1807f22ba9fac68709a526f04cc270c02a7708f70c9b64fb0f7",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round3_retry_20260920/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/cca48d8335cc9d1b-normalized_workflow_runs.jsonl.gz",
+    "bytes": 10205370,
+    "gzip_bytes": 690855,
+    "sha256": "b84f93e03c320e1c7fa11de6c10d52d4ef7302b400fd7c66f95c5c2468c0fbcb",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round3_retry_20260920/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/c905f23cc34a7acd-raw_workflow_runs.jsonl.gz",
+    "bytes": 475017149,
+    "gzip_bytes": 32428643,
+    "sha256": "05860f0a5f3aec4ec07cfde63d8e1d0a2beb77e3566b9e81bbc9c2406dcaafdd",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round3_retry_20260920/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/319088170bbe59d0-repository_execution_status.jsonl.gz",
+    "bytes": 40422,
+    "gzip_bytes": 4438,
+    "sha256": "b256153ca746db61133bfeac8f21deb83c25d5329fac0400315f27d1dcd70fc7",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round3_retry_20260920/request_events.jsonl",
+    "archive_path": "Pipeline/data/a0819e5d424e89f0-request_events.jsonl.gz",
+    "bytes": 397668,
+    "gzip_bytes": 23820,
+    "sha256": "d06828742d0be6cb4d66e92681b6e51eaef663c63d6a8a3227fe177c578a8e50",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round3_retry_20260920/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/67f1031005caca64-workflow_execution_status.jsonl.gz",
+    "bytes": 185648,
+    "gzip_bytes": 14164,
+    "sha256": "f36834cddc78f00ad430637f69f560244feb1698588bf328314a3bf1eae2f3ea",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round4_finalized_20260920/execution_manifest.json",
+    "archive_path": "Pipeline/data/0ed09dfd53b0cff4-execution_manifest.json.gz",
+    "bytes": 2303,
+    "gzip_bytes": 942,
+    "sha256": "e516952329cc36549de4a0f6145f32cad0300cc700328e7ea2ad7aba6777c609",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round4_finalized_20260920/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/7080872a17634134-normalized_workflow_runs.jsonl.gz",
+    "bytes": 36747,
+    "gzip_bytes": 2925,
+    "sha256": "f47588f3ce9bd99bcea4c3d22477e0c27d890653c13d0bd00b705013b9452c4c",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round4_finalized_20260920/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/d1cb09bf80ec5aea-raw_workflow_runs.jsonl.gz",
+    "bytes": 8182389,
+    "gzip_bytes": 870159,
+    "sha256": "5708fd50a125d46da55f364549a8ad533cc3273f3075a304a9262b647f0bb510",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round4_finalized_20260920/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/ce432e008bf6eee1-repository_execution_status.jsonl.gz",
+    "bytes": 2445,
+    "gzip_bytes": 777,
+    "sha256": "21c91adfbd17f4952446a654d1d3c59be524031946d1fb3d5b95a92fb4fba6ba",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round4_finalized_20260920/request_events.jsonl",
+    "archive_path": "Pipeline/data/15ed4972149c8661-request_events.jsonl.gz",
+    "bytes": 15768,
+    "gzip_bytes": 1311,
+    "sha256": "ceccaf9b31ae8c103da77a4e5041d25b269086e03127efdf199a71cb22a3f852",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_round4_finalized_20260920/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/5078f3ba55c1c76c-workflow_execution_status.jsonl.gz",
+    "bytes": 7345,
+    "gzip_bytes": 780,
+    "sha256": "3f3732bb7fec575fac8665ab41224fd85c266a0d53ad424583ab851b5b18c368",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard01/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/1bdd24f73973f033-normalized_workflow_runs.jsonl.gz",
+    "bytes": 17412693,
+    "gzip_bytes": 1190503,
+    "sha256": "7147c4ae65adbe051e5dd571518df1037dfdc2a9fab368fce87fc0d82da02776",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard01/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/168477c8cfc060e8-raw_workflow_runs.jsonl.gz",
+    "bytes": 1130998778,
+    "gzip_bytes": 58213058,
+    "sha256": "d817d05403f722ab9c9e2589f0fd2e8df2a01dcb9847a585fb30dd6feddd904a",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard01/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/5d7a6057534b9732-repository_execution_status.jsonl.gz",
+    "bytes": 454788,
+    "gzip_bytes": 40692,
+    "sha256": "033b5e8728cbc2874e3005d49bad9882b93b4644c9dbeb3e5d603fffc9e28b81",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard01/request_events.jsonl",
+    "archive_path": "Pipeline/data/dd91a427eb679633-request_events.jsonl.gz",
+    "bytes": 1499751,
+    "gzip_bytes": 104139,
+    "sha256": "86152c2290373614123921147fcdd6f8f660f6eed53eb1161cc640b6a98cafd9",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard01/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/f89285d4b4d6a194-workflow_execution_status.jsonl.gz",
+    "bytes": 732056,
+    "gzip_bytes": 55312,
+    "sha256": "7130095721f6ef349c43afe91a28ce44caa970f515fd56d7d8ae9b318158149f",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard02/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/6e9b625f0ef9612c-normalized_workflow_runs.jsonl.gz",
+    "bytes": 21785585,
+    "gzip_bytes": 1542226,
+    "sha256": "b99108bafcfc30c71ac6f18f53db9e22a0ed9cbaab6677e95152ab222c08875e",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard02/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/9d809a65a48c0276-raw_workflow_runs.jsonl.gz",
+    "bytes": 1150439862,
+    "gzip_bytes": 55786760,
+    "sha256": "1ef9e0d3f4f9c729b54281bee12dbff5029e30dbd98e2afc0e07e2bf263a7c56",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard02/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/5e4aa8bbad0ad431-repository_execution_status.jsonl.gz",
+    "bytes": 425350,
+    "gzip_bytes": 37888,
+    "sha256": "f8a861d7a8bbeb5ead24b49ac7aaba3a34e08e19109b64a57c64225d2cd9261d",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard02/request_events.jsonl",
+    "archive_path": "Pipeline/data/50f7184fc913cc4e-request_events.jsonl.gz",
+    "bytes": 1469827,
+    "gzip_bytes": 100591,
+    "sha256": "3e0ac38596982b74f6b1a26db63bee1662182338c6917a5ed6c798ef3df58339",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard02/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/10f978e4070ee936-workflow_execution_status.jsonl.gz",
+    "bytes": 629386,
+    "gzip_bytes": 47288,
+    "sha256": "880c1ad0b0228f2e46c0ca591489d62ca322cf3a5cdd1e6995e1a9d02765e010",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard03/normalized_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/9a945bc186b2b57a-normalized_workflow_runs.jsonl.gz",
+    "bytes": 19820714,
+    "gzip_bytes": 1323490,
+    "sha256": "4b52d1a6e6e0cce6eb349562c5f94a430ab75e0a6802e71ba816b9724e78a1b7",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard03/raw_workflow_runs.jsonl",
+    "archive_path": "Pipeline/data/a746be5b9c914e2a-raw_workflow_runs.jsonl.gz",
+    "bytes": 1171974070,
+    "gzip_bytes": 57822175,
+    "sha256": "b9ae973d7d57edb70baf9b1bd8a6d726a31bec076e143dc20ecff92af7f15796",
+    "raw_api_response": true
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard03/repository_execution_status.jsonl",
+    "archive_path": "Pipeline/data/cac3af6927e9d731-repository_execution_status.jsonl.gz",
+    "bytes": 414183,
+    "gzip_bytes": 36364,
+    "sha256": "aaab14beed90d3b5aaaaaf8bfa85cac56e8e5c44e27d18cb13b86ada87f98f2c",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard03/request_events.jsonl",
+    "archive_path": "Pipeline/data/b12a0b6a6b2a7a45-request_events.jsonl.gz",
+    "bytes": 1446395,
+    "gzip_bytes": 98657,
+    "sha256": "2c36d53129f9f8b2b3ace3d27cfb7cc02801ced248d5f4004127f81de7cd88fe",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_phase2_full_shard03/workflow_execution_status.jsonl",
+    "archive_path": "Pipeline/data/8ee8eb84f6fd078a-workflow_execution_status.jsonl.gz",
+    "bytes": 672854,
+    "gzip_bytes": 50088,
+    "sha256": "6e4846534242af7751ebc87efbfa25897c8fb5074af531ed0c2a4575e668a5f8",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_plan_phase2_0_20260919/rq2_access_probe_targets.jsonl",
+    "archive_path": "Pipeline/data/7e791bd60fd2cf93-rq2_access_probe_targets.jsonl.gz",
+    "bytes": 163208815,
+    "gzip_bytes": 8659590,
+    "sha256": "58fc0d5d4aa33ba297c6773281c1ddab042d9e9a2ce5c1efa141eb1cd2eb9824",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_plan_phase2_0_20260919/rq2_acquisition_plan_manifest.json",
+    "archive_path": "Pipeline/data/a83e1880199328e8-rq2_acquisition_plan_manifest.json.gz",
+    "bytes": 11686,
+    "gzip_bytes": 3149,
+    "sha256": "5aa8c9fb5ff75e1189080fe27126082bde1c3a9db651a2fdc2669cd8b79d88cc",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_plan_phase2_0_20260919/rq2_acquisition_plan_repositories.jsonl",
+    "archive_path": "Pipeline/data/2ca2b97412fc5f59-rq2_acquisition_plan_repositories.jsonl.gz",
+    "bytes": 529859011,
+    "gzip_bytes": 31630104,
+    "sha256": "7260263f244434da998e2fce2d59cecbee76168b6dbf2503e69f7a0d2f60c4f5",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_plan_phase2_0_20260919/rq2_acquisition_plan_summary.json",
+    "archive_path": "Pipeline/data/6112fb2f54c012fe-rq2_acquisition_plan_summary.json.gz",
+    "bytes": 4531,
+    "gzip_bytes": 1597,
+    "sha256": "d6b758e6e28f910cd1ad168a5185ee2f8250ab728ed7ef66bfbad845c934d45c",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_plan_phase2_0_20260919/rq2_acquisition_plan_workflows.jsonl",
+    "archive_path": "Pipeline/data/b67156518aee59a4-rq2_acquisition_plan_workflows.jsonl.gz",
+    "bytes": 450288967,
+    "gzip_bytes": 24596771,
+    "sha256": "8efbd1488608ddc149268b4193c910cd30630b49d9c81dc5ebe877776117f5c4",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_plan_phase2_0_20260919/rq2_already_resolved_anomalies.jsonl",
+    "archive_path": "Pipeline/data/d56de37dc2be4e0c-rq2_already_resolved_anomalies.jsonl.gz",
+    "bytes": 0,
+    "gzip_bytes": 20,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_api_response": false
+  },
+  {
+    "original_path": "output_rq2_unified_acquisition_plan_phase2_0_20260919/rq2_terminal_review_targets.jsonl",
+    "archive_path": "Pipeline/data/3a6c8afe98f1b00e-rq2_terminal_review_targets.jsonl.gz",
+    "bytes": 0,
+    "gzip_bytes": 20,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_api_response": false
+  }
+]

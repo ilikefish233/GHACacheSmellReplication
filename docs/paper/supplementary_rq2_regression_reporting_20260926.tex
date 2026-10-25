@@ -1,0 +1,158 @@
+\documentclass{article}
+\usepackage[a4paper,margin=1.4cm]{geometry}
+\usepackage{booktabs,longtable,array,hyperref,amsmath,needspace}
+\setlength{\tabcolsep}{2.5pt}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{8pt}
+\begin{document}
+\section*{Electronic Supplementary Material 2: Complete RQ2 Regression Reporting}
+\noindent\textit{Cache Configuration Smells in GitHub Actions: A Large-Scale Empirical Study}\\
+Empirical Software Engineering\\
+Siyu Wang, Yang Zhang, Changrong Xie, Jiacheng Jie, Youren Chen, Zezhou Tang, Tanghaoran Zhang, Xinjun Mao\\
+College of Computer Science and Technology, National University of Defense and Technology, Changsha, China\\
+Corresponding author: Xinjun Mao (\texttt{xjmao@nudt.edu.cn})\par\medskip
+
+This supplement reports the unified, version-balanced models for the 30-day RQ2 cohort. Duration uses weighted linear regression of log seconds; success uses a weighted linear probability model (LPM). All reported SEs are repository-clustered sandwich estimates with a $G/(G-1)$ correction. Duration tests use the normal reference; success tests use $t(G-1)$. Pointwise 95\% intervals are not multiplicity-adjusted. BH-FDR is applied separately to the 10 estimable CCS coefficients per primary endpoint; control-variable $p$-values are unadjusted. S9 has no exposure and is not estimable. No bootstrap resampling is used. Continuous size controls are log1p-transformed and standardized over the distinct version--event--week design rows, not over CCS-specific samples. Reference categories are role: other; ecosystem: none identified; OS: Linux; hosting: GitHub-hosted; event: push; week bin: 3 (seven-day bins anchored on 10 May 2026). Unknown and mixed categories remain in the models.
+
+\subsection*{Table S2.1. Model fit and design diagnostics}
+\footnotesize\begin{longtable}{>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{1.6cm}rrrrrrrr}
+\toprule Model & Endpoint & Versions & Predictors & Runs & Clusters & $R^2$ & Error & Max VIF & Condition no.\\\midrule\endfirsthead
+\toprule Model & Endpoint & Versions & Predictors & Runs & Clusters & $R^2$ & Error & Max VIF & Condition no.\\\midrule\endhead
+Unified & Duration & 50,985 & 43 & 1,089,617 & 14,690 & 0.344 & 1.505 & 5.743 & 5.981 \\
+Unified & Success & 50,460 & 43 & 1,047,015 & 14,632 & 0.060 & 0.107 & 5.907 & 6.064 \\
+\bottomrule\end{longtable}
+\noindent\textit{Note.} Error is weighted RMSE in log seconds for duration and weighted mean squared error for success. Predictor count includes the intercept. VIFs and the condition number use version-balanced predictor standardization. For success, 1.43\% of run-level fitted values (1.30\% under analysis weights) fall outside $[0,1]$; predictions are not clipped. S3 occurs in 33 versions across 22 repositories, with 652 failures and no success; its clustered inference should be interpreted cautiously.
+\subsection*{Table S2.2. Complete all-completed-duration coefficients}
+\footnotesize\begin{longtable}{>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{3.8cm}rrrrrr}
+\toprule Model & Predictor & $\hat\alpha$ & Robust SE & $z$ & $p$ & Exp($\hat\alpha$) & Ratio 95\% CI\\\midrule\endfirsthead
+\toprule Model & Predictor & $\hat\alpha$ & Robust SE & $z$ & $p$ & Exp($\hat\alpha$) & Ratio 95\% CI\\\midrule\endhead
+Unified & Intercept & 4.0394 & 0.0427 & 94.695 & $<0.001$ & 56.793 & [52.237, 61.745] \\
+ & S1 & 0.2075 & 0.0451 & 4.602 & $4.19\times10^{-6}$ & 1.231 & [1.127, 1.344] \\
+ & S4 & 0.1161 & 0.0479 & 2.422 & 0.015 & 1.123 & [1.022, 1.234] \\
+ & S10 & -0.0974 & 0.0487 & -2.000 & 0.045 & 0.907 & [0.825, 0.998] \\
+ & S8 & -0.0052 & 0.0901 & -0.058 & 0.954 & 0.995 & [0.834, 1.187] \\
+ & S11 & 0.1051 & 0.0923 & 1.138 & 0.255 & 1.111 & [0.927, 1.331] \\
+ & S5 & -0.0107 & 0.0700 & -0.153 & 0.879 & 0.989 & [0.863, 1.135] \\
+ & S6 & 0.3652 & 0.1113 & 3.280 & 0.001 & 1.441 & [1.158, 1.792] \\
+ & S2 & 0.5579 & 0.0615 & 9.079 & $1.10\times10^{-19}$ & 1.747 & [1.549, 1.971] \\
+ & S3 & -0.7467 & 0.6456 & -1.157 & 0.247 & 0.474 & [0.134, 1.680] \\
+ & S7 & -0.2930 & 0.1530 & -1.915 & 0.055 & 0.746 & [0.553, 1.007] \\
+ & Job count (log1p, z) & -0.1067 & 0.0221 & -4.822 & $1.42\times10^{-6}$ & 0.899 & [0.861, 0.939] \\
+ & Non-cache steps (log1p, z) & 0.6941 & 0.0291 & 23.860 & $7.94\times10^{-126}$ & 2.002 & [1.891, 2.119] \\
+ & Matrix present & 0.5580 & 0.0377 & 14.808 & $1.30\times10^{-49}$ & 1.747 & [1.623, 1.881] \\
+ & Role: mixed & 0.5198 & 0.0620 & 8.390 & $4.85\times10^{-17}$ & 1.682 & [1.489, 1.899] \\
+ & Role: build & 0.6541 & 0.0541 & 12.089 & $1.21\times10^{-33}$ & 1.923 & [1.730, 2.139] \\
+ & Role: test & 0.6301 & 0.0389 & 16.207 & $4.47\times10^{-59}$ & 1.878 & [1.740, 2.026] \\
+ & Role: release & -0.0545 & 0.0423 & -1.289 & 0.197 & 0.947 & [0.872, 1.029] \\
+ & Role: lint & -0.1277 & 0.0377 & -3.388 & $7.05\times10^{-4}$ & 0.880 & [0.817, 0.948] \\
+ & Role: deploy & 0.2304 & 0.0635 & 3.628 & $2.86\times10^{-4}$ & 1.259 & [1.112, 1.426] \\
+ & Ecosystem: multi & 0.3193 & 0.0442 & 7.230 & $4.83\times10^{-13}$ & 1.376 & [1.262, 1.501] \\
+ & Ecosystem: javascript & -0.2748 & 0.0378 & -7.279 & $3.37\times10^{-13}$ & 0.760 & [0.706, 0.818] \\
+ & Ecosystem: python & -0.0090 & 0.0576 & -0.157 & 0.875 & 0.991 & [0.885, 1.110] \\
+ & Ecosystem: unknown & 1.4628 & 0.0903 & 16.190 & $5.89\times10^{-59}$ & 4.318 & [3.617, 5.155] \\
+ & Ecosystem: native & 0.7168 & 0.0688 & 10.419 & $2.02\times10^{-25}$ & 2.048 & [1.790, 2.344] \\
+ & Ecosystem: java & 0.8406 & 0.0501 & 16.794 & $2.70\times10^{-63}$ & 2.318 & [2.101, 2.557] \\
+ & Ecosystem: go & 0.1200 & 0.0945 & 1.271 & 0.204 & 1.128 & [0.937, 1.357] \\
+ & Ecosystem: rust & 0.1161 & 0.0590 & 1.970 & 0.049 & 1.123 & [1.001, 1.261] \\
+ & Ecosystem: dotnet & 0.3091 & 0.0731 & 4.230 & $2.34\times10^{-5}$ & 1.362 & [1.180, 1.572] \\
+ & Ecosystem: ruby & -0.0543 & 0.0673 & -0.808 & 0.419 & 0.947 & [0.830, 1.081] \\
+ & Runner OS: mixed & 0.1317 & 0.0426 & 3.092 & 0.002 & 1.141 & [1.049, 1.240] \\
+ & Runner OS: unknown & 0.2175 & 0.1373 & 1.584 & 0.113 & 1.243 & [0.950, 1.627] \\
+ & Runner OS: windows & 0.8263 & 0.0555 & 14.882 & $4.34\times10^{-50}$ & 2.285 & [2.049, 2.547] \\
+ & Runner OS: macos & 0.7552 & 0.0701 & 10.766 & $5.00\times10^{-27}$ & 2.128 & [1.855, 2.442] \\
+ & Hosting: unknown & 0.5008 & 0.0929 & 5.390 & $7.04\times10^{-8}$ & 1.650 & [1.375, 1.980] \\
+ & Hosting: mixed & 0.3116 & 0.0492 & 6.331 & $2.43\times10^{-10}$ & 1.366 & [1.240, 1.504] \\
+ & Hosting: self\_hosted & 1.6339 & 0.3615 & 4.519 & $6.20\times10^{-6}$ & 5.124 & [2.523, 10.408] \\
+ & Event: schedule & -0.0394 & 0.0442 & -0.893 & 0.372 & 0.961 & [0.882, 1.048] \\
+ & Event: workflow\_dispatch & 0.4151 & 0.0950 & 4.371 & $1.24\times10^{-5}$ & 1.515 & [1.257, 1.824] \\
+ & Week bin: 4 & 0.0600 & 0.0344 & 1.743 & 0.081 & 1.062 & [0.993, 1.136] \\
+ & Week bin: 2 & -0.0565 & 0.0231 & -2.445 & 0.015 & 0.945 & [0.903, 0.989] \\
+ & Week bin: 1 & -0.0316 & 0.0246 & -1.284 & 0.199 & 0.969 & [0.923, 1.017] \\
+ & Week bin: 0 & 0.0497 & 0.0519 & 0.958 & 0.338 & 1.051 & [0.949, 1.164] \\
+\bottomrule\end{longtable}
+\subsection*{Table S2.3. Complete reliability coefficients}
+\footnotesize\begin{longtable}{>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}p{3.8cm}rrrrrr}
+\toprule Model & Predictor & $\hat\beta$ & Robust SE & $t$ & $p$ & Difference (pp) & 95\% CI (pp)\\\midrule\endfirsthead
+\toprule Model & Predictor & $\hat\beta$ & Robust SE & $t$ & $p$ & Difference (pp) & 95\% CI (pp)\\\midrule\endhead
+Unified & Intercept & 0.9651 & 0.0053 & 183.287 & $<0.001$ & 96.514 & [95.482, 97.546] \\
+ & S1 & -0.0242 & 0.0064 & -3.749 & $1.78\times10^{-4}$ & -2.417 & [-3.681, -1.153] \\
+ & S4 & -0.0223 & 0.0086 & -2.600 & 0.009 & -2.226 & [-3.904, -0.548] \\
+ & S10 & -0.0047 & 0.0102 & -0.464 & 0.643 & -0.472 & [-2.466, 1.522] \\
+ & S8 & 0.0138 & 0.0190 & 0.727 & 0.467 & 1.382 & [-2.342, 5.106] \\
+ & S11 & -0.0176 & 0.0193 & -0.910 & 0.363 & -1.760 & [-5.549, 2.030] \\
+ & S5 & 0.0132 & 0.0138 & 0.958 & 0.338 & 1.322 & [-1.382, 4.025] \\
+ & S6 & -0.0170 & 0.0192 & -0.885 & 0.376 & -1.695 & [-5.451, 2.061] \\
+ & S2 & -0.0092 & 0.0093 & -0.991 & 0.322 & -0.922 & [-2.744, 0.901] \\
+ & S3 & -0.8252 & 0.0170 & -48.530 & $<0.001$ & -82.521 & [-85.854, -79.188] \\
+ & S7 & -0.0144 & 0.0417 & -0.344 & 0.731 & -1.437 & [-9.616, 6.742] \\
+ & Job count (log1p, z) & -0.0083 & 0.0028 & -2.969 & 0.003 & -0.827 & [-1.373, -0.281] \\
+ & Non-cache steps (log1p, z) & -0.0382 & 0.0039 & -9.901 & $4.88\times10^{-23}$ & -3.820 & [-4.576, -3.064] \\
+ & Matrix present & 0.0019 & 0.0046 & 0.405 & 0.686 & 0.188 & [-0.721, 1.097] \\
+ & Role: mixed & -0.0288 & 0.0062 & -4.654 & $3.29\times10^{-6}$ & -2.884 & [-4.099, -1.669] \\
+ & Role: build & -0.0400 & 0.0106 & -3.765 & $1.67\times10^{-4}$ & -3.997 & [-6.078, -1.916] \\
+ & Role: test & -0.0558 & 0.0069 & -8.125 & $4.84\times10^{-16}$ & -5.576 & [-6.921, -4.231] \\
+ & Role: release & -0.0182 & 0.0070 & -2.604 & 0.009 & -1.824 & [-3.198, -0.451] \\
+ & Role: lint & -0.0046 & 0.0060 & -0.757 & 0.449 & -0.458 & [-1.644, 0.728] \\
+ & Role: deploy & -0.0252 & 0.0113 & -2.231 & 0.026 & -2.516 & [-4.725, -0.306] \\
+ & Ecosystem: multi & -0.0018 & 0.0061 & -0.297 & 0.767 & -0.181 & [-1.379, 1.017] \\
+ & Ecosystem: javascript & -0.0035 & 0.0058 & -0.610 & 0.542 & -0.354 & [-1.490, 0.782] \\
+ & Ecosystem: python & -0.0075 & 0.0090 & -0.840 & 0.401 & -0.752 & [-2.508, 1.003] \\
+ & Ecosystem: unknown & -0.1340 & 0.0185 & -7.259 & $4.09\times10^{-13}$ & -13.402 & [-17.021, -9.783] \\
+ & Ecosystem: native & -0.0045 & 0.0076 & -0.594 & 0.553 & -0.452 & [-1.945, 1.040] \\
+ & Ecosystem: java & -0.0452 & 0.0086 & -5.277 & $1.33\times10^{-7}$ & -4.524 & [-6.204, -2.844] \\
+ & Ecosystem: go & -0.0285 & 0.0172 & -1.658 & 0.097 & -2.855 & [-6.230, 0.520] \\
+ & Ecosystem: rust & 0.0285 & 0.0096 & 2.962 & 0.003 & 2.849 & [0.963, 4.734] \\
+ & Ecosystem: dotnet & 0.0283 & 0.0105 & 2.694 & 0.007 & 2.828 & [0.771, 4.886] \\
+ & Ecosystem: ruby & -0.0059 & 0.0134 & -0.441 & 0.659 & -0.594 & [-3.230, 2.042] \\
+ & Runner OS: mixed & -0.0030 & 0.0065 & -0.468 & 0.640 & -0.303 & [-1.574, 0.967] \\
+ & Runner OS: unknown & -0.0431 & 0.0168 & -2.566 & 0.010 & -4.306 & [-7.596, -1.016] \\
+ & Runner OS: windows & -0.000625 & 0.0097 & -0.064 & 0.949 & -0.062 & [-1.967, 1.842] \\
+ & Runner OS: macos & -0.0171 & 0.0110 & -1.551 & 0.121 & -1.710 & [-3.871, 0.451] \\
+ & Hosting: unknown & 0.0044 & 0.0109 & 0.402 & 0.688 & 0.437 & [-1.692, 2.565] \\
+ & Hosting: mixed & -0.0110 & 0.0088 & -1.239 & 0.215 & -1.095 & [-2.829, 0.638] \\
+ & Hosting: self\_hosted & -0.0727 & 0.0330 & -2.201 & 0.028 & -7.269 & [-13.743, -0.796] \\
+ & Event: schedule & -0.1347 & 0.0061 & -22.095 & $1.92\times10^{-106}$ & -13.470 & [-14.665, -12.275] \\
+ & Event: workflow\_dispatch & -0.0510 & 0.0095 & -5.342 & $9.32\times10^{-8}$ & -5.100 & [-6.971, -3.229] \\
+ & Week bin: 4 & -0.000437 & 0.0034 & -0.130 & 0.897 & -0.044 & [-0.704, 0.617] \\
+ & Week bin: 2 & -0.0024 & 0.0052 & -0.457 & 0.648 & -0.235 & [-1.247, 0.776] \\
+ & Week bin: 1 & -0.0011 & 0.0045 & -0.253 & 0.800 & -0.113 & [-0.989, 0.763] \\
+ & Week bin: 0 & 0.0109 & 0.0043 & 2.543 & 0.011 & 1.088 & [0.250, 1.927] \\
+\bottomrule\end{longtable}
+\Needspace{16\baselineskip}
+\subsection*{Table S2.4. Target completed-run duration coefficients}
+\footnotesize\begin{longtable}{lrrrrr}
+\toprule CCS & $N$ runs & Coefficient & SE & $p$ & $q$ \\\midrule\endfirsthead
+\toprule CCS & $N$ runs & Coefficient & SE & $p$ & $q$ \\\midrule\endhead
+S1 & 1,089,617 & 0.2075 & 0.0451 & $4.19\times10^{-6}$ & $2.09\times10^{-5}$ \\
+S2 & 1,089,617 & 0.5579 & 0.0615 & $1.10\times10^{-19}$ & $1.10\times10^{-18}$ \\
+S3 & 1,089,617 & -0.7467 & 0.6456 & 0.247 & 0.319 \\
+S4 & 1,089,617 & 0.1161 & 0.0479 & 0.015 & 0.039 \\
+S5 & 1,089,617 & -0.0107 & 0.0700 & 0.879 & 0.954 \\
+S6 & 1,089,617 & 0.3652 & 0.1113 & 0.001 & 0.003 \\
+S7 & 1,089,617 & -0.2930 & 0.1530 & 0.055 & 0.092 \\
+S8 & 1,089,617 & -0.0052 & 0.0901 & 0.954 & 0.954 \\
+S9 & 1,089,617 & -- & -- & -- & -- \\
+S10 & 1,089,617 & -0.0974 & 0.0487 & 0.045 & 0.091 \\
+S11 & 1,089,617 & 0.1051 & 0.0923 & 0.255 & 0.319 \\
+\bottomrule\end{longtable}
+\noindent\textit{Note.} Identifiers follow the main-text catalog. Coefficients are log-duration differences in Table S2.4 and probability differences (not log odds) in Table S2.5. SEs are repository-clustered; $p$ is unadjusted and $q$ is the endpoint-specific BH-FDR value. S9 is not estimable. Very small $p$- and $q$-values are displayed as $<0.001$; the machine-readable results retain numerical values or conservative numerical upper bounds.
+\Needspace{16\baselineskip}
+\subsection*{Table S2.5. Target workflow-run success coefficients}
+\footnotesize\begin{longtable}{lrrrrr}
+\toprule CCS & $N$ runs & Coefficient & SE & $p$ & $q$ \\\midrule\endfirsthead
+\toprule CCS & $N$ runs & Coefficient & SE & $p$ & $q$ \\\midrule\endhead
+S1 & 1,047,015 & -0.0242 & 0.0064 & $1.78\times10^{-4}$ & $8.90\times10^{-4}$ \\
+S2 & 1,047,015 & -0.0092 & 0.0093 & 0.322 & 0.538 \\
+S3 & 1,047,015 & -0.8252 & 0.0170 & $<0.001$ & $<0.001$ \\
+S4 & 1,047,015 & -0.0223 & 0.0086 & 0.009 & 0.031 \\
+S5 & 1,047,015 & 0.0132 & 0.0138 & 0.338 & 0.538 \\
+S6 & 1,047,015 & -0.0170 & 0.0192 & 0.376 & 0.538 \\
+S7 & 1,047,015 & -0.0144 & 0.0417 & 0.731 & 0.731 \\
+S8 & 1,047,015 & 0.0138 & 0.0190 & 0.467 & 0.584 \\
+S9 & 1,047,015 & -- & -- & -- & -- \\
+S10 & 1,047,015 & -0.0047 & 0.0102 & 0.643 & 0.714 \\
+S11 & 1,047,015 & -0.0176 & 0.0193 & 0.363 & 0.538 \\
+\bottomrule\end{longtable}
+\noindent\textit{Note.} Identifiers follow the main-text catalog. Coefficients are log-duration differences in Table S2.4 and probability differences (not log odds) in Table S2.5. SEs are repository-clustered; $p$ is unadjusted and $q$ is the endpoint-specific BH-FDR value. S9 is not estimable. Very small $p$- and $q$-values are displayed as $<0.001$; the machine-readable results retain numerical values or conservative numerical upper bounds.
+\medskip\noindent\textbf{Successful-run duration sensitivity.} The same unified duration specification was fitted to 929,233 successful runs from 46,214 versions in 13,976 repositories. Weighted $R^2=0.413$ and RMSE=1.313 log seconds. The restriction changes the analyzed population and does not substitute for the primary completed-run model.
+\end{document}

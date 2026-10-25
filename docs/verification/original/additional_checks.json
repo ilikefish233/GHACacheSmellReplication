@@ -1,0 +1,30 @@
+{
+  "model_equivalence_tests": 11,
+  "model_equivalence_tests_passed": true,
+  "full_run_group_rebuild_matches": true,
+  "full_run_records_regrouped": 1093639,
+  "detector_smoke_workflows": 100,
+  "detector_smoke_findings_match": true,
+  "full_detector_rescan_executed": false,
+  "quantitative_figures_rendered": 2,
+  "figure_alignment_gates_passed": true,
+  "figure_pngs_visually_inspected": true,
+  "python": "3.12.3",
+  "platform_tested": "Windows",
+  "linux_mac_tested": false,
+  "new_clean_environment_install_tested": false,
+  "dependencies": "requirements.txt pins observed validation runtime",
+  "publication_license_selected": false,
+  "initial_candidate_file_available": false,
+  "python_syntax_files_checked": 104,
+  "python_syntax_errors": 0,
+  "prototype_offline_scan_passed": true,
+  "prototype_live_server_started": false,
+  "portability_guard_passed": [
+    "validation",
+    "rq1",
+    "rq2",
+    "rq2_3"
+  ],
+  "credential_configuration_files_included": 0
+}

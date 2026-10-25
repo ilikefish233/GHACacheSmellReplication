@@ -1,0 +1,991 @@
+{
+  "experimental": true,
+  "endpoint": "reliability",
+  "model": "weighted_linear_probability_model",
+  "status": "ok_with_nonestimable_smells",
+  "outcome": "success=1; failure/startup_failure/timed_out=0; other conclusions excluded",
+  "runs": 1047015,
+  "successes": 929234,
+  "workflow_versions": 50460,
+  "repositories": 14632,
+  "design_groups": 159863,
+  "coefficients": [
+    {
+      "feature": "intercept",
+      "coefficient": 0.9651366643430195,
+      "standard_error": 0.005265708236980789,
+      "coefficient_ci_95": [
+        0.9548152119937537,
+        0.9754581166922852
+      ],
+      "probability_difference_pp": 96.51366643430195,
+      "probability_difference_pp_ci_95": [
+        95.48152119937538,
+        97.54581166922853
+      ],
+      "cluster_robust_p": 2.2250738585072014e-308,
+      "p_is_numerical_upper_bound": true,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "no_dependency_cache",
+      "coefficient": -0.02417100059119765,
+      "standard_error": 0.006446650959932603,
+      "coefficient_ci_95": [
+        -0.03680724963895049,
+        -0.011534751543444815
+      ],
+      "probability_difference_pp": -2.417100059119765,
+      "probability_difference_pp_ci_95": [
+        -3.6807249638950488,
+        -1.1534751543444814
+      ],
+      "cluster_robust_p": 0.00017794885721609304,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": 0.0008897442860804652,
+      "significant_fdr_05": true,
+      "exposed_runs": 118717,
+      "exposed_workflow_versions": 6884,
+      "exposed_repositories": 3838
+    },
+    {
+      "feature": "no_fallback_cache",
+      "coefficient": -0.02225875534697341,
+      "standard_error": 0.008560903317960644,
+      "coefficient_ci_95": [
+        -0.039039205703574574,
+        -0.005478304990372246
+      ],
+      "probability_difference_pp": -2.225875534697341,
+      "probability_difference_pp_ci_95": [
+        -3.9039205703574575,
+        -0.5478304990372246
+      ],
+      "cluster_robust_p": 0.009330452159249353,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": 0.03110150719749784,
+      "significant_fdr_05": true,
+      "exposed_runs": 48348,
+      "exposed_workflow_versions": 2795,
+      "exposed_repositories": 1835
+    },
+    {
+      "feature": "redundant_cache_update",
+      "coefficient": -0.004721230018010667,
+      "standard_error": 0.010171038757378407,
+      "coefficient_ci_95": [
+        -0.024657748934791567,
+        0.015215288898770236
+      ],
+      "probability_difference_pp": -0.47212300180106664,
+      "probability_difference_pp_ci_95": [
+        -2.4657748934791566,
+        1.5215288898770236
+      ],
+      "cluster_robust_p": 0.6425230718441189,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": 0.7139145242712432,
+      "significant_fdr_05": false,
+      "exposed_runs": 16017,
+      "exposed_workflow_versions": 1091,
+      "exposed_repositories": 889
+    },
+    {
+      "feature": "cache_position_error",
+      "coefficient": 0.013821705756170087,
+      "standard_error": 0.018999185767970043,
+      "coefficient_ci_95": [
+        -0.02341909486429667,
+        0.05106250637663685
+      ],
+      "probability_difference_pp": 1.3821705756170086,
+      "probability_difference_pp_ci_95": [
+        -2.341909486429667,
+        5.106250637663685
+      ],
+      "cluster_robust_p": 0.4669378632595633,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": 0.5836723290744541,
+      "significant_fdr_05": false,
+      "exposed_runs": 5679,
+      "exposed_workflow_versions": 415,
+      "exposed_repositories": 292
+    },
+    {
+      "feature": "conflicting_cache_sources",
+      "coefficient": -0.017595509051506458,
+      "standard_error": 0.01933369484240822,
+      "coefficient_ci_95": [
+        -0.05549198965210639,
+        0.020300971549093477
+      ],
+      "probability_difference_pp": -1.7595509051506457,
+      "probability_difference_pp_ci_95": [
+        -5.549198965210639,
+        2.0300971549093476
+      ],
+      "cluster_robust_p": 0.3627871296308022,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": 0.5377376280555283,
+      "significant_fdr_05": false,
+      "exposed_runs": 6765,
+      "exposed_workflow_versions": 337,
+      "exposed_repositories": 228
+    },
+    {
+      "feature": "static_cache_key",
+      "coefficient": 0.013216374096806647,
+      "standard_error": 0.013791752376478145,
+      "coefficient_ci_95": [
+        -0.013817200222212613,
+        0.04024994841582591
+      ],
+      "probability_difference_pp": 1.3216374096806647,
+      "probability_difference_pp_ci_95": [
+        -1.3817200222212613,
+        4.024994841582591
+      ],
+      "cluster_robust_p": 0.3379369223444057,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": 0.5377376280555283,
+      "significant_fdr_05": false,
+      "exposed_runs": 14963,
+      "exposed_workflow_versions": 944,
+      "exposed_repositories": 695
+    },
+    {
+      "feature": "overly_specific_cache_key",
+      "coefficient": -0.01695085842662295,
+      "standard_error": 0.019163353551778554,
+      "coefficient_ci_95": [
+        -0.05451344861111532,
+        0.020611731757869414
+      ],
+      "probability_difference_pp": -1.6950858426622952,
+      "probability_difference_pp_ci_95": [
+        -5.451344861111532,
+        2.0611731757869416
+      ],
+      "cluster_robust_p": 0.3764163396388698,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": 0.5377376280555283,
+      "significant_fdr_05": false,
+      "exposed_runs": 7604,
+      "exposed_workflow_versions": 339,
+      "exposed_repositories": 249
+    },
+    {
+      "feature": "no_docker_layer_cache",
+      "coefficient": -0.00921554346839286,
+      "standard_error": 0.009298265882170347,
+      "coefficient_ci_95": [
+        -0.027441317460127027,
+        0.009010230523341307
+      ],
+      "probability_difference_pp": -0.921554346839286,
+      "probability_difference_pp_ci_95": [
+        -2.7441317460127026,
+        0.9010230523341307
+      ],
+      "cluster_robust_p": 0.32165145485421137,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": 0.5377376280555283,
+      "significant_fdr_05": false,
+      "exposed_runs": 22733,
+      "exposed_workflow_versions": 1385,
+      "exposed_repositories": 1073
+    },
+    {
+      "feature": "deprecated_cache_action",
+      "coefficient": -0.8252061205568699,
+      "standard_error": 0.017003935230507243,
+      "coefficient_ci_95": [
+        -0.8585359784474225,
+        -0.7918762626663174
+      ],
+      "probability_difference_pp": -82.520612055687,
+      "probability_difference_pp_ci_95": [
+        -85.85359784474224,
+        -79.18762626663174
+      ],
+      "cluster_robust_p": 2.2250738585072014e-308,
+      "p_is_numerical_upper_bound": true,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": 2.2250738585072014e-307,
+      "significant_fdr_05": true,
+      "exposed_runs": 652,
+      "exposed_workflow_versions": 33,
+      "exposed_repositories": 22
+    },
+    {
+      "feature": "cache_as_artifact",
+      "coefficient": -0.014369119990923116,
+      "standard_error": 0.04172685265967915,
+      "coefficient_ci_95": [
+        -0.09615901453674262,
+        0.06742077455489638
+      ],
+      "probability_difference_pp": -1.4369119990923116,
+      "probability_difference_pp_ci_95": [
+        -9.615901453674262,
+        6.742077455489638
+      ],
+      "cluster_robust_p": 0.730579416493805,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": 0.730579416493805,
+      "significant_fdr_05": false,
+      "exposed_runs": 1290,
+      "exposed_workflow_versions": 78,
+      "exposed_repositories": 67
+    },
+    {
+      "feature": "log1p_job_count_z",
+      "coefficient": -0.00826964690949848,
+      "standard_error": 0.002785404641369343,
+      "coefficient_ci_95": [
+        -0.013729391351359446,
+        -0.002809902467637514
+      ],
+      "probability_difference_pp": -0.826964690949848,
+      "probability_difference_pp_ci_95": [
+        -1.3729391351359446,
+        -0.2809902467637514
+      ],
+      "cluster_robust_p": 0.0029933162630444207,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "log1p_non_cache_step_count_z",
+      "coefficient": -0.03819859015223573,
+      "standard_error": 0.003858105711511705,
+      "coefficient_ci_95": [
+        -0.04576096399971471,
+        -0.030636216304756752
+      ],
+      "probability_difference_pp": -3.8198590152235727,
+      "probability_difference_pp_ci_95": [
+        -4.576096399971471,
+        -3.063621630475675
+      ],
+      "cluster_robust_p": 4.87586679212515e-23,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "has_matrix",
+      "coefficient": 0.0018771552153826225,
+      "standard_error": 0.004636401980677612,
+      "coefficient_ci_95": [
+        -0.007210777492230471,
+        0.010965087922995716
+      ],
+      "probability_difference_pp": 0.18771552153826224,
+      "probability_difference_pp_ci_95": [
+        -0.721077749223047,
+        1.0965087922995715
+      ],
+      "cluster_robust_p": 0.6855765889102634,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "workflow_role=mixed",
+      "coefficient": -0.02884165759681607,
+      "standard_error": 0.0061977341938062955,
+      "coefficient_ci_95": [
+        -0.04098999838515134,
+        -0.016693316808480792
+      ],
+      "probability_difference_pp": -2.884165759681607,
+      "probability_difference_pp_ci_95": [
+        -4.098999838515134,
+        -1.6693316808480791
+      ],
+      "cluster_robust_p": 3.2908070746082966e-06,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "workflow_role=build",
+      "coefficient": -0.039968108692524276,
+      "standard_error": 0.010615692164064326,
+      "coefficient_ci_95": [
+        -0.06077620437400623,
+        -0.019160013011042323
+      ],
+      "probability_difference_pp": -3.996810869252428,
+      "probability_difference_pp_ci_95": [
+        -6.077620437400623,
+        -1.9160013011042323
+      ],
+      "cluster_robust_p": 0.00016719892280180269,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "workflow_role=test",
+      "coefficient": -0.055759445369332215,
+      "standard_error": 0.006862898579513023,
+      "coefficient_ci_95": [
+        -0.06921159225601621,
+        -0.04230729848264822
+      ],
+      "probability_difference_pp": -5.575944536933221,
+      "probability_difference_pp_ci_95": [
+        -6.921159225601621,
+        -4.230729848264822
+      ],
+      "cluster_robust_p": 4.838465919096944e-16,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "workflow_role=release",
+      "coefficient": -0.01824361686024113,
+      "standard_error": 0.007006733550726269,
+      "coefficient_ci_95": [
+        -0.03197769843352803,
+        -0.00450953528695423
+      ],
+      "probability_difference_pp": -1.824361686024113,
+      "probability_difference_pp_ci_95": [
+        -3.1977698433528032,
+        -0.450953528695423
+      ],
+      "cluster_robust_p": 0.009230948446660503,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "workflow_role=lint",
+      "coefficient": -0.004581151245347305,
+      "standard_error": 0.006048785888708848,
+      "coefficient_ci_95": [
+        -0.016437534567682016,
+        0.007275232076987407
+      ],
+      "probability_difference_pp": -0.4581151245347305,
+      "probability_difference_pp_ci_95": [
+        -1.6437534567682017,
+        0.7275232076987407
+      ],
+      "cluster_robust_p": 0.44884217579180646,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "workflow_role=deploy",
+      "coefficient": -0.02515689277143736,
+      "standard_error": 0.011273644104753401,
+      "coefficient_ci_95": [
+        -0.04725465724927158,
+        -0.0030591282936031396
+      ],
+      "probability_difference_pp": -2.515689277143736,
+      "probability_difference_pp_ci_95": [
+        -4.725465724927158,
+        -0.30591282936031394
+      ],
+      "cluster_robust_p": 0.02566454729737911,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "ecosystem=multi",
+      "coefficient": -0.0018140004548736562,
+      "standard_error": 0.00611177226552492,
+      "coefficient_ci_95": [
+        -0.013793845020730045,
+        0.010165844110982734
+      ],
+      "probability_difference_pp": -0.18140004548736563,
+      "probability_difference_pp_ci_95": [
+        -1.3793845020730044,
+        1.0165844110982734
+      ],
+      "cluster_robust_p": 0.7666201148577539,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "ecosystem=javascript",
+      "coefficient": -0.003536567237331041,
+      "standard_error": 0.005795075750916256,
+      "coefficient_ci_95": [
+        -0.014895646687156979,
+        0.007822512212494897
+      ],
+      "probability_difference_pp": -0.3536567237331041,
+      "probability_difference_pp_ci_95": [
+        -1.4895646687156978,
+        0.7822512212494896
+      ],
+      "cluster_robust_p": 0.5416917181679693,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "ecosystem=python",
+      "coefficient": -0.007524665755246756,
+      "standard_error": 0.008958040427623713,
+      "coefficient_ci_95": [
+        -0.02508355494078364,
+        0.01003422343029013
+      ],
+      "probability_difference_pp": -0.7524665755246756,
+      "probability_difference_pp_ci_95": [
+        -2.508355494078364,
+        1.003422343029013
+      ],
+      "cluster_robust_p": 0.40092763286418276,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "ecosystem=unknown",
+      "coefficient": -0.134017856456576,
+      "standard_error": 0.018461988008032337,
+      "coefficient_ci_95": [
+        -0.17020568170662828,
+        -0.0978300312065237
+      ],
+      "probability_difference_pp": -13.401785645657599,
+      "probability_difference_pp_ci_95": [
+        -17.020568170662827,
+        -9.78300312065237
+      ],
+      "cluster_robust_p": 4.092191743635544e-13,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "ecosystem=native",
+      "coefficient": -0.0045214194096343105,
+      "standard_error": 0.007614415698420282,
+      "coefficient_ci_95": [
+        -0.01944663464408272,
+        0.010403795824814096
+      ],
+      "probability_difference_pp": -0.452141940963431,
+      "probability_difference_pp_ci_95": [
+        -1.9446634644082719,
+        1.0403795824814095
+      ],
+      "cluster_robust_p": 0.5526568815602575,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "ecosystem=java",
+      "coefficient": -0.04523755188442114,
+      "standard_error": 0.008572064468402082,
+      "coefficient_ci_95": [
+        -0.06203987950373034,
+        -0.02843522426511194
+      ],
+      "probability_difference_pp": -4.523755188442114,
+      "probability_difference_pp_ci_95": [
+        -6.203987950373034,
+        -2.843522426511194
+      ],
+      "cluster_robust_p": 1.3295603538691582e-07,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "ecosystem=go",
+      "coefficient": -0.028549640566806093,
+      "standard_error": 0.01721930951949291,
+      "coefficient_ci_95": [
+        -0.06230165923060675,
+        0.005202378096994562
+      ],
+      "probability_difference_pp": -2.8549640566806094,
+      "probability_difference_pp_ci_95": [
+        -6.230165923060675,
+        0.5202378096994562
+      ],
+      "cluster_robust_p": 0.0973386060969408,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "ecosystem=rust",
+      "coefficient": 0.028488840053677137,
+      "standard_error": 0.009619564949186414,
+      "coefficient_ci_95": [
+        0.009633279362638237,
+        0.047344400744716034
+      ],
+      "probability_difference_pp": 2.848884005367714,
+      "probability_difference_pp_ci_95": [
+        0.9633279362638237,
+        4.734440074471603
+      ],
+      "cluster_robust_p": 0.003065846655190774,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "ecosystem=dotnet",
+      "coefficient": 0.028283017485354785,
+      "standard_error": 0.010497017620528957,
+      "coefficient_ci_95": [
+        0.007707538878546433,
+        0.04885849609216314
+      ],
+      "probability_difference_pp": 2.8283017485354787,
+      "probability_difference_pp_ci_95": [
+        0.7707538878546434,
+        4.885849609216314
+      ],
+      "cluster_robust_p": 0.007059892670567752,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "ecosystem=ruby",
+      "coefficient": -0.00593730691997508,
+      "standard_error": 0.013448067827172443,
+      "coefficient_ci_95": [
+        -0.032297216170746726,
+        0.02042260233079657
+      ],
+      "probability_difference_pp": -0.593730691997508,
+      "probability_difference_pp_ci_95": [
+        -3.2297216170746728,
+        2.0422602330796567
+      ],
+      "cluster_robust_p": 0.6588583946693696,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "runner_os=mixed",
+      "coefficient": -0.003034713459008472,
+      "standard_error": 0.0064794539065625035,
+      "coefficient_ci_95": [
+        -0.015735260419847005,
+        0.009665833501830062
+      ],
+      "probability_difference_pp": -0.3034713459008472,
+      "probability_difference_pp_ci_95": [
+        -1.5735260419847006,
+        0.9665833501830062
+      ],
+      "cluster_robust_p": 0.6395345392082457,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "runner_os=unknown",
+      "coefficient": -0.04306031633131297,
+      "standard_error": 0.016782977150917568,
+      "coefficient_ci_95": [
+        -0.07595706851470664,
+        -0.010163564147919302
+      ],
+      "probability_difference_pp": -4.3060316331312976,
+      "probability_difference_pp_ci_95": [
+        -7.5957068514706645,
+        -1.0163564147919302
+      ],
+      "cluster_robust_p": 0.010306243165707229,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "runner_os=windows",
+      "coefficient": -0.0006246304213335673,
+      "standard_error": 0.009715428894233704,
+      "coefficient_ci_95": [
+        -0.019668096536731027,
+        0.018418835694063895
+      ],
+      "probability_difference_pp": -0.062463042133356725,
+      "probability_difference_pp_ci_95": [
+        -1.9668096536731028,
+        1.8418835694063895
+      ],
+      "cluster_robust_p": 0.9487381044665019,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "runner_os=macos",
+      "coefficient": -0.01710235815890539,
+      "standard_error": 0.011023621087855501,
+      "coefficient_ci_95": [
+        -0.0387100459862697,
+        0.0045053296684589225
+      ],
+      "probability_difference_pp": -1.710235815890539,
+      "probability_difference_pp_ci_95": [
+        -3.8710045986269703,
+        0.4505329668458923
+      ],
+      "cluster_robust_p": 0.12082069722840102,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "runner_hosting=unknown",
+      "coefficient": 0.004365505263882038,
+      "standard_error": 0.010859631002422144,
+      "coefficient_ci_95": [
+        -0.016920741310686445,
+        0.025651751838450525
+      ],
+      "probability_difference_pp": 0.4365505263882038,
+      "probability_difference_pp_ci_95": [
+        -1.6920741310686445,
+        2.5651751838450525
+      ],
+      "cluster_robust_p": 0.6876943981109045,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "runner_hosting=mixed",
+      "coefficient": -0.010954975487024546,
+      "standard_error": 0.008843570359968413,
+      "coefficient_ci_95": [
+        -0.02828948890095604,
+        0.00637953792690695
+      ],
+      "probability_difference_pp": -1.0954975487024545,
+      "probability_difference_pp_ci_95": [
+        -2.828948890095604,
+        0.637953792690695
+      ],
+      "cluster_robust_p": 0.21545785539775583,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "runner_hosting=self_hosted",
+      "coefficient": -0.0726915284664418,
+      "standard_error": 0.03302546664483579,
+      "coefficient_ci_95": [
+        -0.13742560884959354,
+        -0.007957448083290061
+      ],
+      "probability_difference_pp": -7.26915284664418,
+      "probability_difference_pp_ci_95": [
+        -13.742560884959353,
+        -0.7957448083290062
+      ],
+      "cluster_robust_p": 0.027746276187974827,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "event=schedule",
+      "coefficient": -0.13470434896775013,
+      "standard_error": 0.0060965210827956225,
+      "coefficient_ci_95": [
+        -0.14665429929170665,
+        -0.1227543986437936
+      ],
+      "probability_difference_pp": -13.470434896775012,
+      "probability_difference_pp_ci_95": [
+        -14.665429929170665,
+        -12.27543986437936
+      ],
+      "cluster_robust_p": 1.9167557267478487e-106,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "event=workflow_dispatch",
+      "coefficient": -0.051000198218294,
+      "standard_error": 0.009546720585171442,
+      "coefficient_ci_95": [
+        -0.0697129747674367,
+        -0.0322874216691513
+      ],
+      "probability_difference_pp": -5.1000198218294,
+      "probability_difference_pp_ci_95": [
+        -6.971297476743669,
+        -3.22874216691513
+      ],
+      "cluster_robust_p": 9.32156996752622e-08,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "calendar_week=4",
+      "coefficient": -0.000437484115799045,
+      "standard_error": 0.0033695468237995604,
+      "coefficient_ci_95": [
+        -0.007042220917625358,
+        0.006167252686027268
+      ],
+      "probability_difference_pp": -0.0437484115799045,
+      "probability_difference_pp_ci_95": [
+        -0.7042220917625358,
+        0.6167252686027268
+      ],
+      "cluster_robust_p": 0.8966989899738923,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "calendar_week=2",
+      "coefficient": -0.002354797439920093,
+      "standard_error": 0.0051581607714799365,
+      "coefficient_ci_95": [
+        -0.012465443191004903,
+        0.007755848311164717
+      ],
+      "probability_difference_pp": -0.2354797439920093,
+      "probability_difference_pp_ci_95": [
+        -1.2465443191004904,
+        0.7755848311164717
+      ],
+      "cluster_robust_p": 0.6480237213095377,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "calendar_week=1",
+      "coefficient": -0.0011318996022559437,
+      "standard_error": 0.004470095592920836,
+      "coefficient_ci_95": [
+        -0.009893850812346058,
+        0.007630051607834171
+      ],
+      "probability_difference_pp": -0.11318996022559437,
+      "probability_difference_pp_ci_95": [
+        -0.9893850812346058,
+        0.7630051607834171
+      ],
+      "cluster_robust_p": 0.8001048820729232,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "calendar_week=0",
+      "coefficient": 0.010882612325536719,
+      "standard_error": 0.004278936196755812,
+      "coefficient_ci_95": [
+        0.002495357644353227,
+        0.01926986700672021
+      ],
+      "probability_difference_pp": 1.0882612325536718,
+      "probability_difference_pp_ci_95": [
+        0.24953576443532272,
+        1.9269867006720212
+      ],
+      "cluster_robust_p": 0.01099133785652736,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "repository_cluster_robust_t",
+      "fdr_q": null,
+      "significant_fdr_05": false
+    },
+    {
+      "feature": "unreachable_cache_write",
+      "coefficient": null,
+      "standard_error": null,
+      "coefficient_ci_95": null,
+      "probability_difference_pp": null,
+      "probability_difference_pp_ci_95": null,
+      "cluster_robust_p": null,
+      "p_is_numerical_upper_bound": false,
+      "inference_status": "not_identifiable",
+      "fdr_q": null,
+      "significant_fdr_05": false,
+      "exposed_runs": 0,
+      "exposed_workflow_versions": 0,
+      "exposed_repositories": 0
+    }
+  ],
+  "weighting": "Each workflow version has total weight 1 within the success endpoint",
+  "inference": {
+    "covariance": "repository-cluster sandwich, G/(G-1) correction",
+    "test": "two-sided t test",
+    "degrees_of_freedom": 14631,
+    "confidence_interval": "pointwise 95%, t(G-1); not simultaneous FDR intervals",
+    "multiple_testing": "BH across identifiable smell coefficients only; q<0.05",
+    "tested_smells": 10,
+    "numerical_underflow": "Underflowed p values are conservatively bounded above by numpy.finfo(float).tiny",
+    "bootstrap": 0
+  },
+  "rank_audit": {
+    "rank": 43,
+    "original_columns": 44,
+    "dropped": [
+      "unreachable_cache_write"
+    ],
+    "unidentified_smells": [
+      "unreachable_cache_write"
+    ]
+  },
+  "fit_iterations": 1,
+  "weighted_r_squared": 0.05989100831398375,
+  "exposure_audit": {
+    "no_dependency_cache": {
+      "runs": 118717,
+      "successes": 100683,
+      "workflow_versions": 6884,
+      "repositories": 3838,
+      "all_failed": false
+    },
+    "no_fallback_cache": {
+      "runs": 48348,
+      "successes": 39508,
+      "workflow_versions": 2795,
+      "repositories": 1835,
+      "all_failed": false
+    },
+    "redundant_cache_update": {
+      "runs": 16017,
+      "successes": 12827,
+      "workflow_versions": 1091,
+      "repositories": 889,
+      "all_failed": false
+    },
+    "cache_position_error": {
+      "runs": 5679,
+      "successes": 4834,
+      "workflow_versions": 415,
+      "repositories": 292,
+      "all_failed": false
+    },
+    "conflicting_cache_sources": {
+      "runs": 6765,
+      "successes": 5743,
+      "workflow_versions": 337,
+      "repositories": 228,
+      "all_failed": false
+    },
+    "static_cache_key": {
+      "runs": 14963,
+      "successes": 12539,
+      "workflow_versions": 944,
+      "repositories": 695,
+      "all_failed": false
+    },
+    "overly_specific_cache_key": {
+      "runs": 7604,
+      "successes": 6184,
+      "workflow_versions": 339,
+      "repositories": 249,
+      "all_failed": false
+    },
+    "no_docker_layer_cache": {
+      "runs": 22733,
+      "successes": 19697,
+      "workflow_versions": 1385,
+      "repositories": 1073,
+      "all_failed": false
+    },
+    "deprecated_cache_action": {
+      "runs": 652,
+      "successes": 0,
+      "workflow_versions": 33,
+      "repositories": 22,
+      "all_failed": true
+    },
+    "unreachable_cache_write": {
+      "runs": 0,
+      "successes": 0,
+      "workflow_versions": 0,
+      "repositories": 0,
+      "all_failed": false
+    },
+    "cache_as_artifact": {
+      "runs": 1290,
+      "successes": 903,
+      "workflow_versions": 78,
+      "repositories": 67,
+      "all_failed": false
+    }
+  },
+  "predictions": {
+    "minimum": -0.15458887662710716,
+    "maximum": 1.04957673284884,
+    "outside_0_1_runs": 14946,
+    "outside_0_1_run_fraction": 0.014274867122247532,
+    "outside_0_1_version_balanced_fraction": 0.01300196517411419
+  },
+  "interpretation": "Adjusted linear associations, not causal effects. Coefficients are probability differences, not odds ratios.",
+  "limitations": [
+    "Linear additive probability specification; predictions are not clipped.",
+    "Conventional cluster inference may be fragile for smells present in few repositories; report exposure cluster counts."
+  ]
+}

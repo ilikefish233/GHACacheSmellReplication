@@ -1,0 +1,12 @@
+smell_type,display_name,instance_count,workflow_count,overall_workflow_denominator,overall_workflow_prevalence_pct,repository_count,overall_repository_denominator,overall_repository_prevalence_pct
+no_dependency_cache,No dependency cache,23257,16430,118523,13.8623,6988,19330,36.1511
+no_restore_keys,No fallback cache,11185,5826,118523,4.9155,3061,19330,15.8355
+redundant_cache_update,Redundant cache update,2412,1375,118523,1.1601,1120,19330,5.7941
+cache_position_error,Cache position error,706,504,118523,0.4252,307,19330,1.5882
+conflicting_cache_sources,Overlapping cache mechanisms,873,613,118523,0.5172,351,19330,1.8158
+static_cache_key,Static cache key,1394,642,118523,0.5417,455,19330,2.3539
+overly_specific_cache_key,Overly specific cache key,941,566,118523,0.4775,376,19330,1.9452
+no_docker_layer_cache,No Docker layer cache,6400,4382,118523,3.6972,2582,19330,13.3575
+deprecated_cache_action,Deprecated cache action,2674,428,118523,0.3611,227,19330,1.1743
+unreachable_cache_write,Unreachable cache write,17,12,118523,0.0101,12,19330,0.0621
+cache_as_artifact,Cache as artifact,87,47,118523,0.0397,39,19330,0.2018

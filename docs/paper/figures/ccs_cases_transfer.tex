@@ -1,0 +1,29 @@
+\begin{figure}[!htbp]
+\centering
+\begin{lstlisting}[style=ccscase]
+ 37 build:
+ 38   name: 'build'
+ 39   runs-on: ubuntu-latest
+ 40   steps:
+    ... omitted ...
+ 54     - run: npm run build -- $BUILD_OPTS
+ 55 
+ 56     - name: dist cache
+ 57       if: ${{ success() }}
+|+| 58       uses: actions/cache/save@v5|/|
+ 59       with:
+|+| 60         path: ./dist/content-ce|/|
+|+| 61         key: cache-dist-${{ github.run_id }}|/|
+ 62 
+ 63 e2es-playwright:
+|+| 64   needs: [build]|/|
+    ... omitted ...
+|+|126     - uses: actions/cache/restore@v5|/|
+127       id: cache
+128       with:
+|+|129         path: ./dist/content-ce|/|
+|+|130         key: cache-dist-${{ github.run_id }}|/|
+\end{lstlisting}
+\caption{\texttt{cache\_as\_artifact} in \href{https://github.com/Alfresco/alfresco-content-app/blob/85366003b55caa86719efe288c51ebb96665afa0/.github/workflows/run-e2e-with-env.yml}{Alfresco/alfresco-content-app}.}
+\label{fig:ccs-transfer}
+\end{figure}

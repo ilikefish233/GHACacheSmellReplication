@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "stages_executed": [
+    "filter",
+    "canonical",
+    "consolidate",
+    "coverage",
+    "queue",
+    "model-input"
+  ],
+  "checks": {
+    "integrity": "Pipeline/verification_integrity.json",
+    "source": "Pipeline/verification_source.json",
+    "filter": "Pipeline/verification_filter.json",
+    "canonical": "Pipeline/verification_canonical.json",
+    "consolidation": "Pipeline/verification_consolidation.json",
+    "coverage": "Pipeline/verification_coverage.json",
+    "queue": "Pipeline/verification_queue.json",
+    "handoff": "Pipeline/verification_handoff.json",
+    "acquisition_dry_run": "Pipeline/verification_acquisition_dry_run.json"
+  },
+  "candidate_rows": 240781,
+  "filtered_repositories": 22911,
+  "canonical_snapshots": 118883,
+  "consolidated_runs": 2132983,
+  "final_versions": 51179,
+  "final_runs": 1093639,
+  "network_requests": 0,
+  "rq3_executed": false,
+  "live_acquisition": "Original source included and dry-run validated; no new GitHub collection performed.",
+  "detector_refresh": "Frozen October source/labels retained; no new population-wide detector rescan during this extension.",
+  "adaptations": [
+    "shared YAML content paths",
+    "cached pure provenance path labels",
+    "incremental duplicate version-ID validation",
+    "larger I/O buffers"
+  ],
+  "limits": [
+    "Fresh environment installation and other operating systems were not tested.",
+    "Baseline collection is retained as JSONL tables; complete original HTTP bodies were not separately archived for every baseline request."
+  ]
+}

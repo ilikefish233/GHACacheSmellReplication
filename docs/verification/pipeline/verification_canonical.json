@@ -1,0 +1,65 @@
+{
+  "rq3_executed": false,
+  "network_requests": 0,
+  "content_relocation": "frozen hash with original availability exclusions",
+  "checks": {
+    "workflow_snapshots": {
+      "expected": 118883,
+      "rebuilt": 118883,
+      "identities_equal": true,
+      "scientific_fields_matched": [
+        "repository_id",
+        "canonical_name",
+        "workflow_path",
+        "workflow_id",
+        "content_hash",
+        "snapshot_status"
+      ]
+    },
+    "workflow_boundaries": {
+      "expected": 118883,
+      "rebuilt": 118883,
+      "identities_equal": true,
+      "scientific_fields_matched": [
+        "repository_id",
+        "workflow_path",
+        "last_change_at",
+        "boundary_status",
+        "boundary_commit_sha"
+      ]
+    },
+    "rq1_cohort": {
+      "expected": 118523,
+      "rebuilt": 118523,
+      "identities_equal": true,
+      "scientific_fields_matched": [
+        "repository_id",
+        "workflow_path",
+        "content_hash",
+        "detector_state_key",
+        "eligible"
+      ]
+    },
+    "rq2_cohort": {
+      "expected": 118883,
+      "rebuilt": 118883,
+      "identities_equal": true,
+      "scientific_fields_matched": [
+        "repository_id",
+        "workflow_path",
+        "workflow_id",
+        "content_hash",
+        "last_change_at",
+        "boundary_status",
+        "qualifying_run_count",
+        "window_start",
+        "eligible"
+      ]
+    },
+    "normalized_runs": {
+      "sha256": "a248e3b17d80e88d7be695beb1d48e445fab53d63567dc69b0074247614ebe63",
+      "byte_identical_to_frozen_canonical": true
+    }
+  },
+  "note": "Retired historical detector cache is deliberately omitted; current-cutoff RQ1/RQ2 only."
+}

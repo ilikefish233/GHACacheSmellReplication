@@ -1,0 +1,768 @@
+{
+  "endpoint": "all_completed_duration",
+  "experimental": true,
+  "status": "ok",
+  "runs": 1089617,
+  "workflow_versions": 50985,
+  "repositories": 14690,
+  "design_groups": 162081,
+  "coefficients": [
+    {
+      "feature": "intercept",
+      "coefficient": 4.039405080002369,
+      "standard_error": 0.04265682589572056,
+      "coefficient_ci_95": [
+        3.9557977012467562,
+        4.123012458757981
+      ],
+      "exponentiated_coefficient": 56.79254573201604,
+      "exponentiated_ci_95": [
+        52.237347125755036,
+        61.74496654583918
+      ],
+      "cluster_robust_p": 0.0,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "no_dependency_cache",
+      "coefficient": 0.2075340864818626,
+      "standard_error": 0.04509831961462107,
+      "coefficient_ci_95": [
+        0.11914138003720533,
+        0.2959267929265199
+      ],
+      "exponentiated_coefficient": 1.2306396643017643,
+      "exponentiated_ci_95": [
+        1.1265291757669564,
+        1.344371735709095
+      ],
+      "cluster_robust_p": 4.188267962623204e-06,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": 2.0941339813116022e-05
+    },
+    {
+      "feature": "no_fallback_cache",
+      "coefficient": 0.11610301401506685,
+      "standard_error": 0.047937620089418244,
+      "coefficient_ci_95": [
+        0.0221452786398071,
+        0.2100607493903266
+      ],
+      "exponentiated_coefficient": 1.1231115624057042,
+      "exponentiated_ci_95": [
+        1.0223923054451987,
+        1.2337530074232284
+      ],
+      "cluster_robust_p": 0.015437035756539126,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": 0.03859258939134782
+    },
+    {
+      "feature": "redundant_cache_update",
+      "coefficient": -0.09744536449891088,
+      "standard_error": 0.04872045545332432,
+      "coefficient_ci_95": [
+        -0.19293745718742655,
+        -0.0019532718103952157
+      ],
+      "exponentiated_coefficient": 0.9071519029006638,
+      "exponentiated_ci_95": [
+        0.8245335411732438,
+        0.9980486345835502
+      ],
+      "cluster_robust_p": 0.04549039404726482,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": 0.09098078809452964
+    },
+    {
+      "feature": "cache_position_error",
+      "coefficient": -0.005246005385667709,
+      "standard_error": 0.0901002476524799,
+      "coefficient_ci_95": [
+        -0.18184249078452833,
+        0.1713504800131929
+      ],
+      "exponentiated_coefficient": 0.9947677308699314,
+      "exponentiated_ci_95": [
+        0.8337326506498949,
+        1.1869066631956273
+      ],
+      "cluster_robust_p": 0.9535701281809287,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": 0.9535701281809287
+    },
+    {
+      "feature": "conflicting_cache_sources",
+      "coefficient": 0.1050833983362368,
+      "standard_error": 0.09232044818739418,
+      "coefficient_ci_95": [
+        -0.07586468011105581,
+        0.2860314767835294
+      ],
+      "exponentiated_coefficient": 1.1108032456354098,
+      "exponentiated_ci_95": [
+        0.9269416317115929,
+        1.3311343544207854
+      ],
+      "cluster_robust_p": 0.2550176965589923,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": 0.3187721206987404
+    },
+    {
+      "feature": "static_cache_key",
+      "coefficient": -0.010682211512358535,
+      "standard_error": 0.07000105377318928,
+      "coefficient_ci_95": [
+        -0.14788427690780953,
+        0.12651985388309245
+      ],
+      "exponentiated_coefficient": 0.9893746406932006,
+      "exponentiated_ci_95": [
+        0.8625309239124578,
+        1.1348719825680695
+      ],
+      "cluster_robust_p": 0.8787131537271554,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": 0.9535701281809287
+    },
+    {
+      "feature": "overly_specific_cache_key",
+      "coefficient": 0.3651864633618495,
+      "standard_error": 0.11134210970394728,
+      "coefficient_ci_95": [
+        0.14695592834211285,
+        0.5834169983815862
+      ],
+      "exponentiated_coefficient": 1.4407826362778415,
+      "exponentiated_ci_95": [
+        1.1583029135752096,
+        1.7921517598470065
+      ],
+      "cluster_robust_p": 0.0010385883751233291,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": 0.003461961250411097
+    },
+    {
+      "feature": "no_docker_layer_cache",
+      "coefficient": 0.5579270838389869,
+      "standard_error": 0.06145295145079278,
+      "coefficient_ci_95": [
+        0.4374792989954331,
+        0.6783748686825408
+      ],
+      "exponentiated_coefficient": 1.7470472616835817,
+      "exponentiated_ci_95": [
+        1.5487982366229067,
+        1.9706725268562069
+      ],
+      "cluster_robust_p": 1.09646780626245e-19,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": 1.0964678062624502e-18
+    },
+    {
+      "feature": "deprecated_cache_action",
+      "coefficient": -0.7467440259959854,
+      "standard_error": 0.6455631315738183,
+      "coefficient_ci_95": [
+        -2.0120477638806693,
+        0.5185597118886984
+      ],
+      "exponentiated_coefficient": 0.47390707254235065,
+      "exponentiated_ci_95": [
+        0.1337145782385658,
+        1.679606789059036
+      ],
+      "cluster_robust_p": 0.24738155893814862,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": 0.3187721206987404
+    },
+    {
+      "feature": "cache_as_artifact",
+      "coefficient": -0.2929600385639262,
+      "standard_error": 0.15296347095767615,
+      "coefficient_ci_95": [
+        -0.5927684416409715,
+        0.006848364513119043
+      ],
+      "exponentiated_coefficient": 0.746051953408982,
+      "exponentiated_ci_95": [
+        0.552794784294529,
+        1.0068718681846405
+      ],
+      "cluster_robust_p": 0.05546333644630213,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": 0.09243889407717021
+    },
+    {
+      "feature": "log1p_job_count_z",
+      "coefficient": -0.10666497006096895,
+      "standard_error": 0.022121755346519136,
+      "coefficient_ci_95": [
+        -0.15002361054014646,
+        -0.06330632958179144
+      ],
+      "exponentiated_coefficient": 0.8988267564249114,
+      "exponentiated_ci_95": [
+        0.8606876548847283,
+        0.9386558915772151
+      ],
+      "cluster_robust_p": 1.4232370248402751e-06,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "log1p_non_cache_step_count_z",
+      "coefficient": 0.6940628550098005,
+      "standard_error": 0.029088722847447,
+      "coefficient_ci_95": [
+        0.6370489582288044,
+        0.7510767517907966
+      ],
+      "exponentiated_coefficient": 2.0018321876153857,
+      "exponentiated_ci_95": [
+        1.8908925347864778,
+        2.1192807278312698
+      ],
+      "cluster_robust_p": 7.935189135081442e-126,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "has_matrix",
+      "coefficient": 0.5580331548087294,
+      "standard_error": 0.037684614517457506,
+      "coefficient_ci_95": [
+        0.48417131035451266,
+        0.6318949992629461
+      ],
+      "exponentiated_coefficient": 1.7472325825092205,
+      "exponentiated_ci_95": [
+        1.6228296293599571,
+        1.8811720233293192
+      ],
+      "cluster_robust_p": 1.3008430765554508e-49,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "workflow_role=mixed",
+      "coefficient": 0.519817190906472,
+      "standard_error": 0.061954862294683284,
+      "coefficient_ci_95": [
+        0.3983856608088928,
+        0.6412487210040513
+      ],
+      "exponentiated_coefficient": 1.6817201878532229,
+      "exponentiated_ci_95": [
+        1.489418329435459,
+        1.8988505340236133
+      ],
+      "cluster_robust_p": 4.8508232852599663e-17,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "workflow_role=build",
+      "coefficient": 0.6541165823979467,
+      "standard_error": 0.05410958618554573,
+      "coefficient_ci_95": [
+        0.5480617934742771,
+        0.7601713713216163
+      ],
+      "exponentiated_coefficient": 1.9234425635851595,
+      "exponentiated_ci_95": [
+        1.7298968690628476,
+        2.1386426911190863
+      ],
+      "cluster_robust_p": 1.2113385801484622e-33,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "workflow_role=test",
+      "coefficient": 0.6300859152728799,
+      "standard_error": 0.03887649970666164,
+      "coefficient_ci_95": [
+        0.5538879758478231,
+        0.7062838546979368
+      ],
+      "exponentiated_coefficient": 1.8777719016195507,
+      "exponentiated_ci_95": [
+        1.74000498096834,
+        2.0264466786466406
+      ],
+      "cluster_robust_p": 4.472862561578355e-59,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "workflow_role=release",
+      "coefficient": -0.05454696485883211,
+      "standard_error": 0.042315636237046525,
+      "coefficient_ci_95": [
+        -0.1374856118834433,
+        0.02839168216577908
+      ],
+      "exponentiated_coefficient": 0.9469140361294726,
+      "exponentiated_ci_95": [
+        0.8715468898251808,
+        1.0287985675662978
+      ],
+      "cluster_robust_p": 0.1973807540721081,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "workflow_role=lint",
+      "coefficient": -0.127700595056968,
+      "standard_error": 0.03769589307669963,
+      "coefficient_ci_95": [
+        -0.2015845454872993,
+        -0.05381664462663674
+      ],
+      "exponentiated_coefficient": 0.8801168510359282,
+      "exponentiated_ci_95": [
+        0.8174344642434157,
+        0.9476058391963471
+      ],
+      "cluster_robust_p": 0.0007049345712727422,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "workflow_role=deploy",
+      "coefficient": 0.23040874077810627,
+      "standard_error": 0.06351106013017224,
+      "coefficient_ci_95": [
+        0.10592706292296868,
+        0.3548904186332439
+      ],
+      "exponentiated_coefficient": 1.2591145562277244,
+      "exponentiated_ci_95": [
+        1.1117407864259516,
+        1.426024380018673
+      ],
+      "cluster_robust_p": 0.0002857887481081295,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "ecosystem=multi",
+      "coefficient": 0.3192876332541498,
+      "standard_error": 0.04416157511377981,
+      "coefficient_ci_95": [
+        0.23273094603114142,
+        0.40584432047715824
+      ],
+      "exponentiated_coefficient": 1.3761470936519207,
+      "exponentiated_ci_95": [
+        1.262041876267859,
+        1.5005689264186406
+      ],
+      "cluster_robust_p": 4.830387194071181e-13,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "ecosystem=javascript",
+      "coefficient": -0.2747851660915037,
+      "standard_error": 0.03775099921965228,
+      "coefficient_ci_95": [
+        -0.3487771245620222,
+        -0.20079320762098524
+      ],
+      "exponentiated_coefficient": 0.7597353226027381,
+      "exponentiated_ci_95": [
+        0.7055503625937705,
+        0.8180815871008423
+      ],
+      "cluster_robust_p": 3.365914960717297e-13,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "ecosystem=python",
+      "coefficient": -0.009037931053973417,
+      "standard_error": 0.05763697825812131,
+      "coefficient_ci_95": [
+        -0.12200640843989118,
+        0.10393054633194433
+      ],
+      "exponentiated_coefficient": 0.9910027882797147,
+      "exponentiated_ci_95": [
+        0.8851426961006884,
+        1.1095233917701024
+      ],
+      "cluster_robust_p": 0.8753962803418709,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "ecosystem=unknown",
+      "coefficient": 1.4627932662341179,
+      "standard_error": 0.09034906546031152,
+      "coefficient_ci_95": [
+        1.2857090979319072,
+        1.6398774345363285
+      ],
+      "exponentiated_coefficient": 4.318004033624891,
+      "exponentiated_ci_95": [
+        3.61723201976873,
+        5.15453770521276
+      ],
+      "cluster_robust_p": 5.888314917193291e-59,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "ecosystem=native",
+      "coefficient": 0.7168257785258717,
+      "standard_error": 0.06879801073617305,
+      "coefficient_ci_95": [
+        0.5819816774829725,
+        0.8516698795687709
+      ],
+      "exponentiated_coefficient": 2.047922323595044,
+      "exponentiated_ci_95": [
+        1.7895812921369172,
+        2.3435570442686826
+      ],
+      "cluster_robust_p": 2.0247891472291722e-25,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "ecosystem=java",
+      "coefficient": 0.8405872469974187,
+      "standard_error": 0.05005263707708552,
+      "coefficient_ci_95": [
+        0.7424840783263311,
+        0.9386904156685063
+      ],
+      "exponentiated_coefficient": 2.317727655821363,
+      "exponentiated_ci_95": [
+        2.101148454474318,
+        2.556631101015262
+      ],
+      "cluster_robust_p": 2.697208790811236e-63,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "ecosystem=go",
+      "coefficient": 0.1200486029584693,
+      "standard_error": 0.09447594557102167,
+      "coefficient_ci_95": [
+        -0.06512425036073317,
+        0.3052214562776718
+      ],
+      "exponentiated_coefficient": 1.127551652593762,
+      "exponentiated_ci_95": [
+        0.9369510396400429,
+        1.3569254693984427
+      ],
+      "cluster_robust_p": 0.2038428584227766,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "ecosystem=rust",
+      "coefficient": 0.11612621530522568,
+      "standard_error": 0.05895589720470986,
+      "coefficient_ci_95": [
+        0.0005726567839943603,
+        0.231679773826457
+      ],
+      "exponentiated_coefficient": 1.123137620345232,
+      "exponentiated_ci_95": [
+        1.000572820783194,
+        1.2607159499369223
+      ],
+      "cluster_robust_p": 0.048871236923734684,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "ecosystem=dotnet",
+      "coefficient": 0.3091463494573402,
+      "standard_error": 0.07308317624893587,
+      "coefficient_ci_95": [
+        0.1659033240094259,
+        0.45238937490525455
+      ],
+      "exponentiated_coefficient": 1.3622617221793576,
+      "exponentiated_ci_95": [
+        1.180458974166008,
+        1.5720639516728299
+      ],
+      "cluster_robust_p": 2.3362715751240213e-05,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "ecosystem=ruby",
+      "coefficient": -0.05433609406480652,
+      "standard_error": 0.06726662511757472,
+      "coefficient_ci_95": [
+        -0.18617867929525297,
+        0.07750649116563993
+      ],
+      "exponentiated_coefficient": 0.9471137336985976,
+      "exponentiated_ci_95": [
+        0.8301252555341029,
+        1.0805892467195837
+      ],
+      "cluster_robust_p": 0.41922186581401344,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "runner_os=mixed",
+      "coefficient": 0.1317272975387619,
+      "standard_error": 0.04260874334653738,
+      "coefficient_ci_95": [
+        0.04821416057954862,
+        0.21524043449797514
+      ],
+      "exponentiated_coefficient": 1.1407971786463664,
+      "exponentiated_ci_95": [
+        1.0493953703817547,
+        1.2401600383791216
+      ],
+      "cluster_robust_p": 0.0019911071451902598,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "runner_os=unknown",
+      "coefficient": 0.2174662413335699,
+      "standard_error": 0.13725904074267267,
+      "coefficient_ci_95": [
+        -0.05156147852206855,
+        0.48649396118920835
+      ],
+      "exponentiated_coefficient": 1.2429234693606754,
+      "exponentiated_ci_95": [
+        0.9497452592324508,
+        1.6266032766892418
+      ],
+      "cluster_robust_p": 0.11311429204268922,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "runner_os=windows",
+      "coefficient": 0.8262610985451972,
+      "standard_error": 0.05552217273335957,
+      "coefficient_ci_95": [
+        0.7174376399878125,
+        0.935084557102582
+      ],
+      "exponentiated_coefficient": 2.2847602571226084,
+      "exponentiated_ci_95": [
+        2.049175751764992,
+        2.547428851835074
+      ],
+      "cluster_robust_p": 4.337225396573228e-50,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "runner_os=macos",
+      "coefficient": 0.7552082005037262,
+      "standard_error": 0.07014921604705852,
+      "coefficient_ci_95": [
+        0.6177157370514914,
+        0.8927006639559609
+      ],
+      "exponentiated_coefficient": 2.1280545392626613,
+      "exponentiated_ci_95": [
+        1.8546866075163195,
+        2.4417150065804694
+      ],
+      "cluster_robust_p": 4.9958731951175675e-27,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "runner_hosting=unknown",
+      "coefficient": 0.5007695454780507,
+      "standard_error": 0.09290319947374298,
+      "coefficient_ci_95": [
+        0.3186792745095145,
+        0.682859816446587
+      ],
+      "exponentiated_coefficient": 1.6499905250103812,
+      "exponentiated_ci_95": [
+        1.375310157138229,
+        1.979530739661661
+      ],
+      "cluster_robust_p": 7.036784910176853e-08,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "runner_hosting=mixed",
+      "coefficient": 0.3116169700856985,
+      "standard_error": 0.04921737195350348,
+      "coefficient_ci_95": [
+        0.21515092105683167,
+        0.40808301911456535
+      ],
+      "exponentiated_coefficient": 1.365631515117278,
+      "exponentiated_ci_95": [
+        1.2400490323548574,
+        1.5039320110915024
+      ],
+      "cluster_robust_p": 2.428793779275147e-10,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "runner_hosting=self_hosted",
+      "coefficient": 1.6339215316482225,
+      "standard_error": 0.36153962157342834,
+      "coefficient_ci_95": [
+        0.925303873364303,
+        2.342539189932142
+      ],
+      "exponentiated_coefficient": 5.123929020864393,
+      "exponentiated_ci_95": [
+        2.52263470539597,
+        10.407629988875152
+      ],
+      "cluster_robust_p": 6.203184919177289e-06,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "event=schedule",
+      "coefficient": -0.039428222845788174,
+      "standard_error": 0.04416678411926167,
+      "coefficient_ci_95": [
+        -0.12599511971954103,
+        0.04713867402796469
+      ],
+      "exponentiated_coefficient": 0.9613389536885963,
+      "exponentiated_ci_95": [
+        0.8816191493216239,
+        1.0482673664588669
+      ],
+      "cluster_robust_p": 0.3720113659116383,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "event=workflow_dispatch",
+      "coefficient": 0.41509814562303166,
+      "standard_error": 0.09497079422215966,
+      "coefficient_ci_95": [
+        0.22895538894759873,
+        0.6012409022984646
+      ],
+      "exponentiated_coefficient": 1.514519376845769,
+      "exponentiated_ci_95": [
+        1.257285948909379,
+        1.8243812752628032
+      ],
+      "cluster_robust_p": 1.2379334780766949e-05,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "calendar_week=4",
+      "coefficient": 0.059960669908246625,
+      "standard_error": 0.03440062067916982,
+      "coefficient_ci_95": [
+        -0.007464546622926213,
+        0.12738588643941945
+      ],
+      "exponentiated_coefficient": 1.0617947852378002,
+      "exponentiated_ci_95": [
+        0.9925632439143047,
+        1.1358552443591432
+      ],
+      "cluster_robust_p": 0.08133164435016119,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "calendar_week=2",
+      "coefficient": -0.056498450722631675,
+      "standard_error": 0.02311133389262088,
+      "coefficient_ci_95": [
+        -0.10179666515216859,
+        -0.011200236293094752
+      ],
+      "exponentiated_coefficient": 0.945067948666397,
+      "exponentiated_ci_95": [
+        0.9032131877145236,
+        0.9888622528381509
+      ],
+      "cluster_robust_p": 0.014500445627258433,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "calendar_week=1",
+      "coefficient": -0.0316152036659928,
+      "standard_error": 0.0246128697407186,
+      "coefficient_ci_95": [
+        -0.07985642835780125,
+        0.01662602102581566
+      ],
+      "exponentiated_coefficient": 0.9688793315731635,
+      "exponentiated_ci_95": [
+        0.9232488892308962,
+        1.0167650024812465
+      ],
+      "cluster_robust_p": 0.19896745449665687,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    },
+    {
+      "feature": "calendar_week=0",
+      "coefficient": 0.04974668307115292,
+      "standard_error": 0.051934510751918586,
+      "coefficient_ci_95": [
+        -0.052044958002607514,
+        0.15153832414491336
+      ],
+      "exponentiated_coefficient": 1.0510048253374091,
+      "exponentiated_ci_95": [
+        0.9492861878726064,
+        1.16362289580764
+      ],
+      "cluster_robust_p": 0.33812663334315063,
+      "inference_status": "repository_cluster_robust",
+      "fdr_q": null
+    }
+  ],
+  "not_estimable_smells": [
+    "unreachable_cache_write"
+  ],
+  "rank_audit": {
+    "rank": 43,
+    "original_columns": 44,
+    "dropped": [
+      "unreachable_cache_write"
+    ],
+    "unidentified_smells": [
+      "unreachable_cache_write"
+    ]
+  },
+  "fit_converged": true,
+  "fit_iterations": 1,
+  "separation_diagnostics": [],
+  "grouping": "Exact sufficient statistics for identical version/event/calendar-week design vectors; endpoint-specific version weights",
+  "bootstrap_requested": 0,
+  "bootstrap_valid_replicates": 0,
+  "bootstrap_failed_replicates": 0,
+  "timings": {
+    "fit_seconds": 0.06881770002655685,
+    "covariance_seconds": 0.17422879999503493,
+    "bootstrap_seconds": 0.020970300014596432
+  },
+  "weighted_log_r_squared": 0.34394066079714736
+}

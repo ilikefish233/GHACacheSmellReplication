@@ -1,0 +1,13 @@
+{
+  "source": "archive/legacy_log_analysis_data/gha_log_dataset/repositories.json",
+  "artifact_path": "data/upstream/ghalogs/repositories.json",
+  "bytes": 397887638,
+  "sha256": "5688806e7c0bbc909a5d2ceaea5c7d5ae690658332c77d1a979be2250eb7bcb7",
+  "records": 240781,
+  "format": "JSON Lines despite .json extension",
+  "author_confirmation": "Manually downloaded GHALogs dataset; repositories.json supplied the initial candidate repository frame (2026-10-25).",
+  "source_identity_in_paper_manifest": "GHALogs v1.0.1 repositories.json.gz; https://zenodo.org/records/14796970",
+  "limits": "Historical metadata describes the original research copy. The candidate file is not bundled. The original compressed download bytes and download date were not independently verified. Initial filtering and offline curation were previously checked; live collection was not repeated.",
+  "distributed": false,
+  "acquisition": "External download; see root README"
+}

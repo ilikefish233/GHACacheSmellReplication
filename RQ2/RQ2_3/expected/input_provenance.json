@@ -1,0 +1,152 @@
+{
+  "prior_experiment": "E:\\gha_log_analysis\\output_experimental_rq23_history_current_detector_20261019",
+  "reused_source_hashes": {
+    "output_rq23_historical_before_after_20261010\\prepare_history.py": "516e17789d89c6717c8b3871fa8d899989a68ab22abe80acfe90a2577ccca470",
+    "output_rq23_historical_before_after_20261010\\recompute.py": "c5fdbfb476e212c1f0e7c3961e67d98af199d13b3922064bab7b5fbce2859377",
+    "output_rq23_historical_before_after_20261010\\verify_configuration.py": "2113f6fd8af518dff33c8813bf311dc8630b637e31db3d7a646f1bf3f5b6816e",
+    "scripts\\analyze_rq2_adjusted.py": "0ceecaba7fa1131969af488e29b11c4970af1a31bf6c38995f76000e41af30a2",
+    "src\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\analysis\\__init__.py": "c0ffddbab785acbb519c282d620be5ab90b66a2ad4022c1074d8cc070062bdcf",
+    "src\\analysis\\cache_analyzer.py": "ba8d66b1efb67317e55daf363a7373bceb442d1d7cd76c95c2e7813a770a73d7",
+    "src\\analysis\\log_analyzer.py": "80f5e175f172def520f9c461ce51fc0f1b3e4ebf7490361e45bef91f3f5a77d3",
+    "src\\analysis\\run_analyzer.py": "3cb135e10c6aae458cf806371baaf94395672e0a3063a76f82e428205c9c097b",
+    "src\\analysis\\statistics.py": "889780bdb5e131a1467f9be7ccd5785a0dd8d114b3dfd5f9c94130eb81ab44d7",
+    "src\\analyzers\\__init__.py": "86f3009d0bb5d5854a10c17f1af0c76d230c62b3e9405ef3b9eeb367a334a1ef",
+    "src\\analyzers\\workflow_call_analyzer.py": "957ed0d7b3153b9ea86da4d9aa7a7ce352129ec25d493241c5860c4bbad8efb3",
+    "src\\cache\\__init__.py": "1c340e814113444b6b95fb08883e8b7ea4c96ac50507d8659345192dc232dd9e",
+    "src\\cache\\workflow_cache.py": "8235387d63aab063ad4c3312ff0ed2fbaa13b508f7ffbbb74617ccd84bf76ea3",
+    "src\\detectors\\__init__.py": "fc4fd3cc4d2ce7629fd8edd66dc973034291bf0e7d5c036cd9e3c51cb6d590fc",
+    "src\\detectors\\base.py": "b979299aefa9f427d75cf82b2fb4b7275b8e9eb18741c8e1eccb14c9c985924c",
+    "src\\detectors\\cache_detector.py": "037f1d5581285f8494dead21720775562a111d101dea239e1e2959d847387a3e",
+    "src\\detectors\\core\\__init__.py": "736ca3781abcaccd9c3813633136f29549b32d15bd78d5e5943c23a408943b28",
+    "src\\detectors\\core\\cache_detector.py": "729b15a8ba3106bef21b623ca2669ccecb894e0916eeb8cb835c995b75a58b14",
+    "src\\detectors\\core\\timeout_detector.py": "57d498e00f6cc6d63b589e2db4675798fb6b06771731dc361b87229641c7e26e",
+    "src\\detectors\\deepclone_detector.py": "a907082f56ec52e520f9b1a09b4a5c7151c3a9fa87a026776bd7a457e8a0c954",
+    "src\\detectors\\experimental\\__init__.py": "cb5dab3a4cdd3a4966b09ba1f7993351f92f2e37b2cf4b227ad9ab72dcffd5ee",
+    "src\\detectors\\failfast_detector.py": "d04c52251df110f40875425ae370e7a3168a15eaa191fe3ee75e0e050ed47c85",
+    "src\\detectors\\parallelism_detector.py": "efbe1b8a2b2a775dca56633eeac3ca262b70caa72c7c2aefc46df34f7f0d2323",
+    "src\\detectors\\pipeline.py": "7841be075658cd62cde0f08dac7afb03261e673262d9acc9cfc491d9d944c308",
+    "src\\detectors\\redundantRun_detector.py": "acd3418b6b699f6f28cea92807a78c7b0e2053dab59391c04b176a1abcdaa459",
+    "src\\detectors\\redundantTrigger_detector.py": "f029cb8b28c06502d93daae90ce3f6d0590f6c9354970492a120e43cca09646b",
+    "src\\detectors\\runner_detector.py": "90efab73bef87ae13be979c1a2e297648e8f9125dc3e186b911bf1c6418bfebe",
+    "src\\detectors\\smell\\__init__.py": "c37cbbcb40b90766b0ecc0d72b07f458109de4378f575cfcbb1d2a67d6727670",
+    "src\\detectors\\smell\\cache_action_deprecation.py": "5e36b4536076dd9b55b042c98cc2c7f320f614d52be9cc83e2c94fa196636144",
+    "src\\detectors\\smell\\cache_artifact_dataflow.py": "832543f1903b471794239cbdbc96b7ea4f44c33899e670e6680a9f177071052e",
+    "src\\detectors\\smell\\cache_consumption.py": "33af15cffc61083f6ce6f3b362bdae5d9e180501dfe523647a5b39f76e20a67a",
+    "src\\detectors\\smell\\cache_key_dependency_downloads.py": "31f27ed2018b80ef11a1ce443a393c600c19349020665a22fd9c8f2efb4241eb",
+    "src\\detectors\\smell\\cache_key_runtime_sources.py": "ca701759dd82d3ef8576a08491ff00f0814cba3c8a82eb1d3e91bd7eba02b383",
+    "src\\detectors\\smell\\cache_position_dataflow.py": "5a5f868edb52136430f98b5bc0cab27b824a40ba0e814314f6de82c041234f9a",
+    "src\\detectors\\smell\\cache_smell_detector.py": "56f0ae43a09b3d9e23dbcc212bc2a490fda11ccaa781be5fb0d980c94628e7e3",
+    "src\\detectors\\smell\\docker_layer_cache.py": "8aec10b3a4dc9d9f5e2490f2018d581b40caebf6dae9b07bcf211faac0d0adec",
+    "src\\detectors\\smell\\ndc_install_semantics.py": "57ed0eab8e079b5cd2b2871732e2e8e45fb40369940977a2e7627798654fc249",
+    "src\\detectors\\smell\\setup_cache_capabilities.py": "1b37fc9a93a2c42600d76e763dc564b320e46d9a315c9beff8fdeb8e38094835",
+    "src\\detectors\\timeout_detector.py": "15ebd35fb327a9db13cc1cdbaf23da7dd09e1ea8fc110a32b4f94c3137962170",
+    "src\\legacy\\__init__.py": "321b8e7b22f845cc0335f59204453dd05fe01518f11326e0a3be44ecb36187a0",
+    "src\\legacy\\open_coding\\__init__.py": "c9b8abe91ac026d24d8bb0571a6f555763f0a2107aac3d8266d944d8feeaa91a",
+    "src\\legacy\\open_coding\\label_pool.py": "b97b582104456e73ccdda522459653931659106089681c77a29ad5e5c64d37f6",
+    "src\\legacy\\open_coding\\log_extractor.py": "d4177d4267caa374807a094fea49d8a5331a5d674663c6a90309990ebfb9818a",
+    "src\\legacy\\open_coding\\saturation.py": "0ea657e68275a3a7e905a09734254b9bef21447183c1916ca7744624d5514dd8",
+    "src\\loaders\\__init__.py": "571571d5fd6078acbeb082ccb796a6c20c7aaff9ed2ccdded9886ecc64e9ae49",
+    "src\\loaders\\json_loader.py": "439abd992d8e3f868c0b597f238db2b8918fc3ec6be9b05ffa6417ead3b0906f",
+    "src\\loaders\\log_loader.py": "6e2ff067bf70cf4499280dc6c341d8caa994daae1a010a78463d3301357b49b8",
+    "src\\models\\__init__.py": "41dafc86c8ac65090d65e7f8e1bee4c2f69e032e6b6b4591c856893e930f09ff",
+    "src\\models\\workflow.py": "6f13f38ad024a5417dfbc813306b561e934ef574767da95d8bf76f7713cb4b2a",
+    "src\\parsers\\__init__.py": "ac6f092224474ed3d1a56d2acbc99b25c025b12f35b8bdfbd88fee36fba68bc7",
+    "src\\parsers\\workflow_parser.py": "e6da12fb0707f9a9173bcaef9ec6bc0c694c41ca75f6e00a0df3816e0adc7219",
+    "src\\pipeline.py": "cbe98393e82c9f1e865501f3c3f3e7a862095b8929acd68d817bcd6f424e2639",
+    "src\\processors\\__init__.py": "657fb9d42c4bfeb16297518aeb7a9033ef4f50b4514a160b18909254a2c6ee87",
+    "src\\processors\\base.py": "91ab6f13a80fe2a4c033eddbe73be68ef3dd5f2bbfecf8c29f8b18f0d9126835",
+    "src\\processors\\log_processor.py": "2e2df76caab3419da3e3ee4e96a364ac376b2319f767c567fea2e9537f4f61d9",
+    "src\\processors\\run_processor.py": "b1fff866bdabb41f47fa51b3eab3d607a76bf22c1dbf3b67dd59a742ed66ab33",
+    "src\\smell_names.py": "2d826eb81aeff433594851cbd0faa0750f19da1d3fb71f05f78f5e675373c943",
+    "src\\utils\\__init__.py": "929596d94975d207f57c5d674256512c4aaf27f2894c01b5c163dc2d6cb06d88",
+    "src\\utils\\checkpoint.py": "2f5219fc2aafdf10d6f8931ae58bad1ca2fcc94b144a5f69506933502b86401f",
+    "src\\utils\\env_loader.py": "ca37f1b529224067785ae015725e999f70e8456a5011582f8c16f03714f711d1",
+    "src\\utils\\github_client.py": "df94cef853b9f4535546b15be1975a212433c11b5fbe4332d4870a64f57fdbb6",
+    "src\\utils\\helpers.py": "7d407e9dd5fc1dbe55d31ec81e5b278b0318dce613cb00bbc4cb8238fbc12ad6",
+    "src\\utils\\memory.py": "c69670cd0384c93e162f4977c580b09388f46688b4ef3989369a71865c6c6f70"
+  },
+  "source_files": {
+    "E:\\gha_log_analysis\\output_experimental_rq23_history_current_detector_20261019\\candidate_transitions.jsonl": "5b0755830125edfd17193232bd917be0285e5d62eb64ed8e0223dea62e8e1708",
+    "E:\\gha_log_analysis\\output_experimental_rq23_history_current_detector_20261019\\job_archive_index.jsonl": "1591be9b0ec13e85138ad45efe06f317422cc2e6fc93247a26d4c0060e6137cb",
+    "E:\\gha_log_analysis\\output_experimental_rq23_history_current_detector_20261019\\job_archive_audit.json": "37c58cee91f349ee46c22711caa8641d58539709a289baac660303c0aaf3ccb3",
+    "E:\\gha_log_analysis\\output_experimental_rq23_history_current_detector_20261019\\historical_exact_content_index.jsonl": "85d312eab0f4fb09165e4958d8a062104b99c253ea0958af5d8f8347e333700e",
+    "E:\\gha_log_analysis\\output_experimental_rq23_history_current_detector_20261019\\execution_content_evidence.jsonl": "b69ca432259c911b2b4b5c10737b2c62a2b8f31e7ab5e6896238cba152502f1d"
+  },
+  "run_sources": [
+    {
+      "file": "E:\\gha_log_analysis\\output_full_logical_20260915_complete\\rq2_input_merged_round4\\workflow_runs.jsonl",
+      "sha256": "03fc52bd3a4e63b166961ac3983e5456d070768623f04b450af889fd5f12c7e0",
+      "raw_rows": 1717343,
+      "new_target_success_runs": 24445
+    },
+    {
+      "file": "E:\\gha_log_analysis\\data_26_6_9_complete_20260609\\workflow_runs.jsonl",
+      "sha256": "ef5edce4b1e5c06d3d0fab606d962206bac69bf0f5830fa5de2dbe47ff336c25",
+      "raw_rows": 601061,
+      "new_target_success_runs": 0
+    },
+    {
+      "file": "E:\\gha_log_analysis\\output_rq23_sample_acquisition_20260929\\workflow_runs.jsonl",
+      "sha256": "7fcc7d55ffc6f494f6efb78e80f137144af921184e163f66a2f5138eea6a6305",
+      "raw_rows": 2534911,
+      "new_target_success_runs": 21014
+    },
+    {
+      "file": "E:\\gha_log_analysis\\output_rq23_sample_acquisition_batch2_20260930\\candidate_workflow_runs.jsonl",
+      "sha256": "d7766f7853939a3a74c57c5208e38c8f48b0794d1cd8de02fdae174e061cea5e",
+      "raw_rows": 9015,
+      "new_target_success_runs": 4236
+    },
+    {
+      "file": "E:\\gha_log_analysis\\output_rq23_full_history_sample_20261005\\archived_candidate_runs.jsonl",
+      "sha256": "dacddac19938dd1fca8e0171583322147667cf3239080288fa04f0d605879953",
+      "raw_rows": 2093,
+      "new_target_success_runs": 370
+    },
+    {
+      "file": "E:\\gha_log_analysis\\output_rq23_full_history_sample_20261005\\live_candidate_runs.jsonl",
+      "sha256": "c28dd677e771791e1eb09bcd59d375e0ce4eb6c151c43dc7a368c65fa7641a2f",
+      "raw_rows": 1405,
+      "new_target_success_runs": 0
+    },
+    {
+      "file": "E:\\gha_log_analysis\\output_rq23_full_history_sample_batch3_20261005\\archived_candidate_runs.jsonl",
+      "sha256": "9a2c97161c19c5966c049bd7bb9c8982490659eee56be4bc93eb981650b751e0",
+      "raw_rows": 20268,
+      "new_target_success_runs": 8913
+    },
+    {
+      "file": "E:\\gha_log_analysis\\output_rq23_full_history_sample_batch3_20261005\\live_candidate_runs.jsonl",
+      "sha256": "2f5834ff6a96a7daaf0c34c76ba28bcb744e12d1f2ae4fe762bc3747f1e6b5a2",
+      "raw_rows": 15896,
+      "new_target_success_runs": 0
+    },
+    {
+      "file": "E:\\gha_log_analysis\\output_rq23_full_history_sample_batch4_20261006\\archived_candidate_runs.jsonl",
+      "sha256": "33df0de00f8dbaa7ce8819562826752899ae3f98429c48d3935cce16df0adf0c",
+      "raw_rows": 3880,
+      "new_target_success_runs": 327
+    },
+    {
+      "file": "E:\\gha_log_analysis\\output_rq23_full_history_sample_batch4_20261006\\live_candidate_runs.jsonl",
+      "sha256": "e35d71c75745e0a975e9440128488dd7964b24c56cfac1ae1bd0a4deabb23f9e",
+      "raw_rows": 417,
+      "new_target_success_runs": 0
+    },
+    {
+      "file": "E:\\gha_log_analysis\\output_rq23_full_history_sample_batch5_20261006\\archived_candidate_runs.jsonl",
+      "sha256": "9671df51c60d69a86aa989d70f1d379be19a88b61a2e0ab6da7df97d3466889a",
+      "raw_rows": 15932,
+      "new_target_success_runs": 1006
+    },
+    {
+      "file": "E:\\gha_log_analysis\\output_rq23_full_history_sample_batch5_20261006\\live_candidate_runs.jsonl",
+      "sha256": "5094d73f39e55e87f9fa4413f4abe6783e66f93950ed00b0423f5248328c8546",
+      "raw_rows": 2106,
+      "new_target_success_runs": 0
+    }
+  ],
+  "conflicting_run_keys": 0,
+  "conflicting_exact_refs": 0
+}

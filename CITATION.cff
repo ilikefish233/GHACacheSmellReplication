@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this replication package. Update with the final publication and deposit identifiers when available."
+title: "Cache Configuration Smells in GitHub Actions: A Large-Scale Empirical Study — Replication Package"
+type: dataset
+version: "2026-10-25-local"
+authors:
+  - family-names: Wang
+    given-names: Siyu
+  - family-names: Zhang
+    given-names: Yang
+  - family-names: Xie
+    given-names: Changrong
+  - family-names: Jie
+    given-names: Jiacheng
+  - family-names: Chen
+    given-names: Youren
+  - family-names: Tang
+    given-names: Zezhou
+  - family-names: Zhang
+    given-names: Tanghaoran
+  - family-names: Mao
+    given-names: Xinjun

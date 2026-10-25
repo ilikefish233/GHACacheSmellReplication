@@ -1,0 +1,422 @@
+[
+  {
+    "path": "config/settings.py",
+    "sha256": "9b35e7620a0098cb111bdd8fe414fd245ea289e1d6a1591151a8c14f31bebcad",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/analyze_rq1_context_distributions.py",
+    "sha256": "533b72f122537695f61a6d19c671b34f50ebe3d7068358eeda3b732579591ffc",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/analyze_rq2_adjusted.py",
+    "sha256": "adf07eeec74285a0caa089ba461d82990ee5708da02946a39a9f13802d6d37c4",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/analyze_rq2_regression.py",
+    "sha256": "5a2f323c4a8c686b40e82b89398ebbdf17b514da03c35f215a37b7e0400e307d",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/analyze_rq2_run_level.py",
+    "sha256": "6630db9c1efcbb282fd3ead7da753b404cc004bdb8ade877f0a80e1ace3c069a",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/apply_rq2_cutoff_snapshot_repairs.py",
+    "sha256": "b33005ebb7636c14a09d8175cee79df5745faa146b36899767ed748f8f4618e5",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/audit_rq2_canonical_coverage.py",
+    "sha256": "1bd3057af13c19be267b6c1b7fab9e5c45470257a52def518b7dd46c0b6adde0",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/build_canonical_dataset.py",
+    "sha256": "0b32c244120c2a54ee4608a115623cec1e689b472925df7413027807c26cc236",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/build_rq2_final_coverage_evidence.py",
+    "sha256": "e01e14e3357edcbbb1afd2c0f3194dd0b81ab6d4328c6cec4c77a602239998d7",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/build_rq2_snapshot_repair_targets.py",
+    "sha256": "93af8c0ea2a21379f54be0def224110a0fd4e511c6c23a4240f39e4d285ad886",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/build_rq2_unified_acquisition_plan.py",
+    "sha256": "5f6bf44c79b03a1c5c56cbe04c8e0ae64ae7e2ccc4fed8b27c7984b0313533aa",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/cap_supplemental_runs.py",
+    "sha256": "31cb54e2d152cb23d8690475e6d83741f0137ba5a3a719feadae86e8f117076c",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/collect_rq23_candidate_workflow_runs.py",
+    "sha256": "6c9900dc434c067d0aa2043450283c617f089d1f4574bb3b1cf9d3199548183b",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/collect_rq23_extended_candidate_runs.py",
+    "sha256": "91a6e7a76c2216581ecb362d42c22c75f19c41dd3d12c8dfc0bdb0b17c4a85c3",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/collect_rq23_extended_history_blobs.py",
+    "sha256": "7da186dcbe7325ae79cf744290a5704b4c123f020c0420da0add4591e7c0eb39",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/collect_rq23_extended_history_index.py",
+    "sha256": "97def71f22e5010a115faad2091aa60e971c3a3c768ab93453cd37fe17dcc0ef",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/collect_rq23_sample_data.py",
+    "sha256": "10d19cdce3279fe307cee314c31245006fd035a036cfb3f82bf0418b63fa640c",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/consolidate_rq2_full_acquisition.py",
+    "sha256": "e326a9f1bb688a2a7d9ab380ed7a81b5d1af6eb5250036c2404d96350f3c6649",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/consolidate_rq2_query_coverage.py",
+    "sha256": "426805f218d58cb94a8f8dd5298e0b37c49dcfba4b6e49ca178aacc764997f1d",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/data_update/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/data_update/build_complete_dataset.py",
+    "sha256": "4c23a24e4f6290659fde04107d01ea768f218053bc3bae0d76812bc3a4a1773b",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/data_update/deduplicate_supplement_workflows.py",
+    "sha256": "2b42b29ceafd3443eae371e483e212422057a7bacc4ffa536c224dbeb5dd1606",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/data_update/deduplicate_workflow_files.py",
+    "sha256": "541e31022f9d0d61800203c69fc6496775c5573d48296cfe18c6ef12a304d1ae",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/data_update/fetch_all.py",
+    "sha256": "ded0d7488fd61477d3a4b27f2e3864e7de4e8506d349287a2b5daf7a60f8b025",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/data_update/fetch_missing_workflows.py",
+    "sha256": "c4b8f1b3ae7c2d164486413049a20df8ebdbf21ab59d85505bdf066f06a1e2c5",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/data_update/fetch_rare_smell_runs.py",
+    "sha256": "f5dace460538b2e15f7035186c550bc3c7906ebbe4b8687c97cd274ca73c5e89",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/data_update/fetch_workflow_changes.py",
+    "sha256": "9264741819d51861e72b7ed446b448c1e6a593c3472b8e692200ba606f45e2d9",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/data_update/filter_config.py",
+    "sha256": "635a88b25e16e5ca89a27cffb427126f8b7e337c316d043b64a50959fe525726",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/data_update/merge_rq2_inputs.py",
+    "sha256": "24f3b61d08981b5ce6f49ad249ca9b0a98a5cca0df598c4953cc33d1ba07b977",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/execute_rq2_unified_acquisition.py",
+    "sha256": "bb4d8ba19951e49b374f3569193dcf91bce0fc727d7b4a20929f4ea4f7109db3",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/fetch_current_run_jobs.py",
+    "sha256": "c8a8300588e103e25525e9c6b538413b32033a8d55b3d943822f9cf19c95f976",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/fetch_rq23_extended_selected_jobs.py",
+    "sha256": "b6fdfae5277617fc52e09deae61d7565d58899b974a754157098bea692839bde",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/fetch_workflows.py",
+    "sha256": "e05dcf4baa7aba926ff1dbea5c3f98d5257557d01038e8127620ee3206e429cc",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/filter_repositories.py",
+    "sha256": "a24a9c4a3e3d74c939dc6a64fae5f90f637d487883d37cc1ec1d02cd30b41fe0",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/filter_rq2_history_by_targets.py",
+    "sha256": "43fdf11fac8e525f89e7dc8d1fd36509e5febcadef314dad90ac6a8238cc70b3",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/finalize_rq23_batch2_jobs.py",
+    "sha256": "fada102888560b50e3c4f0d04a64b352f714a6b33f959bf392b911aeaf56f254",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/merge_rq2_history_sources.py",
+    "sha256": "b86b9b8be5ba11d12cd815964dfd91ce1c4f147284012de1febcd7905add00ec",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/normalize_rq2_repository_names.py",
+    "sha256": "984a437068273263e186847e4b8445944331e3f4fe8785f9f6e99022c6a89af2",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/prepare_canonical_experiment_inputs.py",
+    "sha256": "62eb5463f18f20984471add5f2f2e4b09d3a2fff4471d80a8aac6237c91d8beb",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/prepare_rq2_final_model_input.py",
+    "sha256": "3ea2ea2f31e1ab140025cea0c299c4462e0151f35b24d9bf003496ef62af4b4c",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/prepare_rq2_latest_snapshot.py",
+    "sha256": "d7409ac29b9f5f4ac7197fa455d3f2641624b7167a211198d5534c2f8fc53493",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/prepare_rq2_latest_version_interval.py",
+    "sha256": "09481af0a045262ae698866e84bdcacb01760ffdb130ed91b49a4a6e2d1d6c70",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/prepare_rq2_supplemented.py",
+    "sha256": "4b410cf828568210d3a6d638e299306634c45acd09935628e27b51a0d006b616",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/prepare_rq2_versioned.py",
+    "sha256": "7e3c096dead07fef48ec960c71f255e5703dd55e41618c64094b9b4b83976f3f",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/rerun_rq1_rq2_experimental.py",
+    "sha256": "4d942805201befb323574ca0e0677dc6c68e9acf02a74270a75ba7f1c6f3504f",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/sample_rq23_batch2_repositories.py",
+    "sha256": "0ab13f51cf67a9cb340d98500e87f142283bd2734af43c222dc08235ca4b86b1",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/sample_rq23_repositories.py",
+    "sha256": "2412a8c12201ca1c9b31054ba560bfd2fbcb370b4c521f966f43e5be6478c3e5",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/scan_smells_new.py",
+    "sha256": "ad54c85d7c5dc717e2ebaefe9d4adcef992873ef718f703d67ffdd49bfe85f25",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/scan_supplemented_snapshots.py",
+    "sha256": "8909444a5528f984230ab38d763c6c4ce5d4d7078b224e71c4e484f7504d87b9",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/smell_prevalence_new.py",
+    "sha256": "7ade41f47fa39b54d2dd3774d43418b9c118915c975d2ee80acaa1137cf0d373",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/supplement_default_branch_runs.py",
+    "sha256": "fa1c2cca8be168253fb03568bd555bed773c354c762698d8f42939b8a12724f7",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/supplement_rq2_cutoff_workflow_contents_graphql.py",
+    "sha256": "8c05d6e9d6b4d6647ebd9155823ad0adb9202c9b55760c48a79dec0be8869110",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/supplement_rq2_latest_version_history.py",
+    "sha256": "1b0a1fc88747a35f67169796784bcc079ad2c083a78f20d4ca48a6e5decaa080",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/supplement_rq2_latest_version_history_graphql.py",
+    "sha256": "a15f80e48f8478b6a68cb82e901b503f87e114692b3d2391687b5fcd43e3c21b",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "scripts/supplement_workflow_snapshots.py",
+    "sha256": "67852aaab88e6eebdfede441403b29c21d8616e068062965a072e215fc88529a",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/base.py",
+    "sha256": "b979299aefa9f427d75cf82b2fb4b7275b8e9eb18741c8e1eccb14c9c985924c",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/core/cache_detector.py",
+    "sha256": "729b15a8ba3106bef21b623ca2669ccecb894e0916eeb8cb835c995b75a58b14",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/core/timeout_detector.py",
+    "sha256": "57d498e00f6cc6d63b589e2db4675798fb6b06771731dc361b87229641c7e26e",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/deepclone_detector.py",
+    "sha256": "a907082f56ec52e520f9b1a09b4a5c7151c3a9fa87a026776bd7a457e8a0c954",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/failfast_detector.py",
+    "sha256": "d04c52251df110f40875425ae370e7a3168a15eaa191fe3ee75e0e050ed47c85",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/parallelism_detector.py",
+    "sha256": "efbe1b8a2b2a775dca56633eeac3ca262b70caa72c7c2aefc46df34f7f0d2323",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/redundantRun_detector.py",
+    "sha256": "acd3418b6b699f6f28cea92807a78c7b0e2053dab59391c04b176a1abcdaa459",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/redundantTrigger_detector.py",
+    "sha256": "f029cb8b28c06502d93daae90ce3f6d0590f6c9354970492a120e43cca09646b",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/runner_detector.py",
+    "sha256": "90efab73bef87ae13be979c1a2e297648e8f9125dc3e186b911bf1c6418bfebe",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/cache_action_deprecation.py",
+    "sha256": "5e36b4536076dd9b55b042c98cc2c7f320f614d52be9cc83e2c94fa196636144",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/cache_action_release_registry.json",
+    "sha256": "026fec834e9d5fe6495ef652daddc80e5c6be9b6dc985aa2f34b6cf0ad30610b",
+    "role": "versioned detector registry required by source acquisition scans"
+  },
+  {
+    "path": "src/detectors/smell/cache_artifact_dataflow.py",
+    "sha256": "832543f1903b471794239cbdbc96b7ea4f44c33899e670e6680a9f177071052e",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/cache_consumption.py",
+    "sha256": "33af15cffc61083f6ce6f3b362bdae5d9e180501dfe523647a5b39f76e20a67a",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/cache_key_dependency_downloads.py",
+    "sha256": "31f27ed2018b80ef11a1ce443a393c600c19349020665a22fd9c8f2efb4241eb",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/cache_key_runtime_sources.py",
+    "sha256": "ca701759dd82d3ef8576a08491ff00f0814cba3c8a82eb1d3e91bd7eba02b383",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/cache_position_dataflow.py",
+    "sha256": "5a5f868edb52136430f98b5bc0cab27b824a40ba0e814314f6de82c041234f9a",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/cache_smell_detector.py",
+    "sha256": "56f0ae43a09b3d9e23dbcc212bc2a490fda11ccaa781be5fb0d980c94628e7e3",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/docker_layer_cache.py",
+    "sha256": "8aec10b3a4dc9d9f5e2490f2018d581b40caebf6dae9b07bcf211faac0d0adec",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/ndc_install_semantics.py",
+    "sha256": "57ed0eab8e079b5cd2b2871732e2e8e45fb40369940977a2e7627798654fc249",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/setup_cache_capabilities.py",
+    "sha256": "1b37fc9a93a2c42600d76e763dc564b320e46d9a315c9beff8fdeb8e38094835",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/detectors/smell/setup_cache_registry.json",
+    "sha256": "d14ea64cce416075b1b9145f185630f3875b7c306dae9f860c603d2a2589820a",
+    "role": "versioned detector registry required by source acquisition scans"
+  },
+  {
+    "path": "src/loaders/json_loader.py",
+    "sha256": "439abd992d8e3f868c0b597f238db2b8918fc3ec6be9b05ffa6417ead3b0906f",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/models/workflow.py",
+    "sha256": "6f13f38ad024a5417dfbc813306b561e934ef574767da95d8bf76f7713cb4b2a",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/parsers/workflow_parser.py",
+    "sha256": "e6da12fb0707f9a9173bcaef9ec6bc0c694c41ca75f6e00a0df3816e0adc7219",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/smell_names.py",
+    "sha256": "2d826eb81aeff433594851cbd0faa0750f19da1d3fb71f05f78f5e675373c943",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/utils/checkpoint.py",
+    "sha256": "2f5219fc2aafdf10d6f8931ae58bad1ca2fcc94b144a5f69506933502b86401f",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/utils/env_loader.py",
+    "sha256": "ca37f1b529224067785ae015725e999f70e8456a5011582f8c16f03714f711d1",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/utils/github_client.py",
+    "sha256": "df94cef853b9f4535546b15be1975a212433c11b5fbe4332d4870a64f57fdbb6",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  },
+  {
+    "path": "src/utils/helpers.py",
+    "sha256": "7d407e9dd5fc1dbe55d31ec81e5b278b0318dce613cb00bbc4cb8238fbc12ad6",
+    "role": "historical acquisition/curation source; formal detector remains code/frozen"
+  }
+]

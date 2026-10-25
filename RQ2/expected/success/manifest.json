@@ -1,0 +1,35 @@
+{
+  "experimental": true,
+  "status": "complete",
+  "started_at": "2026-10-18T16:19:13.266247+00:00",
+  "prepared_source": "E:\\gha_log_analysis\\output_experimental_rq2_unified_slim_20261018_results",
+  "bootstrap": 0,
+  "model": "unified LPM for success only",
+  "input_sha256": {
+    "run_records.jsonl": "f937c7ce8423c5865310a3a6532a4808ceff9ee7bac37c0c42c056fc400e910e",
+    "version_scan_results.jsonl": "ca20b03da79a01539f936d5267e82ec22149c15ca42e062c6f5a4b4256eed492"
+  },
+  "prepared_sha256": {
+    "manifest.json": "e72e72b0123b247395d3e68095f36bebf08603f24287495d2ad1656dedb19c9a",
+    "workflow_features.jsonl": "8e37064c1f4349a6298489c1fd32569e7c1778201b1f83a34b66360e26fd4faa",
+    "group_keys.jsonl": "7c63772e9002fe9ac1f69eb9453e048fc1557e8e9b3c4ae68feaa8413935d312",
+    "grouped_outcomes.npz": "bf7afa6a8084483f57a980a5b4f1d467f96f74c6820f3d641bfd04c8d2377e33",
+    "reliability.json": "dab54072ca9cb2ce126e96b8f69c69fea769bfa48cf1b4f32013ed9cd6ea6325",
+    "all_completed_duration.json": "3c2b5b5a7e33364f1d555915cb948b82fb7d4eaecba6feee700ff8263b122632",
+    "successful_duration.json": "9701e485029d6a8cc830d39e509fcfeb4a6facdd64960dd5026db5b09ea07152"
+  },
+  "code_sha256": {
+    "experiments\\rq2_unified_slim_20261018\\engine.py": "c40ad308bf8b974f23b3b2fa50236d3893724584099b00a63cfa2b003cb71015",
+    "experiments\\rq2_unified_slim_20261018\\features.py": "9fa0f9a5e3a11d682d888011d7a179b8e424f059e0471435524c98f7642b9533",
+    "experiments\\rq2_unified_slim_20261018\\run.py": "9bdea52f2613ca156f7e5972678d4dd742aba4fedff9fd31ed18b8d8445f7a4f",
+    "experiments\\rq2_unified_slim_20261018\\test_model.py": "4603bb79ac794697d3131fe0b003b3ff78c1e10c7a4a70ec63b1daf17c6f5e95",
+    "experiments\\rq2_unified_lpm_20261019\\run.py": "dc9faf5f1e3e10ef55fa26765936711f6317aeeab70eaeac5cdfc67784ae51fd",
+    "experiments\\rq2_unified_lpm_20261019\\test_lpm.py": "c607887bef3864a69304d5531fccfc35e025c9a269db8db2e562c5eab6f09f94"
+  },
+  "original_code_verified": true,
+  "completed_at": "2026-10-18T16:19:27.315423+00:00",
+  "seconds": 14.0500060999766,
+  "sample_matches_previous_success_model": true,
+  "duration_results_source": "E:\\gha_log_analysis\\output_experimental_rq2_unified_slim_20261018_results",
+  "duration_results_recomputed": false
+}

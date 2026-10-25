@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "file": "paper/supplementary_rq1_repository_features_20260925.tex",
+      "sha256": "32c1db94c3f1c2a4df3e3180af30192129d272ba98b27fdeace985aee2bdf7f5"
+    },
+    {
+      "file": "paper/supplementary_rq2_regression_reporting_20260926.tex",
+      "sha256": "cc76e009eee896fbce572f34660b1015e3a56ff06b28dd728912d2f8c497c683"
+    },
+    {
+      "file": "paper/template.tex",
+      "sha256": "3a123f3c2d3188f4dcb7e88cfe03d4cca86a05396794cb7beb709d96a8f41db7"
+    }
+  ],
+  "source_modified": false,
+  "rq3_scope_restored": false
+}

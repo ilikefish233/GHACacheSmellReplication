@@ -1,0 +1,22 @@
+{
+  "full_run_source": "E:\\gha_log_analysis\\output_rq23_sample_acquisition_20260929\\workflow_runs.jsonl",
+  "sha256": "7fcc7d55ffc6f494f6efb78e80f137144af921184e163f66a2f5138eea6a6305",
+  "source_rows": 2534911,
+  "covered_calendar_months": [
+    "2026-04",
+    "2026-05"
+  ],
+  "frequency_scope": "completed/success on research default branch; all trigger types; observed run_id/run_attempt records",
+  "effect_repositories": 88,
+  "frequency_covered_repositories": 52,
+  "frequency_missing_repositories": 36,
+  "covered_effect_events": 105,
+  "frequency_target_duplicates": 0,
+  "api_calls": 0,
+  "hypothetical_frequency_used": false,
+  "source": "audited complete repository run acquisition, not job sample sizes",
+  "cost_difference_source": "E:\\gha_log_analysis\\output_experimental_rq23_history_relaxed_20261019\\event_resource_differences.jsonl",
+  "cost_difference_source_sha256": "994e2e4bb880c994339fef402dae14c45a385fdb66cf4fc873ce9d54989375e9",
+  "repository_metadata_sha256": "5977de05fed0740922f6fbbc2740f38a157abe108c9b0b6a05ef97f463deca17",
+  "run_status_sha256": "db70e05119a7bba90b418e610182ed89104f077768ca1692569cad64e7413742"
+}

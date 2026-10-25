@@ -1,0 +1,1640 @@
+﻿workflow_key,error
+10057936|.github/workflows/build.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\6345f95a3dbcfba77923858a122749126c244402bd2860aff19962edb71c2029.yml
+101767772|.github/workflows/main.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+108473348|.github/workflows/main.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+115012280|.github/workflows/build.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+115012280|.github/workflows/clang.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+115012280|.github/workflows/gcc-versions.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+115012280|.github/workflows/mingw.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+115012280|.github/workflows/osx.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+11542067|.github/workflows/qctools.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+121250848|.github/workflows/ci.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1105, in _analyze_job
+    smells.extend(self._detect_disposable_cache_key(job_name, analysis, workflow_mode, job, workflow))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3608, in _detect_disposable_cache_key
+    evidence = RuntimeCacheKeySources(workflow, job).evidence(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_key_runtime_sources.py"", line 244, in evidence
+    self._step(step, index, duplicates)
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_key_runtime_sources.py"", line 185, in _step
+    scope, local, output, env_writes = self._scope(step), {}, {}, {}
+                                       ^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_key_runtime_sources.py"", line 142, in _scope
+    scope.update(getattr(step, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+12384165|.github/workflows/arm.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+12384165|.github/workflows/build.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+12384165|.github/workflows/decode.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+12384165|.github/workflows/mingw.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+12384165|.github/workflows/osx.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+124952577|.github/workflows/build_and_test.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+125767856|.github/workflows/eepp-windows-build-check.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+12968763|.github/workflows/ci.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\394225108f3f450db56e55a6c7b6a74974f08e960aa6912cc11d1222367a5703.yml
+135159521|.github/workflows/pre-commit.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+13900112|.github/workflows/tests.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+14052034|.github/workflows/test.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+14712850|.github/workflows/build-syncthing.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\4aa1d1562c6c3fc999e4984c44263308ad68ba07f96a569edf12a123bb37d3d4.yml
+14712850|.github/workflows/mirrors.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\c867ed963cb923f667b599468cd434fdd0d411d0eabbbeb04d20a239913d88b2.yml
+14712850|.github/workflows/org-members.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\1b8ca13ed102854270c6479211872606e1ee776ec6942b5aa9c4758b1eeb8f00.yml
+14712850|.github/workflows/pr-metadata.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\8c45570c486f1a75b38a5daaffc61b16b83cc414be57d8340ef7af1ca61e71e3.yml
+14712850|.github/workflows/release-syncthing.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\55cd947b213bf856eb2fa5f3046170e2537d9fe05330acec6d56f03c66ceb64d.yml
+14712850|.github/workflows/trigger-nightly.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\41256e2aa6b7dde14927414840736f486c33dc62f4fc8cb8630b75c4430cf950.yml
+14712850|.github/workflows/update-docs-translations.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\d75b93140ea9273035e9123d357428e6ccdb9b0cb0173b2a8dba43cea3afdf67.yml
+147887472|.github/workflows/release-draft.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+147889066|.github/workflows/release-draft.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+1613176|.github/workflows/codeql.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+174428423|.github/workflows/ci.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+181911464|.github/workflows/doxygen.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+186178030|.github/workflows/build.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+19103692|.github/workflows/lock.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\a1beaa8eb3926abfa930d944a1316e6c4b3f60de4f305e05258693f6d95e7b9a.yml
+19103692|.github/workflows/pre-commit.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\6ceaadd5d41f22d6384392e6b4fcd239695addb45ff490ef22ab441b57ffdd42.yml
+19103692|.github/workflows/zizmor.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\d5901a4a70beeaf175b2a07b2a7b9236bc326de320d070e0376ff664aa9cde3b.yml
+1975671|.github/workflows/automation/greetings.yml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\7a2d0931e93207a4e6d105579d455fe2bb1a08f6379c61d26f5115d4de275cdc.yml
+1975671|.github/workflows/automation/label.yml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\792c20b5bae66700b758e3c4d02abe52fdb34cc35bb05147eaf0bd61c3192ed7.yml
+1975671|.github/workflows/automation/stale.yml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\30b5de0cf51f9ce80d357563ca215e9bd50f6aafe0d1341617301798066f43c4.yml
+21540759|.github/workflows/pr-quality-check.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\2c804ea1813c8038347b463e14a1cefcacaf2d81df273b637b68dc25dfed493d.yml
+21540759|.github/workflows/recheck-open-prs.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\a4e705c6f0192ff69d3c6869ac0ac937adca1b425bfcb49304fbe455f057d4dd.yml
+21540759|.github/workflows/run-check.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\122a5ade9b65a001ce865a7d374d0cff5d16a9f9f45df2d7e18144dfdfc6f075.yml
+21540759|.github/workflows/site-deploy.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\f1a86b9460a222e2a7f92763ff6d20022ca64546cf9fe143a50ecec207e23743.yml
+21540759|.github/workflows/tests.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\5cf7c6ce10e6f0ffc32122a63b5953756a8fad1a57d7d1e6526cce1c6f46cd64.yml
+2179920|.github/workflows/ci.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+224468298|.github/workflows/ci.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+22637619|.github/workflows/rotating-domains-checker.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+226983227|.github/workflows/build.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+226983227|.github/workflows/release.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+2339555|.github/workflows/cibuild.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+234192998|.github/workflows/fuzz.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+24517284|.github/workflows/main.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1102, in _analyze_job
+    smells.extend(self._detect_no_dependency_cache(job_name, analysis, workflow_mode, job, workflow))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1857, in _detect_no_dependency_cache
+    step['context'] = install_context(self, workflow, job, step['index'], step['run'], occurrence)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\ndc_install_semantics.py"", line 122, in install_context
+    env = {**analyzer.env, **step.env}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not a mapping
+"
+26217535|.github/workflows/ci.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+265302687|.github/workflows/main.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+27156301|.github/workflows/build.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+293539521|.github/workflows/main.yaml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+306084295|.github/workflows/summa-wasm.yaml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 29, in __init__
+    self.env.update(getattr(workflow, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+311186596|.github/workflows/ci.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1104, in _analyze_job
+    smells.extend(self._detect_cache_position_error(job_name, analysis, job, workflow, workflow_mode))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 2391, in _detect_cache_position_error
+    producer = self._cache_has_prior_producer(job, cache_info, workflow, analysis)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 2255, in _cache_has_prior_producer
+    written = [item for item in explicit_file_outputs(workflow, job, step, index)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_position_dataflow.py"", line 108, in explicit_file_outputs
+    env = {**analyzer.env, **(step.env or {})}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not a mapping
+"
+311715246|.github/workflows/checks.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1102, in _analyze_job
+    smells.extend(self._detect_no_dependency_cache(job_name, analysis, workflow_mode, job, workflow))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1857, in _detect_no_dependency_cache
+    step['context'] = install_context(self, workflow, job, step['index'], step['run'], occurrence)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\ndc_install_semantics.py"", line 122, in install_context
+    env = {**analyzer.env, **step.env}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not a mapping
+"
+31288958|.github/workflows/test-go.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 29, in __init__
+    self.env.update(getattr(workflow, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+31374735|.github/workflows/create_containers.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+31374735|.github/workflows/matrix.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+32873163|.github/workflows/msbuild.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+32873313|.github/workflows/build-test.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+33486016|.github/workflows/build.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\9e1b200a963d3dfe315985aee6c031484518994403fd0058de8bd10f1ade8d86.yml
+33486016|.github/workflows/test.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\8ab3621afe8d9b76c2bacc802b2636e8aaf7be4e2bbafed1469fac9991cc78b8.yml
+341707514|.github/workflows/main.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+34824499|.github/workflows/stale.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\4830d2d915aa9e69aa3b6a04bc8589899c04f68cf56e36236d473f39c7a297f2.yml
+35640229|.github/workflows/build-and-tests.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1105, in _analyze_job
+    smells.extend(self._detect_disposable_cache_key(job_name, analysis, workflow_mode, job, workflow))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3608, in _detect_disposable_cache_key
+    evidence = RuntimeCacheKeySources(workflow, job).evidence(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_key_runtime_sources.py"", line 244, in evidence
+    self._step(step, index, duplicates)
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_key_runtime_sources.py"", line 185, in _step
+    scope, local, output, env_writes = self._scope(step), {}, {}, {}
+                                       ^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_key_runtime_sources.py"", line 142, in _scope
+    scope.update(getattr(step, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+35649|.github/workflows/ci-macos.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+35649|.github/workflows/ci-sanitizers.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+35649|.github/workflows/ci-scheduled-fuzzing.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+35649|.github/workflows/ci.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+35649|.github/workflows/docker-crossbuild.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+35649|.github/workflows/docker-service.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+39093389|.github/workflows/copilot-setup-steps.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\ec8f6c16106df23e1f623028775f89f7b19aa18830f339545eaa4c8815b5a5e1.yml
+410749029|.github/workflows/cache-factory.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\02bc424720a98ea3225bb82b4f36ff58f5fccc454c238427758281e4f755a5f1.yml
+416569171|.github/workflows/config/label-commands.yml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\f107264928ad6df8552b5e722b1b2673965064a76af994fdbbd7bb840badda97.yml
+416569171|.github/workflows/config/needs-more-info.yml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\6e09f3d293e8fa9b345c9298bae0c14a3a918d13e13f4e0e5a85c6454381489c.yml
+416569171|.github/workflows/config/pr-label-branch-name.yml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\367ebed48c3ee4078f0fb920228b66a008ca9bfa54706a75df2586aca4caa7c6.yml
+416569171|.github/workflows/config/pr-label-file-paths.yml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\19dfde1b2c6151e4a15ebd86239333272c030564d480dc54592ea835fe541f40.yml
+416569171|.github/workflows/config/slash-commands.yml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\4071dbe79585f55240dc746747312cfead9ee8707aa402e36ead81815368cadb.yml
+42332863|.github/workflows/ci.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\082f6654044c057c616b55b8f2bc654b6cb69f9fd0658d5fc2b65d30ad93bfc7.yml
+42332863|.github/workflows/lint-pr.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\95929b916e2bcedaa3ee8e5f8d4c65613aa4f342f2a9ce4d4732e3554d2013f3.yml
+429907564|.github/workflows/ci.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+438782840|.github/workflows/pkg-pr-new.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+448045|.github/workflows/ci.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\dea6d033afae0e5265be1c1fd10ad256ff6b426cd316a42dc1ba00ddf19fa298.yml
+448045|.github/workflows/release.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\bab23041de0daf19b5170d1206e8720b21cb012e06d786dbfc86353a4a3b2d33.yml
+46379698|.github/workflows/version-matrix.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+491676495|.github/workflows/expo.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+5108051|.github/workflows/PR-4.x.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\d5cc88535411ecc9f05b70612a724badef90ebb677045dbed7f3dfb516a5a33d.yml
+514553345|.github/workflows/build_all.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+52161880|.github/workflows/nodejs.yml,"Frozen content unavailable; excluded, never treated as smell-free"
+527591471|.github/workflows/on_pull_request.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\2b97d99e78ef5b0d1045db77c38ac83e6f11d52712f8705953d4c6c63c465400.yml
+527591471|.github/workflows/run_tests.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\054414879e0d483bef3aa8aec80c32fd9e008d0b71f15acb6fcffdc2a0615661.yml
+529502|.github/workflows/checks.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1102, in _analyze_job
+    smells.extend(self._detect_no_dependency_cache(job_name, analysis, workflow_mode, job, workflow))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1857, in _detect_no_dependency_cache
+    step['context'] = install_context(self, workflow, job, step['index'], step['run'], occurrence)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\ndc_install_semantics.py"", line 122, in install_context
+    env = {**analyzer.env, **step.env}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not a mapping
+"
+529502|.github/workflows/tests-macos.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1102, in _analyze_job
+    smells.extend(self._detect_no_dependency_cache(job_name, analysis, workflow_mode, job, workflow))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1857, in _detect_no_dependency_cache
+    step['context'] = install_context(self, workflow, job, step['index'], step['run'], occurrence)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\ndc_install_semantics.py"", line 122, in install_context
+    env = {**analyzer.env, **step.env}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not a mapping
+"
+529502|.github/workflows/tests-ubuntu.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1102, in _analyze_job
+    smells.extend(self._detect_no_dependency_cache(job_name, analysis, workflow_mode, job, workflow))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1857, in _detect_no_dependency_cache
+    step['context'] = install_context(self, workflow, job, step['index'], step['run'], occurrence)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\ndc_install_semantics.py"", line 122, in install_context
+    env = {**analyzer.env, **step.env}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not a mapping
+"
+529502|.github/workflows/tests-windows.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1102, in _analyze_job
+    smells.extend(self._detect_no_dependency_cache(job_name, analysis, workflow_mode, job, workflow))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1857, in _detect_no_dependency_cache
+    step['context'] = install_context(self, workflow, job, step['index'], step['run'], occurrence)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\ndc_install_semantics.py"", line 122, in install_context
+    env = {**analyzer.env, **step.env}
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not a mapping
+"
+576431865|.github/workflows/callable-test.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+596892|.github/workflows/lock.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\a1beaa8eb3926abfa930d944a1316e6c4b3f60de4f305e05258693f6d95e7b9a.yml
+596892|.github/workflows/pre-commit.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\6ceaadd5d41f22d6384392e6b4fcd239695addb45ff490ef22ab441b57ffdd42.yml
+596892|.github/workflows/publish.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\d6ebee41546c9b8be29e0b4cec18f13d2a394a8154f17f3f38450e5c1e1a7a3d.yml
+596892|.github/workflows/tests.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\fefc4362b9823c261594a05c7919140c2e312eecee84c4dd10095dbdd00a514b.yml
+596892|.github/workflows/zizmor.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\d5901a4a70beeaf175b2a07b2a7b9236bc326de320d070e0376ff664aa9cde3b.yml
+66424871|.github/workflows/main_distributed.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\1d8eebea866450d5017bed0225a0c78c457800fd1a86b07ba4ea36447d2651ad.yml
+6910286|.github/workflows/ci.yml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\b616d2dae01217e5ef7da78b116bae4891a70c131d39ab3f2752fe8d04e7eb51.yml
+843222|.github/workflows/unit-tests.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+84580444|.github/workflows/centos-and-fedora.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+84580444|.github/workflows/debian.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+84580444|.github/workflows/opensuse.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+84580444|.github/workflows/time-machine.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+84580444|.github/workflows/ubuntu.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+86566316|.github/workflows/tests.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+901662|.github/workflows/ab-perf.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+901662|.github/workflows/benchmark.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+901662|.github/workflows/experimental.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+901662|.github/workflows/main.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+901662|.github/workflows/nightly.yml,"Traceback (most recent call last):
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 58, in scan
+    return _scan(task)
+           ^^^^^^^^^^^
+  File ""E:\gha_log_analysis\scripts\rerun_rq1_rq2_experimental.py"", line 50, in _scan
+    result = CacheSmellDetector().detect_from_file(Path(content), workflow_path=workflow_path)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\base.py"", line 200, in detect_from_file
+    return self.detect(workflow)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 264, in detect
+    job_smells, analysis = self._analyze_job(job_name, job, workflow, workflow_mode)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 1091, in _analyze_job
+    docker_assessments = self._assess_docker_layer_cache(job, analysis, workflow)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_smell_detector.py"", line 3905, in _assess_docker_layer_cache
+    return DockerLayerCacheAnalyzer(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\docker_layer_cache.py"", line 16, in __init__
+    self.paths = CacheConsumptionAnalyzer(workflow=workflow, job=job)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""E:\gha_log_analysis\src\detectors\smell\cache_consumption.py"", line 30, in __init__
+    self.env.update(getattr(job, 'env', None) or {})
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+"
+997338|.github/workflows/lock.yaml,Content hash mismatch: E:\gha_log_analysis\data_26_6_9_canonical_20260609\content\a1beaa8eb3926abfa930d944a1316e6c4b3f60de4f305e05258693f6d95e7b9a.yml

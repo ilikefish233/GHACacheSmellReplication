@@ -1,0 +1,24 @@
+\begin{figure}[!htbp]
+\centering
+\begin{lstlisting}[style=ccscase]
+  4 jobs:
+  5   tests:
+  6     strategy:
+  7       matrix:
+|+|  8         java: ['17', '21', '25']|/|
+|+|  9         os: [ubuntu-latest]|/|
+ 10 
+ 11     runs-on: ${{ matrix.os }}
+    ... omitted ...
+ 23       - uses: actions/cache@v5
+|+| 24         id: cache-deps|/|
+ 25         with:
+|+| 26           path: ~/.m2/repository|/|
+|+| 27           key: deps-${{ hashFiles('project.clj') }}|/|
+ 28           restore-keys: deps-
+ 29 
+|+| 30       - run: lein test-ci|/|
+\end{lstlisting}
+\caption{\texttt{redundant\_cache\_update} in \href{https://github.com/http-kit/http-kit/blob/7bd0a06ae2d5e50a44ec38fb0f672897352cfe8d/.github/workflows/main-tests.yml}{http-kit/http-kit}.}
+\label{fig:ccs-redundant-update}
+\end{figure}

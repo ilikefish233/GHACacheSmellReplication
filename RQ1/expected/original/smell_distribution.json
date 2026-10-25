@@ -1,0 +1,5524 @@
+{
+  "by_language": {
+    "no_dependency_cache": [
+      {
+        "language": "Python",
+        "count": 2552,
+        "pct": 69.8
+      },
+      {
+        "language": "TypeScript",
+        "count": 1346,
+        "pct": 42.96
+      },
+      {
+        "language": "JavaScript",
+        "count": 610,
+        "pct": 42.21
+      }
+    ],
+    "no_restore_keys": [
+      {
+        "language": "Python",
+        "count": 550,
+        "pct": 15.04
+      },
+      {
+        "language": "TypeScript",
+        "count": 422,
+        "pct": 13.47
+      },
+      {
+        "language": "C++",
+        "count": 354,
+        "pct": 23.71
+      },
+      {
+        "language": "Rust",
+        "count": 317,
+        "pct": 22.82
+      },
+      {
+        "language": "Go",
+        "count": 263,
+        "pct": 13.01
+      },
+      {
+        "language": "Java",
+        "count": 225,
+        "pct": 16.34
+      },
+      {
+        "language": "C",
+        "count": 184,
+        "pct": 21.52
+      },
+      {
+        "language": "PHP",
+        "count": 162,
+        "pct": 18.88
+      },
+      {
+        "language": "JavaScript",
+        "count": 132,
+        "pct": 9.13
+      },
+      {
+        "language": "C#",
+        "count": 89,
+        "pct": 12.7
+      },
+      {
+        "language": "Kotlin",
+        "count": 76,
+        "pct": 17.16
+      },
+      {
+        "language": "Ruby",
+        "count": 39,
+        "pct": 8.86
+      },
+      {
+        "language": "Elixir",
+        "count": 39,
+        "pct": 46.99
+      },
+      {
+        "language": "Shell",
+        "count": 24,
+        "pct": 6.03
+      },
+      {
+        "language": "HTML",
+        "count": 20,
+        "pct": 18.69
+      },
+      {
+        "language": "Dart",
+        "count": 20,
+        "pct": 9.85
+      },
+      {
+        "language": "Swift",
+        "count": 10,
+        "pct": 6.21
+      },
+      {
+        "language": "Jupyter Notebook",
+        "count": 10,
+        "pct": 17.86
+      },
+      {
+        "language": "MDX",
+        "count": 9,
+        "pct": 20.45
+      },
+      {
+        "language": "Unknown",
+        "count": 7,
+        "pct": 10.94
+      },
+      {
+        "language": "Vue",
+        "count": 7,
+        "pct": 23.33
+      },
+      {
+        "language": "Solidity",
+        "count": 4,
+        "pct": 40.0
+      },
+      {
+        "language": "Lua",
+        "count": 4,
+        "pct": 44.44
+      },
+      {
+        "language": "Erlang",
+        "count": 3,
+        "pct": 100.0
+      },
+      {
+        "language": "Scala",
+        "count": 3,
+        "pct": 37.5
+      },
+      {
+        "language": "Nix",
+        "count": 3,
+        "pct": 6.82
+      },
+      {
+        "language": "CSS",
+        "count": 3,
+        "pct": 18.75
+      },
+      {
+        "language": "Assembly",
+        "count": 2,
+        "pct": 40.0
+      },
+      {
+        "language": "OCaml",
+        "count": 2,
+        "pct": 50.0
+      },
+      {
+        "language": "Vim Script",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Apex",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "LLVM",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "SystemVerilog",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "V",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Gherkin",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "BitBake",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "Mathematica",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "MLIR",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Reason",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "Blade",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "Nim",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "CMake",
+        "count": 1,
+        "pct": 25.0
+      },
+      {
+        "language": "ReScript",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Groovy",
+        "count": 1,
+        "pct": 5.0
+      },
+      {
+        "language": "Makefile",
+        "count": 1,
+        "pct": 10.0
+      },
+      {
+        "language": "Verilog",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "Tcl",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "CAP CDS",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Jac",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "EJS",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "QML",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Pony",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Ballerina",
+        "count": 1,
+        "pct": 100.0
+      }
+    ],
+    "redundant_cache_update": [
+      {
+        "language": "TypeScript",
+        "count": 246,
+        "pct": 7.85
+      },
+      {
+        "language": "Python",
+        "count": 223,
+        "pct": 6.1
+      },
+      {
+        "language": "PHP",
+        "count": 170,
+        "pct": 19.81
+      },
+      {
+        "language": "Java",
+        "count": 164,
+        "pct": 11.91
+      },
+      {
+        "language": "Go",
+        "count": 147,
+        "pct": 7.27
+      },
+      {
+        "language": "C++",
+        "count": 114,
+        "pct": 7.64
+      },
+      {
+        "language": "Rust",
+        "count": 106,
+        "pct": 7.63
+      },
+      {
+        "language": "JavaScript",
+        "count": 67,
+        "pct": 4.64
+      },
+      {
+        "language": "C",
+        "count": 65,
+        "pct": 7.6
+      },
+      {
+        "language": "Kotlin",
+        "count": 32,
+        "pct": 7.22
+      },
+      {
+        "language": "C#",
+        "count": 25,
+        "pct": 3.57
+      },
+      {
+        "language": "Ruby",
+        "count": 23,
+        "pct": 5.23
+      },
+      {
+        "language": "Elixir",
+        "count": 20,
+        "pct": 24.1
+      },
+      {
+        "language": "HTML",
+        "count": 6,
+        "pct": 5.61
+      },
+      {
+        "language": "Dart",
+        "count": 6,
+        "pct": 2.96
+      },
+      {
+        "language": "MDX",
+        "count": 5,
+        "pct": 11.36
+      },
+      {
+        "language": "Jupyter Notebook",
+        "count": 5,
+        "pct": 8.93
+      },
+      {
+        "language": "Swift",
+        "count": 4,
+        "pct": 2.48
+      },
+      {
+        "language": "Shell",
+        "count": 4,
+        "pct": 1.01
+      },
+      {
+        "language": "Unknown",
+        "count": 3,
+        "pct": 4.69
+      },
+      {
+        "language": "Groovy",
+        "count": 3,
+        "pct": 15.0
+      },
+      {
+        "language": "Solidity",
+        "count": 3,
+        "pct": 30.0
+      },
+      {
+        "language": "Erlang",
+        "count": 2,
+        "pct": 66.67
+      },
+      {
+        "language": "Objective-C",
+        "count": 2,
+        "pct": 6.06
+      },
+      {
+        "language": "CSS",
+        "count": 2,
+        "pct": 12.5
+      },
+      {
+        "language": "Assembly",
+        "count": 1,
+        "pct": 20.0
+      },
+      {
+        "language": "Vim Script",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "LLVM",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "Mathematica",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Reason",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "Scala",
+        "count": 1,
+        "pct": 12.5
+      },
+      {
+        "language": "Lua",
+        "count": 1,
+        "pct": 11.11
+      },
+      {
+        "language": "ReScript",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Vue",
+        "count": 1,
+        "pct": 3.33
+      },
+      {
+        "language": "Svelte",
+        "count": 1,
+        "pct": 14.29
+      },
+      {
+        "language": "Tcl",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "HCL",
+        "count": 1,
+        "pct": 16.67
+      },
+      {
+        "language": "Pony",
+        "count": 1,
+        "pct": 100.0
+      }
+    ],
+    "cache_position_error": [
+      {
+        "language": "Go",
+        "count": 318,
+        "pct": 15.73
+      },
+      {
+        "language": "TypeScript",
+        "count": 57,
+        "pct": 1.82
+      },
+      {
+        "language": "Python",
+        "count": 50,
+        "pct": 1.37
+      },
+      {
+        "language": "JavaScript",
+        "count": 20,
+        "pct": 1.38
+      },
+      {
+        "language": "C++",
+        "count": 18,
+        "pct": 1.21
+      },
+      {
+        "language": "Rust",
+        "count": 16,
+        "pct": 1.15
+      },
+      {
+        "language": "C",
+        "count": 11,
+        "pct": 1.29
+      },
+      {
+        "language": "Java",
+        "count": 10,
+        "pct": 0.73
+      },
+      {
+        "language": "Ruby",
+        "count": 5,
+        "pct": 1.14
+      },
+      {
+        "language": "PHP",
+        "count": 3,
+        "pct": 0.35
+      },
+      {
+        "language": "Kotlin",
+        "count": 3,
+        "pct": 0.68
+      },
+      {
+        "language": "HTML",
+        "count": 3,
+        "pct": 2.8
+      },
+      {
+        "language": "Shell",
+        "count": 3,
+        "pct": 0.75
+      },
+      {
+        "language": "Unknown",
+        "count": 2,
+        "pct": 3.12
+      },
+      {
+        "language": "MDX",
+        "count": 2,
+        "pct": 4.55
+      },
+      {
+        "language": "Haskell",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "Elixir",
+        "count": 1,
+        "pct": 1.2
+      },
+      {
+        "language": "LLVM",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "Dockerfile",
+        "count": 1,
+        "pct": 5.26
+      },
+      {
+        "language": "Vue",
+        "count": 1,
+        "pct": 3.33
+      },
+      {
+        "language": "Tcl",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Swift",
+        "count": 1,
+        "pct": 0.62
+      }
+    ],
+    "conflicting_cache_sources": [
+      {
+        "language": "Go",
+        "count": 164,
+        "pct": 8.11
+      },
+      {
+        "language": "Java",
+        "count": 52,
+        "pct": 3.78
+      },
+      {
+        "language": "Python",
+        "count": 44,
+        "pct": 1.2
+      },
+      {
+        "language": "C++",
+        "count": 37,
+        "pct": 2.48
+      },
+      {
+        "language": "TypeScript",
+        "count": 33,
+        "pct": 1.05
+      },
+      {
+        "language": "Rust",
+        "count": 16,
+        "pct": 1.15
+      },
+      {
+        "language": "C",
+        "count": 14,
+        "pct": 1.64
+      },
+      {
+        "language": "JavaScript",
+        "count": 13,
+        "pct": 0.9
+      },
+      {
+        "language": "Kotlin",
+        "count": 8,
+        "pct": 1.81
+      },
+      {
+        "language": "C#",
+        "count": 6,
+        "pct": 0.86
+      },
+      {
+        "language": "PHP",
+        "count": 5,
+        "pct": 0.58
+      },
+      {
+        "language": "Elixir",
+        "count": 3,
+        "pct": 3.61
+      },
+      {
+        "language": "Jupyter Notebook",
+        "count": 2,
+        "pct": 3.57
+      },
+      {
+        "language": "Ruby",
+        "count": 1,
+        "pct": 0.23
+      },
+      {
+        "language": "HTML",
+        "count": 1,
+        "pct": 0.93
+      },
+      {
+        "language": "Unknown",
+        "count": 1,
+        "pct": 1.56
+      },
+      {
+        "language": "MDX",
+        "count": 1,
+        "pct": 2.27
+      },
+      {
+        "language": "Lean",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Shell",
+        "count": 1,
+        "pct": 0.25
+      },
+      {
+        "language": "HCL",
+        "count": 1,
+        "pct": 16.67
+      },
+      {
+        "language": "Dart",
+        "count": 1,
+        "pct": 0.49
+      },
+      {
+        "language": "Just",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Erlang",
+        "count": 1,
+        "pct": 33.33
+      }
+    ],
+    "static_cache_key": [
+      {
+        "language": "C++",
+        "count": 178,
+        "pct": 11.92
+      },
+      {
+        "language": "Python",
+        "count": 162,
+        "pct": 4.43
+      },
+      {
+        "language": "Java",
+        "count": 131,
+        "pct": 9.51
+      },
+      {
+        "language": "Rust",
+        "count": 122,
+        "pct": 8.78
+      },
+      {
+        "language": "TypeScript",
+        "count": 104,
+        "pct": 3.32
+      },
+      {
+        "language": "Go",
+        "count": 93,
+        "pct": 4.6
+      },
+      {
+        "language": "C",
+        "count": 87,
+        "pct": 10.18
+      },
+      {
+        "language": "C#",
+        "count": 54,
+        "pct": 7.7
+      },
+      {
+        "language": "PHP",
+        "count": 52,
+        "pct": 6.06
+      },
+      {
+        "language": "JavaScript",
+        "count": 43,
+        "pct": 2.98
+      },
+      {
+        "language": "Kotlin",
+        "count": 39,
+        "pct": 8.8
+      },
+      {
+        "language": "Dart",
+        "count": 21,
+        "pct": 10.34
+      },
+      {
+        "language": "Ruby",
+        "count": 12,
+        "pct": 2.73
+      },
+      {
+        "language": "Shell",
+        "count": 6,
+        "pct": 1.51
+      },
+      {
+        "language": "HTML",
+        "count": 5,
+        "pct": 4.67
+      },
+      {
+        "language": "Lua",
+        "count": 4,
+        "pct": 44.44
+      },
+      {
+        "language": "Elixir",
+        "count": 3,
+        "pct": 3.61
+      },
+      {
+        "language": "Jupyter Notebook",
+        "count": 3,
+        "pct": 5.36
+      },
+      {
+        "language": "Scala",
+        "count": 2,
+        "pct": 25.0
+      },
+      {
+        "language": "Nix",
+        "count": 2,
+        "pct": 4.55
+      },
+      {
+        "language": "Unknown",
+        "count": 2,
+        "pct": 3.12
+      },
+      {
+        "language": "LLVM",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "SystemVerilog",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Solidity",
+        "count": 1,
+        "pct": 10.0
+      },
+      {
+        "language": "Gherkin",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "MDX",
+        "count": 1,
+        "pct": 2.27
+      },
+      {
+        "language": "BitBake",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "Mathematica",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Erlang",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "Objective-C",
+        "count": 1,
+        "pct": 3.03
+      },
+      {
+        "language": "ReScript",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Swift",
+        "count": 1,
+        "pct": 0.62
+      },
+      {
+        "language": "Vue",
+        "count": 1,
+        "pct": 3.33
+      },
+      {
+        "language": "Makefile",
+        "count": 1,
+        "pct": 10.0
+      },
+      {
+        "language": "Jac",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "QML",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Assembly",
+        "count": 1,
+        "pct": 20.0
+      },
+      {
+        "language": "Ballerina",
+        "count": 1,
+        "pct": 100.0
+      }
+    ],
+    "overly_specific_cache_key": [
+      {
+        "language": "C++",
+        "count": 83,
+        "pct": 5.56
+      },
+      {
+        "language": "Python",
+        "count": 64,
+        "pct": 1.75
+      },
+      {
+        "language": "TypeScript",
+        "count": 51,
+        "pct": 1.63
+      },
+      {
+        "language": "Go",
+        "count": 47,
+        "pct": 2.33
+      },
+      {
+        "language": "Java",
+        "count": 39,
+        "pct": 2.83
+      },
+      {
+        "language": "PHP",
+        "count": 26,
+        "pct": 3.03
+      },
+      {
+        "language": "C",
+        "count": 25,
+        "pct": 2.92
+      },
+      {
+        "language": "Rust",
+        "count": 24,
+        "pct": 1.73
+      },
+      {
+        "language": "JavaScript",
+        "count": 13,
+        "pct": 0.9
+      },
+      {
+        "language": "C#",
+        "count": 9,
+        "pct": 1.28
+      },
+      {
+        "language": "Ruby",
+        "count": 6,
+        "pct": 1.36
+      },
+      {
+        "language": "Shell",
+        "count": 4,
+        "pct": 1.01
+      },
+      {
+        "language": "HTML",
+        "count": 2,
+        "pct": 1.87
+      },
+      {
+        "language": "Jupyter Notebook",
+        "count": 2,
+        "pct": 3.57
+      },
+      {
+        "language": "CMake",
+        "count": 1,
+        "pct": 25.0
+      },
+      {
+        "language": "Nix",
+        "count": 1,
+        "pct": 2.27
+      },
+      {
+        "language": "SystemVerilog",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "MDX",
+        "count": 1,
+        "pct": 2.27
+      },
+      {
+        "language": "Tcl",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "TypeSpec",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "Kotlin",
+        "count": 1,
+        "pct": 0.23
+      },
+      {
+        "language": "EJS",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "Just",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Dart",
+        "count": 1,
+        "pct": 0.49
+      }
+    ],
+    "no_docker_layer_cache": [
+      {
+        "language": "Go",
+        "count": 500,
+        "pct": 24.74
+      },
+      {
+        "language": "Python",
+        "count": 490,
+        "pct": 13.4
+      },
+      {
+        "language": "TypeScript",
+        "count": 303,
+        "pct": 9.67
+      },
+      {
+        "language": "C++",
+        "count": 203,
+        "pct": 13.6
+      },
+      {
+        "language": "Rust",
+        "count": 182,
+        "pct": 13.1
+      },
+      {
+        "language": "Java",
+        "count": 144,
+        "pct": 10.46
+      },
+      {
+        "language": "JavaScript",
+        "count": 125,
+        "pct": 8.65
+      },
+      {
+        "language": "C",
+        "count": 94,
+        "pct": 10.99
+      },
+      {
+        "language": "Shell",
+        "count": 55,
+        "pct": 13.82
+      },
+      {
+        "language": "C#",
+        "count": 54,
+        "pct": 7.7
+      },
+      {
+        "language": "PHP",
+        "count": 46,
+        "pct": 5.36
+      },
+      {
+        "language": "Ruby",
+        "count": 40,
+        "pct": 9.09
+      },
+      {
+        "language": "HTML",
+        "count": 19,
+        "pct": 17.76
+      },
+      {
+        "language": "Kotlin",
+        "count": 12,
+        "pct": 2.71
+      },
+      {
+        "language": "Dart",
+        "count": 10,
+        "pct": 4.93
+      },
+      {
+        "language": "Dockerfile",
+        "count": 8,
+        "pct": 42.11
+      },
+      {
+        "language": "Swift",
+        "count": 7,
+        "pct": 4.35
+      },
+      {
+        "language": "Vue",
+        "count": 6,
+        "pct": 20.0
+      },
+      {
+        "language": "Elixir",
+        "count": 5,
+        "pct": 6.02
+      },
+      {
+        "language": "Jupyter Notebook",
+        "count": 5,
+        "pct": 8.93
+      },
+      {
+        "language": "Jinja",
+        "count": 3,
+        "pct": 27.27
+      },
+      {
+        "language": "LLVM",
+        "count": 2,
+        "pct": 66.67
+      },
+      {
+        "language": "Unknown",
+        "count": 2,
+        "pct": 3.12
+      },
+      {
+        "language": "Lua",
+        "count": 2,
+        "pct": 22.22
+      },
+      {
+        "language": "SCSS",
+        "count": 2,
+        "pct": 66.67
+      },
+      {
+        "language": "Assembly",
+        "count": 2,
+        "pct": 40.0
+      },
+      {
+        "language": "CSS",
+        "count": 2,
+        "pct": 12.5
+      },
+      {
+        "language": "Solidity",
+        "count": 2,
+        "pct": 20.0
+      },
+      {
+        "language": "Reason",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "Verilog",
+        "count": 1,
+        "pct": 50.0
+      },
+      {
+        "language": "EJS",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "SystemVerilog",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Common Lisp",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Smarty",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Markdown",
+        "count": 1,
+        "pct": 12.5
+      },
+      {
+        "language": "Nix",
+        "count": 1,
+        "pct": 2.27
+      },
+      {
+        "language": "Objective-C",
+        "count": 1,
+        "pct": 3.03
+      },
+      {
+        "language": "Makefile",
+        "count": 1,
+        "pct": 10.0
+      },
+      {
+        "language": "Svelte",
+        "count": 1,
+        "pct": 14.29
+      },
+      {
+        "language": "HCL",
+        "count": 1,
+        "pct": 16.67
+      },
+      {
+        "language": "FreeMarker",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Groovy",
+        "count": 1,
+        "pct": 5.0
+      },
+      {
+        "language": "CUE",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Pony",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "PLpgSQL",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "Haskell",
+        "count": 1,
+        "pct": 50.0
+      }
+    ],
+    "deprecated_cache_action": [
+      {
+        "language": "Python",
+        "count": 52,
+        "pct": 1.42
+      },
+      {
+        "language": "TypeScript",
+        "count": 48,
+        "pct": 1.53
+      },
+      {
+        "language": "Rust",
+        "count": 28,
+        "pct": 2.02
+      },
+      {
+        "language": "Go",
+        "count": 21,
+        "pct": 1.04
+      },
+      {
+        "language": "Java",
+        "count": 18,
+        "pct": 1.31
+      },
+      {
+        "language": "JavaScript",
+        "count": 18,
+        "pct": 1.25
+      },
+      {
+        "language": "C++",
+        "count": 17,
+        "pct": 1.14
+      },
+      {
+        "language": "PHP",
+        "count": 11,
+        "pct": 1.28
+      },
+      {
+        "language": "Kotlin",
+        "count": 7,
+        "pct": 1.58
+      },
+      {
+        "language": "C",
+        "count": 6,
+        "pct": 0.7
+      },
+      {
+        "language": "Ruby",
+        "count": 4,
+        "pct": 0.91
+      },
+      {
+        "language": "C#",
+        "count": 4,
+        "pct": 0.57
+      },
+      {
+        "language": "Shell",
+        "count": 3,
+        "pct": 0.75
+      },
+      {
+        "language": "Jupyter Notebook",
+        "count": 2,
+        "pct": 3.57
+      },
+      {
+        "language": "Elixir",
+        "count": 2,
+        "pct": 2.41
+      },
+      {
+        "language": "Swift",
+        "count": 2,
+        "pct": 1.24
+      },
+      {
+        "language": "LLVM",
+        "count": 1,
+        "pct": 33.33
+      },
+      {
+        "language": "Mathematica",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "Objective-C",
+        "count": 1,
+        "pct": 3.03
+      },
+      {
+        "language": "CMake",
+        "count": 1,
+        "pct": 25.0
+      },
+      {
+        "language": "Solidity",
+        "count": 1,
+        "pct": 10.0
+      },
+      {
+        "language": "HTML",
+        "count": 1,
+        "pct": 0.93
+      }
+    ],
+    "unreachable_cache_write": [
+      {
+        "language": "C++",
+        "count": 2,
+        "pct": 0.13
+      },
+      {
+        "language": "TypeScript",
+        "count": 1,
+        "pct": 0.03
+      },
+      {
+        "language": "Rust",
+        "count": 1,
+        "pct": 0.07
+      }
+    ],
+    "cache_as_artifact": [
+      {
+        "language": "TypeScript",
+        "count": 36,
+        "pct": 1.15
+      },
+      {
+        "language": "Go",
+        "count": 23,
+        "pct": 1.14
+      },
+      {
+        "language": "Python",
+        "count": 12,
+        "pct": 0.33
+      },
+      {
+        "language": "Java",
+        "count": 10,
+        "pct": 0.73
+      },
+      {
+        "language": "Rust",
+        "count": 8,
+        "pct": 0.58
+      },
+      {
+        "language": "C++",
+        "count": 7,
+        "pct": 0.47
+      },
+      {
+        "language": "C",
+        "count": 7,
+        "pct": 0.82
+      },
+      {
+        "language": "JavaScript",
+        "count": 6,
+        "pct": 0.42
+      },
+      {
+        "language": "PHP",
+        "count": 2,
+        "pct": 0.23
+      },
+      {
+        "language": "C#",
+        "count": 2,
+        "pct": 0.29
+      },
+      {
+        "language": "Shell",
+        "count": 1,
+        "pct": 0.25
+      },
+      {
+        "language": "V",
+        "count": 1,
+        "pct": 100.0
+      },
+      {
+        "language": "HTML",
+        "count": 1,
+        "pct": 0.93
+      }
+    ]
+  },
+  "by_cache_usage": {
+    "no_dependency_cache": [
+      {
+        "uses_cache": "False",
+        "repo_count": 6136,
+        "instance_count": 18977
+      },
+      {
+        "uses_cache": "True",
+        "repo_count": 1695,
+        "instance_count": 3876
+      }
+    ],
+    "no_restore_keys": [
+      {
+        "uses_cache": "True",
+        "repo_count": 3007,
+        "instance_count": 13001
+      }
+    ],
+    "redundant_cache_update": [
+      {
+        "uses_cache": "True",
+        "repo_count": 1460,
+        "instance_count": 4024
+      }
+    ],
+    "cache_position_error": [
+      {
+        "uses_cache": "True",
+        "repo_count": 528,
+        "instance_count": 1214
+      }
+    ],
+    "conflicting_cache_sources": [
+      {
+        "uses_cache": "True",
+        "repo_count": 407,
+        "instance_count": 1169
+      }
+    ],
+    "static_cache_key": [
+      {
+        "uses_cache": "True",
+        "repo_count": 1142,
+        "instance_count": 3014
+      }
+    ],
+    "overly_specific_cache_key": [
+      {
+        "uses_cache": "True",
+        "repo_count": 405,
+        "instance_count": 1316
+      }
+    ],
+    "no_docker_layer_cache": [
+      {
+        "uses_cache": "False",
+        "repo_count": 1954,
+        "instance_count": 3823
+      },
+      {
+        "uses_cache": "True",
+        "repo_count": 556,
+        "instance_count": 1906
+      }
+    ],
+    "deprecated_cache_action": [
+      {
+        "uses_cache": "True",
+        "repo_count": 249,
+        "instance_count": 2730
+      }
+    ],
+    "unreachable_cache_write": [
+      {
+        "uses_cache": "True",
+        "repo_count": 4,
+        "instance_count": 5
+      }
+    ],
+    "cache_as_artifact": [
+      {
+        "uses_cache": "True",
+        "repo_count": 116,
+        "instance_count": 388
+      }
+    ]
+  },
+  "by_cache_category": {
+    "no_dependency_cache": [
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 1130,
+        "instance_count": 2648
+      },
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 769,
+        "instance_count": 1541
+      },
+      {
+        "cache_category": "other_cache_action",
+        "repo_count": 29,
+        "instance_count": 58
+      }
+    ],
+    "no_restore_keys": [
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 3003,
+        "instance_count": 12966
+      },
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 807,
+        "instance_count": 2544
+      },
+      {
+        "cache_category": "other_cache_action",
+        "repo_count": 28,
+        "instance_count": 83
+      }
+    ],
+    "redundant_cache_update": [
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 1460,
+        "instance_count": 4024
+      },
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 318,
+        "instance_count": 716
+      },
+      {
+        "cache_category": "other_cache_action",
+        "repo_count": 1,
+        "instance_count": 1
+      }
+    ],
+    "cache_position_error": [
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 367,
+        "instance_count": 865
+      },
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 279,
+        "instance_count": 619
+      }
+    ],
+    "conflicting_cache_sources": [
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 407,
+        "instance_count": 1169
+      },
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 287,
+        "instance_count": 774
+      },
+      {
+        "cache_category": "other_cache_action",
+        "repo_count": 1,
+        "instance_count": 1
+      }
+    ],
+    "static_cache_key": [
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 1142,
+        "instance_count": 3010
+      },
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 290,
+        "instance_count": 571
+      },
+      {
+        "cache_category": "other_cache_action",
+        "repo_count": 5,
+        "instance_count": 12
+      }
+    ],
+    "overly_specific_cache_key": [
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 402,
+        "instance_count": 1302
+      },
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 94,
+        "instance_count": 310
+      },
+      {
+        "cache_category": "other_cache_action",
+        "repo_count": 6,
+        "instance_count": 20
+      }
+    ],
+    "no_docker_layer_cache": [
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 260,
+        "instance_count": 1429
+      },
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 364,
+        "instance_count": 565
+      },
+      {
+        "cache_category": "other_cache_action",
+        "repo_count": 3,
+        "instance_count": 5
+      }
+    ],
+    "deprecated_cache_action": [
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 249,
+        "instance_count": 2730
+      },
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 15,
+        "instance_count": 64
+      }
+    ],
+    "unreachable_cache_write": [
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 4,
+        "instance_count": 5
+      },
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 2,
+        "instance_count": 2
+      }
+    ],
+    "cache_as_artifact": [
+      {
+        "cache_category": "manual_actions_cache",
+        "repo_count": 116,
+        "instance_count": 388
+      },
+      {
+        "cache_category": "setup_action_cache",
+        "repo_count": 39,
+        "instance_count": 129
+      },
+      {
+        "cache_category": "other_cache_action",
+        "repo_count": 1,
+        "instance_count": 3
+      }
+    ]
+  },
+  "by_job_name": {
+    "no_dependency_cache": [
+      {
+        "job_name": "build",
+        "repo_count": 2011,
+        "instance_count": 3136,
+        "instance_pct": 13.72
+      },
+      {
+        "job_name": "test",
+        "repo_count": 897,
+        "instance_count": 1137,
+        "instance_pct": 4.98
+      },
+      {
+        "job_name": "deploy",
+        "repo_count": 577,
+        "instance_count": 649,
+        "instance_pct": 2.84
+      },
+      {
+        "job_name": "lint",
+        "repo_count": 401,
+        "instance_count": 443,
+        "instance_pct": 1.94
+      },
+      {
+        "job_name": "release",
+        "repo_count": 373,
+        "instance_count": 406,
+        "instance_pct": 1.78
+      },
+      {
+        "job_name": "publish",
+        "repo_count": 327,
+        "instance_count": 365,
+        "instance_pct": 1.6
+      },
+      {
+        "job_name": "tests",
+        "repo_count": 222,
+        "instance_count": 315,
+        "instance_pct": 1.38
+      },
+      {
+        "job_name": "docs",
+        "repo_count": 169,
+        "instance_count": 191,
+        "instance_pct": 0.84
+      },
+      {
+        "job_name": "build-linux",
+        "repo_count": 37,
+        "instance_count": 149,
+        "instance_pct": 0.65
+      },
+      {
+        "job_name": "check",
+        "repo_count": 93,
+        "instance_count": 104,
+        "instance_pct": 0.46
+      },
+      {
+        "job_name": "unit-tests",
+        "repo_count": 58,
+        "instance_count": 88,
+        "instance_pct": 0.39
+      },
+      {
+        "job_name": "windows",
+        "repo_count": 76,
+        "instance_count": 86,
+        "instance_pct": 0.38
+      },
+      {
+        "job_name": "main",
+        "repo_count": 53,
+        "instance_count": 86,
+        "instance_pct": 0.38
+      },
+      {
+        "job_name": "coverage",
+        "repo_count": 80,
+        "instance_count": 80,
+        "instance_pct": 0.35
+      },
+      {
+        "job_name": "build-n-publish",
+        "repo_count": 67,
+        "instance_count": 79,
+        "instance_pct": 0.35
+      },
+      {
+        "job_name": "run",
+        "repo_count": 43,
+        "instance_count": 72,
+        "instance_pct": 0.32
+      },
+      {
+        "job_name": "linux",
+        "repo_count": 58,
+        "instance_count": 71,
+        "instance_pct": 0.31
+      },
+      {
+        "job_name": "analyze",
+        "repo_count": 64,
+        "instance_count": 69,
+        "instance_pct": 0.3
+      },
+      {
+        "job_name": "build_wheels",
+        "repo_count": 59,
+        "instance_count": 66,
+        "instance_pct": 0.29
+      },
+      {
+        "job_name": "build_sdist",
+        "repo_count": 61,
+        "instance_count": 63,
+        "instance_pct": 0.28
+      },
+      {
+        "job_name": "build-and-deploy",
+        "repo_count": 61,
+        "instance_count": 63,
+        "instance_pct": 0.28
+      },
+      {
+        "job_name": "update",
+        "repo_count": 47,
+        "instance_count": 60,
+        "instance_pct": 0.26
+      },
+      {
+        "job_name": "build-and-test",
+        "repo_count": 45,
+        "instance_count": 60,
+        "instance_pct": 0.26
+      },
+      {
+        "job_name": "macos",
+        "repo_count": 52,
+        "instance_count": 60,
+        "instance_pct": 0.26
+      },
+      {
+        "job_name": "validate",
+        "repo_count": 55,
+        "instance_count": 59,
+        "instance_pct": 0.26
+      },
+      {
+        "job_name": "publish-npm",
+        "repo_count": 54,
+        "instance_count": 59,
+        "instance_pct": 0.26
+      },
+      {
+        "job_name": "build-docs",
+        "repo_count": 56,
+        "instance_count": 56,
+        "instance_pct": 0.25
+      },
+      {
+        "job_name": "benchmark",
+        "repo_count": 52,
+        "instance_count": 55,
+        "instance_pct": 0.24
+      },
+      {
+        "job_name": "build-windows",
+        "repo_count": 47,
+        "instance_count": 53,
+        "instance_pct": 0.23
+      },
+      {
+        "job_name": "run-tests",
+        "repo_count": 39,
+        "instance_count": 51,
+        "instance_pct": 0.22
+      }
+    ],
+    "no_restore_keys": [
+      {
+        "job_name": "build",
+        "repo_count": 737,
+        "instance_count": 1574,
+        "instance_pct": 12.11
+      },
+      {
+        "job_name": "test",
+        "repo_count": 401,
+        "instance_count": 826,
+        "instance_pct": 6.35
+      },
+      {
+        "job_name": "lint",
+        "repo_count": 169,
+        "instance_count": 195,
+        "instance_pct": 1.5
+      },
+      {
+        "job_name": "tests",
+        "repo_count": 100,
+        "instance_count": 141,
+        "instance_pct": 1.08
+      },
+      {
+        "job_name": "release",
+        "repo_count": 58,
+        "instance_count": 86,
+        "instance_pct": 0.66
+      },
+      {
+        "job_name": "linux",
+        "repo_count": 35,
+        "instance_count": 83,
+        "instance_pct": 0.64
+      },
+      {
+        "job_name": "pre-commit",
+        "repo_count": 74,
+        "instance_count": 76,
+        "instance_pct": 0.58
+      },
+      {
+        "job_name": "deploy",
+        "repo_count": 48,
+        "instance_count": 70,
+        "instance_pct": 0.54
+      },
+      {
+        "job_name": "analyze",
+        "repo_count": 45,
+        "instance_count": 63,
+        "instance_pct": 0.48
+      },
+      {
+        "job_name": "windows",
+        "repo_count": 48,
+        "instance_count": 61,
+        "instance_pct": 0.47
+      },
+      {
+        "job_name": "publish",
+        "repo_count": 40,
+        "instance_count": 58,
+        "instance_pct": 0.45
+      },
+      {
+        "job_name": "e2e",
+        "repo_count": 37,
+        "instance_count": 57,
+        "instance_pct": 0.44
+      },
+      {
+        "job_name": "benchmark",
+        "repo_count": 36,
+        "instance_count": 45,
+        "instance_pct": 0.35
+      },
+      {
+        "job_name": "Test",
+        "repo_count": 7,
+        "instance_count": 44,
+        "instance_pct": 0.34
+      },
+      {
+        "job_name": "native",
+        "repo_count": 3,
+        "instance_count": 42,
+        "instance_pct": 0.32
+      },
+      {
+        "job_name": "ci",
+        "repo_count": 35,
+        "instance_count": 42,
+        "instance_pct": 0.32
+      },
+      {
+        "job_name": "build-windows",
+        "repo_count": 30,
+        "instance_count": 41,
+        "instance_pct": 0.32
+      },
+      {
+        "job_name": "build_and_test",
+        "repo_count": 19,
+        "instance_count": 39,
+        "instance_pct": 0.3
+      },
+      {
+        "job_name": "check",
+        "repo_count": 33,
+        "instance_count": 38,
+        "instance_pct": 0.29
+      },
+      {
+        "job_name": "build-cache",
+        "repo_count": 6,
+        "instance_count": 38,
+        "instance_pct": 0.29
+      },
+      {
+        "job_name": "build-linux",
+        "repo_count": 27,
+        "instance_count": 35,
+        "instance_pct": 0.27
+      },
+      {
+        "job_name": "build-and-test",
+        "repo_count": 19,
+        "instance_count": 34,
+        "instance_pct": 0.26
+      },
+      {
+        "job_name": "macos",
+        "repo_count": 26,
+        "instance_count": 33,
+        "instance_pct": 0.25
+      },
+      {
+        "job_name": "integration-tests",
+        "repo_count": 26,
+        "instance_count": 33,
+        "instance_pct": 0.25
+      },
+      {
+        "job_name": "unit-tests",
+        "repo_count": 28,
+        "instance_count": 31,
+        "instance_pct": 0.24
+      },
+      {
+        "job_name": "clippy",
+        "repo_count": 25,
+        "instance_count": 31,
+        "instance_pct": 0.24
+      },
+      {
+        "job_name": "main",
+        "repo_count": 20,
+        "instance_count": 29,
+        "instance_pct": 0.22
+      },
+      {
+        "job_name": "upload-coverage",
+        "repo_count": 3,
+        "instance_count": 29,
+        "instance_pct": 0.22
+      },
+      {
+        "job_name": "download-midwares-and-cache",
+        "repo_count": 1,
+        "instance_count": 28,
+        "instance_pct": 0.22
+      },
+      {
+        "job_name": "unit",
+        "repo_count": 26,
+        "instance_count": 28,
+        "instance_pct": 0.22
+      }
+    ],
+    "redundant_cache_update": [
+      {
+        "job_name": "build",
+        "repo_count": 264,
+        "instance_count": 605,
+        "instance_pct": 15.03
+      },
+      {
+        "job_name": "test",
+        "repo_count": 201,
+        "instance_count": 479,
+        "instance_pct": 11.9
+      },
+      {
+        "job_name": "tests",
+        "repo_count": 53,
+        "instance_count": 143,
+        "instance_pct": 3.55
+      },
+      {
+        "job_name": "Test",
+        "repo_count": 3,
+        "instance_count": 72,
+        "instance_pct": 1.79
+      },
+      {
+        "job_name": "run",
+        "repo_count": 12,
+        "instance_count": 51,
+        "instance_pct": 1.27
+      },
+      {
+        "job_name": "run-tests",
+        "repo_count": 12,
+        "instance_count": 49,
+        "instance_pct": 1.22
+      },
+      {
+        "job_name": "ci",
+        "repo_count": 13,
+        "instance_count": 32,
+        "instance_pct": 0.8
+      },
+      {
+        "job_name": "build-and-test",
+        "repo_count": 9,
+        "instance_count": 31,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "build_and_test",
+        "repo_count": 6,
+        "instance_count": 26,
+        "instance_pct": 0.65
+      },
+      {
+        "job_name": "unit-test",
+        "repo_count": 7,
+        "instance_count": 25,
+        "instance_pct": 0.62
+      },
+      {
+        "job_name": "phpstan",
+        "repo_count": 4,
+        "instance_count": 20,
+        "instance_pct": 0.5
+      },
+      {
+        "job_name": "e2e",
+        "repo_count": 15,
+        "instance_count": 20,
+        "instance_pct": 0.5
+      },
+      {
+        "job_name": "build1, build10, build100, build11, build12, build13, build14, build15, build16, build17, build18, build19, build2, build20, build21, build22, build23, build24, build25, build26, build27, build28, build29, build3, build30, build31, build32, build33, build34, build35, build36, build37, build38, build39, build4, build40, build41, build42, build43, build44, build45, build46, build47, build48, build49, build5, build50, build51, build52, build53, build54, build55, build56, build57, build58, build59, build6, build60, build61, build62, build63, build64, build65, build66, build67, build68, build69, build7, build70, build71, build72, build73, build74, build75, build76, build77, build78, build79, build8, build80, build81, build82, build83, build84, build85, build86, build87, build88, build89, build9, build90, build91, build92, build93, build94, build95, build96, build97, build98, build99",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.5
+      },
+      {
+        "job_name": "lint, test",
+        "repo_count": 15,
+        "instance_count": 20,
+        "instance_pct": 0.5
+      },
+      {
+        "job_name": "legacy-browser-tests, unit-tests",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.5
+      },
+      {
+        "job_name": "windows",
+        "repo_count": 13,
+        "instance_count": 18,
+        "instance_pct": 0.45
+      },
+      {
+        "job_name": "unit-tests",
+        "repo_count": 11,
+        "instance_count": 17,
+        "instance_pct": 0.42
+      },
+      {
+        "job_name": "Build",
+        "repo_count": 6,
+        "instance_count": 15,
+        "instance_pct": 0.37
+      },
+      {
+        "job_name": "analyze",
+        "repo_count": 12,
+        "instance_count": 14,
+        "instance_pct": 0.35
+      },
+      {
+        "job_name": "unit",
+        "repo_count": 7,
+        "instance_count": 14,
+        "instance_pct": 0.35
+      },
+      {
+        "job_name": "integration-tests",
+        "repo_count": 8,
+        "instance_count": 13,
+        "instance_pct": 0.32
+      },
+      {
+        "job_name": "build-release",
+        "repo_count": 1,
+        "instance_count": 13,
+        "instance_pct": 0.32
+      },
+      {
+        "job_name": "build_release",
+        "repo_count": 3,
+        "instance_count": 13,
+        "instance_pct": 0.32
+      },
+      {
+        "job_name": "phpunit",
+        "repo_count": 6,
+        "instance_count": 12,
+        "instance_pct": 0.3
+      },
+      {
+        "job_name": "build-release-artifacts",
+        "repo_count": 1,
+        "instance_count": 12,
+        "instance_pct": 0.3
+      },
+      {
+        "job_name": "test-javascript",
+        "repo_count": 1,
+        "instance_count": 11,
+        "instance_pct": 0.27
+      },
+      {
+        "job_name": "check",
+        "repo_count": 8,
+        "instance_count": 11,
+        "instance_pct": 0.27
+      },
+      {
+        "job_name": "ubuntu_20_04, ubuntu_22_04",
+        "repo_count": 1,
+        "instance_count": 10,
+        "instance_pct": 0.25
+      },
+      {
+        "job_name": "cypress",
+        "repo_count": 9,
+        "instance_count": 10,
+        "instance_pct": 0.25
+      },
+      {
+        "job_name": "linux",
+        "repo_count": 7,
+        "instance_count": 10,
+        "instance_pct": 0.25
+      }
+    ],
+    "cache_position_error": [
+      {
+        "job_name": "build",
+        "repo_count": 140,
+        "instance_count": 213,
+        "instance_pct": 17.55
+      },
+      {
+        "job_name": "test",
+        "repo_count": 93,
+        "instance_count": 115,
+        "instance_pct": 9.47
+      },
+      {
+        "job_name": "lint",
+        "repo_count": 42,
+        "instance_count": 48,
+        "instance_pct": 3.95
+      },
+      {
+        "job_name": "golangci",
+        "repo_count": 40,
+        "instance_count": 43,
+        "instance_pct": 3.54
+      },
+      {
+        "job_name": "release",
+        "repo_count": 22,
+        "instance_count": 22,
+        "instance_pct": 1.81
+      },
+      {
+        "job_name": "tests",
+        "repo_count": 15,
+        "instance_count": 16,
+        "instance_pct": 1.32
+      },
+      {
+        "job_name": "coverage",
+        "repo_count": 14,
+        "instance_count": 14,
+        "instance_pct": 1.15
+      },
+      {
+        "job_name": "smoke",
+        "repo_count": 1,
+        "instance_count": 12,
+        "instance_pct": 0.99
+      },
+      {
+        "job_name": "pubsub-tests",
+        "repo_count": 1,
+        "instance_count": 10,
+        "instance_pct": 0.82
+      },
+      {
+        "job_name": "publish",
+        "repo_count": 8,
+        "instance_count": 9,
+        "instance_pct": 0.74
+      },
+      {
+        "job_name": "unit-test",
+        "repo_count": 7,
+        "instance_count": 9,
+        "instance_pct": 0.74
+      },
+      {
+        "job_name": "unit",
+        "repo_count": 9,
+        "instance_count": 9,
+        "instance_pct": 0.74
+      },
+      {
+        "job_name": "run",
+        "repo_count": 4,
+        "instance_count": 8,
+        "instance_pct": 0.66
+      },
+      {
+        "job_name": "e2e",
+        "repo_count": 6,
+        "instance_count": 8,
+        "instance_pct": 0.66
+      },
+      {
+        "job_name": "e2e_test",
+        "repo_count": 6,
+        "instance_count": 8,
+        "instance_pct": 0.66
+      },
+      {
+        "job_name": "golangci-lint",
+        "repo_count": 6,
+        "instance_count": 7,
+        "instance_pct": 0.58
+      },
+      {
+        "job_name": "testing",
+        "repo_count": 4,
+        "instance_count": 6,
+        "instance_pct": 0.49
+      },
+      {
+        "job_name": "analyze",
+        "repo_count": 6,
+        "instance_count": 6,
+        "instance_pct": 0.49
+      },
+      {
+        "job_name": "ci",
+        "repo_count": 3,
+        "instance_count": 6,
+        "instance_pct": 0.49
+      },
+      {
+        "job_name": "deploy",
+        "repo_count": 6,
+        "instance_count": 6,
+        "instance_pct": 0.49
+      },
+      {
+        "job_name": "integration",
+        "repo_count": 6,
+        "instance_count": 6,
+        "instance_pct": 0.49
+      },
+      {
+        "job_name": "deploy_production_main",
+        "repo_count": 1,
+        "instance_count": 6,
+        "instance_pct": 0.49
+      },
+      {
+        "job_name": "format",
+        "repo_count": 4,
+        "instance_count": 6,
+        "instance_pct": 0.49
+      },
+      {
+        "job_name": "integration-tests",
+        "repo_count": 4,
+        "instance_count": 5,
+        "instance_pct": 0.41
+      },
+      {
+        "job_name": "test-unit",
+        "repo_count": 5,
+        "instance_count": 5,
+        "instance_pct": 0.41
+      },
+      {
+        "job_name": "validate",
+        "repo_count": 2,
+        "instance_count": 5,
+        "instance_pct": 0.41
+      },
+      {
+        "job_name": "clang-tidy",
+        "repo_count": 1,
+        "instance_count": 4,
+        "instance_pct": 0.33
+      },
+      {
+        "job_name": "go_lint",
+        "repo_count": 4,
+        "instance_count": 4,
+        "instance_pct": 0.33
+      },
+      {
+        "job_name": "generate",
+        "repo_count": 3,
+        "instance_count": 4,
+        "instance_pct": 0.33
+      },
+      {
+        "job_name": "test-linux",
+        "repo_count": 4,
+        "instance_count": 4,
+        "instance_pct": 0.33
+      }
+    ],
+    "conflicting_cache_sources": [
+      {
+        "job_name": "build",
+        "repo_count": 105,
+        "instance_count": 160,
+        "instance_pct": 13.69
+      },
+      {
+        "job_name": "check-cache",
+        "repo_count": 1,
+        "instance_count": 93,
+        "instance_pct": 7.96
+      },
+      {
+        "job_name": "test",
+        "repo_count": 42,
+        "instance_count": 46,
+        "instance_pct": 3.93
+      },
+      {
+        "job_name": "merge-caches",
+        "repo_count": 2,
+        "instance_count": 36,
+        "instance_pct": 3.08
+      },
+      {
+        "job_name": "coveralls",
+        "repo_count": 1,
+        "instance_count": 28,
+        "instance_pct": 2.4
+      },
+      {
+        "job_name": "lint",
+        "repo_count": 26,
+        "instance_count": 28,
+        "instance_pct": 2.4
+      },
+      {
+        "job_name": "build-sentry",
+        "repo_count": 1,
+        "instance_count": 21,
+        "instance_pct": 1.8
+      },
+      {
+        "job_name": "release",
+        "repo_count": 13,
+        "instance_count": 15,
+        "instance_pct": 1.28
+      },
+      {
+        "job_name": "tests",
+        "repo_count": 9,
+        "instance_count": 10,
+        "instance_pct": 0.86
+      },
+      {
+        "job_name": "unit-test",
+        "repo_count": 7,
+        "instance_count": 9,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "build-source",
+        "repo_count": 1,
+        "instance_count": 9,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "linux",
+        "repo_count": 5,
+        "instance_count": 9,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "goreleaser",
+        "repo_count": 6,
+        "instance_count": 8,
+        "instance_pct": 0.68
+      },
+      {
+        "job_name": "unit-tests",
+        "repo_count": 7,
+        "instance_count": 7,
+        "instance_pct": 0.6
+      },
+      {
+        "job_name": "unit",
+        "repo_count": 7,
+        "instance_count": 7,
+        "instance_pct": 0.6
+      },
+      {
+        "job_name": "e2etest-preparation",
+        "repo_count": 1,
+        "instance_count": 6,
+        "instance_pct": 0.51
+      },
+      {
+        "job_name": "benchmark",
+        "repo_count": 6,
+        "instance_count": 6,
+        "instance_pct": 0.51
+      },
+      {
+        "job_name": "publish",
+        "repo_count": 4,
+        "instance_count": 6,
+        "instance_pct": 0.51
+      },
+      {
+        "job_name": "build_mpv",
+        "repo_count": 1,
+        "instance_count": 6,
+        "instance_pct": 0.51
+      },
+      {
+        "job_name": "integration",
+        "repo_count": 5,
+        "instance_count": 6,
+        "instance_pct": 0.51
+      },
+      {
+        "job_name": "test-integration",
+        "repo_count": 5,
+        "instance_count": 6,
+        "instance_pct": 0.51
+      },
+      {
+        "job_name": "bench",
+        "repo_count": 4,
+        "instance_count": 5,
+        "instance_pct": 0.43
+      },
+      {
+        "job_name": "get_data",
+        "repo_count": 1,
+        "instance_count": 5,
+        "instance_pct": 0.43
+      },
+      {
+        "job_name": "samples-test-job",
+        "repo_count": 1,
+        "instance_count": 5,
+        "instance_pct": 0.43
+      },
+      {
+        "job_name": "deploy",
+        "repo_count": 5,
+        "instance_count": 5,
+        "instance_pct": 0.43
+      },
+      {
+        "job_name": "pubsub-tests",
+        "repo_count": 1,
+        "instance_count": 5,
+        "instance_pct": 0.43
+      },
+      {
+        "job_name": "legacy",
+        "repo_count": 1,
+        "instance_count": 5,
+        "instance_pct": 0.43
+      },
+      {
+        "job_name": "e2e_test",
+        "repo_count": 4,
+        "instance_count": 5,
+        "instance_pct": 0.43
+      },
+      {
+        "job_name": "integration-test-job",
+        "repo_count": 1,
+        "instance_count": 5,
+        "instance_pct": 0.43
+      },
+      {
+        "job_name": "latest",
+        "repo_count": 1,
+        "instance_count": 4,
+        "instance_pct": 0.34
+      }
+    ],
+    "static_cache_key": [
+      {
+        "job_name": "build",
+        "repo_count": 257,
+        "instance_count": 456,
+        "instance_pct": 15.13
+      },
+      {
+        "job_name": "test",
+        "repo_count": 104,
+        "instance_count": 151,
+        "instance_pct": 5.01
+      },
+      {
+        "job_name": "linux",
+        "repo_count": 14,
+        "instance_count": 46,
+        "instance_pct": 1.53
+      },
+      {
+        "job_name": "build-cache",
+        "repo_count": 3,
+        "instance_count": 34,
+        "instance_pct": 1.13
+      },
+      {
+        "job_name": "tests",
+        "repo_count": 25,
+        "instance_count": 30,
+        "instance_pct": 1.0
+      },
+      {
+        "job_name": "benchmark",
+        "repo_count": 24,
+        "instance_count": 30,
+        "instance_pct": 1.0
+      },
+      {
+        "job_name": "analyze",
+        "repo_count": 29,
+        "instance_count": 30,
+        "instance_pct": 1.0
+      },
+      {
+        "job_name": "download-midwares-and-cache",
+        "repo_count": 1,
+        "instance_count": 26,
+        "instance_pct": 0.86
+      },
+      {
+        "job_name": "lint",
+        "repo_count": 23,
+        "instance_count": 23,
+        "instance_pct": 0.76
+      },
+      {
+        "job_name": "windows",
+        "repo_count": 17,
+        "instance_count": 22,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "sonar",
+        "repo_count": 14,
+        "instance_count": 17,
+        "instance_pct": 0.56
+      },
+      {
+        "job_name": "publish",
+        "repo_count": 11,
+        "instance_count": 15,
+        "instance_pct": 0.5
+      },
+      {
+        "job_name": "build-windows",
+        "repo_count": 11,
+        "instance_count": 15,
+        "instance_pct": 0.5
+      },
+      {
+        "job_name": "ci",
+        "repo_count": 13,
+        "instance_count": 15,
+        "instance_pct": 0.5
+      },
+      {
+        "job_name": "security_audit",
+        "repo_count": 14,
+        "instance_count": 14,
+        "instance_pct": 0.46
+      },
+      {
+        "job_name": "build-and-test",
+        "repo_count": 8,
+        "instance_count": 14,
+        "instance_pct": 0.46
+      },
+      {
+        "job_name": "job_001",
+        "repo_count": 11,
+        "instance_count": 13,
+        "instance_pct": 0.43
+      },
+      {
+        "job_name": "release",
+        "repo_count": 11,
+        "instance_count": 12,
+        "instance_pct": 0.4
+      },
+      {
+        "job_name": "job_003",
+        "repo_count": 11,
+        "instance_count": 12,
+        "instance_pct": 0.4
+      },
+      {
+        "job_name": "job_002",
+        "repo_count": 11,
+        "instance_count": 12,
+        "instance_pct": 0.4
+      },
+      {
+        "job_name": "job_004",
+        "repo_count": 11,
+        "instance_count": 11,
+        "instance_pct": 0.36
+      },
+      {
+        "job_name": "job_005",
+        "repo_count": 9,
+        "instance_count": 9,
+        "instance_pct": 0.3
+      },
+      {
+        "job_name": "build_and_test",
+        "repo_count": 6,
+        "instance_count": 9,
+        "instance_pct": 0.3
+      },
+      {
+        "job_name": "docs",
+        "repo_count": 9,
+        "instance_count": 9,
+        "instance_pct": 0.3
+      },
+      {
+        "job_name": "job_013",
+        "repo_count": 8,
+        "instance_count": 8,
+        "instance_pct": 0.27
+      },
+      {
+        "job_name": "build_linux",
+        "repo_count": 2,
+        "instance_count": 8,
+        "instance_pct": 0.27
+      },
+      {
+        "job_name": "unit-tests",
+        "repo_count": 7,
+        "instance_count": 8,
+        "instance_pct": 0.27
+      },
+      {
+        "job_name": "job_007",
+        "repo_count": 8,
+        "instance_count": 8,
+        "instance_pct": 0.27
+      },
+      {
+        "job_name": "job_006",
+        "repo_count": 8,
+        "instance_count": 8,
+        "instance_pct": 0.27
+      },
+      {
+        "job_name": "integration-tests",
+        "repo_count": 6,
+        "instance_count": 8,
+        "instance_pct": 0.27
+      }
+    ],
+    "overly_specific_cache_key": [
+      {
+        "job_name": "build",
+        "repo_count": 90,
+        "instance_count": 153,
+        "instance_pct": 11.63
+      },
+      {
+        "job_name": "test",
+        "repo_count": 34,
+        "instance_count": 49,
+        "instance_pct": 3.72
+      },
+      {
+        "job_name": "agent",
+        "repo_count": 18,
+        "instance_count": 44,
+        "instance_pct": 3.34
+      },
+      {
+        "job_name": "update_cache_memory",
+        "repo_count": 8,
+        "instance_count": 25,
+        "instance_pct": 1.9
+      },
+      {
+        "job_name": "analyze",
+        "repo_count": 5,
+        "instance_count": 20,
+        "instance_pct": 1.52
+      },
+      {
+        "job_name": "tests",
+        "repo_count": 13,
+        "instance_count": 17,
+        "instance_pct": 1.29
+      },
+      {
+        "job_name": "phpstan",
+        "repo_count": 9,
+        "instance_count": 14,
+        "instance_pct": 1.06
+      },
+      {
+        "job_name": "lint",
+        "repo_count": 12,
+        "instance_count": 14,
+        "instance_pct": 1.06
+      },
+      {
+        "job_name": "build-agent-and-cache",
+        "repo_count": 1,
+        "instance_count": 11,
+        "instance_pct": 0.84
+      },
+      {
+        "job_name": "release",
+        "repo_count": 9,
+        "instance_count": 10,
+        "instance_pct": 0.76
+      },
+      {
+        "job_name": "macos",
+        "repo_count": 9,
+        "instance_count": 10,
+        "instance_pct": 0.76
+      },
+      {
+        "job_name": "build-source",
+        "repo_count": 2,
+        "instance_count": 10,
+        "instance_pct": 0.76
+      },
+      {
+        "job_name": "samples-test-job",
+        "repo_count": 1,
+        "instance_count": 9,
+        "instance_pct": 0.68
+      },
+      {
+        "job_name": "industrial_ci",
+        "repo_count": 7,
+        "instance_count": 9,
+        "instance_pct": 0.68
+      },
+      {
+        "job_name": "unit-test",
+        "repo_count": 3,
+        "instance_count": 9,
+        "instance_pct": 0.68
+      },
+      {
+        "job_name": "integration-test-job",
+        "repo_count": 1,
+        "instance_count": 9,
+        "instance_pct": 0.68
+      },
+      {
+        "job_name": "fuzz",
+        "repo_count": 6,
+        "instance_count": 8,
+        "instance_pct": 0.61
+      },
+      {
+        "job_name": "war",
+        "repo_count": 1,
+        "instance_count": 8,
+        "instance_pct": 0.61
+      },
+      {
+        "job_name": "unit-tests",
+        "repo_count": 7,
+        "instance_count": 8,
+        "instance_pct": 0.61
+      },
+      {
+        "job_name": "build-cross-compile",
+        "repo_count": 7,
+        "instance_count": 7,
+        "instance_pct": 0.53
+      },
+      {
+        "job_name": "mutation-testing",
+        "repo_count": 4,
+        "instance_count": 7,
+        "instance_pct": 0.53
+      },
+      {
+        "job_name": "linux",
+        "repo_count": 6,
+        "instance_count": 7,
+        "instance_pct": 0.53
+      },
+      {
+        "job_name": "prepare-release",
+        "repo_count": 2,
+        "instance_count": 6,
+        "instance_pct": 0.46
+      },
+      {
+        "job_name": "clang-tidy",
+        "repo_count": 2,
+        "instance_count": 6,
+        "instance_pct": 0.46
+      },
+      {
+        "job_name": "windows",
+        "repo_count": 5,
+        "instance_count": 6,
+        "instance_pct": 0.46
+      },
+      {
+        "job_name": "integration-test",
+        "repo_count": 3,
+        "instance_count": 6,
+        "instance_pct": 0.46
+      },
+      {
+        "job_name": "test_coverage",
+        "repo_count": 1,
+        "instance_count": 6,
+        "instance_pct": 0.46
+      },
+      {
+        "job_name": "test-integration",
+        "repo_count": 4,
+        "instance_count": 6,
+        "instance_pct": 0.46
+      },
+      {
+        "job_name": "compile",
+        "repo_count": 2,
+        "instance_count": 5,
+        "instance_pct": 0.38
+      },
+      {
+        "job_name": "integration-tests",
+        "repo_count": 5,
+        "instance_count": 5,
+        "instance_pct": 0.38
+      }
+    ],
+    "no_docker_layer_cache": [
+      {
+        "job_name": "build",
+        "repo_count": 551,
+        "instance_count": 769,
+        "instance_pct": 13.42
+      },
+      {
+        "job_name": "docker",
+        "repo_count": 295,
+        "instance_count": 359,
+        "instance_pct": 6.27
+      },
+      {
+        "job_name": "build-and-push-image",
+        "repo_count": 84,
+        "instance_count": 112,
+        "instance_pct": 1.95
+      },
+      {
+        "job_name": "push_to_registry",
+        "repo_count": 60,
+        "instance_count": 111,
+        "instance_pct": 1.94
+      },
+      {
+        "job_name": "build-and-push",
+        "repo_count": 73,
+        "instance_count": 100,
+        "instance_pct": 1.75
+      },
+      {
+        "job_name": "test",
+        "repo_count": 54,
+        "instance_count": 85,
+        "instance_pct": 1.48
+      },
+      {
+        "job_name": "publish",
+        "repo_count": 46,
+        "instance_count": 60,
+        "instance_pct": 1.05
+      },
+      {
+        "job_name": "release",
+        "repo_count": 53,
+        "instance_count": 59,
+        "instance_pct": 1.03
+      },
+      {
+        "job_name": "docker-build",
+        "repo_count": 51,
+        "instance_count": 58,
+        "instance_pct": 1.01
+      },
+      {
+        "job_name": "build-docker",
+        "repo_count": 49,
+        "instance_count": 53,
+        "instance_pct": 0.93
+      },
+      {
+        "job_name": "main",
+        "repo_count": 16,
+        "instance_count": 41,
+        "instance_pct": 0.72
+      },
+      {
+        "job_name": "deploy",
+        "repo_count": 28,
+        "instance_count": 35,
+        "instance_pct": 0.61
+      },
+      {
+        "job_name": "push",
+        "repo_count": 11,
+        "instance_count": 35,
+        "instance_pct": 0.61
+      },
+      {
+        "job_name": "build-image",
+        "repo_count": 24,
+        "instance_count": 28,
+        "instance_pct": 0.49
+      },
+      {
+        "job_name": "job",
+        "repo_count": 1,
+        "instance_count": 28,
+        "instance_pct": 0.49
+      },
+      {
+        "job_name": "Build",
+        "repo_count": 5,
+        "instance_count": 28,
+        "instance_pct": 0.49
+      },
+      {
+        "job_name": "push_to_registries",
+        "repo_count": 24,
+        "instance_count": 27,
+        "instance_pct": 0.47
+      },
+      {
+        "job_name": "buildx",
+        "repo_count": 15,
+        "instance_count": 23,
+        "instance_pct": 0.4
+      },
+      {
+        "job_name": "publish-docker",
+        "repo_count": 20,
+        "instance_count": 22,
+        "instance_pct": 0.38
+      },
+      {
+        "job_name": "build_docker",
+        "repo_count": 22,
+        "instance_count": 22,
+        "instance_pct": 0.38
+      },
+      {
+        "job_name": "build_and_push",
+        "repo_count": 11,
+        "instance_count": 18,
+        "instance_pct": 0.31
+      },
+      {
+        "job_name": "build-images",
+        "repo_count": 12,
+        "instance_count": 15,
+        "instance_pct": 0.26
+      },
+      {
+        "job_name": "docker-build-push",
+        "repo_count": 9,
+        "instance_count": 14,
+        "instance_pct": 0.24
+      },
+      {
+        "job_name": "publish-docker-image",
+        "repo_count": 14,
+        "instance_count": 14,
+        "instance_pct": 0.24
+      },
+      {
+        "job_name": "docker-image",
+        "repo_count": 13,
+        "instance_count": 14,
+        "instance_pct": 0.24
+      },
+      {
+        "job_name": "build-container",
+        "repo_count": 11,
+        "instance_count": 13,
+        "instance_pct": 0.23
+      },
+      {
+        "job_name": "UpdateTool",
+        "repo_count": 1,
+        "instance_count": 12,
+        "instance_pct": 0.21
+      },
+      {
+        "job_name": "container",
+        "repo_count": 10,
+        "instance_count": 12,
+        "instance_pct": 0.21
+      },
+      {
+        "job_name": "dockerhub",
+        "repo_count": 11,
+        "instance_count": 12,
+        "instance_pct": 0.21
+      },
+      {
+        "job_name": "build-push",
+        "repo_count": 7,
+        "instance_count": 12,
+        "instance_pct": 0.21
+      }
+    ],
+    "deprecated_cache_action": [
+      {
+        "job_name": "build",
+        "repo_count": 94,
+        "instance_count": 158,
+        "instance_pct": 5.79
+      },
+      {
+        "job_name": "test",
+        "repo_count": 28,
+        "instance_count": 38,
+        "instance_pct": 1.39
+      },
+      {
+        "job_name": "deploy",
+        "repo_count": 15,
+        "instance_count": 25,
+        "instance_pct": 0.92
+      },
+      {
+        "job_name": "build62",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build82",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build2",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build22",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build95",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build89",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build15",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build70",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build66",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build14",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build55",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build85",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build1",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build8",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build18",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build72",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build37",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build96",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build32",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build71",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build46",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build73",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build40",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build44",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build17",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build4",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      },
+      {
+        "job_name": "build94",
+        "repo_count": 1,
+        "instance_count": 20,
+        "instance_pct": 0.73
+      }
+    ],
+    "unreachable_cache_write": [
+      {
+        "job_name": "integration_test_deployment",
+        "repo_count": 1,
+        "instance_count": 1,
+        "instance_pct": 20.0
+      },
+      {
+        "job_name": "check-broken-links-in-docs",
+        "repo_count": 1,
+        "instance_count": 1,
+        "instance_pct": 20.0
+      },
+      {
+        "job_name": "ktlint",
+        "repo_count": 1,
+        "instance_count": 1,
+        "instance_pct": 20.0
+      },
+      {
+        "job_name": "kagome_dev_docker_build_tidy",
+        "repo_count": 1,
+        "instance_count": 1,
+        "instance_pct": 20.0
+      },
+      {
+        "job_name": "kagome_dev_docker_build_sanitizers",
+        "repo_count": 1,
+        "instance_count": 1,
+        "instance_pct": 20.0
+      }
+    ],
+    "cache_as_artifact": [
+      {
+        "job_name": "release",
+        "repo_count": 4,
+        "instance_count": 20,
+        "instance_pct": 5.15
+      },
+      {
+        "job_name": "collect-commit-and-push",
+        "repo_count": 1,
+        "instance_count": 15,
+        "instance_pct": 3.87
+      },
+      {
+        "job_name": "test",
+        "repo_count": 11,
+        "instance_count": 14,
+        "instance_pct": 3.61
+      },
+      {
+        "job_name": "publish-multi-arch-images",
+        "repo_count": 1,
+        "instance_count": 10,
+        "instance_pct": 2.58
+      },
+      {
+        "job_name": "lint",
+        "repo_count": 7,
+        "instance_count": 8,
+        "instance_pct": 2.06
+      },
+      {
+        "job_name": "build",
+        "repo_count": 5,
+        "instance_count": 7,
+        "instance_pct": 1.8
+      },
+      {
+        "job_name": "publish-npm",
+        "repo_count": 3,
+        "instance_count": 6,
+        "instance_pct": 1.55
+      },
+      {
+        "job_name": "e2e",
+        "repo_count": 3,
+        "instance_count": 6,
+        "instance_pct": 1.55
+      },
+      {
+        "job_name": "publish",
+        "repo_count": 3,
+        "instance_count": 6,
+        "instance_pct": 1.55
+      },
+      {
+        "job_name": "compare-memory-and-trace",
+        "repo_count": 2,
+        "instance_count": 4,
+        "instance_pct": 1.03
+      },
+      {
+        "job_name": "pkg-pr-new",
+        "repo_count": 1,
+        "instance_count": 4,
+        "instance_pct": 1.03
+      },
+      {
+        "job_name": "war",
+        "repo_count": 1,
+        "instance_count": 4,
+        "instance_pct": 1.03
+      },
+      {
+        "job_name": "compare-outputs-dynamic-layouts",
+        "repo_count": 2,
+        "instance_count": 4,
+        "instance_pct": 1.03
+      },
+      {
+        "job_name": "test-browser",
+        "repo_count": 2,
+        "instance_count": 4,
+        "instance_pct": 1.03
+      },
+      {
+        "job_name": "typecheck-packages",
+        "repo_count": 1,
+        "instance_count": 4,
+        "instance_pct": 1.03
+      },
+      {
+        "job_name": "test-integration",
+        "repo_count": 2,
+        "instance_count": 4,
+        "instance_pct": 1.03
+      },
+      {
+        "job_name": "compare-run-from-cairo-pie-all-outputs",
+        "repo_count": 2,
+        "instance_count": 4,
+        "instance_pct": 1.03
+      },
+      {
+        "job_name": "unit",
+        "repo_count": 4,
+        "instance_count": 4,
+        "instance_pct": 1.03
+      },
+      {
+        "job_name": "publish-documentation",
+        "repo_count": 1,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "ui-tests",
+        "repo_count": 1,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "publish-services",
+        "repo_count": 1,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "edge-release",
+        "repo_count": 1,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "publish-tag",
+        "repo_count": 1,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "e2es-playwright",
+        "repo_count": 1,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "upload",
+        "repo_count": 2,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "prepare-release",
+        "repo_count": 1,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "build-mac",
+        "repo_count": 3,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "run-e2e-test",
+        "repo_count": 1,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "codecov-upload",
+        "repo_count": 1,
+        "instance_count": 3,
+        "instance_pct": 0.77
+      },
+      {
+        "job_name": "sanitize",
+        "repo_count": 2,
+        "instance_count": 2,
+        "instance_pct": 0.52
+      }
+    ]
+  },
+  "by_repo_feature": {
+    "forks": {
+      "any_smell": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 10528,
+          "repo_pct": 54.48
+        }
+      ],
+      "no_dependency_cache": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 6976,
+          "instance_count": 22853,
+          "repo_pct": 36.1
+        }
+      ],
+      "no_restore_keys": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 3007,
+          "instance_count": 13001,
+          "repo_pct": 15.56
+        }
+      ],
+      "redundant_cache_update": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 1460,
+          "instance_count": 4024,
+          "repo_pct": 7.56
+        }
+      ],
+      "cache_position_error": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 528,
+          "instance_count": 1214,
+          "repo_pct": 2.73
+        }
+      ],
+      "conflicting_cache_sources": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 407,
+          "instance_count": 1169,
+          "repo_pct": 2.11
+        }
+      ],
+      "static_cache_key": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 1142,
+          "instance_count": 3014,
+          "repo_pct": 5.91
+        }
+      ],
+      "overly_specific_cache_key": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 405,
+          "instance_count": 1316,
+          "repo_pct": 2.1
+        }
+      ],
+      "no_docker_layer_cache": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 2343,
+          "instance_count": 5729,
+          "repo_pct": 12.12
+        }
+      ],
+      "deprecated_cache_action": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 249,
+          "instance_count": 2730,
+          "repo_pct": 1.29
+        }
+      ],
+      "unreachable_cache_write": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 4,
+          "instance_count": 5,
+          "repo_pct": 0.02
+        }
+      ],
+      "cache_as_artifact": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 116,
+          "instance_count": 388,
+          "repo_pct": 0.6
+        }
+      ]
+    },
+    "issues": {
+      "any_smell": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 10528,
+          "repo_pct": 54.48
+        }
+      ],
+      "no_dependency_cache": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 6976,
+          "instance_count": 22853,
+          "repo_pct": 36.1
+        }
+      ],
+      "no_restore_keys": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 3007,
+          "instance_count": 13001,
+          "repo_pct": 15.56
+        }
+      ],
+      "redundant_cache_update": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 1460,
+          "instance_count": 4024,
+          "repo_pct": 7.56
+        }
+      ],
+      "cache_position_error": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 528,
+          "instance_count": 1214,
+          "repo_pct": 2.73
+        }
+      ],
+      "conflicting_cache_sources": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 407,
+          "instance_count": 1169,
+          "repo_pct": 2.11
+        }
+      ],
+      "static_cache_key": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 1142,
+          "instance_count": 3014,
+          "repo_pct": 5.91
+        }
+      ],
+      "overly_specific_cache_key": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 405,
+          "instance_count": 1316,
+          "repo_pct": 2.1
+        }
+      ],
+      "no_docker_layer_cache": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 2343,
+          "instance_count": 5729,
+          "repo_pct": 12.12
+        }
+      ],
+      "deprecated_cache_action": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 249,
+          "instance_count": 2730,
+          "repo_pct": 1.29
+        }
+      ],
+      "unreachable_cache_write": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 4,
+          "instance_count": 5,
+          "repo_pct": 0.02
+        }
+      ],
+      "cache_as_artifact": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 116,
+          "instance_count": 388,
+          "repo_pct": 0.6
+        }
+      ]
+    },
+    "workflows": {
+      "any_smell": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 3833,
+          "repo_pct": 54.08
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 2707,
+          "repo_pct": 61.22
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 1990,
+          "repo_pct": 37.68
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 1998,
+          "repo_pct": 78.88
+        }
+      ],
+      "no_dependency_cache": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 2435,
+          "instance_count": 6114,
+          "repo_pct": 34.35
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 1777,
+          "instance_count": 5617,
+          "repo_pct": 40.19
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 1348,
+          "instance_count": 2428,
+          "repo_pct": 25.53
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 1416,
+          "instance_count": 8694,
+          "repo_pct": 55.9
+        }
+      ],
+      "no_restore_keys": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 984,
+          "instance_count": 2668,
+          "repo_pct": 13.88
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 778,
+          "instance_count": 2989,
+          "repo_pct": 17.59
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 426,
+          "instance_count": 1086,
+          "repo_pct": 8.07
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 819,
+          "instance_count": 6258,
+          "repo_pct": 32.33
+        }
+      ],
+      "redundant_cache_update": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 522,
+          "instance_count": 1289,
+          "repo_pct": 7.36
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 362,
+          "instance_count": 1072,
+          "repo_pct": 8.19
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 249,
+          "instance_count": 641,
+          "repo_pct": 4.72
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 327,
+          "instance_count": 1022,
+          "repo_pct": 12.91
+        }
+      ],
+      "cache_position_error": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 176,
+          "instance_count": 362,
+          "repo_pct": 2.48
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 159,
+          "instance_count": 367,
+          "repo_pct": 3.6
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 84,
+          "instance_count": 141,
+          "repo_pct": 1.59
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 109,
+          "instance_count": 344,
+          "repo_pct": 4.3
+        }
+      ],
+      "conflicting_cache_sources": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 108,
+          "instance_count": 202,
+          "repo_pct": 1.52
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 123,
+          "instance_count": 310,
+          "repo_pct": 2.78
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 37,
+          "instance_count": 63,
+          "repo_pct": 0.7
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 139,
+          "instance_count": 594,
+          "repo_pct": 5.49
+        }
+      ],
+      "static_cache_key": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 358,
+          "instance_count": 715,
+          "repo_pct": 5.05
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 310,
+          "instance_count": 1046,
+          "repo_pct": 7.01
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 156,
+          "instance_count": 318,
+          "repo_pct": 2.95
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 318,
+          "instance_count": 935,
+          "repo_pct": 12.55
+        }
+      ],
+      "overly_specific_cache_key": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 103,
+          "instance_count": 396,
+          "repo_pct": 1.45
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 104,
+          "instance_count": 263,
+          "repo_pct": 2.35
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 38,
+          "instance_count": 72,
+          "repo_pct": 0.72
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 160,
+          "instance_count": 585,
+          "repo_pct": 6.32
+        }
+      ],
+      "no_docker_layer_cache": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 757,
+          "instance_count": 1156,
+          "repo_pct": 10.68
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 724,
+          "instance_count": 1476,
+          "repo_pct": 16.37
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 239,
+          "instance_count": 310,
+          "repo_pct": 4.53
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 623,
+          "instance_count": 2787,
+          "repo_pct": 24.6
+        }
+      ],
+      "deprecated_cache_action": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 110,
+          "instance_count": 291,
+          "repo_pct": 1.55
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 55,
+          "instance_count": 183,
+          "repo_pct": 1.24
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 64,
+          "instance_count": 118,
+          "repo_pct": 1.21
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 20,
+          "instance_count": 2138,
+          "repo_pct": 0.79
+        }
+      ],
+      "unreachable_cache_write": [
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 4,
+          "instance_count": 5,
+          "repo_pct": 0.16
+        }
+      ],
+      "cache_as_artifact": [
+        {
+          "tier": "中 (3-5)",
+          "repo_count": 31,
+          "instance_count": 137,
+          "repo_pct": 0.44
+        },
+        {
+          "tier": "多 (6-10)",
+          "repo_count": 42,
+          "instance_count": 131,
+          "repo_pct": 0.95
+        },
+        {
+          "tier": "少 (1-2)",
+          "repo_count": 8,
+          "instance_count": 17,
+          "repo_pct": 0.15
+        },
+        {
+          "tier": "很多 (>10)",
+          "repo_count": 35,
+          "instance_count": 103,
+          "repo_pct": 1.38
+        }
+      ]
+    },
+    "runs": {
+      "any_smell": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 3409,
+          "repo_pct": 49.54
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 2151,
+          "repo_pct": 46.15
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 3319,
+          "repo_pct": 67.13
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 1649,
+          "repo_pct": 58.12
+        }
+      ],
+      "no_dependency_cache": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 2211,
+          "instance_count": 5637,
+          "repo_pct": 32.13
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 1408,
+          "instance_count": 3268,
+          "repo_pct": 30.21
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 2266,
+          "instance_count": 10534,
+          "repo_pct": 45.83
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 1091,
+          "instance_count": 3414,
+          "repo_pct": 38.46
+        }
+      ],
+      "no_restore_keys": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 844,
+          "instance_count": 2606,
+          "repo_pct": 12.26
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 479,
+          "instance_count": 1217,
+          "repo_pct": 10.28
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 1217,
+          "instance_count": 7686,
+          "repo_pct": 24.62
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 467,
+          "instance_count": 1492,
+          "repo_pct": 16.46
+        }
+      ],
+      "redundant_cache_update": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 431,
+          "instance_count": 1198,
+          "repo_pct": 6.26
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 279,
+          "instance_count": 748,
+          "repo_pct": 5.99
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 514,
+          "instance_count": 1507,
+          "repo_pct": 10.4
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 236,
+          "instance_count": 571,
+          "repo_pct": 8.32
+        }
+      ],
+      "cache_position_error": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 160,
+          "instance_count": 350,
+          "repo_pct": 2.32
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 100,
+          "instance_count": 178,
+          "repo_pct": 2.15
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 184,
+          "instance_count": 493,
+          "repo_pct": 3.72
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 84,
+          "instance_count": 193,
+          "repo_pct": 2.96
+        }
+      ],
+      "conflicting_cache_sources": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 99,
+          "instance_count": 216,
+          "repo_pct": 1.44
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 48,
+          "instance_count": 80,
+          "repo_pct": 1.03
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 193,
+          "instance_count": 717,
+          "repo_pct": 3.9
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 67,
+          "instance_count": 156,
+          "repo_pct": 2.36
+        }
+      ],
+      "static_cache_key": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 335,
+          "instance_count": 797,
+          "repo_pct": 4.87
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 181,
+          "instance_count": 316,
+          "repo_pct": 3.88
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 451,
+          "instance_count": 1452,
+          "repo_pct": 9.12
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 175,
+          "instance_count": 449,
+          "repo_pct": 6.17
+        }
+      ],
+      "overly_specific_cache_key": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 98,
+          "instance_count": 257,
+          "repo_pct": 1.42
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 39,
+          "instance_count": 136,
+          "repo_pct": 0.84
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 204,
+          "instance_count": 719,
+          "repo_pct": 4.13
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 64,
+          "instance_count": 204,
+          "repo_pct": 2.26
+        }
+      ],
+      "no_docker_layer_cache": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 735,
+          "instance_count": 1412,
+          "repo_pct": 10.68
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 375,
+          "instance_count": 611,
+          "repo_pct": 8.05
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 879,
+          "instance_count": 3089,
+          "repo_pct": 17.78
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 354,
+          "instance_count": 617,
+          "repo_pct": 12.48
+        }
+      ],
+      "deprecated_cache_action": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 80,
+          "instance_count": 195,
+          "repo_pct": 1.16
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 106,
+          "instance_count": 274,
+          "repo_pct": 2.27
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 33,
+          "instance_count": 2131,
+          "repo_pct": 0.67
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 30,
+          "instance_count": 130,
+          "repo_pct": 1.06
+        }
+      ],
+      "unreachable_cache_write": [
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 4,
+          "instance_count": 5,
+          "repo_pct": 0.08
+        }
+      ],
+      "cache_as_artifact": [
+        {
+          "tier": "中频 (100-299)",
+          "repo_count": 29,
+          "instance_count": 91,
+          "repo_pct": 0.42
+        },
+        {
+          "tier": "低频 (<100)",
+          "repo_count": 11,
+          "instance_count": 51,
+          "repo_pct": 0.24
+        },
+        {
+          "tier": "极高频 (≥600)",
+          "repo_count": 59,
+          "instance_count": 191,
+          "repo_pct": 1.19
+        },
+        {
+          "tier": "高频 (300-599)",
+          "repo_count": 17,
+          "instance_count": 55,
+          "repo_pct": 0.6
+        }
+      ]
+    },
+    "commits": {
+      "any_smell": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 3953,
+          "repo_pct": 51.55
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 1306,
+          "repo_pct": 45.63
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 2668,
+          "repo_pct": 63.48
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 2601,
+          "repo_pct": 56.65
+        }
+      ],
+      "no_dependency_cache": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 2625,
+          "instance_count": 7555,
+          "repo_pct": 34.23
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 865,
+          "instance_count": 2052,
+          "repo_pct": 30.22
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 1779,
+          "instance_count": 6501,
+          "repo_pct": 42.33
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 1707,
+          "instance_count": 6745,
+          "repo_pct": 37.18
+        }
+      ],
+      "no_restore_keys": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 943,
+          "instance_count": 2998,
+          "repo_pct": 12.3
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 263,
+          "instance_count": 597,
+          "repo_pct": 9.19
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 1039,
+          "instance_count": 4700,
+          "repo_pct": 24.72
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 762,
+          "instance_count": 4706,
+          "repo_pct": 16.6
+        }
+      ],
+      "redundant_cache_update": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 474,
+          "instance_count": 1238,
+          "repo_pct": 6.18
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 134,
+          "instance_count": 345,
+          "repo_pct": 4.68
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 450,
+          "instance_count": 1387,
+          "repo_pct": 10.71
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 402,
+          "instance_count": 1054,
+          "repo_pct": 8.76
+        }
+      ],
+      "cache_position_error": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 223,
+          "instance_count": 494,
+          "repo_pct": 2.91
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 83,
+          "instance_count": 151,
+          "repo_pct": 2.9
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 108,
+          "instance_count": 248,
+          "repo_pct": 2.57
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 114,
+          "instance_count": 321,
+          "repo_pct": 2.48
+        }
+      ],
+      "conflicting_cache_sources": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 125,
+          "instance_count": 306,
+          "repo_pct": 1.63
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 31,
+          "instance_count": 51,
+          "repo_pct": 1.08
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 141,
+          "instance_count": 426,
+          "repo_pct": 3.35
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 110,
+          "instance_count": 386,
+          "repo_pct": 2.4
+        }
+      ],
+      "static_cache_key": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 348,
+          "instance_count": 1091,
+          "repo_pct": 4.54
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 97,
+          "instance_count": 190,
+          "repo_pct": 3.39
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 388,
+          "instance_count": 1015,
+          "repo_pct": 9.23
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 309,
+          "instance_count": 718,
+          "repo_pct": 6.73
+        }
+      ],
+      "overly_specific_cache_key": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 104,
+          "instance_count": 329,
+          "repo_pct": 1.36
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 21,
+          "instance_count": 42,
+          "repo_pct": 0.73
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 185,
+          "instance_count": 639,
+          "repo_pct": 4.4
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 95,
+          "instance_count": 306,
+          "repo_pct": 2.07
+        }
+      ],
+      "no_docker_layer_cache": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 832,
+          "instance_count": 1658,
+          "repo_pct": 10.85
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 237,
+          "instance_count": 392,
+          "repo_pct": 8.28
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 664,
+          "instance_count": 1534,
+          "repo_pct": 15.8
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 610,
+          "instance_count": 2145,
+          "repo_pct": 13.29
+        }
+      ],
+      "deprecated_cache_action": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 93,
+          "instance_count": 289,
+          "repo_pct": 1.21
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 94,
+          "instance_count": 246,
+          "repo_pct": 3.28
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 25,
+          "instance_count": 75,
+          "repo_pct": 0.59
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 37,
+          "instance_count": 2120,
+          "repo_pct": 0.81
+        }
+      ],
+      "unreachable_cache_write": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 2,
+          "instance_count": 3,
+          "repo_pct": 0.03
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 2,
+          "instance_count": 2,
+          "repo_pct": 0.05
+        }
+      ],
+      "cache_as_artifact": [
+        {
+          "tier": "中 (500-1999)",
+          "repo_count": 36,
+          "instance_count": 115,
+          "repo_pct": 0.47
+        },
+        {
+          "tier": "低 (<500)",
+          "repo_count": 7,
+          "instance_count": 14,
+          "repo_pct": 0.24
+        },
+        {
+          "tier": "极高 (≥5000)",
+          "repo_count": 40,
+          "instance_count": 137,
+          "repo_pct": 0.95
+        },
+        {
+          "tier": "高 (2000-4999)",
+          "repo_count": 33,
+          "instance_count": 122,
+          "repo_pct": 0.72
+        }
+      ]
+    },
+    "contributors": {
+      "any_smell": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 4892,
+          "repo_pct": 53.46
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 2990,
+          "repo_pct": 57.05
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 1659,
+          "repo_pct": 49.83
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 987,
+          "repo_pct": 61.57
+        }
+      ],
+      "no_dependency_cache": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 3273,
+          "instance_count": 9880,
+          "repo_pct": 35.77
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 1961,
+          "instance_count": 6856,
+          "repo_pct": 37.42
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 1073,
+          "instance_count": 2758,
+          "repo_pct": 32.23
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 669,
+          "instance_count": 3359,
+          "repo_pct": 41.73
+        }
+      ],
+      "no_restore_keys": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 1249,
+          "instance_count": 6198,
+          "repo_pct": 13.65
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 973,
+          "instance_count": 3877,
+          "repo_pct": 18.57
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 374,
+          "instance_count": 1282,
+          "repo_pct": 11.23
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 411,
+          "instance_count": 1644,
+          "repo_pct": 25.64
+        }
+      ],
+      "redundant_cache_update": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 614,
+          "instance_count": 1557,
+          "repo_pct": 6.71
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 489,
+          "instance_count": 1464,
+          "repo_pct": 9.33
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 179,
+          "instance_count": 436,
+          "repo_pct": 5.38
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 178,
+          "instance_count": 567,
+          "repo_pct": 11.1
+        }
+      ],
+      "cache_position_error": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 249,
+          "instance_count": 566,
+          "repo_pct": 2.72
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 167,
+          "instance_count": 388,
+          "repo_pct": 3.19
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 59,
+          "instance_count": 117,
+          "repo_pct": 1.77
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 53,
+          "instance_count": 143,
+          "repo_pct": 3.31
+        }
+      ],
+      "conflicting_cache_sources": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 173,
+          "instance_count": 470,
+          "repo_pct": 1.89
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 126,
+          "instance_count": 365,
+          "repo_pct": 2.4
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 45,
+          "instance_count": 99,
+          "repo_pct": 1.35
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 63,
+          "instance_count": 235,
+          "repo_pct": 3.93
+        }
+      ],
+      "static_cache_key": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 486,
+          "instance_count": 1173,
+          "repo_pct": 5.31
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 368,
+          "instance_count": 913,
+          "repo_pct": 7.02
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 145,
+          "instance_count": 537,
+          "repo_pct": 4.36
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 143,
+          "instance_count": 391,
+          "repo_pct": 8.92
+        }
+      ],
+      "overly_specific_cache_key": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 150,
+          "instance_count": 473,
+          "repo_pct": 1.64
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 155,
+          "instance_count": 531,
+          "repo_pct": 2.96
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 31,
+          "instance_count": 67,
+          "repo_pct": 0.93
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 69,
+          "instance_count": 245,
+          "repo_pct": 4.3
+        }
+      ],
+      "no_docker_layer_cache": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 1130,
+          "instance_count": 3266,
+          "repo_pct": 12.35
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 626,
+          "instance_count": 1340,
+          "repo_pct": 11.94
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 388,
+          "instance_count": 653,
+          "repo_pct": 11.66
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 199,
+          "instance_count": 470,
+          "repo_pct": 12.41
+        }
+      ],
+      "deprecated_cache_action": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 118,
+          "instance_count": 2328,
+          "repo_pct": 1.29
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 34,
+          "instance_count": 124,
+          "repo_pct": 0.65
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 89,
+          "instance_count": 257,
+          "repo_pct": 2.67
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 8,
+          "instance_count": 21,
+          "repo_pct": 0.5
+        }
+      ],
+      "unreachable_cache_write": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 2,
+          "instance_count": 3,
+          "repo_pct": 0.02
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 1,
+          "instance_count": 1,
+          "repo_pct": 0.02
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 1,
+          "instance_count": 1,
+          "repo_pct": 0.06
+        }
+      ],
+      "cache_as_artifact": [
+        {
+          "tier": "中 (10-49)",
+          "repo_count": 48,
+          "instance_count": 184,
+          "repo_pct": 0.52
+        },
+        {
+          "tier": "多 (50-199)",
+          "repo_count": 40,
+          "instance_count": 133,
+          "repo_pct": 0.76
+        },
+        {
+          "tier": "少 (<10)",
+          "repo_count": 12,
+          "instance_count": 35,
+          "repo_pct": 0.36
+        },
+        {
+          "tier": "很多 (≥200)",
+          "repo_count": 16,
+          "instance_count": 36,
+          "repo_pct": 1.0
+        }
+      ]
+    },
+    "pull_requests": {
+      "any_smell": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 10528,
+          "repo_pct": 54.48
+        }
+      ],
+      "no_dependency_cache": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 6976,
+          "instance_count": 22853,
+          "repo_pct": 36.1
+        }
+      ],
+      "no_restore_keys": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 3007,
+          "instance_count": 13001,
+          "repo_pct": 15.56
+        }
+      ],
+      "redundant_cache_update": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 1460,
+          "instance_count": 4024,
+          "repo_pct": 7.56
+        }
+      ],
+      "cache_position_error": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 528,
+          "instance_count": 1214,
+          "repo_pct": 2.73
+        }
+      ],
+      "conflicting_cache_sources": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 407,
+          "instance_count": 1169,
+          "repo_pct": 2.11
+        }
+      ],
+      "static_cache_key": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 1142,
+          "instance_count": 3014,
+          "repo_pct": 5.91
+        }
+      ],
+      "overly_specific_cache_key": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 405,
+          "instance_count": 1316,
+          "repo_pct": 2.1
+        }
+      ],
+      "no_docker_layer_cache": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 2343,
+          "instance_count": 5729,
+          "repo_pct": 12.12
+        }
+      ],
+      "deprecated_cache_action": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 249,
+          "instance_count": 2730,
+          "repo_pct": 1.29
+        }
+      ],
+      "unreachable_cache_write": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 4,
+          "instance_count": 5,
+          "repo_pct": 0.02
+        }
+      ],
+      "cache_as_artifact": [
+        {
+          "tier": "低 (<50)",
+          "repo_count": 116,
+          "instance_count": 388,
+          "repo_pct": 0.6
+        }
+      ]
+    },
+    "releases": {
+      "any_smell": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 10528,
+          "repo_pct": 54.48
+        }
+      ],
+      "no_dependency_cache": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 6976,
+          "instance_count": 22853,
+          "repo_pct": 36.1
+        }
+      ],
+      "no_restore_keys": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 3007,
+          "instance_count": 13001,
+          "repo_pct": 15.56
+        }
+      ],
+      "redundant_cache_update": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 1460,
+          "instance_count": 4024,
+          "repo_pct": 7.56
+        }
+      ],
+      "cache_position_error": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 528,
+          "instance_count": 1214,
+          "repo_pct": 2.73
+        }
+      ],
+      "conflicting_cache_sources": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 407,
+          "instance_count": 1169,
+          "repo_pct": 2.11
+        }
+      ],
+      "static_cache_key": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 1142,
+          "instance_count": 3014,
+          "repo_pct": 5.91
+        }
+      ],
+      "overly_specific_cache_key": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 405,
+          "instance_count": 1316,
+          "repo_pct": 2.1
+        }
+      ],
+      "no_docker_layer_cache": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 2343,
+          "instance_count": 5729,
+          "repo_pct": 12.12
+        }
+      ],
+      "deprecated_cache_action": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 249,
+          "instance_count": 2730,
+          "repo_pct": 1.29
+        }
+      ],
+      "unreachable_cache_write": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 4,
+          "instance_count": 5,
+          "repo_pct": 0.02
+        }
+      ],
+      "cache_as_artifact": [
+        {
+          "tier": "无 (0)",
+          "repo_count": 116,
+          "instance_count": 388,
+          "repo_pct": 0.6
+        }
+      ]
+    },
+    "code_lines": {
+      "any_smell": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 10528,
+          "repo_pct": 54.48
+        }
+      ],
+      "no_dependency_cache": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 6976,
+          "instance_count": 22853,
+          "repo_pct": 36.1
+        }
+      ],
+      "no_restore_keys": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 3007,
+          "instance_count": 13001,
+          "repo_pct": 15.56
+        }
+      ],
+      "redundant_cache_update": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 1460,
+          "instance_count": 4024,
+          "repo_pct": 7.56
+        }
+      ],
+      "cache_position_error": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 528,
+          "instance_count": 1214,
+          "repo_pct": 2.73
+        }
+      ],
+      "conflicting_cache_sources": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 407,
+          "instance_count": 1169,
+          "repo_pct": 2.11
+        }
+      ],
+      "static_cache_key": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 1142,
+          "instance_count": 3014,
+          "repo_pct": 5.91
+        }
+      ],
+      "overly_specific_cache_key": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 405,
+          "instance_count": 1316,
+          "repo_pct": 2.1
+        }
+      ],
+      "no_docker_layer_cache": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 2343,
+          "instance_count": 5729,
+          "repo_pct": 12.12
+        }
+      ],
+      "deprecated_cache_action": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 249,
+          "instance_count": 2730,
+          "repo_pct": 1.29
+        }
+      ],
+      "unreachable_cache_write": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 4,
+          "instance_count": 5,
+          "repo_pct": 0.02
+        }
+      ],
+      "cache_as_artifact": [
+        {
+          "tier": "小 (<1万)",
+          "repo_count": 116,
+          "instance_count": 388,
+          "repo_pct": 0.6
+        }
+      ]
+    }
+  },
+  "by_job_count": {
+    "no_dependency_cache": [],
+    "no_restore_keys": [],
+    "redundant_cache_update": [],
+    "cache_position_error": [],
+    "conflicting_cache_sources": [],
+    "static_cache_key": [],
+    "overly_specific_cache_key": [],
+    "no_docker_layer_cache": [],
+    "deprecated_cache_action": [],
+    "unreachable_cache_write": [],
+    "cache_as_artifact": []
+  },
+  "by_step_count": {
+    "no_dependency_cache": [],
+    "no_restore_keys": [],
+    "redundant_cache_update": [],
+    "cache_position_error": [],
+    "conflicting_cache_sources": [],
+    "static_cache_key": [],
+    "overly_specific_cache_key": [],
+    "no_docker_layer_cache": [],
+    "deprecated_cache_action": [],
+    "unreachable_cache_write": [],
+    "cache_as_artifact": []
+  },
+  "by_trigger_type": {
+    "no_dependency_cache": [],
+    "no_restore_keys": [],
+    "redundant_cache_update": [],
+    "cache_position_error": [],
+    "conflicting_cache_sources": [],
+    "static_cache_key": [],
+    "overly_specific_cache_key": [],
+    "no_docker_layer_cache": [],
+    "deprecated_cache_action": [],
+    "unreachable_cache_write": [],
+    "cache_as_artifact": []
+  },
+  "trigger_overview": {
+    "push": {
+      "workflow_count": 60882,
+      "workflow_pct": 51.42,
+      "smell_workflow_counts": {
+        "no_dependency_cache": 9718,
+        "no_restore_keys": 3670,
+        "redundant_cache_update": 1490,
+        "cache_position_error": 618,
+        "conflicting_cache_sources": 446,
+        "static_cache_key": 1239,
+        "overly_specific_cache_key": 354,
+        "no_docker_layer_cache": 2453,
+        "deprecated_cache_action": 332,
+        "unreachable_cache_write": 0,
+        "cache_as_artifact": 96
+      },
+      "smell_workflow_pct": {
+        "no_dependency_cache": 8.21,
+        "no_restore_keys": 3.1,
+        "redundant_cache_update": 1.26,
+        "cache_position_error": 0.52,
+        "conflicting_cache_sources": 0.38,
+        "static_cache_key": 1.05,
+        "overly_specific_cache_key": 0.3,
+        "no_docker_layer_cache": 2.07,
+        "deprecated_cache_action": 0.28,
+        "unreachable_cache_write": 0.0,
+        "cache_as_artifact": 0.08
+      }
+    },
+    "pull_request": {
+      "workflow_count": 59771,
+      "workflow_pct": 50.48,
+      "smell_workflow_counts": {
+        "no_dependency_cache": 8712,
+        "no_restore_keys": 3531,
+        "redundant_cache_update": 1528,
+        "cache_position_error": 646,
+        "conflicting_cache_sources": 428,
+        "static_cache_key": 1151,
+        "overly_specific_cache_key": 365,
+        "no_docker_layer_cache": 1305,
+        "deprecated_cache_action": 232,
+        "unreachable_cache_write": 3,
+        "cache_as_artifact": 90
+      },
+      "smell_workflow_pct": {
+        "no_dependency_cache": 7.36,
+        "no_restore_keys": 2.98,
+        "redundant_cache_update": 1.29,
+        "cache_position_error": 0.55,
+        "conflicting_cache_sources": 0.36,
+        "static_cache_key": 0.97,
+        "overly_specific_cache_key": 0.31,
+        "no_docker_layer_cache": 1.1,
+        "deprecated_cache_action": 0.2,
+        "unreachable_cache_write": 0.0,
+        "cache_as_artifact": 0.08
+      }
+    },
+    "schedule": {
+      "workflow_count": 22150,
+      "workflow_pct": 18.71,
+      "smell_workflow_counts": {
+        "no_dependency_cache": 2444,
+        "no_restore_keys": 749,
+        "redundant_cache_update": 249,
+        "cache_position_error": 69,
+        "conflicting_cache_sources": 70,
+        "static_cache_key": 280,
+        "overly_specific_cache_key": 122,
+        "no_docker_layer_cache": 413,
+        "deprecated_cache_action": 66,
+        "unreachable_cache_write": 0,
+        "cache_as_artifact": 16
+      },
+      "smell_workflow_pct": {
+        "no_dependency_cache": 2.06,
+        "no_restore_keys": 0.63,
+        "redundant_cache_update": 0.21,
+        "cache_position_error": 0.06,
+        "conflicting_cache_sources": 0.06,
+        "static_cache_key": 0.24,
+        "overly_specific_cache_key": 0.1,
+        "no_docker_layer_cache": 0.35,
+        "deprecated_cache_action": 0.06,
+        "unreachable_cache_write": 0.0,
+        "cache_as_artifact": 0.01
+      }
+    },
+    "workflow_dispatch": {
+      "workflow_count": 47262,
+      "workflow_pct": 39.92,
+      "smell_workflow_counts": {
+        "no_dependency_cache": 6947,
+        "no_restore_keys": 2506,
+        "redundant_cache_update": 701,
+        "cache_position_error": 205,
+        "conflicting_cache_sources": 264,
+        "static_cache_key": 784,
+        "overly_specific_cache_key": 374,
+        "no_docker_layer_cache": 1785,
+        "deprecated_cache_action": 137,
+        "unreachable_cache_write": 2,
+        "cache_as_artifact": 72
+      },
+      "smell_workflow_pct": {
+        "no_dependency_cache": 5.87,
+        "no_restore_keys": 2.12,
+        "redundant_cache_update": 0.59,
+        "cache_position_error": 0.17,
+        "conflicting_cache_sources": 0.22,
+        "static_cache_key": 0.66,
+        "overly_specific_cache_key": 0.32,
+        "no_docker_layer_cache": 1.51,
+        "deprecated_cache_action": 0.12,
+        "unreachable_cache_write": 0.0,
+        "cache_as_artifact": 0.06
+      }
+    },
+    "release": {
+      "workflow_count": 4926,
+      "workflow_pct": 4.16,
+      "smell_workflow_counts": {
+        "no_dependency_cache": 1095,
+        "no_restore_keys": 171,
+        "redundant_cache_update": 70,
+        "cache_position_error": 29,
+        "conflicting_cache_sources": 12,
+        "static_cache_key": 39,
+        "overly_specific_cache_key": 14,
+        "no_docker_layer_cache": 408,
+        "deprecated_cache_action": 39,
+        "unreachable_cache_write": 0,
+        "cache_as_artifact": 10
+      },
+      "smell_workflow_pct": {
+        "no_dependency_cache": 0.92,
+        "no_restore_keys": 0.14,
+        "redundant_cache_update": 0.06,
+        "cache_position_error": 0.02,
+        "conflicting_cache_sources": 0.01,
+        "static_cache_key": 0.03,
+        "overly_specific_cache_key": 0.01,
+        "no_docker_layer_cache": 0.34,
+        "deprecated_cache_action": 0.03,
+        "unreachable_cache_write": 0.0,
+        "cache_as_artifact": 0.01
+      }
+    },
+    "other": {
+      "workflow_count": 11291,
+      "workflow_pct": 9.54,
+      "smell_workflow_counts": {
+        "no_dependency_cache": 797,
+        "no_restore_keys": 328,
+        "redundant_cache_update": 106,
+        "cache_position_error": 52,
+        "conflicting_cache_sources": 39,
+        "static_cache_key": 104,
+        "overly_specific_cache_key": 38,
+        "no_docker_layer_cache": 164,
+        "deprecated_cache_action": 12,
+        "unreachable_cache_write": 1,
+        "cache_as_artifact": 17
+      },
+      "smell_workflow_pct": {
+        "no_dependency_cache": 0.67,
+        "no_restore_keys": 0.28,
+        "redundant_cache_update": 0.09,
+        "cache_position_error": 0.04,
+        "conflicting_cache_sources": 0.03,
+        "static_cache_key": 0.09,
+        "overly_specific_cache_key": 0.03,
+        "no_docker_layer_cache": 0.14,
+        "deprecated_cache_action": 0.01,
+        "unreachable_cache_write": 0.0,
+        "cache_as_artifact": 0.01
+      }
+    }
+  },
+  "trigger_combinations": [
+    {
+      "triggers": "pull_request+push",
+      "count": 40858
+    },
+    {
+      "triggers": "push+workflow_dispatch",
+      "count": 18795
+    },
+    {
+      "triggers": "pull_request+workflow_dispatch",
+      "count": 15413
+    },
+    {
+      "triggers": "schedule+workflow_dispatch",
+      "count": 12545
+    },
+    {
+      "triggers": "push+schedule",
+      "count": 9327
+    },
+    {
+      "triggers": "pull_request+schedule",
+      "count": 8617
+    },
+    {
+      "triggers": "other+pull_request",
+      "count": 4210
+    },
+    {
+      "triggers": "other+push",
+      "count": 3079
+    },
+    {
+      "triggers": "other+workflow_dispatch",
+      "count": 2741
+    },
+    {
+      "triggers": "release+workflow_dispatch",
+      "count": 1920
+    },
+    {
+      "triggers": "other+schedule",
+      "count": 1493
+    },
+    {
+      "triggers": "push+release",
+      "count": 1163
+    },
+    {
+      "triggers": "pull_request+release",
+      "count": 830
+    },
+    {
+      "triggers": "release+schedule",
+      "count": 173
+    },
+    {
+      "triggers": "other+release",
+      "count": 100
+    }
+  ]
+}

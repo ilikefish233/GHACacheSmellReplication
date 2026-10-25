@@ -1,7 +1,7 @@
 {
   "archive_url": null,
-  "doi": null,
-  "publication_status": "Zenodo deposit pending",
+  "doi": "10.5281/zenodo.23640810",
+  "publication_status": "Zenodo draft; DOI reserved; data not yet published",
   "archive_filename": "replication_package_emse_20261025.zip",
   "identity": {
     "paper_title": "Cache Configuration Smells in GitHub Actions: A Large-Scale Empirical Study",

@@ -15,7 +15,7 @@
     },
     {
       "path": "data/sources.json",
-      "bytes": 2336
+      "bytes": 2385
     },
     {
       "path": "data/upstream/ghalogs/README.md",
@@ -271,7 +271,7 @@
     },
     {
       "path": "docs/zenodo_deposit.md",
-      "bytes": 4698
+      "bytes": 2099
     },
     {
       "path": "LICENSE",
@@ -343,11 +343,11 @@
     },
     {
       "path": "README.md",
-      "bytes": 16827
+      "bytes": 17055
     },
     {
       "path": "README_zh.md",
-      "bytes": 13183
+      "bytes": 13460
     },
     {
       "path": "reproduce.py",

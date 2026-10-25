@@ -1,73 +1,43 @@
-# Zenodo deposit instructions
+# Zenodo data deposit
 
-Recommended arrangement: GitHub hosts the readable code, entry points, small
-expected tables and documentation; Zenodo preserves the complete versioned ZIP
-with its analysis data. The GitHub README points to the actual Zenodo record.
-For this package, uploading the complete ZIP is simpler than splitting datasets
-and preserves all relative paths. The removed GHALogs source is obtained from
-its original record when replaying initial filtering.
+GitHub distributes executable code, the validation workbook, small expected
+results and usage instructions. Zenodo distributes only the omitted research
+data and supporting data documentation, not a code snapshot.
 
-## Prepare the record
+## Current status
 
-1. Sign in at https://zenodo.org and choose **New upload**. Start with a draft.
-2. Upload `replication_package_emse_20261025.zip`. Optionally also upload the
-   root README, `docs/license_scope.md` and `CITATION.cff` as small standalone files.
-   Zenodo currently documents up to 100 files and 50 GB per upload, so this
-   approximately 3 GB ZIP fits without splitting.
-3. Use the title **Cache Configuration Smells in GitHub Actions: A Large-Scale
-   Empirical Study — Replication Package**. Select resource type **Dataset** for
-   this mixed data/code artifact. Copy creators from `CITATION.cff`; check their
-   order, affiliations and ORCIDs rather than inventing identifiers.
-4. Choose an actual release version (for example `1.0.0`) and synchronize it in
-   citation metadata and the deposit. Describe the frozen October analyses,
-   RQ1/RQ2 scope, validation, shared YAML, run data, acquisition/curation code,
-   external GHALogs download and known validation limits.
-5. In **Licenses**, declare MIT and CC BY 4.0 with their scope described in the
-   record and `docs/license_scope.md`. Do not mark all bundled third-party workflows
-   or raw upstream responses as CC BY. The unresolved third-party workflow
-   distribution status remains separate from this author-owned license grant.
-6. Add the actual GitHub URL as a related identifier when it exists; relate the
-   GHALogs record https://doi.org/10.5281/zenodo.14796970 as a source. Add the
-   manuscript DOI later, if assigned; it is not the dataset DOI.
-7. If the package has no DOI, choose **No** for an existing DOI and use **Get a
-   DOI now!** to reserve one. A reservation becomes registered only upon
-   publication. Insert only the assigned identifier into the README/citation
-   metadata and final files. Do not reuse the GHALogs DOI for this package.
-8. Save and preview the draft. When intentionally ready to publish, choose the
-   intended access setting and publish. No upload, DOI reservation or external
-   publication has been performed by the local package preparation scripts.
+Reserved data DOI: [10.5281/zenodo.23640810](https://doi.org/10.5281/zenodo.23640810).
+The author has created a draft; data are not yet published. A reserved DOI is
+registered only when the record is published and may not resolve beforehand.
+Keep the existing draft to retain this reservation.
+
+`data/sources.json` contains the reserved DOI and pending-publication status.
+`archive_url` remains `null`; do not guess a file URL or use the DOI landing page
+as a ZIP download link. Readers do not need to edit the configuration.
+
+## Finish the deposit
+
+Upload the seven files prepared in the local Zenodo `to_upload/` directory to
+the existing draft, including `replication_package_emse_20261025.zip`. Use type
+Dataset. Declare CC BY 4.0 for author-owned derived data and documentation, with
+third-party exclusions explained in `LICENSE_SCOPE.md`. MIT applies to the code
+on GitHub, which is not included in the data deposit. Confirm creators and
+version, add the actual GitHub repository URL, then preview and publish when ready.
+The original GHALogs candidate list is excluded; obtain it from
+https://doi.org/10.5281/zenodo.14796970 for initial filtering as described in README.
 
 ## After publication
 
-- Link GitHub to the actual record; state which ZIP to download, where to
-  extract it and the commands to run. The code-only GitHub checkout does not
-  contain the complete frozen analysis data.
-- Cite the specific archived version in the manuscript's Data Availability
-  statement and reference list. Update `CITATION.cff` with the real DOI/URL.
-- If scientific files change for a revision, create a new Zenodo version and
-  cite that version. Keep earlier versions available for traceability.
-- A DOI identifies and preserves a deposit; it does not resolve third-party
-  distribution rights. That review is deferred in the present local update.
+The authors update `data/sources.json`: retain the actual data version DOI,
+set `archive_url` to the HTTPS download link for the ZIP, and update
+`publication_status`. Update both READMEs to state that data are publicly
+available. Cite the data version used by the paper. Scientific data changes
+should be released using Zenodo's New version workflow.
 
-## Description draft
+Readers may also download the ZIP manually, then run from the code root:
 
-This replication package accompanies “Cache Configuration Smells in GitHub
-Actions: A Large-Scale Empirical Study”. It contains the frozen October
-paper-selected detector and statistical implementations, workflow configurations,
-workflow-run analysis inputs, human-validation annotations, expected results,
-figure source data and acquisition/curation pipeline for RQ1 and RQ2. The retired
-RQ3 is outside the study. Default paper analyses use frozen inputs offline after
-dependency installation. Initial candidate filtering additionally requires
-`repositories.json.gz` from GHALogs v1.0.1 (DOI 10.5281/zenodo.14796970), which is
-not redistributed. Author-owned code is MIT; author-owned derived data and
-documentation are CC BY 4.0. Third-party material retains upstream rights and
-is excluded from these grants; see docs/license_scope.md and docs/third_party_notices.md.
-Tested with Python 3.12.3 on Windows. Fresh installation and other operating
-systems have not been tested; a new full population detector scan was not run
-during package assembly. See the included validation reports for completed checks.
+```powershell
+python data_setup.py --archive "../replication_package_emse_20261025.zip"
+```
 
-## Official guidance
-
-- Upload and DOI reservation: https://help.zenodo.org/docs/deposit/create-new-upload/
-- Mixed licenses: https://help.zenodo.org/docs/deposit/describe-records/licenses/
-- Versioning: https://help.zenodo.org/docs/deposit/manage-versions/
+Official instructions: https://help.zenodo.org/docs/deposit/create-new-upload/

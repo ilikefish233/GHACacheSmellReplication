@@ -70,9 +70,12 @@ Linux/macOS 的环境激活命令为 `source .venv/bin/activate`。
 
 ### 2. 获取并接入大型数据
 
-**目前尚未创建本研究的 Zenodo 存档和 DOI。** `data/sources.json` 中的
-`archive_url`、`doi` 因此为空，当前没有可供外部读者下载本研究完整数据的公开地址。
-正式对外发布前，需要补入实际的存档地址、ZIP 直链和版本信息。
+**数据存档状态：已创建 Zenodo 草稿并预留 DOI，数据尚未发布。**
+预留数据 DOI：[10.5281/zenodo.23640810](https://doi.org/10.5281/zenodo.23640810)。
+该 DOI 在 Zenodo 正式发布后才注册，发布前可能无法解析；草稿目前不提供公开数据下载。
+`data/sources.json` 已填写预留的 `doi`，`archive_url` 继续保持 `null`。
+正式发布后，由作者补入实际数据 ZIP 下载直链；复现者无需自行填写这些配置。
+Zenodo 仅保存本 GitHub 版缺少的数据，代码在本仓库提供。
 
 已有完整包时，可把完整 ZIP 放到本仓库文件夹的上一级，然后执行：
 

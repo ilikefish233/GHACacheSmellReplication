@@ -127,11 +127,14 @@ the paper analyses do not require a GitHub account, API token or network access.
 
 ### Obtain and restore the analysis data
 
-**Archive publication status: the Zenodo record and DOI have not been created.**
-Consequently `archive_url` and `doi` in `data/sources.json` are `null`. A reader
-cannot currently download this study's complete data from a public address.
-Before publishing the final replication release, the authors must supply the
-actual archive record, direct ZIP download URL and version identifier.
+**Data archive status: Zenodo draft; DOI reserved; data not yet published.**
+Reserved data DOI: [10.5281/zenodo.23640810](https://doi.org/10.5281/zenodo.23640810).
+The DOI is not registered until the Zenodo record is published and may not resolve
+before then. The draft is not a public data download. `data/sources.json` records
+the reserved `doi`; `archive_url` remains `null`. After publication, the authors
+will configure the actual data ZIP download URL. Readers do not need to edit
+these settings. The Zenodo deposit contains the data omitted from this GitHub
+release; executable code is distributed here.
 
 If you already have the matching complete ZIP, place it next to this repository
 folder and run:

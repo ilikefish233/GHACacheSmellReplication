@@ -22,7 +22,6 @@
     "Detector/scan.py": "src/scan.py",
     "docs/data_dictionary.md": "docs/data_dictionary.md",
     "docs/data_provenance.md": "docs/data_provenance.md",
-    "docs/full_package_README.md": "docs/full_package_README.md",
     "docs/large_data_inventory.json": "docs/large_data_inventory.json",
     "docs/paper_artifact_map.csv": "docs/paper_artifact_map.csv",
     "docs/publishing.md": "docs/publishing.md",
@@ -63,7 +62,6 @@
     "provenance/paper_original_manifest.json": "docs/provenance/paper_original_manifest.json",
     "provenance/run3_original_manifest.json": "docs/provenance/run3_original_manifest.json",
     "provenance/upstream_repository_frame.json": "docs/provenance/upstream_repository_frame.json",
-    "provenance/validation_original.json": "docs/provenance/validation_original.json",
     "results/additional_checks.json": "docs/verification/original/additional_checks.json",
     "results/full_run_rebuild_verification.json": "docs/verification/original/full_run_rebuild_verification.json",
     "results/portability_checks.json": "docs/verification/original/portability_checks.json",
@@ -85,7 +83,6 @@
     "Validation/analysis.py": "Validation/analysis.py",
     "Validation/README.md": "Validation/README.md",
     "code/paper/audit_run3_manuscript_impact.py": "src/analysis/audit_run3_manuscript_impact.py",
-    "code/paper/evaluate_frozen_run3.py": "src/analysis/evaluate_frozen_run3.py",
     "code/paper/finalize_canonical_rq1_20260921.py": "src/analysis/finalize_canonical_rq1_20260921.py",
     "code/paper/redraw_study_overview.py": "src/analysis/redraw_study_overview.py",
     "code/paper/reformat_repository_contexts.py": "src/analysis/reformat_repository_contexts.py",
@@ -95,7 +92,6 @@
     "code/resource/recompute.py": "src/resources/recompute.py",
     "code/resource/run_relaxed.py": "src/resources/run_relaxed.py",
     "code/frozen/scripts/analyze_rq1_context_distributions.py": "src/frozen/scripts/analyze_rq1_context_distributions.py",
-    "code/frozen/scripts/evaluate_verify_xlsx.py": "src/frozen/scripts/evaluate_verify_xlsx.py",
     "code/frozen/scripts/finalize_canonical_rq1_20260921.py": "src/frozen/scripts/finalize_canonical_rq1_20260921.py",
     "code/frozen/scripts/prepare_canonical_experiment_inputs.py": "src/frozen/scripts/prepare_canonical_experiment_inputs.py",
     "code/frozen/scripts/rerun_rq1_rq2_experimental.py": "src/frozen/scripts/rerun_rq1_rq2_experimental.py",
@@ -395,12 +391,13 @@
     "Validation/expected/evaluation.json": "Validation/expected/evaluation.json"
   },
   "archive_compatibility": "The complete ZIP retains its old layout. External data paths selected by data_setup.py are unchanged.",
-  "immutable_sources": [
+  "historical_reports": "Paths inside archived provenance/report JSON remain historical.",
+  "study_source_directories": [
     "src/frozen/",
     "src/models/",
     "src/analysis/",
     "src/resources/",
     "src/collection/"
   ],
-  "historical_reports": "Paths inside archived provenance/report JSON remain historical."
+  "source_version_policy": "src/frozen is the study-selected run3 iteration, not an immutable archive. Maintain source versions according to current entry-point dependencies and paper-result equivalence; obsolete scripts may be removed. Record detector/parser changes and revalidate affected results."
 }

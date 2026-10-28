@@ -24,4 +24,19 @@ VM seconds sum allocated job time. Reference cost uses the original fixed histor
 
 ## Validation
 
-The workbook is unchanged. Only its first 200 physical data rows are scored, with 24 adoption-zero cases excluded. Matching is primarily smell type plus job. Parenthesized NDC annotations follow the original per-job exclusions. This is a detector-development benchmark, not a population-representative accuracy estimate or an independent 383-case benchmark. Frozen scoring also emits diagnostic candidate types; only eleven formal types belong in paper quantitative summaries.
+`Validation/data/annotations.xlsx` contains 383 annotated workflows and is copied
+byte for byte from the author's completed workbook. All 383 are processed with
+the frozen run3 detector/parser; no whole-workflow exclusions apply. Primary
+TP/FP/FN and precision/recall/F1 use one binary workflow label per CCS type.
+NDC excludes parenthesized out-of-scope labels (341 evaluated workflows); the
+other ten formal types use 383 each. Job-level results are supplementary.
+
+`annotations.yaml_sources.json` resolves three truncated Excel YAML cells to
+packaged full snapshots under `Validation/data/yaml/`, with recorded SHA-256,
+case identity and embedded-prefix checks. Paths are relative to the package root.
+Missing or corrupt snapshots must fail rather than silently score truncated YAML.
+
+Current provenance: `docs/replication_manifest.json` (section `validation`). Current expected results:
+`Validation/expected/evaluation.json`. Earlier validation checks remain as historical entries in
+`docs/verification/`; their old counting rules do not apply to this evaluation. See `Validation/README.md` for annotation
+conventions and known limitations, including the sampling-provenance distinction.

@@ -27,19 +27,15 @@
     },
     {
       "path": "docs/data_dictionary.md",
-      "bytes": 4761
+      "bytes": 5449
     },
     {
       "path": "docs/data_provenance.md",
-      "bytes": 3848
+      "bytes": 4381
     },
     {
       "path": "docs/detector.md",
       "bytes": 176
-    },
-    {
-      "path": "docs/full_package_README.md",
-      "bytes": 11262
     },
     {
       "path": "docs/large_data_inventory.json",
@@ -47,11 +43,11 @@
     },
     {
       "path": "docs/layout.md",
-      "bytes": 1142
+      "bytes": 1451
     },
     {
       "path": "docs/layout_map.json",
-      "bytes": 39126
+      "bytes": 38698
     },
     {
       "path": "docs/license_scope.md",
@@ -151,7 +147,7 @@
     },
     {
       "path": "docs/paper/template.tex",
-      "bytes": 113593
+      "bytes": 110856
     },
     {
       "path": "docs/paper_artifact_map.csv",
@@ -175,11 +171,11 @@
     },
     {
       "path": "docs/provenance/manuscript_snapshot.json",
-      "bytes": 570
+      "bytes": 987
     },
     {
       "path": "docs/provenance/paper_original_manifest.json",
-      "bytes": 4602
+      "bytes": 6708
     },
     {
       "path": "docs/provenance/run3_original_manifest.json",
@@ -190,20 +186,16 @@
       "bytes": 968
     },
     {
-      "path": "docs/provenance/validation_original.json",
-      "bytes": 634
-    },
-    {
       "path": "docs/publishing.md",
       "bytes": 1837
     },
     {
       "path": "docs/release_checklist.md",
-      "bytes": 866
+      "bytes": 1089
     },
     {
       "path": "docs/replication_manifest.json",
-      "bytes": 2458
+      "bytes": 5331
     },
     {
       "path": "docs/third_party_notices.md",
@@ -211,7 +203,7 @@
     },
     {
       "path": "docs/verification/github_layout.json",
-      "bytes": 2319
+      "bytes": 4768
     },
     {
       "path": "docs/verification/original/additional_checks.json",
@@ -343,11 +335,11 @@
     },
     {
       "path": "README.md",
-      "bytes": 17055
+      "bytes": 17315
     },
     {
       "path": "README_zh.md",
-      "bytes": 13460
+      "bytes": 13707
     },
     {
       "path": "reproduce.py",
@@ -778,10 +770,6 @@
       "bytes": 14660
     },
     {
-      "path": "src/analysis/evaluate_frozen_run3.py",
-      "bytes": 32206
-    },
-    {
       "path": "src/analysis/finalize_canonical_rq1_20260921.py",
       "bytes": 27884
     },
@@ -1186,10 +1174,6 @@
       "bytes": 80361
     },
     {
-      "path": "src/frozen/scripts/evaluate_verify_xlsx.py",
-      "bytes": 31360
-    },
-    {
       "path": "src/frozen/scripts/finalize_canonical_rq1_20260921.py",
       "bytes": 27211
     },
@@ -1479,7 +1463,7 @@
     },
     {
       "path": "src/README.md",
-      "bytes": 1405
+      "bytes": 1588
     },
     {
       "path": "src/render_figures.py",
@@ -1563,26 +1547,56 @@
     },
     {
       "path": "Validation/analysis.py",
-      "bytes": 1238
+      "bytes": 2576
     },
     {
       "path": "Validation/data/annotations.xlsx",
-      "bytes": 718177
+      "bytes": 655124
     },
     {
       "path": "Validation/expected/evaluation.json",
-      "bytes": 29712
+      "bytes": 3049885
     },
     {
       "path": "Validation/README.md",
-      "bytes": 178
+      "bytes": 2840
     },
     {
       "path": "verify.py",
-      "bytes": 4285
+      "bytes": 5239
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 249
+    },
+    {
+      "path": "Validation/data/annotations.yaml_sources.json",
+      "bytes": 840
+    },
+    {
+      "path": "Validation/data/yaml/case_28.yml",
+      "bytes": 30515
+    },
+    {
+      "path": "Validation/data/yaml/case_44.yml",
+      "bytes": 81236
+    },
+    {
+      "path": "Validation/data/yaml/case_70.yml",
+      "bytes": 40258
+    },
+    {
+      "path": "src/analysis/evaluate_completed_validation.py",
+      "bytes": 20889
+    },
+    {
+      "path": "src/analysis/validation_labels.py",
+      "bytes": 7967
     }
   ],
   "external_file_count": 115280,
   "external_bytes": 9657563827,
-  "note": "Scientific test inputs, caches and large external data excluded; no full-data SHA pass."
+  "note": "Scientific test inputs, caches and large external data excluded; no full-data SHA pass. Validation updated to 383 workflows; validation provenance and checks are merged into the existing replication manifest and verification report. Inventory excludes its own byte count.",
+  "validation_updated_on": "2026-10-28",
+  "legacy_cleanup_on": "2026-10-28"
 }

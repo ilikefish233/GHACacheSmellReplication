@@ -7,13 +7,17 @@ manuscript assets, original-source metadata and verification reports are under
 `docs`.
 
 `layout_map.json` maps every path in the earlier GitHub edition to its new path.
-Frozen detector, model, analysis-helper and collection Python/JSON sources retain
-their original bytes. Portable adapters supply new locations and import roots.
+The `src/frozen` name identifies the selected run3 iteration, not an immutable
+archive. Source retention follows current entry-point dependencies and paper-result
+verification; superseded scripts may be removed. Portable adapters supply current
+locations and import roots. Historical manifests describe earlier versions rather
+than requiring every historical file to remain in this distribution.
 The legacy folder names in those files and historical JSON reports describe the
 original experiments. They are not additional required top-level directories.
 
-The companion full-data ZIP does not need rebuilding: its external data paths
-are unchanged, and `data_setup.py` only restores selected data. Repository code
+The external data paths selected by `data_setup.py` are unchanged. That helper
+restores selected data only. A separately distributed complete package should
+incorporate current code, validation inputs and documentation when repackaged. Repository code
 and documentation are not overwritten. Source settings now live in
 `data/sources.json`. Archive publication URLs/DOIs remain pending.
 

@@ -28,14 +28,14 @@ RQ 分析需要的大型数据由单独的完整 ZIP 接入；验证集评估可
 
 | 目录或文件 | 内容与用途 |
 | --- | --- |
-| `Validation/` | 原始标注工作簿、评估脚本和预期指标；前 200 个物理案例中排除 24 个，实际评估 176 个 |
+| `Validation/` | 383 个工作流的标注、完整 YAML 补充快照、冻结检测器评估和预期指标；主指标按工作流匹配 |
 | `RQ1/RQ1_1/` | 流行度/情境入口 `analysis.py` 和流行度预期结果 `data.csv` |
 | `RQ1/RQ1_2/` | 多重异味/共现入口、预期多重异味表 `data.csv` 和 `cooccurrence.csv` |
 | `RQ2/RQ2_1/` | 时长入口，以及两个时长端点的预期系数 `data.csv` |
 | `RQ2/RQ2_2/` | 成功率入口，以及 LPM 预期系数和推断字段 `data.csv` |
 | `RQ2/RQ2_3/` | 探索性资源比较入口、预期汇总 `data.csv` 和其他预期结果 |
 | `RQ1/expected/`、`RQ2/expected/` | 用于核对的预期输出 |
-| `src/` | 共享实现：冻结检测器 `frozen/`、模型 `models/`、分析辅助 `analysis/`、资源比较 `resources/`、采集源码 `collection/`，以及扫描、绘图、工具和测试 |
+| `src/` | 共享实现：研究选用的 run3 检测器版本 `frozen/`、模型 `models/`、分析辅助 `analysis/`、资源比较 `resources/`、采集源码 `collection/`，以及扫描、绘图、工具和测试 |
 | `Pipeline/` | 采集、补抓和离线筛选清洗的对外入口 |
 | `data/` | 外部数据获取位置和 `sources.json` 来源配置 |
 | `docs/` | 字段和图表映射；`paper/`、`provenance/`、`verification/` 分别保存论文材料、来源和核对报告 |
@@ -124,6 +124,7 @@ results_reproduced/
 
 ```powershell
 python Validation/analysis.py --output results_manual/validation
+python verify.py --results results_manual --validation-only
 python RQ1/RQ1_1/analysis.py --output results_manual/rq1
 python RQ2/RQ2_1/analysis.py --output results_manual/rq2
 python RQ2/RQ2_3/analysis.py --output results_manual/rq2_3
@@ -206,7 +207,7 @@ python Pipeline/verify_handoff.py --work-dir ../emse_pipeline_work
 
 - 当前名称为 `no_fallback_cache`；历史 `no_restore_keys` 仅为兼容输入，不另计一种异味。
 - 流行度分母按各类异味的适用条件确定，不能统一使用工作流总数。
-- 验证集使用 176 个有效案例；`no_dependency_cache` 中带括号的非支持生态标注按既定规则排除。
+- 验证集包含 383 个工作流，无整例排除；`no_dependency_cache` 因带括号的覆盖范围标注纳入 341 例，其他十类各纳入 383 例。主指标按工作流计算。
 - 时长模型使用对数时长；成功率使用加权 LPM，系数表示概率差，不能解释为优势比。
 - 模型推断采用仓库聚类及端点内多重比较校正；结果是调整后观察性关联。
 - RQ2.3 为探索性历史比较，不作为因果效应解释。
@@ -215,10 +216,13 @@ python Pipeline/verify_handoff.py --work-dir ../emse_pipeline_work
 字段和论文对应关系见 [数据字典](docs/data_dictionary.md) 与
 [图表映射](docs/paper_artifact_map.csv)。
 
+`src/frozen` 只是研究过程中选用的代码版本名称，并非不可修改的归档。
+源码保留与清理以当前入口依赖和论文结果核对为依据。
+
 ## 核对与常见问题
 
-GitHub 版的检查见 `docs/verification/github_layout.json`：176 个有效案例指标与冻结结果一致，
-11 项原始模型测试通过，数据恢复脚本通过小型提取测试。
+当前验证检查见 `docs/verification/github_layout.json` (section `validation_383`)：11 类工作流级指标与论文完全一致。
+`docs/verification/github_layout.json` 保留旧 176 例验证、11 项原始模型测试和数据恢复测试的历史记录。
 `docs/verification/original/` 和 `docs/verification/pipeline/` 中其他报告保留原完整包的历史核对证据，不代表在代码版中
 重新执行了全部数据分析。尚未重新全量扫描检测器或验证全新环境和其他操作系统。
 
@@ -240,5 +244,6 @@ GitHub 版的检查见 `docs/verification/github_layout.json`：176 个有效案
 适用范围及第三方/论文材料例外见 [docs/license_scope.md](docs/license_scope.md)。
 第三方工作流授权审查按作者要求暂缓，不在此对上游材料授予新许可。
 
-请引用配套论文和所使用的具体存档版本。作者元数据见 `CITATION.cff`，尚未分配的
-论文 DOI 和本包 DOI 不作虚构填写。作者存档步骤见 [Zenodo 指南](docs/zenodo_deposit.md)。
+请引用配套论文和所使用的具体数据版本。作者元数据见 `CITATION.cff`。预留数据 DOI 为
+[10.5281/zenodo.23640810](https://doi.org/10.5281/zenodo.23640810)，发布状态见上文；
+论文 DOI 待正式分配后补入。作者存档步骤见 [Zenodo 指南](docs/zenodo_deposit.md)。

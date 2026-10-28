@@ -43,8 +43,9 @@ GHACacheSmellReplication/
 
 
 - `Validation/`: Detector evaluation.
-  - `data/annotations.xlsx`: Original annotation workbook; evaluation uses the
-    first 200 physical cases, excludes 24 cases and analyzes 176 eligible cases.
+  - `data/annotations.xlsx`: 383-workflow annotation workbook; primary matching is at the workflow level.
+    NDC uses 341 workflows; the other ten types each use all 383. Three full YAML
+    snapshots and their hash manifest are included for truncated Excel cells.
   - `analysis.py`: Runs the frozen detector evaluation.
   - `expected/evaluation.json`: Expected case counts and metrics.
 - `RQ1/RQ1_1/`: Prevalence and contexts.
@@ -64,7 +65,7 @@ GHACacheSmellReplication/
   - `data.csv`: Frozen smell-level resource summary.
   - `analysis.py`: Recomputes the selected historical comparisons and frequency summaries.
 - `RQ1/expected/`, `RQ2/expected/`: Small expected outputs used for comparison.
-- `src/`: Shared implementations: `frozen/` (detector), `models/` (duration/LPM),
+- `src/`: Shared implementations: `frozen/` (selected run3 detector version), `models/` (duration/LPM),
   `analysis/` and `resources/` (paper analysis helpers), `collection/` (captured
   acquisition source), plus `scan.py`, `render_figures.py`, `tool/` and `tests/`.
 - `Pipeline/`: User-facing acquisition, supplementation and offline cleaning entry points.
@@ -193,6 +194,7 @@ The following commands together produce the same result-directory structure:
 
 ```powershell
 python Validation/analysis.py --output results_manual/validation
+python verify.py --results results_manual --validation-only
 python RQ1/RQ1_1/analysis.py --output results_manual/rq1
 python RQ2/RQ2_1/analysis.py --output results_manual/rq2
 python RQ2/RQ2_3/analysis.py --output results_manual/rq2_3
@@ -304,8 +306,9 @@ online commands. No retired RQ3 operation is invoked.
 - Prevalence denominators depend on each smell's eligibility criteria. Adjacent
   summary tables include eligible-population fields; percentages should not be
   recomputed using one universal workflow denominator.
-- Validation uses 176 eligible cases. Parenthesized unsupported-ecosystem
-  annotations are excluded from `no_dependency_cache` evaluation as documented.
+- Validation uses 383 workflows with no whole-workflow exclusions. Parenthesized
+  unsupported-ecosystem labels exclude 42 workflows for `no_dependency_cache`
+  only; that type uses 341 workflows. Primary metrics are workflow-level.
 - Duration endpoints use log duration; success uses the adopted weighted LPM.
   Success coefficients describe probability differences, not odds ratios.
 - Model inference uses repository clustering and endpoint-specific multiplicity
@@ -317,11 +320,15 @@ Field definitions and detailed mappings are in
 [`docs/data_dictionary.md`](docs/data_dictionary.md) and
 [`docs/paper_artifact_map.csv`](docs/paper_artifact_map.csv).
 
+The `src/frozen` name identifies a study code iteration, not an immutable archive.
+Source maintenance follows current dependencies and verification against the paper results.
+
 ## Verification and Troubleshooting
 
-The GitHub-edition checks are recorded in `docs/verification/github_layout.json`: the
-176-case evaluation matched the frozen metrics, 11 original model tests passed,
-and the data-restoration helper was checked on small extraction fixtures.
+Current validation checks are in `docs/verification/github_layout.json` (section `validation_383`): all
+11 workflow-level metrics match the manuscript. Historical layout checks in
+`docs/verification/github_layout.json` cover the superseded 176-case evaluation,
+11 original model tests and small data-restoration fixtures.
 Reports in `docs/verification/original/` and `docs/verification/pipeline/` retain earlier complete-artifact checks;
 they do not claim a new full-data execution in this code-only checkout.
 
@@ -348,7 +355,8 @@ manuscript exclusions are defined in [`docs/license_scope.md`](docs/license_scop
 Third-party workflow licensing review is deferred; no new license is asserted
 over upstream materials.
 
-Please cite the accompanying paper and the exact archived package version.
-Creator metadata are in `CITATION.cff`. The paper DOI and package DOI will be
-added only when assigned. See [`docs/zenodo_deposit.md`](docs/zenodo_deposit.md)
-for the author's data-deposit procedure.
+Please cite the accompanying paper and the exact data version used. Creator
+metadata are in `CITATION.cff`. The reserved data DOI is
+[10.5281/zenodo.23640810](https://doi.org/10.5281/zenodo.23640810); the
+data-publication status is described above. Add the paper DOI when assigned.
+See [`docs/zenodo_deposit.md`](docs/zenodo_deposit.md) for the deposit procedure.

@@ -25,7 +25,10 @@ def main():
     p.add_argument('--results',type=Path,default=ROOT/'results')
     p.add_argument('--checksums',action='store_true')
     p.add_argument('--integrity-only',action='store_true')
+    p.add_argument('--validation-only',action='store_true',help='Check only the bundled 383-workflow validation; no RQ data required')
     a=p.parse_args();checks={}
+    if a.validation_only and a.integrity_only:
+        p.error('--validation-only cannot be combined with --integrity-only')
     if a.checksums:
         if not (ROOT/'checksums.sha256').is_file():
             raise SystemExit('Full-package checksums are not bundled in this GitHub edition. Use the complete offline artifact for its integrity-only check.')
@@ -38,8 +41,19 @@ def main():
     if not a.integrity_only:
         def read(p):return canonical(json.loads(p.read_text(encoding='utf-8-sig')))
         expected=read(ROOT/'Validation/expected/evaluation.json');actual=read(a.results/'validation/evaluation.json')
-        for k in ['total_cases','parsed_successfully','by_smell_type']:compare(expected[k],actual[k],'validation/'+k)
-        checks['validation_176_cases_and_all_type_metrics']=True
+        provenance=read(ROOT/'docs/replication_manifest.json')['validation']
+        for name,h in provenance['input_sha256'].items():
+            assert digest(ROOT/name)==h,'Validation input SHA256 mismatch: '+name
+        assert digest(ROOT/'Validation/expected/evaluation.json')==provenance['expected_result_sha256'],'Validation expected result SHA256 mismatch'
+        for k in ['source_sha256','physical_cases','excluded_adoption_zero','excluded_ids',
+                  'parsed_and_detected_cases','failures','policy','by_smell_type','cases']:
+            compare(expected[k],actual[k],'validation/'+k)
+        checks['validation_383_workflows_and_all_type_metrics']=True
+        if a.validation_only:
+            print(json.dumps(checks,indent=2))
+            write(a.results/'verification.json',{'passed':True,'scope':'validation only','checks':checks,
+                'relative_tolerance':1e-8,'absolute_tolerance':1e-10})
+            return
         for name in ['all_completed_duration','successful_duration']:
             e=read(ROOT/'RQ2/expected/duration'/(name+'.json'));r=read(a.results/'rq2'/(name+'.json'))
             for k in ['runs','workflow_versions','repositories','design_groups','coefficients']:

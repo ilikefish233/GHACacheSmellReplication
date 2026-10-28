@@ -124,7 +124,7 @@ Building on this definition, we implement and validate static detection rules fo
 
 Our main contributions are as follows:
 \begin{enumerate}
-  \item \textbf{CCS Operationalization and Detection:} We operationalize 11 CCS types as reproducible, GitHub Actions-specific YAML rules by triangulating platform documentation, prior work, workflow configurations, and revision cases. We evaluate the detector on 176 eligible manually reviewed workflows.
+  \item \textbf{CCS Operationalization and Detection:} We operationalize 11 CCS types as reproducible, GitHub Actions-specific YAML rules by triangulating platform documentation, prior work, workflow configurations, and revision cases. We evaluate the detector on 383 manually annotated workflows.
 
   \item \textbf{Large-Scale Empirical Characterization:} We quantify prevalence, co-occurrence, and contextual distribution in 118,402 parseable workflows from 19,324 repositories. We then use 1,091,978 detector-valid, version-aligned runs from 51,097 workflow versions in 14,695 repositories to estimate adjusted associations with completed-run duration and success. Four CCS types were associated with longer duration and three with lower success probability after BH adjustment. A separate historical extension covers 166 configuration changes and 1,268 successful runs, comparing runner-allocated VM time and estimated runner cost within workflows.
 \end{enumerate}
@@ -472,26 +472,15 @@ RQ2.3 uses archived workflow configurations, run records, and job-level executio
 \subsection{Evaluating the Detector}
 \label{sec:validation-design}
 
-\paragraph{Sampling and annotating workflows.}
-\label{sec:validation-sampling}
+We randomly sample 383 workflows from the 118,402 workflows in the study dataset for manual evaluation. We determine the sample size using Cochran's formula with a finite population correction~\citep{cochran1977sampling}, a 95\% confidence level, a 5\% margin of error, and an assumed proportion of 0.5. Two annotators independently inspect each workflow against the CCS definitions in Section~\ref{sec:taxonomy} and label the presence or absence of the 11 CCS types. They discuss disagreements to establish the final reference annotations.
 
-We sample 388 workflows without replacement from the detector output produced during rule development, using random seed 42. The sampling plan requests 80, 80, 70, and 60 positive workflows for \path{no_dependency_cache}, \path{no_fallback_cache}, \path{cache_position_error}, and \path{redundant_cache_update}, respectively. We fill the remaining quota with workflows lacking these four CCS, followed by random workflows from the dataset. The verification records include the sampled YAML content.
-
-Two annotators independently annotate the first 200 workflows by inspecting their YAML and supporting case evidence. These observations also inform CCS definitions and detection-rule refinement. Of the annotated workflows, 176 are included in the evaluation after excluding 24 cases whose recorded adoption field is zero. The remaining 188 sampled workflows are outside this evaluation. The evaluation uses the reviewed cases that informed rule development.
-
-Verification records retain case identifiers, YAML evidence, adoption decisions, and descriptions. We evaluate the same detector snapshot used for RQ1 and RQ2 against this embedded YAML, independently of the run-to-version linkage.
-
-\paragraph{Matching findings and measuring agreement.}
-
-We compare the 11 detection rules with the manual annotations using true positives (TP), false positives (FP), and false negatives (FN). Most rules require agreement on the CCS type and affected job. For \path{redundant_cache_update}, a match also requires agreement on the set of competing writer jobs. Rules evaluated at the workflow-case level use case-level matching. Precision, recall, and F1 are computed as follows:
+We compare the detector's predictions with the reference annotations at the workflow level and report precision, recall, and F1 for each CCS type. With TP, FP, and FN denoting workflow-level true positives, false positives, and false negatives, respectively, we compute these metrics as follows:
 \[
 \mathrm{Precision}=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FP}},\qquad
 \mathrm{Recall}=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FN}},\qquad
 \mathrm{F1}=\frac{2\,\mathrm{Precision}\,\mathrm{Recall}}
 {\mathrm{Precision}+\mathrm{Recall}}.
 \]
-
-The adoption field determines whether a case is included in evaluation. A zero value excludes the case from scoring. Parenthesized \path{no_dependency_cache} annotations for unsupported operations are also excluded. The evaluation measures agreement on the reviewed workflows. The sample reflects detector predictions and shares repositories with the rule-development data.
 
 \subsection{Analyzing Prevalence and Workflow Outcomes}
 \label{sec:analysis-methods}
@@ -589,33 +578,35 @@ We first report detector evaluation, followed by CCS occurrence patterns (RQ1) a
 \subsection{Detector Validation Results}
 \label{subsec:detector-validation}
 
-Among the first 200 annotated cases, 176 eligible YAML documents parsed successfully after 24 curator-excluded cases were removed. The remaining 188 sampled workflows were not evaluated. Table~\ref{tab:detector-validation} reports rule-level results for the detector-stratified development sample described in Section~\ref{sec:validation-design}.
+Table~\ref{tab:detector-validation} reports workflow-level precision, recall, and F1 for the 11 CCS types on the 383 manually annotated workflows described in Section~\ref{sec:validation-design}.
 
 \begin{table}[htbp]
 \centering
-\caption{Evaluation of the 11 detector rules against manual annotations of 176 eligible workflow cases}
+\caption{Workflow-level evaluation of the 11 detector rules against manual annotations of 383 workflows}
 \label{tab:detector-validation}
 \scriptsize
 \begin{tabular}{lrrrrrr}
 \hline\noalign{\smallskip}
 \textbf{CCS} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
-Missing dependency cache & 31 & 2 & 14 & 93.94\% & 68.89\% & 79.49\% \\
-Missing fallback matching & 119 & 13 & 1 & 90.15\% & 99.17\% & 94.44\% \\
-Redundant cache update & 27 & 7 & 0 & 79.41\% & 100.00\% & 88.52\% \\
-Cache placement error & 12 & 0 & 5 & 100.00\% & 70.59\% & 82.76\% \\
-Missing Docker layer cache & 12 & 2 & 2 & 85.71\% & 85.71\% & 85.71\% \\
-Deprecated cache action & 2 & 0 & 0 & 100.00\% & 100.00\% & 100.00\% \\
-Cache used as an artifact & 3 & 1 & 3 & 75.00\% & 50.00\% & 60.00\% \\
-Overlapping mechanisms & 5 & 2 & 1 & 71.43\% & 83.33\% & 76.92\% \\
-Static cache key & 8 & 16 & 2 & 33.33\% & 80.00\% & 47.06\% \\
-Overly specific cache key & 2 & 1 & 1 & 66.67\% & 66.67\% & 66.67\% \\
-Unreachable cache write & 2 & 0 & 0 & 100.00\% & 100.00\% & 100.00\% \\
+Missing dependency cache & 51 & 2 & 5 & 96.23\% & 91.07\% & 93.58\% \\
+Missing fallback matching & 171 & 10 & 0 & 94.48\% & 100.00\% & 97.16\% \\
+Redundant cache update & 54 & 0 & 3 & 100.00\% & 94.74\% & 97.30\% \\
+Cache placement error & 16 & 1 & 2 & 94.12\% & 88.89\% & 91.43\% \\
+Missing Docker layer cache & 42 & 2 & 9 & 95.45\% & 82.35\% & 88.42\% \\
+Deprecated cache action & 36 & 0 & 0 & 100.00\% & 100.00\% & 100.00\% \\
+Cache used as an artifact & 40 & 1 & 3 & 97.56\% & 93.02\% & 95.24\% \\
+Overlapping mechanisms & 27 & 0 & 3 & 100.00\% & 90.00\% & 94.74\% \\
+Static cache key & 57 & 1 & 2 & 98.28\% & 96.61\% & 97.44\% \\
+Overly specific cache key & 43 & 0 & 1 & 100.00\% & 97.73\% & 98.85\% \\
+Unreachable cache write & 4 & 0 & 0 & 100.00\% & 100.00\% & 100.00\% \\
 \noalign{\smallskip}\hline
 \end{tabular}
+\par\smallskip
+\parbox{\linewidth}{\footnotesize\emph{Note.} Missing dependency caching is evaluated on 341 workflows within the rule's scope. The other rules are evaluated on all 383 workflows.}
 \end{table}
 
-Precision and recall varied across rules. The static-key rule had eight true positives and 16 false positives (33.33\% precision), limiting confidence in its reported occurrences. Cache used as an artifact had three true positives, one false positive, and three false negatives, while overly specific keys had two true positives, one false positive, and one false negative. Deprecated cache actions and unreachable writes each had only two positive reference cases, limiting the evidence behind their perfect scores.
+Precision ranged from 94.12\% to 100.00\%, and recall ranged from 82.35\% to 100.00\%. Missing Docker layer caching had nine false negatives, the most among the 11 rules. Unreachable cache writes had only four positive reference workflows, limiting the evidence behind its perfect scores.
 
 \subsection{Prevalence and Occurrence Patterns (RQ1)}
 
@@ -742,7 +733,7 @@ $>20$ & 704 & 83.95\% & 24,203 & 18.51\% \\\hline
 
 \subsubsection{Multiplicity and Co-occurrence (RQ1.2)}
 
-Across the 118,402 workflows with usable detector results, \path{no_fallback_cache} and \path{static_cache_key} co-occurred most often (1,596 workflows, 1.35\% of the corpus). This pair also had the largest Jaccard overlap among the frequent pairs (0.271). The static-key rule's low precision in the reviewed sample limits interpretation of this overlap. Selected pair counts and Jaccard indices are in Online Resource~1 (Table~S1). The complete 11-rule matrix is in \texttt{rq1\_cooccurrence.csv}.
+Across the 118,402 workflows with usable detector results, \path{no_fallback_cache} and \path{static_cache_key} co-occurred most often (1,596 workflows, 1.35\% of the corpus). This pair also had the largest Jaccard overlap among the frequent pairs (0.271). Selected pair counts and Jaccard indices are in Online Resource~1 (Table~S1). The complete 11-rule matrix is in \texttt{rq1\_cooccurrence.csv}.
 
 Most affected workflows contained one CCS type (83.66\%). Four or more types occurred in 267 workflows (Table~\ref{tab:smell-multiplicity}).
 
@@ -947,7 +938,7 @@ Researchers can connect static findings to cache hits, transferred bytes, instal
 \label{sec:threats}
 
 \paragraph{Construct validity.}
-Static rules approximate configuration concerns and may miss behavior inside scripts, reusable workflows, or custom actions. Rule precision varied, with false-positive static-key reports in the reviewed sample. The detector-stratified evaluation reuses rule-development cases, includes repeated repositories, and contains few positive cases for several rules. Job-level matching may also overstate step-level placement accuracy. Repository language and job-name roles are approximations of workflow context. Run-to-version linkage uses workflow identities and last-change intervals without checking YAML at every run's \texttt{head\_sha}. Incorrect boundaries could misclassify CCS presence. Duration and run conclusions include work and failures unrelated to caching. Estimated cost uses a fixed reference model whose coverage depends on operating-system recognition, job-level rounding, and job availability.
+Static rules approximate configuration concerns and may miss behavior inside scripts, reusable workflows, or custom actions. Some CCS types have few positive reference workflows, limiting the evidence for their detection accuracy. Repository language and job-name roles are approximations of workflow context. Run-to-version linkage uses workflow identities and last-change intervals without checking YAML at every run's \texttt{head\_sha}. Incorrect boundaries could misclassify CCS presence. Duration and run conclusions include work and failures unrelated to caching. Estimated cost uses a fixed reference model whose coverage depends on operating-system recognition, job-level rounding, and job availability.
 
 \paragraph{Internal validity.}
 Measured controls account for observed workload and environment differences, and repository-clustered uncertainty accounts for dependent observations. Unmeasured task complexity, runner conditions, and project practices may still be associated with CCS. The duration model leaves substantial variation unexplained. The LPM assumes additive linear probability differences and produced fitted values outside $[0,1]$ for 1.43\% of runs. Clustered inference for deprecated actions also warrants caution because only 22 repositories were exposed. Repository-feature contrasts and resource comparisons do not adjust for confounding. The results therefore describe associations and observed differences. Controlled comparisons are needed to estimate repair benefits.

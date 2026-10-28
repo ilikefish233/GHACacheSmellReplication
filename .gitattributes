@@ -1,0 +1,5 @@
+# Keep SHA-256-verified validation inputs stable across Git checkouts.
+Validation/data/annotations.xlsx -text
+Validation/data/yaml/*.yml -text
+Validation/data/annotations.yaml_sources.json text eol=lf
+Validation/expected/evaluation.json text eol=lf

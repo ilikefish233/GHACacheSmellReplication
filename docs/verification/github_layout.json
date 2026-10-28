@@ -59,5 +59,55 @@
       "No full-data SHA pass performed.",
       "Fresh dependency installation and other operating systems not tested."
     ]
+  },
+  "validation_383": {
+    "checked_on": "2026-10-28",
+    "scope": "383-workflow validation correction only",
+    "environment": "Windows / Python 3.12; installed local dependencies; no fresh installation tested",
+    "checks": {
+      "physical_workflows": 383,
+      "processed_workflows": 383,
+      "whole_workflow_exclusions": 0,
+      "failed_workflows": 0,
+      "ndc_evaluated_workflows": 341,
+      "other_types_evaluated_workflows_each": 383,
+      "all_11_paper_table_rows_match": true,
+      "full_report_matches_20261025_reference_with_portable_paths": true,
+      "frozen_detector_and_parser_preserved": true,
+      "workbook_bytes_preserved": true,
+      "extracted_annotation_function_bodies_preserved": true,
+      "standalone_validation_verifier_passed": true,
+      "changed_python_files_parse": true,
+      "portable_validation_regression_tests_passed": 6,
+      "git_checkout_line_endings_supported": true
+    },
+    "regression_checks": [
+      "Relocated path containing spaces, unrelated working directory, no RQ data",
+      "Altered metrics rejected",
+      "Missing detailed case rejected",
+      "Old 176-case schema rejected",
+      "Corrupt full YAML snapshot rejected before scoring",
+      "Frozen LF checkout produces identical results"
+    ],
+    "commands": [
+      "python Validation/analysis.py --output results_new/validation",
+      "python verify.py --results results_new --validation-only"
+    ],
+    "historical_reports": "github_layout.json and original/ preserve earlier checks; their 176-case validation is superseded",
+    "limits": [
+      "RQ analyses and full-data scans were not rerun for this validation-only correction",
+      "Other operating systems and fresh dependency installation were not tested",
+      "Result agreement does not independently establish the manuscript sampling description"
+    ],
+    "regression_test_location": "Local development tests; not included in the distribution"
+  },
+  "legacy_cleanup": {
+    "checked_on": "2026-10-28",
+    "obsolete_files_removed": 4,
+    "source_policy": "frozen is an iteration label; retain current dependencies and verify affected paper results",
+    "current_validation": "383 workflows; workflow-level metrics; NDC 341 and other types 383 each",
+    "manuscript_source_paths_and_hashes_refreshed": true,
+    "current_metadata_and_path_map_references_cleaned": true,
+    "historical_execution_reports": "Earlier checks and run manifests describe earlier versions, not the current file inventory"
   }
 }

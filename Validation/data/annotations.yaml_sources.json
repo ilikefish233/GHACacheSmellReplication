@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "cases": {
+    "28": {
+      "repo": "radareorg/radare2",
+      "workflow": "build_001.yml",
+      "case_hash": "7751c9b9e3e9",
+      "path": "Validation/data/yaml/case_28.yml",
+      "sha256": "c5b33fb3768e7c2259339cf55da19ba68cfbaa5d9d7af597bd1419cb3c8441ff"
+    },
+    "44": {
+      "repo": "naruno/naruno",
+      "workflow": "local_stability_test_4_1_001.yml",
+      "case_hash": "b702e6bfdb02",
+      "path": "Validation/data/yaml/case_44.yml",
+      "sha256": "a7faba7bb03a2ede80168bd800894ea5009a790ce78c3eae78f759a22078bf12"
+    },
+    "70": {
+      "repo": "seladb/pcapplusplus",
+      "workflow": "build_and_test_001.yml",
+      "case_hash": "59a159c6e1e1",
+      "path": "Validation/data/yaml/case_70.yml",
+      "sha256": "27851ac4d83d0b9e11b2d2b410c9d4a952db687541bb7b62fe57c4836f65dfaa"
+    }
+  }
+}

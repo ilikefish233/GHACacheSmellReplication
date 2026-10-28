@@ -5,9 +5,9 @@ modules below are shared by those entry points.
 
 | Location | Role |
 | --- | --- |
-| `frozen/` | Byte-preserved October detector snapshot and its supporting source |
+| `frozen/` | Selected October run3 detector iteration and required supporting source |
 | `models/` | Byte-preserved adopted duration/LPM model implementations and their original tests |
-| `analysis/` | Preserved paper analysis and plotting helpers |
+| `analysis/` | Current paper analysis and plotting helpers |
 | `resources/` | Preserved exploratory resource-comparison implementations |
 | `collection/` | Preserved acquisition and curation source used by Pipeline entry points |
 | `artifact.py` | Portable path, loading, naming and output helpers |
@@ -17,7 +17,11 @@ modules below are shared by those entry points.
 | `tool/` | Optional local UI bound to the frozen detector |
 | `tests/` | Portable test entry points |
 
-Do not run preserved historical orchestration files directly: their original
+`frozen/` is a version label, not a rule against maintenance. Retain code used
+by current entry points; obsolete scripts can be removed after dependency and
+result checks. Record and verify any detector/parser changes.
+
+Do not run historical orchestration files directly: their original
 paths are retained as evidence. Portable adapters select the adopted study,
 resolve current paths and avoid invoking retired RQ3 branches.
 

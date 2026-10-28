@@ -1,18 +1,23 @@
 {
   "sources": [
     {
-      "file": "paper/supplementary_rq1_repository_features_20260925.tex",
-      "sha256": "32c1db94c3f1c2a4df3e3180af30192129d272ba98b27fdeace985aee2bdf7f5"
+      "file": "docs/paper/supplementary_rq1_repository_features_20260925.tex",
+      "sha256": "32c1db94c3f1c2a4df3e3180af30192129d272ba98b27fdeace985aee2bdf7f5",
+      "sha256_lf": "32c1db94c3f1c2a4df3e3180af30192129d272ba98b27fdeace985aee2bdf7f5"
     },
     {
-      "file": "paper/supplementary_rq2_regression_reporting_20260926.tex",
-      "sha256": "cc76e009eee896fbce572f34660b1015e3a56ff06b28dd728912d2f8c497c683"
+      "file": "docs/paper/supplementary_rq2_regression_reporting_20260926.tex",
+      "sha256": "cc76e009eee896fbce572f34660b1015e3a56ff06b28dd728912d2f8c497c683",
+      "sha256_lf": "24f999c3d42679e7ee9313b979295dbf877eda3e38660042d33703af2bc8d993"
     },
     {
-      "file": "paper/template.tex",
-      "sha256": "3a123f3c2d3188f4dcb7e88cfe03d4cca86a05396794cb7beb709d96a8f41db7"
+      "file": "docs/paper/template.tex",
+      "sha256": "d3c5e442f88a43f3b40e37154a60871fd1d48be826b2281fc5572331da11ef91",
+      "sha256_lf": "d3c5e442f88a43f3b40e37154a60871fd1d48be826b2281fc5572331da11ef91"
     }
   ],
-  "source_modified": false,
-  "rq3_scope_restored": false
+  "source_modified": true,
+  "rq3_scope_restored": false,
+  "updated_on": "2026-10-28",
+  "scope": "Current packaged manuscript and supplements; validation text/table synchronized with the 383-workflow evaluation."
 }

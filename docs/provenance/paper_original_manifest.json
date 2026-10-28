@@ -1,5 +1,5 @@
 {
-  "artifact_version": "run3-manuscript-revision-2026-10-19",
+  "artifact_version": "run3-manuscript-validation383-2026-10-28",
   "study_cutoff": "2026-06-09T23:59:59Z",
   "repository": "https://github.com/ilikefish233/gha_log_analysis",
   "selection": {
@@ -34,7 +34,9 @@
     ],
     "frozen_source_snapshot": "E:\\gha_log_analysis\\output_experimental_rq1_rq2_20261018_run3\\source_snapshot",
     "sha256": "daca83cf58ed207fdaa7719862b07bb2f771bebe11bbf9bda25013b2dcdca39e",
-    "scope": "original eleven paper rules; extra diagnostic rules excluded"
+    "scope": "original eleven paper rules; extra diagnostic rules excluded",
+    "packaged_source": "src/frozen/src/detectors/smell/cache_smell_detector.py",
+    "source_version_policy": "Study-selected run3 iteration; the directory name frozen does not prohibit maintenance."
   },
   "rq1": {
     "scan": "E:\\gha_log_analysis\\output_experimental_rq1_rq2_20261018_run3\\analysis_inputs\\rq1_scan_direct.jsonl",
@@ -49,15 +51,49 @@
     "opportunity_note": "broad detector metadata presence predicates; not restricted to every final non-auxiliary decision"
   },
   "validation": {
-    "frozen_source_root": "E:\\gha_log_analysis\\output_experimental_rq1_rq2_20261018_run3\\source_snapshot",
+    "updated_on": "2026-10-28",
+    "cases": 383,
+    "primary_unit": "workflow per CCS type",
+    "whole_workflow_exclusions": 0,
+    "evaluated_workflows_per_type": {
+      "no_dependency_cache": 341,
+      "no_docker_layer_cache": 383,
+      "deprecated_cache_action": 383,
+      "no_fallback_cache": 383,
+      "static_cache_key": 383,
+      "overly_specific_cache_key": 383,
+      "cache_as_artifact": 383,
+      "cache_position_error": 383,
+      "unreachable_cache_write": 383,
+      "redundant_cache_update": 383,
+      "overlapping_cache_mechanisms": 383
+    },
+    "detector": "src/frozen/src/detectors/smell/cache_smell_detector.py",
     "detector_sha256": "daca83cf58ed207fdaa7719862b07bb2f771bebe11bbf9bda25013b2dcdca39e",
-    "xlsx_sha256": "aed30b013730fed6936cf5e76796a664825436c3e4d85d87266bb40eba174c8d",
-    "scoring_script_sha256": "c9f7c8960592ade97ac765db0e6412622518fe66adfa3f1073a95c562f4dcca3",
-    "result_sha256": "7ff48e9f90a1c59d352d41bfaabc8df1a606b09e86c70bdd5f936a9af1d1a730",
-    "cases": 176,
-    "annotations_changed": false,
-    "scoring_logic_changed": false,
-    "adapter_changes": "only frozen module search paths and output filename"
+    "parser_sha256": "e6da12fb0707f9a9173bcaef9ec6bc0c694c41ca75f6e00a0df3816e0adc7219",
+    "original_evaluator_sha256": "e2445260cd898ed1db8a4b771a7b30ead5426f970894ed8f0371076ba3c6121f",
+    "original_annotation_helpers_sha256": "c2148504177bddb8379f80743a70c0ea64494892d4fedbbfa83e6bfc9d680b98",
+    "original_validation_result_sha256": "130b37503d91dc50f2bf5094c6687fbf5bf7278504cd889d696de52c5695c48e",
+    "input_sha256": {
+      "Validation/data/annotations.xlsx": "b219d83515ec980013146b5d16be399ed5b4b71c8dd65a642a2e96bd1e30563c",
+      "Validation/data/annotations.yaml_sources.json": "06a332528b21e42099d963a8ef9bc747be577605a839cc4ceda458b2b34129e0",
+      "Validation/data/yaml/case_28.yml": "c5b33fb3768e7c2259339cf55da19ba68cfbaa5d9d7af597bd1419cb3c8441ff",
+      "Validation/data/yaml/case_44.yml": "a7faba7bb03a2ede80168bd800894ea5009a790ce78c3eae78f759a22078bf12",
+      "Validation/data/yaml/case_70.yml": "27851ac4d83d0b9e11b2d2b410c9d4a952db687541bb7b62fe57c4836f65dfaa"
+    },
+    "expected_result_sha256": "cbd538b26577bffd437e91998744fac351594b2f6d7837a70e609b76acfb2fd4",
+    "annotation_values_changed": false,
+    "detector_changed": false,
+    "adaptations": [
+      "Package-relative input and output provenance paths",
+      "Frozen module binding and source/input hash verification",
+      "Annotation helpers extracted with function bodies unchanged"
+    ],
+    "packaged_evaluator_sha256": "6a9f11e2d7b519b92143638ab0fcb4d4f23a642db4cfd81b7c10641bd00e0d71",
+    "packaged_annotation_helpers_sha256": "ba94cb268eacce63bc222395c4477931c172182d131a6913c326d421a056b0a2",
+    "detector_source_lf_sha256": "b39a33c803209d20c60324bc88d7ec528bfb33bfb9c14e3a7995303a185637b6",
+    "parser_source_lf_sha256": "e6da12fb0707f9a9173bcaef9ec6bc0c694c41ca75f6e00a0df3816e0adc7219",
+    "verification": "docs/verification/github_layout.json#validation_383"
   },
   "rq2": {
     "linked_versions": 51179,
@@ -99,5 +135,6 @@
     "changes_before_section_4_3": "numeric substitutions only; overview figure workflow count updated",
     "rq2_results_changed": false,
     "references_changed": false
-  }
+  },
+  "updated_on": "2026-10-28"
 }

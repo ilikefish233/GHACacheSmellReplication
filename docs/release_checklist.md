@@ -10,3 +10,6 @@
 - Third-party workflow licensing review is deferred at the author's request.
 - Fresh dependency installation and other operating systems remain untested.
 - No repository, upload or DOI was created during local assembly.
+
+- Current 383-workflow validation supersedes the historical 176-case benchmark;
+  see `docs/verification/github_layout.json` (section `validation_383`). Include the three full YAML snapshots when publishing the validation correction.

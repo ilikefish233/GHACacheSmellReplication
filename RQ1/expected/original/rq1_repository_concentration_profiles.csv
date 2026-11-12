@@ -1,6 +1,0 @@
-profile,repository_count,repository_pct,workflow_count,smelly_workflow_count
-no_smelly_workflow,8796,45.5185,39347,0
-exactly_one_smelly_workflow,4679,24.2134,24004,4679
-multiple_smelly_workflows,5849,30.2681,55051,21709
-partial_exposure,8903,46.0722,75630,22963
-all_workflows_smelly,1625,8.4092,3425,3425

@@ -225,7 +225,7 @@ manifest={'read_only_sources':True,'scope':'run3 detection labels; original pape
     'context_definition':'original canonical primary_ecosystem, original job-name substring role function, original bounded top-level on-block parser',
     'trigger_parser_engine':'LibYAML CBaseLoader; same all-string BaseLoader semantics; validated against Python BaseLoader on 500 examples and original full-cohort trigger totals',
     'ndc_opportunity_definition':'broad install metadata predicate used in run3 smell_prevalence.json; NOT strict non-auxiliary NDC decision scope',
-    'source_files':{str(p):sha(p) for p in [RUN/'analysis_inputs/rq1_scan_direct.jsonl', RUN/'rq1/smell_prevalence.json',CAN/'repositories.jsonl',CAN/'rq1_cohort.jsonl',script,Path('E:/0_cache_smell/template.tex')]},
+    'source_files':{str(p):sha(p) for p in [RUN/'analysis_inputs/rq1_scan_direct.jsonl', RUN/'rq1/smell_prevalence.json',CAN/'repositories.jsonl',CAN/'rq1_cohort.jsonl',script]},
     'software':{'numpy':np.__version__,'scipy':scipy.__version__,'pyyaml':yaml.__version__},
     'statistics':'two-sided asymptotic tie/continuity-corrected Mann-Whitney; Holm over 55 tests; target-oriented Cliff delta; feature-wise missing omission',
     'not_run':['detector','GitHub collection','RQ2 models','plot rendering','manuscript editing']}

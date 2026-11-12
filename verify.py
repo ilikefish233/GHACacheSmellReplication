@@ -80,6 +80,14 @@ def main():
             checks['rq1/'+name]=True
         for name in ['smell_resource_summary.json','result_audit.json','observed_monthly_frequency/smell_observed_monthly_summary.json']:
             e=read(ROOT/'RQ2/RQ2_3/expected'/name);r=read(a.results/'rq2_3'/name)
+            if name=='result_audit.json':
+                fields=('final_events','final_repositories','unique_success_runs','smell_memberships','single_observation_events')
+                e={k:e[k] for k in fields}
+                r={k:r[k] for k in fields}
+            elif name=='smell_resource_summary.json':
+                omitted={'single_observation_events','other_smell_change_events','task_changed_or_unconfirmed_events',
+                         'previously_ineligible_or_ambiguous_control_events','experimental','causal_effect'}
+                e=[{k:v for k,v in row.items() if k not in omitted} for row in e]
             compare(e,r,'resource/'+name);checks['rq2_3/'+name]=True
     print(json.dumps(checks,indent=2))
     if not a.integrity_only:

@@ -334,34 +334,34 @@ def main():
                                      'annotation': data['raw_annotation'], 'predicted_jobs': ';'.join(data['predicted_jobs'])})
     def pct(x):
         return '—' if x is None else f'{x * 100:.2f}%'
-    lines = ['# 十一种缓存异味检测器验证', '',
-             f'共 {ws.max_row - 1} 个案例；采用=0 排除 {len(excluded)} 个；成功运行检测器 {len(rows)} 个；失败 {len(failed)} 个。', '',
-             '主表按工作流案例逐类型进行二分类。Accuracy=(TP+TN)/N；Precision=TP/(TP+FP)；Recall=TP/(TP+FN)。',
-             '未判定及待扩展标签只排除对应异味；NDC 括号标注遵循项目已有排除规则。嵌套列不排除整例，按各类型可见标注评估。没有额外排除 ID44。',
-             f'版本列解释：{args.version_labels}；99 解释：{args.code99}。', '',
-             '|异味|纳入|TP|FP|FN|TN|Precision|Recall|F1|Accuracy|',
+    lines = ['# Validation of eleven cache configuration smell types', '',
+             f'Cases: {ws.max_row - 1}. Excluded by the inclusion flag: {len(excluded)}. Successfully analyzed: {len(rows)}. Failed: {len(failed)}.', '',
+             'The main table reports binary classification metrics per workflow and CCS type.',
+             'Unresolved and pending-extension annotations exclude only the associated type. The existing NDC exclusion rule applies to parenthesized job labels. Nested labels are evaluated where visible. Case ID44 has no additional exclusion.',
+             f'Version label policy: {args.version_labels}. Code 99 policy: {args.code99}.', '',
+             '|CCS type|Included|TP|FP|FN|TN|Precision|Recall|F1|Accuracy|',
              '|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
     for t in TYPES:
         m = metrics(cases[t])
         lines.append('|' + '|'.join([t, str(sum(cases[t].values()))] + [str(m[k]) for k in ('tp', 'fp', 'fn', 'tn')] + [pct(m[k]) for k in ('precision', 'recall', 'f1', 'accuracy')]) + '|')
-    lines += ['', '## Job 级补充结果', '',
-              '仅对能独立解析为 YAML job ID、显示名称或步骤名的标注计数。描述性阳性不能确定完整 job 清单时，排除该案例的 job 级比较，仍纳入案例级主表。RCU 按参与 job 去重，不按冲突组或步骤计数。S7 从检测结果的 job_name、producer_job、consumer_job 提取并去重实际 YAML job ID，同时计入生产者与消费者；不推断未报告的传递关系，案例级判定保持原口径。', '',
-              '|异味|TP|FP|FN|Precision|Recall|F1|无法解析阳性案例数|',
+    lines += ['', '## Supplementary job-level results', '',
+              'Job-level comparisons use annotations that can be resolved to a YAML job ID, display name, or step name. Descriptive positives with incomplete job labels remain eligible for the workflow-level table. Redundant updates are deduplicated by participating job. For S7, producer and consumer jobs are both counted when reported by the detector.', '',
+              '|CCS type|TP|FP|FN|Precision|Recall|F1|Unresolved positive cases|',
               '|---|---:|---:|---:|---:|---:|---:|---:|']
     for t in TYPES:
         m = metrics(job_stats[t])
         lines.append('|' + '|'.join([t] + [str(m[k]) for k in ('tp', 'fp', 'fn')] + [pct(m[k]) for k in ('precision', 'recall', 'f1')] + [str(len(job_skips[t]))]) + '|')
-    lines += ['', '## 口径与边界', '',
-              '- 源文件保持不变；使用研究冻结的 run3 CacheSmellDetector，未优化检测规则。',
-              '- 旧“静态检测器结果”列不作为人工真值；未采用任何表内指令。',
-              '- unreachable_cache_write 无独立专列，从说明/其他潜在异味中的明确“无效缓存”等标签派生；空白按阴性，因此该类型的真值完整性有限。',
-              '- 缓存重复列对应 overlapping_cache_mechanisms（代码旧名 conflicting_cache_sources）；当前实现仅覆盖 setup 内置缓存与手动缓存的路径重叠，未证明覆盖该正式定义的所有机制组合。',
-              '- 一次性/细粒度缓存键两列合并对应 overly_specific_cache_key。',
-              '- 回退键不一致、路径问题和其他列不是额外正式异味，未自动并入十一类标签。',
-              '- 案例级 TP 只表示工作流中存在同类异味，不证明缓存步骤、资源、子类型或 job 完全匹配。',
-              '- 稀有异味补充样本经过富集；本结果描述此验证集，不能直接推算总体流行度或总体准确率。',
-              '- evaluation.json 保存逐案例真值、检测结果、排除原因及原始 findings；disagreements.csv 保存案例级 FP/FN。', '',
-              '## 逐类型排除', '']
+    lines += ['', '## Scope and interpretation', '',
+              '- The evaluation uses the study\'s run3 detector and original annotations.',
+              '- Historical detector-output columns are excluded from the ground truth.',
+              '- Unreachable cache write labels are derived from explicit annotation notes. Blank notes are treated as negative, which limits ground-truth completeness for this type.',
+              '- The duplicate cache column corresponds to overlapping cache mechanisms. The implementation checks path overlaps between built-in setup caching and manual caching.',
+              '- The disposable and fine-grained cache key annotations are combined under overly specific cache key.',
+              '- Other annotation columns are retained as source data. The main table covers the eleven paper types.',
+              '- A workflow-level true positive indicates that both sources report the same type somewhere in the workflow.',
+              '- The validation set enriches rare smells. Its metrics describe this set.',
+              '- evaluation.json contains case-level labels, findings, and exclusions. disagreements.csv lists false positives and false negatives.', '',
+              '## Exclusions by type', '']
     for t in TYPES:
         if skips[t]:
             lines.append(f'- {t}: ' + '; '.join(f"ID{x['id']} ({x['reason']})" for x in skips[t]))

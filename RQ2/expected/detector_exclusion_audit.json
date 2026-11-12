@@ -1,0 +1,12 @@
+{
+  "input_runs": 1093639,
+  "versions": 51179,
+  "detector_error_versions": 82,
+  "feature_error_versions": 0,
+  "excluded_versions_with_runs": 82,
+  "excluded_detector_or_feature_error_runs": 1661,
+  "common_dataset_runs": 1091978,
+  "common_dataset_repositories": 14695,
+  "matches_archived_sample_audit": true,
+  "matches_paper": true
+}

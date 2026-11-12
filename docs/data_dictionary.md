@@ -18,7 +18,12 @@ Success: success=1; failure/startup_failure/timed_out=0. Other conclusions are e
 
 ## RQ2.3
 
-`RQ2/RQ2_3/expected/frozen_events.jsonl` and `frozen_run_manifest.jsonl` fix historical comparisons before resource computation. `data/frozen_job_metadata.jsonl` contains the exact referenced jobs, keyed by repository/run/attempt, plus original archive evidence. `data/frequency/` preserves the audited April-May run archive, acquisition statuses and audit counts. Missing frequency is not zero.
+The RQ2.3 history index lists sampled repositories, workflow paths, commits,
+and references to verified YAML. `analysis_inputs/rq2_3/matching/run_jobs.jsonl`
+contains successful default-branch run attempts, their archived job records,
+and available exact content evidence. The entry point matches these runs to
+newly detected events. `analysis_inputs/rq2_3/frequency/` contains the April
+and May run archive and acquisition audits used for monthly estimates.
 
 VM seconds sum allocated job time. Reference cost uses the original fixed historical OS multipliers, rounding and base rate in `src/resources/recompute.py`; it does not estimate current charges. Comparisons retain successful runs, average events within repositories and then weight repositories equally. Monthly equivalents apply workflow-specific differences once to observed workflow frequencies, then aggregate within repository; they are not causal savings. Historical events may include simultaneous workflow changes. Pointwise repository-bootstrap intervals are not multiplicity-adjusted.
 

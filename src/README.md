@@ -1,7 +1,7 @@
 # Shared implementation
 
-Use the RQ/Validation/Pipeline entry points from the repository root. The source
-modules below are shared by those entry points.
+Use the RQ and Validation entry points from the repository root. The source
+modules below support these analyses and the documented collection stages.
 
 | Location | Role |
 | --- | --- |
@@ -9,7 +9,7 @@ modules below are shared by those entry points.
 | `models/` | Byte-preserved adopted duration/LPM model implementations and their original tests |
 | `analysis/` | Current paper analysis and plotting helpers |
 | `resources/` | Preserved exploratory resource-comparison implementations |
-| `collection/` | Preserved acquisition and curation source used by Pipeline entry points |
+| `collection/` | Acquisition and curation source mapped by `Pipeline/stages.json` |
 | `artifact.py` | Portable path, loading, naming and output helpers |
 | `scan.py` | User-facing frozen-detector scan entry point |
 | `render_figures.py` | User-facing quantitative figure entry point |
@@ -31,4 +31,3 @@ python src/render_figures.py --help
 python -I src/tests/run_models.py
 ```
 
-See `docs/layout_map.json` at the repository root for the complete old/new path map.

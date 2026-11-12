@@ -18,7 +18,7 @@
     "rq1": "RQ1/data",
     "rq2": "RQ2/data",
     "rq2_grouped": "RQ2/prepared",
-    "rq2_3_jobs": "RQ2/RQ2_3/data/frozen_job_metadata.jsonl",
+    "rq2_3_jobs": "analysis_inputs/rq2_3/matching/run_jobs.jsonl",
     "yaml": "data/canonical/content",
     "validation": "Validation/data/annotations.xlsx",
     "upstream_candidates": "data/upstream/ghalogs/repositories.json",
@@ -31,15 +31,12 @@
     "rq2_3": "RQ2/RQ2_3/analysis.py",
     "validation": "Validation/analysis.py",
     "detector": "src/scan.py",
-    "figures": "src/render_figures.py",
-    "pipeline": "Pipeline/run.py"
+    "figures": "src/render_figures.py"
   },
   "interpretation": "adjusted observational associations; LPM success differences are not odds ratios",
   "initial_candidate_file_included": false,
   "publication_status": "local; author-owned licenses selected; public deposit pending",
-  "verification": "docs/verification/original/verification.json",
   "pipeline_scope": "RQ1/RQ2 only; no retired RQ3 execution",
-  "pipeline_verification": "docs/verification/pipeline/verification.json",
   "pipeline_source_data_bytes": 42888924225,
   "pipeline_compressed_data_bytes": 2552315203,
   "licensing": {

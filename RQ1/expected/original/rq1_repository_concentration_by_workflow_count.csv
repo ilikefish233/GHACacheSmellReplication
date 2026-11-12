@@ -1,7 +1,0 @@
-observed_workflow_count_category,repository_count,exposed_repository_count,repository_coverage_pct,workflow_count,smelly_workflow_count,workflow_coverage_pct,mean_within_repository_smell_fraction
-1,2310,747,32.3377,2310,747,32.3377,0.323377
-2–3,5827,2702,46.3703,14469,4074,28.1567,0.281591
-4–5,4273,2401,56.19,18946,4805,25.3616,0.254786
-6–10,4395,2691,61.2287,32803,7084,21.5956,0.217278
-11–20,1815,1396,76.9146,25671,5197,20.2446,0.204341
->20,704,591,83.9489,24203,4481,18.5142,0.184831

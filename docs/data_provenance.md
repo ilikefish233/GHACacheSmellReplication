@@ -1,15 +1,25 @@
-# Study source versions and portability
+# Data provenance
 
-The paper-selected run3 detector is under `src/frozen`; this is an iteration of the study code, not an immutable archive. The folder name is retained for the current entry-point paths. Retain source files needed by current analyses and remove superseded scripts. Changes to the selected detector or parser require updated provenance and verification of affected paper results. This cleanup does not alter either implementation.
+The study used [`repositories.json.gz`](https://zenodo.org/records/14796970/files/repositories.json.gz?download=1)
+from GHALogs as the upstream candidate repository list. The list was
+filtered to select repositories. Workflow configurations, histories, runs,
+and job records were then collected from GitHub for the selected repositories
+and prepared for analysis. The reproduction workflow uses the resulting
+cohorts and archived records in the Zenodo data package.
 
-The current validation uses `Validation/data/annotations.xlsx` (383 workflows; SHA256 `b219d83515ec980013146b5d16be399ed5b4b71c8dd65a642a2e96bd1e30563c`). Three full YAML snapshots supplement truncated workbook cells. Validation source/input hashes and counting rules are recorded in `docs/replication_manifest.json` under `validation`; the old 176-case evaluator and its separate provenance file are no longer distributed.
+Detector validation uses `Validation/data/annotations.xlsx` and the bundled YAML
+snapshots for truncated workbook cells. RQ1 uses saved detector outputs or a
+rescan of archived workflow snapshots. RQ2 uses prepared workflow features
+and grouped outcome statistics. The `--rebuild-groups` option recomputes the
+groups from archived runs.
 
-Historical run manifests retain the original iteration paths and hashes; these are evidence about earlier executions, not a current package file inventory. `docs/distribution_inventory.json` lists distributed files. The paper manifest and manuscript snapshot describe the updated validation and packaged manuscript. Portable entry points resolve current paths and isolate outputs. Adopted model implementations are under `src/models`.
+RQ2.3 uses the two [reconstructed repository lists](../RQ2/RQ2_3/data/).
+The lists were assembled for replication to retain repositories represented in
+the candidate-event data.
+The analysis scans archived workflow versions, matches
+CCS changes to archived runs and job records, and computes per-run and monthly
+resource contrasts.
 
-GHALogs supplies the candidate-list origin; workflow configurations and execution metadata were independently collected from GitHub. The author confirmed manual download of the GHALogs dataset and use of its `repositories.json` as the candidate frame. The original file was recovered from `archive/legacy_log_analysis_data/gha_log_dataset/repositories.json` and used unchanged in the original study. It is excluded from the distributed package; users obtain it separately at `data/upstream/ghalogs/repositories.json` using the root README. Its historical byte count, SHA256 and validated JSON Lines record count are recorded in `docs/provenance/upstream_repository_frame.json`. The paper manifest identifies GHALogs v1.0.1 and its Zenodo record; the original compressed download and download date have not been independently verified. Default offline recomputation starts from frozen selected cohorts; the pipeline extension replays initial filtering and offline curation, while live collection has not been repeated. Original dataset manifests and selected-cohort records document the boundary. Rerunning a live API query cannot guarantee identical historical availability.
-
-RQ1 rescan resolves content hashes within `data/canonical/content`. Files recovered from the local collection are copied only when actually referenced by the frozen run3 scan. Originally unavailable content remains an explicit exclusion. RQ2 prepared data preserve the original YAML-derived controls and exact sufficient statistics; `--rebuild-groups` independently reconstructs aggregation from the bundled full run records. RQ2.3 recomputation starts with its adopted frozen event/run selection and raw job metadata, not fresh historical candidate generation.
-
-Legacy RQ1 files in `docs/provenance/legacy` are used only to reproduce the original audit's old/new comparison columns and trigger consistency checks. They are not primary outcomes. The adopted RQ1 tables are in `RQ1/expected/paper_tables`; current-count columns are recomputed from full scan data. RQ3 files and collection workflows are outside this artifact's analytical scope.
-
-The acquisition/curation extension captures the original baseline JSONL collection tables and all eleven formal RQ2 supplementation batches, including raw run API response archives, normalized increments, request events, acquisition statuses, plans, cutoff snapshot metadata, merged history and pre-canonical run inputs. `Pipeline/data_manifest.json` maps every original relative path to a lossless gzip file with its uncompressed hash. Shared frozen YAML is relocated by hash rather than copied into each historical source layout. `Pipeline/source_manifest.json` records the recovered acquisition/curation source revisions, distinct from the selected October detector version. `Pipeline/run.py` offers offline stage replay with network blocked and separate live acquisition. Historical RQ3 branches in the canonical builder are never invoked. See `Pipeline/README.md` for stage boundaries and the October label-refresh handoff.
+Historical acquisition and curation records are under `Pipeline/` and
+`docs/provenance/`. The RQ1 historical comparison and trigger checks use the
+files under `docs/provenance/legacy/`.

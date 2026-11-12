@@ -12,7 +12,6 @@ the authors do not hold. Existing file-specific notices take precedence.
 | Third-party workflow YAML, embedded workflow/code excerpts, copied third-party code and resource assets | Excluded from the grants above; retain applicable upstream terms and notices |
 | GHALogs `repositories.json` / `repositories.json.gz` | Not distributed; obtain separately using the root README; original terms apply |
 | Raw GitHub API responses, collected upstream metadata and third-party fields embedded in derived tables | No new ownership or blanket license is asserted over third-party content; the CC BY grant covers only author-owned contributions, if any |
-| Manuscript snapshot and supplied publication assets in `docs/paper/` | Excluded from these package grants; no additional manuscript publication license is granted here |
 
 The directory names in this table identify material, not an unconditional
 relicensing of everything stored in those directories. For example, annotation

@@ -1,8 +1,0 @@
-[
-  {
-    "source": "archive/legacy_log_analysis_data/gha_log_dataset/data/filtered_repositories.json",
-    "expected": 22911,
-    "rebuilt": 22911,
-    "identical_membership": true
-  }
-]

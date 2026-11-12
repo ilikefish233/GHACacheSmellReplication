@@ -199,21 +199,19 @@ def main():
         'covered_effect_events': len({eid for w in workflows if w['monthly_frequency_available'] for eid in w['event_ids']}),
         'frequency_target_duplicates': duplicates, 'api_calls': 0,
         'hypothetical_frequency_used': False, 'source': 'audited complete repository run acquisition, not job sample sizes'})
-    lines = ['# 实验性：按对应工作流真实月运行频率换算', '',
-        '**频率来自2026年4月、5月两个完整自然月的实际运行档案，不使用假定的100/300/1000次，也不使用采样job数作为频率。**', '',
-        '## 方法', '',
-        '1. 对同仓库、同workflow_id/路径、同异味的多个历史事件，先平均每成功运行差额；每条工作流的频率只乘一次。',
-        '2. 对应工作流月参考美元差 = 该工作流历史每成功运行美元差 × 该工作流在该自然月的实际默认分支成功运行次数。所有触发类型均计入，单位与成本端点一致。',
-        '3. 同仓库同类型异味涉及的不同工作流在月内求和，再对4月和5月平均，最后仓库等权汇总。并非把原全样本总体均值乘某个总体平均频率。',
-        '4. 全仓库其他工作流的次数另列作参考，不能乘到单条工作流上；当前估计只覆盖已有成本对比的工作流，不代表整个仓库全部工作流的异味损失。',
-        f'5. 原成本比较的{len(target_repos)}个仓库中，{len(covered)}个有经审计的完整运行档案；其他仓库仅有局部/候选运行记录，频率和月金额为NA。原166个历史事件不因本频率补充而被改动。完整档案中某工作流月运行数确为0时可计0，不能把缺失当0。',
-        '6. 这叫“观测频率下的月度参考差额”，不是观测到的实际月损失。每运行差额可能来自更早历史事件，将其应用于4、5月真实频率仍假定差额在该负载频率下可迁移，不重建当月所有版本的实际因果负担。',
-        '7. 金额沿用原历史参考价格，单位是所覆盖仓库中已配对工作流合计的月均差额。少仓库、任务/配置同变、成功条件选择和时间区间归属等原限制仍在，不同异味不可相加。',
-        '8. 区间为2,000次仓库聚类bootstrap的逐项区间，单仓库不报总体区间；频率按所观察月份固定，未来月份频率不确定性不包含在内。档案按run_id/run_attempt计数，不补造API未列出的历史重试。', '',
-        '月度表的频率覆盖子集和工作流汇总权重与原全样本每运行表不同，方向或大小改变不能仅归因于单位换算。原每运行结果保持原样；不以缺失频率填零来保留原表规模。', '',
-        '## 原十一类结果', '',
-        '| 异味 | 有频率仓库/原成本仓库 | 已配对工作流数 | 实际成功次数/月/仓库（所覆盖工作流合计） | 参考美元差/月/仓库 | VM小时差/月/仓库 | 美元逐项95%区间 |',
-        '|---|---:|---:|---:|---:|---:|---|']
+    lines = ['# Monthly resource equivalents at observed frequencies', '',
+        'The analysis uses the complete run archives for April and May 2026.', '',
+        '## Method', '',
+        '1. Average historical per-successful-run differences for each repository, workflow, and CCS type.',
+        '2. Multiply each workflow difference by its observed successful default-branch run count for each month. Counts cover all trigger types.',
+        '3. Sum the compared workflows within each repository and month, average the two months, and weight repositories equally.',
+        f'4. Complete frequency records cover {len(covered)} of {len(target_repos)} repositories in the per-run analysis. Incomplete records are treated as missing. A verified zero count remains zero.',
+        '5. The calculation applies historical per-run differences to observed execution frequencies. It estimates a reference cost difference under this assumption.',
+        '6. Intervals use 2,000 repository bootstrap replicates and hold the observed frequencies fixed. A single repository does not support an interval.',
+        '',
+        '## Results for the eleven paper CCS types', '',
+        '| CCS type | Frequency-covered / cost-analysis repositories | Workflows | Successful runs per repository-month | USD difference per repository-month | VM hours difference per repository-month | Pointwise 95% USD interval |',
+        '|---|---:|---:|---:|---:|---:|---:|']
     def fmt(x):
         return 'NA' if x is None else f'{x:+.2f}'
     for r in summary:
@@ -221,8 +219,7 @@ def main():
             continue
         ci = '—' if r['monthly_reference_cost_interval_lower_usd'] is None else f"[{fmt(r['monthly_reference_cost_interval_lower_usd'])}, {fmt(r['monthly_reference_cost_interval_upper_usd'])}]"
         lines.append(f"| {r['smell']} | {r['observed_frequency_repositories']}/{r['cost_comparison_repositories']} | {r['matched_workflows']} | {fmt(r['mean_matched_workflow_successful_runs_per_repository_month'])} | {fmt(r['mean_monthly_reference_cost_difference_usd_per_repository'])} | {fmt(r['mean_monthly_vm_difference_hours_per_repository'])} | {ci} |")
-    lines += ['', '逐仓库、逐月实测次数和金额见 repository_observed_monthly.csv；逐工作流的原差额、次数及缺失状态见 workflow_observed_monthly.csv。', '',
-              '离线复算：在上一级实验目录执行 `python -B calculate_observed_monthly.py`。未修改原每运行结果和冻结输入；本次无API调用。']
+    lines += ['', 'See repository_observed_monthly.csv for repository-month counts and estimates. See workflow_observed_monthly.csv for workflow-level estimates and missing-frequency flags.']
     (OUT / 'method_report.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
     print(json.dumps({'covered_repositories': len(covered), 'missing_repositories': len(target_repos - covered),
                       'covered_events': len({eid for w in workflows if w['monthly_frequency_available'] for eid in w['event_ids']}),

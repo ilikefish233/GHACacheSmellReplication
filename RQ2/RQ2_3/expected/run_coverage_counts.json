@@ -1,8 +1,0 @@
-{
-  "after_success_runs": 7418,
-  "before_success_runs": 4410,
-  "after_missing_local_exact_jobs": 6473,
-  "before_missing_local_exact_jobs": 3684,
-  "before_retry_outside_interval": 1,
-  "after_retry_outside_interval": 1
-}

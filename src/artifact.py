@@ -7,6 +7,60 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 
+
+def add_data_dir(parser):
+    parser.add_argument('--data-dir', type=Path, help='Extracted Zenodo directory containing manifest.json')
+
+
+class DataPaths:
+    def __init__(self, directory=None):
+        self.root = Path(directory).resolve() if directory is not None else ROOT / 'zenodo_data'
+        self.mapping = None
+        if directory is not None or self.root.exists():
+            manifest = self.root / 'manifest.json'
+            if not manifest.is_file():
+                raise ValueError(f'Missing Zenodo data manifest: {manifest}')
+            config = json.loads(manifest.read_text(encoding='utf-8-sig'))
+            if config.get('schema_version') != 1 or not isinstance(config.get('paths'), dict):
+                raise ValueError(f'Unsupported data manifest: {manifest}')
+            self.mapping = config['paths']
+
+    def path(self, legacy):
+        if self.mapping is None:
+            return ROOT / legacy
+        parts = Path(legacy).parts
+        for n in range(len(parts), 0, -1):
+            prefix = '/'.join(parts[:n])
+            if prefix in self.mapping:
+                relative = Path(self.mapping[prefix])
+                target = self.root.joinpath(relative, *parts[n:]).resolve()
+                if relative.anchor or '..' in relative.parts or not target.is_relative_to(self.root):
+                    raise ValueError(f'Invalid archive path for {prefix}: {relative}')
+                return target
+        raise ValueError(f'No archive path for {legacy}')
+
+
+def rq23_sample_files():
+    directory = ROOT / 'RQ2/RQ2_3/data'
+    return sorted(
+        path for path in directory.glob('repositories_batch*.txt')
+        if path.stem.removeprefix('repositories_batch').isdecimal()
+    )
+
+
+def rq23_sample_names():
+    manifests = rq23_sample_files()
+    if not manifests:
+        raise FileNotFoundError('No RQ2.3 batch lists in RQ2/RQ2_3/data')
+    names = set()
+    for path in sorted(manifests):
+        batch_names = [line.strip().lower() for line in path.read_text(encoding='utf-8-sig').splitlines() if line.strip()]
+        if not batch_names or len(set(batch_names)) != len(batch_names) or names.intersection(batch_names):
+            raise ValueError(f'Empty list or duplicate repository in RQ2.3 list: {path}')
+        names.update(batch_names)
+    return sorted(names)
+
+
 def rows(path):
     with Path(path).open(encoding='utf-8-sig') as stream:
         for line in stream:

@@ -1,7 +1,0 @@
-{
-  "passed": true,
-  "input_run_attempts": 1093639,
-  "method": "original prepare() reaggregated raw bundled runs with frozen static features; refit both duration models and success LPM",
-  "matched": "sample counts and coefficients at rtol=1e-8, atol=1e-10",
-  "details_retained_in_development_audit": true
-}

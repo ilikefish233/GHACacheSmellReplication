@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "paths": {
+    "data/canonical": "workflows",
+    "data/canonical/repositories.jsonl": "repositories/repositories.jsonl",
+    "data/canonical/workflow_runs.jsonl": "runs/workflow_runs.jsonl",
+    "RQ1/data": "analysis_inputs/rq1",
+    "RQ1/paper_source_data": "analysis_inputs/rq1/paper_source_data",
+    "RQ2/data": "analysis_inputs/rq2/model_input",
+    "RQ2/prepared": "analysis_inputs/rq2/prepared",
+    "RQ2/RQ2_3/data": "analysis_inputs/rq2_3",
+    "RQ2/RQ2_3/data/collection": "analysis_inputs/rq2_3/collection",
+    "RQ2/collected_runs": "runs/rq2_observation_runs.jsonl",
+    "RQ2/collected_runs_manifest": "runs/rq2_observation_runs_manifest.json",
+    "RQ2/coverage_status": "analysis_inputs/intermediate/rq2_coverage_status.jsonl",
+    "RQ2/coverage_evidence": "analysis_inputs/intermediate/rq2_phase3_1_coverage_evidence.jsonl",
+    "RQ2/canonical_detector_states": "analysis_inputs/intermediate/canonical_detector_states.jsonl",
+    "RQ2/intermediate_manifest": "analysis_inputs/intermediate/manifest.json"
+  }
+}

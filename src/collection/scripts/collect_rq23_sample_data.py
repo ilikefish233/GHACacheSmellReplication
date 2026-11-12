@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import random
 import sys
 import threading
@@ -27,9 +28,11 @@ if str(ROOT) not in sys.path:
 from src.utils.env_loader import load_env_file
 
 
-INPUT = ROOT / "data_26_6_9_complete_20260609" / "workflow_files.jsonl"
-SAMPLE = ROOT / "output_rq23_history_sample_20260929" / "repositories.txt"
-OUT = ROOT / "output_rq23_sample_acquisition_20260929"
+PACKAGE = ROOT.parents[1]
+sys.path.insert(0, str(PACKAGE / "src"))
+from artifact import DataPaths, add_data_dir, rq23_sample_names
+
+
 START = "2026-03-11T23:59:59Z"
 CUTOFF = "2026-06-09T23:59:59Z"
 RUN_START = "2026-03-12"
@@ -74,13 +77,6 @@ def request_json(session: requests.Session, method: str, url: str, **kwargs: Any
             raise ApiError(f"http:{response.status_code}:non_object")
         return response.status_code, body
     raise AssertionError("unreachable")
-
-
-def read_sample(path: Path = SAMPLE) -> list[str]:
-    names = path.read_text(encoding="utf-8").splitlines()
-    if len(names) != 1000 or len(set(names)) != 1000:
-        raise ValueError("Frozen 1,000-repository sample is invalid")
-    return names
 
 
 def read_status(path: Path) -> set[str]:
@@ -212,7 +208,8 @@ def query_runs(session: requests.Session, repo: str) -> list[dict[str, Any]]:
     return list(by_key.values())
 
 
-def query_blobs(session: requests.Session, repo: str, commits: list[dict[str, Any]], output_dir: Path) -> list[dict[str, Any]]:
+def query_blobs(session: requests.Session, repo: str, commits: list[dict[str, Any]], output_dir: Path,
+                shared_content: Path | None = None) -> list[dict[str, Any]]:
     owner, name = repo.split("/", 1)
     results: list[dict[str, Any]] = []
     blob_dir = output_dir / "workflow_blobs"
@@ -234,11 +231,18 @@ def query_blobs(session: requests.Session, repo: str, commits: list[dict[str, An
             else:
                 content = obj["text"]
                 digest = hashlib.sha256(content.encode("utf-8")).hexdigest()
-                path = blob_dir / digest[:2] / f"{digest}.yml"
+                path = (shared_content / f"{digest}.yml" if shared_content is not None
+                        else blob_dir / digest[:2] / f"{digest}.yml")
                 path.parent.mkdir(parents=True, exist_ok=True)
                 if not path.exists():
-                    path.write_text(content, encoding="utf-8")
-                row.update({"content_status": "ok", "blob_oid": obj.get("oid"), "content_sha256": digest, "content_file": str(path.relative_to(output_dir)).replace("\\", "/")})
+                    temporary = path.with_suffix(f".{threading.get_ident()}.partial")
+                    temporary.write_bytes(content.encode("utf-8"))
+                    temporary.replace(path)
+                content_root = shared_content if shared_content is not None else output_dir
+                row.update({"content_status": "ok", "blob_oid": obj.get("oid"),
+                            "content_sha256": digest, "content_file": path.relative_to(content_root).as_posix()})
+                if shared_content is not None:
+                    row["content_store"] = "shared"
             results.append(row)
     return results
 
@@ -248,8 +252,7 @@ def main() -> None:
     parser.add_argument("--phase", choices=["history", "runs", "blobs"], required=True)
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--limit-repos", type=int, default=0)
-    parser.add_argument("--output-dir", type=Path, default=OUT)
-    parser.add_argument("--sample-file", type=Path, default=SAMPLE)
+    add_data_dir(parser)
     parser.add_argument("--changed-workflows-only", action="store_true",
                         help="For blob phase, fetch baseline and window YAML only for paths with a window commit")
     parser.add_argument("--token-env", default=None)
@@ -262,9 +265,12 @@ def main() -> None:
     args = parser.parse_args()
     if args.workers < 1 or args.workers > 8:
         raise ValueError("workers must be 1..8")
-    output_dir = args.output_dir
+    paths = DataPaths(args.data_dir)
+    if paths.mapping is None:
+        parser.error("RQ2.3 collection requires zenodo_data/manifest.json or --data-dir")
+    sample = rq23_sample_names()
+    output_dir = paths.path("RQ2/RQ2_3/data/collection")
     output_dir.mkdir(parents=True, exist_ok=True)
-    sample = read_sample(args.sample_file)
     status_path = output_dir / f"{args.phase}_status.jsonl"
     data_path = output_dir / {"history": "history_commit_index.jsonl", "runs": "workflow_runs.jsonl", "blobs": "workflow_versions.jsonl"}[args.phase]
     done = read_status(status_path)
@@ -283,16 +289,21 @@ def main() -> None:
     workflows: dict[str, list[dict[str, Any]]] = defaultdict(list)
     if args.phase == "history":
         selected = set(pending)
-        with INPUT.open(encoding="utf-8") as stream:
+        with paths.path("data/canonical/workflow_snapshots.jsonl").open(encoding="utf-8-sig") as stream:
             for line in stream:
                 item = json.loads(line)
-                name = item["repository_name"].lower()
+                name = (item.get("canonical_name") or item["repository_name"]).lower()
                 if name in selected:
                     workflows[name].append(item)
     if args.phase == "blobs":
+        history_index = output_dir / "history_commit_index.jsonl"
+        if not history_index.is_file():
+            parser.error(f"Collect history before downloading workflow versions: {history_index}")
+        history_done = read_status(output_dir / "history_status.jsonl")
+        pending = [repo for repo in pending if repo in history_done]
         selected = set(pending)
         history_rows = []
-        with (output_dir / "history_commit_index.jsonl").open(encoding="utf-8") as stream:
+        with history_index.open(encoding="utf-8") as stream:
             for line in stream:
                 item = json.loads(line)
                 if item["repository_name"] in selected:
@@ -302,7 +313,8 @@ def main() -> None:
             if not args.changed_workflows_only or (item["repository_name"], item["workflow_path"]) in changed:
                 workflows[item["repository_name"]].append(item)
     env = load_env_file()
-    token = env.get(args.token_env or ("GITHUB_TOKEN_2" if args.phase == "runs" else "GITHUB_TOKEN"))
+    token_name = args.token_env or ("GITHUB_TOKEN_2" if args.phase == "runs" else "GITHUB_TOKEN")
+    token = os.environ.get(token_name) or env.get(token_name)
     if not token:
         raise RuntimeError("Missing GitHub credential in config/.env")
     local = threading.local()
@@ -314,7 +326,8 @@ def main() -> None:
             if args.phase == "history":
                 rows = query_histories(local.session, repo, workflows[repo])
             elif args.phase == "blobs":
-                rows = query_blobs(local.session, repo, workflows[repo], output_dir)
+                rows = query_blobs(local.session, repo, workflows[repo], output_dir,
+                                   paths.path("data/canonical/content"))
             else:
                 rows = query_runs(local.session, repo)
             return repo, rows, "ok", ""

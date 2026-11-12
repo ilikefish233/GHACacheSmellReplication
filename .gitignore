@@ -10,6 +10,7 @@ rescanned/
 rq1_rescanned/
 *.partial
 *.zip
+/zenodo_data/
 /data/canonical/
 /Pipeline/data/
 /RQ1/data/

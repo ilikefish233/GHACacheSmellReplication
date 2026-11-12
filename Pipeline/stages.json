@@ -14,57 +14,57 @@
   "stages": [
     {
       "name": "filter",
-      "script": "source/scripts/filter_repositories.py",
+      "script": "../src/collection/scripts/filter_repositories.py",
       "network": false,
       "expected_candidate_records": 240781,
       "expected_selected_repositories": 22911
     },
     {
       "name": "collect-base",
-      "script": "source/scripts/data_update/fetch_all.py",
+      "script": "../src/collection/scripts/data_update/fetch_all.py",
       "network": true,
-      "configuration": "source/scripts/data_update/filter_config.py",
+      "configuration": "../src/collection/scripts/data_update/filter_config.py",
       "notes": "Original early collector limits are followed by explicit supplementation."
     },
     {
       "name": "canonical",
-      "adapter": "canonical_rq1_rq2.py",
-      "script": "source/scripts/build_canonical_dataset.py",
+      "script": "../src/collection/scripts/build_canonical_dataset.py",
       "network": false,
       "rq3_entrypoint_called": false,
-      "expected_snapshots": 118883
+      "expected_snapshots": 118883,
+      "notes": "The historical canonical_rq1_rq2.py wrapper is absent. Run the archived source only after supplying its required acquisition inputs and explicit paths."
     },
     {
       "name": "consolidate",
-      "script": "source/scripts/consolidate_rq2_full_acquisition.py",
+      "script": "../src/collection/scripts/consolidate_rq2_full_acquisition.py",
       "network": false,
       "formal_batches": 11,
       "expected_unique_runs": 2132983
     },
     {
       "name": "coverage",
-      "script": "source/scripts/build_rq2_final_coverage_evidence.py",
+      "script": "../src/collection/scripts/build_rq2_final_coverage_evidence.py",
       "network": false,
       "expected_coverage_rows": 118883
     },
     {
       "name": "queue",
-      "script": "source/scripts/audit_rq2_canonical_coverage.py",
+      "script": "../src/collection/scripts/audit_rq2_canonical_coverage.py",
       "network": false,
       "expected_final_workflows": 51179,
       "expected_final_runs": 1093639
     },
     {
       "name": "model-input",
-      "script": "source/scripts/prepare_rq2_final_model_input.py",
+      "script": "../src/collection/scripts/prepare_rq2_final_model_input.py",
       "network": false,
-      "handoff_verifier": "verify_handoff.py"
+      "notes": "The historical verify_handoff.py wrapper is absent; use the current analysis verifier after preparing inputs."
     },
     {
       "name": "October paper analyses",
       "entrypoint": "../reproduce.py",
       "network": false,
-      "detector": "../code/frozen/src/detectors/smell/cache_smell_detector.py",
+      "detector": "../src/frozen/src/detectors/smell/cache_smell_detector.py",
       "notes": "Adopted run3 labels; unified duration models and LPM success."
     }
   ]

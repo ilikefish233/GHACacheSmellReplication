@@ -1,0 +1,9 @@
+{
+  "canonical_snapshots": 118883,
+  "rq1_cohort": 118523,
+  "not_in_rq1_cohort": 360,
+  "detector_error_workflows": 121,
+  "excluded_total": 481,
+  "paper_workflows": 118402,
+  "matches_paper": true
+}

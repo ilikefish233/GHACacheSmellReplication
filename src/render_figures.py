@@ -5,7 +5,7 @@ import json
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
-from artifact import ROOT,new_output,write
+from artifact import ROOT,new_output,write,DataPaths,add_data_dir
 
 def module(name,path):
     source=path.read_text(encoding='utf-8-sig')
@@ -23,6 +23,7 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--output',type=Path,required=True)
     ap.add_argument('--results',type=Path,help='Optional regenerated RQ2 results directory; default uses frozen adopted results')
+    add_data_dir(ap)
     a=ap.parse_args();out=new_output(a.output)
     sys.path.insert(0,str(ROOT/'src/vendor'))
     forest=module('forest',ROOT/'src/analysis/reformat_rq2_forest.py')
@@ -32,7 +33,10 @@ def main():
         'reliability':json.loads(success.read_text(encoding='utf-8'))}
     forest['build_forest'](report,out/'rq2_adjusted_associations_forest')
     repository=module('repository',ROOT/'src/analysis/reformat_repository_contexts.py')
-    data=ROOT/'RQ1/paper_source_data'
+    data=DataPaths(a.data_dir).path('RQ1/paper_source_data')
+    for name in ('repository_feature_comparison_long_data.csv', 'repository_source_data.csv'):
+        if not (data/name).is_file():
+            ap.error(f'Missing RQ1 figure input: {data/name}')
     sys.argv=['repository','--source',str(data/'repository_feature_comparison_long_data.csv'),
         '--repositories',str(data/'repository_source_data.csv'),'--output',str(out/'rq1_representative_repository_contexts_split_violin_ccs.pdf')]
     repository['main']()

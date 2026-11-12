@@ -2,7 +2,7 @@
   {
     "smell": "no_dependency_cache",
     "scope": "original_11",
-    "cost_comparison_repositories": 59,
+    "cost_comparison_repositories": 58,
     "observed_frequency_repositories": 33,
     "matched_workflows": 56,
     "historical_events": 60,

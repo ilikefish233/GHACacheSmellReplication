@@ -1,57 +1,5 @@
 {
-  "archive_url": null,
   "doi": "10.5281/zenodo.23640810",
-  "publication_status": "Zenodo draft; DOI reserved; data not yet published",
-  "archive_filename": "replication_package_emse_20261025.zip",
-  "identity": {
-    "paper_title": "Cache Configuration Smells in GitHub Actions: A Large-Scale Empirical Study",
-    "study_cutoff": "2026-06-09T23:59:59Z",
-    "detector_sha256": "daca83cf58ed207fdaa7719862b07bb2f771bebe11bbf9bda25013b2dcdca39e"
-  },
-  "external_prefixes": [
-    "data/canonical/",
-    "Pipeline/data/",
-    "RQ1/data/",
-    "RQ1/paper_source_data/",
-    "RQ2/data/",
-    "RQ2/prepared/",
-    "RQ2/RQ2_3/data/"
-  ],
-  "external_files": [
-    "RQ2/RQ2_3/expected/candidate_transitions.jsonl"
-  ],
-  "external_file_count": 115280,
-  "external_uncompressed_bytes": 9657563827,
-  "external_groups": {
-    "data/canonical/": {
-      "files": 114822,
-      "bytes": 708931983
-    },
-    "Pipeline/data/": {
-      "files": 94,
-      "bytes": 2552315203
-    },
-    "RQ1/data/": {
-      "files": 2,
-      "bytes": 549284146
-    },
-    "RQ1/paper_source_data/": {
-      "files": 25,
-      "bytes": 73145259
-    },
-    "RQ2/data/": {
-      "files": 4,
-      "bytes": 4568397865
-    },
-    "RQ2/prepared/": {
-      "files": 13,
-      "bytes": 60580278
-    },
-    "RQ2/RQ2_3/data/": {
-      "files": 319,
-      "bytes": 1133942727
-    }
-  },
   "required_files": {
     "rq1": [
       "RQ1/data/rq1_scan_direct.jsonl",
@@ -67,17 +15,26 @@
       "RQ2/prepared/manifest.json",
       "RQ2/prepared/group_keys.jsonl",
       "RQ2/prepared/workflow_features.jsonl",
-      "RQ2/prepared/grouped_outcomes.npz"
+      "RQ2/prepared/grouped_outcomes.npz",
+      "RQ2/prepared/feature_audit.json",
+      "RQ2/prepared/sample_audit.json"
     ],
     "rq2_3": [
-      "RQ2/RQ2_3/data/frozen_job_metadata.jsonl",
+      "RQ2/RQ2_3/data/collection/workflow_versions.jsonl",
+      "RQ2/RQ2_3/data/matching/run_jobs.jsonl",
+      "RQ2/RQ2_3/data/matching/manifest.json",
       "RQ2/RQ2_3/data/frequency/workflow_runs.jsonl",
+      "RQ2/RQ2_3/data/frequency/runs_status.jsonl",
+      "RQ2/RQ2_3/data/frequency/acquisition_audit.json",
       "data/canonical/repositories.jsonl"
     ],
     "detector": [
       "RQ1/data/rq1_scan_direct.jsonl",
       "data/canonical/rq1_cohort.jsonl"
+    ],
+    "rq2_collection": [
+      "RQ2/collected_runs",
+      "RQ2/collected_runs_manifest"
     ]
-  },
-  "notes": "Use the matching complete ZIP. GHALogs is separately downloaded from its original record, not this archive."
+  }
 }

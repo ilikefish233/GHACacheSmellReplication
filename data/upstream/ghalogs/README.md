@@ -1,8 +1,6 @@
-# External GHALogs input
+# GHALogs repository list
 
-The original candidate list is not distributed. Obtain `repositories.json.gz`
-from https://zenodo.org/records/14796970 and decompress it to `repositories.json`
-in this directory before running `Pipeline/run.py filter` or `offline-all`.
-See the root README for commands, citation and third-party terms. Default paper
-analyses do not need this download. Historical verification metadata describes
-the author's original research copy, not a currently bundled file.
+Download [`repositories.json.gz`](https://zenodo.org/records/14796970/files/repositories.json.gz?download=1) from the
+GHALogs dataset and extract `repositories.json`. This is the upstream
+candidate list used for repository selection. The workflow, run, and job
+data in the study were collected from the selected repositories.

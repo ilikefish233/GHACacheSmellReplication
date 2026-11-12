@@ -1,3 +1,0 @@
-dependency_ecosystem,dependency_ecosystem_label,detector_eligible_workflow_count,ndc_workflow_count,ndc_conditional_pct,ndc_pct_all_workflows,eligible_pct_all_workflows
-npm,npm-compatible (npm/yarn/pnpm),14558,6211,42.6638,5.2457,12.2954
-python,Python-compatible (pip/pipenv/poetry/uv),0,0,0.0,0.0,0.0

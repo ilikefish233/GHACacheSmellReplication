@@ -5,8 +5,7 @@ The bulk analysis data are distributed separately through Zenodo.
 
 ## Reproduce the results
 
-The data DOI is [10.5281/zenodo.23640810](https://doi.org/10.5281/zenodo.23640810).
-The DOI is reserved and the data deposit is pending publication. If you have
+The data DOI is [10.5281/zenodo.23640810](https://doi.org/10.5281/zenodo.23640810). If you have
 a local copy, use the extracted directory containing `manifest.json` as
 `PATH_TO_ZENODO_DATA`.
 
